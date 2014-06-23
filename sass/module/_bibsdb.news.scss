@@ -1,0 +1,15 @@
+ /**
+ * News
+ *
+ * Uses shared %article @extends
+ *
+ * @author agms
+ */
+
+.news-list { 
+  .news-label {
+    @extend .label;
+
+    margin-right: 5px;
+  }
+}

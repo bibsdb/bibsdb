@@ -1,0 +1,41 @@
+// =============================================================================
+//
+// Bibsdb stylesheet combiner
+//
+// =============================================================================
+//
+
+// Include compass
+@import "compass/css3";
+
+// Grid - http://zengrids.com
+@import "zen";
+
+// Include configuration
+@import "configuration/_bibsdb.variables";
+@import "configuration/_bibsdb.colors";
+@import "configuration/_bibsdb.configuration";
+
+// Include framework
+@import "framework/_bibsdb.mixins";
+@import "framework/_bibsdb.base";
+@import "framework/_bibsdb.navigation";
+@import "framework/_bibsdb.buttons";
+@import "framework/_bibsdb.labels";
+
+
+// Include media queries (displays and attachments)
+@import "layout/_bibsdb.layout";
+@import "layout/_bibsdb.drupal";
+@import "layout/_bibsdb.typography";
+
+// Include modules
+@import "module/_bibsdb.module";
+@import "module/_bibsdb.search";
+@import "module/_bibsdb.news";
+@import "module/_bibsdb.event";
+@import "module/_bibsdb.user";
+@import "module/_bibsdb.libraries";
+
+// Include bibsdbextras
+@import "bibsdbextras/_bibsdb.extras";

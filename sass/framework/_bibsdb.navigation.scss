@@ -1,0 +1,113 @@
+/**
+ * Navigation
+ *
+ * @author agms
+ */
+
+/* Topbar menu
+   ========================================================================== */
+
+.topbar-menu {
+	margin-top: 52px;
+	@include small-medium() {
+    margin-top: 0;
+  }
+  @include small() {
+    margin-top: 0;
+  }
+	width: 50%;							/* Logo spans 6 colums - Topbar-menu spans 6 columns */
+	margin-left: -50%;
+	.menu-item {
+		@include text-shadow(1px 1px 0 rgba(183, 187, 191, 1));
+		font-size: $font-size-large;
+		
+		/* Make the tabs a little higher to span the logo as it grows higher */
+		@include medium() {
+			padding: 20px 14px;
+		}
+		@include small() {
+			padding: 10px 14px;
+		}
+	
+
+		color: $gray-darkest;
+		&:hover {
+			background-color: $green;
+			color: $white;
+		}
+
+		&.active {
+			color: $white;
+			background-color: $gray-dark;
+		}
+
+	}
+}
+
+/* Navigation, main menu and secondary menu
+   ========================================================================== */
+.navigation-wrapper {
+  background-color: $navigation-background-color;
+  /* Media queries */
+  @include small-medium() {
+	  background-color: $header-background-color;
+  }
+  @include small() {
+    background-color: $header-background-color;
+  }
+}
+
+.main-menu {
+	font-size: $font-size-large;
+}
+
+.secondary-menu {
+	font-size: $font-size-medium;
+}
+
+.main-menu, .secondary-menu {
+  .menu-item {
+		color: $white;
+		&:hover {
+      color: $green;
+		}
+		&.active {
+      color: $green;
+      @include font-bold();
+		}
+	}
+}
+
+/* Sub menu
+   ========================================================================== */
+h2.sub-menu-title {
+	@include font-bold();
+}
+
+.sub-menu {
+	margin-bottom: $large-spacing;
+  > li {
+    a {
+      color: $font-color-primary;
+      padding-top: $small-spacing;
+      padding-bottom: 3px;
+      
+      &:hover {
+				color: $font-color-primary;
+			}
+		}
+	}
+	li {
+
+    &:before {
+      color: $font-color-primary;
+      font-size: $font-size-reset;
+      margin-top: 4px;
+    }
+  }
+  ul {
+    li {
+			display: none;
+    }
+  }
+}

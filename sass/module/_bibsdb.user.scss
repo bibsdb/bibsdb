@@ -1,0 +1,85 @@
+/**
+ * User
+ *
+ * @author agms
+ * - not modified
+ */
+
+/* User login in header
+   ========================================================================== */
+
+.header-wrapper {
+  /* Add padding if the search is in the header */
+  .user {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+}
+
+.user {
+  @extend %search-user-header;
+  overflow: hidden;
+
+  .user-field-wrapper {
+    position: relative;
+  }
+
+  .form-item-name {
+    @include zen-grid-item(6, 1);
+
+    .form-text {
+      padding-left: 45px;
+    }
+  }
+
+  .form-item-pass {
+    @include zen-grid-item(6, 1, right);
+
+    .form-text {
+      padding-left: 42px;
+    }
+  }
+
+  .block-title {
+    display: none;
+  }
+
+  @include small() {
+    .form-item-name,
+    .form-item-pass {
+      @include zen-grid-item(12, 1);
+      @include zen-clear();
+    }
+
+    .form-actions {
+      margin-bottom: 0;
+    }
+
+    .form-submit {
+      margin-top: $medium-spacing;
+    }
+  }
+
+  @include small-medium() {
+    text-align: left;
+
+    .block-title {
+      display: block;
+      color: $white;
+      margin-top: 10px;
+      border-bottom: 1px solid transparentize($white, .75);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .user-field-wrapper {
+      position: relative;
+    }
+  }
+
+  @include small-medium {
+    width: auto;
+  }
+}

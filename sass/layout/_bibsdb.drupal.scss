@@ -1,0 +1,19 @@
+/**
+ * Drupal
+ *
+ * Overrides for Drupal specific markup
+ *
+ * @author agms
+ */
+
+
+/**
+ * Homepage search result listing
+ */
+.view-node-search-result {
+  .list-item {
+    .field-type-taxonomy-term-reference a {
+      @extend .label;
+    }
+  }
+}

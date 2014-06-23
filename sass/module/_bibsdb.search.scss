@@ -1,0 +1,133 @@
+/**
+ * Search
+ * - not modified
+ *
+ * @author agms
+ */
+
+/* Search
+   ========================================================================== */
+
+.header-wrapper {
+  /* Add padding if the search is in the header */
+  .search {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+}
+
+.search {
+  @extend %search-user-header;
+  
+
+  .search-field-wrapper {
+    position: relative;
+  }
+
+  [class^="icon-"] {
+    bottom: 14px;
+    left: 14px;
+  }
+
+  .spinner {
+    i[class^="icon-"] {
+      @extend .icon-spin;
+      @extend .icon-spinner;
+      height: auto;
+    }
+  }
+
+  .form-item {
+    width: 100%;
+  }
+
+  .form-text {
+    padding-left: 49px;
+  }
+
+  @include small-medium {
+    width: auto;
+  }
+}
+
+
+/* Search in content
+   ========================================================================== */
+
+.search-field-in-content {
+  @include large-x-large() {
+    .form-submit {
+      margin-top: 0;
+    }
+  }
+}
+
+.search-field-in-content--amount {
+  color: $gray-dark;
+}
+
+.search-field-in-content {
+  @extend .search;
+
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative;
+
+  .form-text {
+    border: 1px solid $gray;
+  }
+}
+
+
+.search-field-in-content--message {
+  @include font-bold();
+
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background-color: lighten($yellow, 20%);
+}
+
+.search-field-in-content--sort-results,
+.search-field-in-content--sort-best-match,
+.page-search .pane-search-per-page,
+.page-search .pane-ting-search-sort-form {
+  display: inline-block;
+  min-width: 0;
+  max-width: 49%;
+
+  .form-select {
+    width: 100%;
+  }
+}
+
+.search-field-in-content--sort-results,
+.page-search .pane-search-per-page {
+  @include zen-grid-item(6, 1, right);
+}
+
+.search-field-in-content--sort-best-match,
+.page-search .pane-ting-search-sort-form {
+  @include zen-grid-item(6, 1);
+}
+
+.page-search .pane-ting-search-sort-form {
+  clear: none;
+
+  overflow: visible;
+}
+
+.page-search .pane-search-per-page,
+.page-search .pane-ting-search-sort-form {
+  @include zen-nested-container();
+
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+
+    max-width: 100%;
+  }
+}

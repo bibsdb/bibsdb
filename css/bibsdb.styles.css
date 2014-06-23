@@ -1,0 +1,1597 @@
+/**
+ * Variables
+ *
+ * @author agms
+ */
+/* Spacing variables
+   ========================================================================== */
+/* Zen Grid variables
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Standard color definitions - changed - agms
+   ========================================================================== */
+/* Font library
+   ========================================================================== */
+/* Typography
+   ========================================================================== */
+/* Font variables
+   ========================================================================== */
+/* Font sizes
+   ========================================================================== */
+/* Labels
+   ========================================================================== */
+/* Navigation
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/**
+ * Colors settings for the bibsdb theme.
+ *
+ * Every color settings MUST be in HEX format..
+ * @author agms
+ */
+/* Topbar */
+/* Header */
+/* Navigation */
+/* Links */
+/* Labels */
+/* Content */
+/* List */
+/* Footer */
+/**
+ * Rules that can be configured is located in this file.
+ *
+ * @author agms
+ */
+/* Topbar background color */
+/* line 9, ../sass/configuration/_bibsdb.configuration.scss */
+.topbar {
+  background-color: white;
+}
+
+/* Header background color */
+/* line 16, ../sass/configuration/_bibsdb.configuration.scss */
+.header-wrapper {
+  background-color: #979da2;
+}
+
+/* Navigation background color */
+/* line 23, ../sass/configuration/_bibsdb.configuration.scss */
+.navigation-wrapper {
+  background-color: #6d6e71;
+}
+
+/* Links */
+/* line 29, ../sass/configuration/_bibsdb.configuration.scss */
+a {
+  font-weight: normal;
+}
+/* line 32, ../sass/configuration/_bibsdb.configuration.scss */
+a:link {
+  color: #619630;
+  text-decoration: none;
+}
+/* line 37, ../sass/configuration/_bibsdb.configuration.scss */
+a:visited {
+  color: #619630;
+  text-decoration: none;
+}
+/* line 42, ../sass/configuration/_bibsdb.configuration.scss */
+a:hover {
+  color: #3b5c1d;
+  text-decoration: underline;
+}
+/* line 46, ../sass/configuration/_bibsdb.configuration.scss */
+a:hover i[class^="icon-"] {
+  text-decoration: none;
+}
+/* line 51, ../sass/configuration/_bibsdb.configuration.scss */
+a:focus {
+  color: #3b5c1d;
+}
+
+/* Article background extends */
+/* line 58, ../sass/configuration/_bibsdb.configuration.scss */
+.bibsdb-taglist .bibsdb-taglist-item {
+  background-color: #edeeef;
+}
+
+/* line 62, ../sass/configuration/_bibsdb.configuration.scss */
+.bibsdb-taglist .bibsdb-taglist-item:nth-child(odd) {
+  background-color: #edeeef;
+}
+
+/* line 66, ../sass/configuration/_bibsdb.configuration.scss */
+.bibsdb-taglist .bibsdb-list-item:nth-child(even) {
+  background-color: #edeeef;
+}
+
+/* Footer background color */
+/* line 74, ../sass/configuration/_bibsdb.configuration.scss */
+.footer {
+  background-color: #979da2;
+}
+
+/* Bottom background color */
+/* line 79, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom {
+  background-color: #6d6e71;
+}
+
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/**
+ * Base
+ *
+ * @author agms
+ */
+/* line 7, ../sass/framework/_bibsdb.base.scss */
+body {
+  background-color: #d2d5d7;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 21, ../sass/framework/_bibsdb.base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  /* This fixes huge spaces when a heading wraps onto two lines */
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
+  /* Voodoo to enable ligatures and kerning */
+  text-rendering: optimizeLegibility;
+}
+/* line 34, ../sass/framework/_bibsdb.base.scss */
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+/* line 39, ../sass/framework/_bibsdb.base.scss */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 43, ../sass/framework/_bibsdb.base.scss */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 47, ../sass/framework/_bibsdb.base.scss */
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 51, ../sass/framework/_bibsdb.base.scss */
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 59, ../sass/framework/_bibsdb.base.scss */
+h1 {
+  font-size: 200%;
+}
+
+/* line 63, ../sass/framework/_bibsdb.base.scss */
+h2 {
+  font-size: 180%;
+}
+
+/* line 67, ../sass/framework/_bibsdb.base.scss */
+h3 {
+  font-size: 160%;
+}
+
+/* line 71, ../sass/framework/_bibsdb.base.scss */
+h4 {
+  font-size: 130%;
+}
+
+/* line 75, ../sass/framework/_bibsdb.base.scss */
+h5 {
+  font-size: 110%;
+}
+
+/* line 79, ../sass/framework/_bibsdb.base.scss */
+h6 {
+  font-size: 100%;
+}
+
+/* line 84, ../sass/framework/_bibsdb.base.scss */
+strong {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+}
+
+/* line 89, ../sass/framework/_bibsdb.base.scss */
+em {
+  font-family: "SourceSansProItalic";
+  font-weight: normal;
+}
+/* line 92, ../sass/framework/_bibsdb.base.scss */
+em strong {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+}
+
+/* Image
+   ========================================================================== */
+/* line 101, ../sass/framework/_bibsdb.base.scss */
+img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* Lists
+   ========================================================================== */
+/* line 113, ../sass/framework/_bibsdb.base.scss */
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+/* line 117, ../sass/framework/_bibsdb.base.scss */
+ul li {
+  list-style: none;
+}
+
+/* Make sure lists in content get the icon */
+/* line 125, ../sass/framework/_bibsdb.base.scss */
+.page-content li {
+  list-style: disc outside;
+}
+
+/* Agms
+	============================================================================= */
+/* line 133, ../sass/framework/_bibsdb.base.scss */
+body {
+  /* Voodoo to enable ligatures and kerning */
+  text-rendering: optimizeLegibility;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+  /* line 140, ../sass/framework/_bibsdb.base.scss */
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 147, ../sass/framework/_bibsdb.base.scss */
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/* line 181, ../sass/framework/_bibsdb.base.scss */
+h4,
+h5,
+h6 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* line 155, ../sass/framework/_bibsdb.base.scss */
+h4 a:link,
+h5 a:link,
+h6 a:link {
+  color: #619630;
+  text-decoration: none;
+}
+/* line 160, ../sass/framework/_bibsdb.base.scss */
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #619630;
+}
+/* line 164, ../sass/framework/_bibsdb.base.scss */
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #3b5c1d;
+}
+/* line 168, ../sass/framework/_bibsdb.base.scss */
+h4 a:focus,
+h5 a:focus,
+h6 a:focus {
+  color: #3b5c1d;
+}
+/* line 172, ../sass/framework/_bibsdb.base.scss */
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  background-color: transparent;
+  color: #3b5c1d;
+}
+
+/* line 198, ../sass/framework/_bibsdb.base.scss */
+h4 {
+  font-size: 130%;
+}
+
+/* line 202, ../sass/framework/_bibsdb.base.scss */
+h5 {
+  font-size: 110%;
+}
+
+/* line 206, ../sass/framework/_bibsdb.base.scss */
+h6 {
+  font-size: 100%;
+}
+
+/**
+ * Navigation
+ *
+ * @author agms
+ */
+/* Topbar menu
+   ========================================================================== */
+/* line 10, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu {
+  margin-top: 52px;
+  width: 50%;
+  /* Logo spans 6 colums - Topbar-menu spans 6 columns */
+  margin-left: -50%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 10, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 10, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu {
+    margin-top: 0;
+  }
+}
+/* line 20, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .menu-item {
+  text-shadow: 1px 1px 0 #b7bbbf;
+  font-size: 130%;
+  /* Make the tabs a little higher to span the logo as it grows higher */
+  color: #6d6e71;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 20, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .menu-item {
+    padding: 20px 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 20, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .menu-item {
+    padding: 10px 14px;
+  }
+}
+/* line 34, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .menu-item:hover {
+  background-color: #7fc241;
+  color: white;
+}
+/* line 39, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .menu-item.active {
+  color: white;
+  background-color: #979da2;
+}
+
+/* Navigation, main menu and secondary menu
+   ========================================================================== */
+/* line 49, ../sass/framework/_bibsdb.navigation.scss */
+.navigation-wrapper {
+  background-color: #6d6e71;
+  /* Media queries */
+}
+@media only screen and (max-width: 768px) {
+  /* line 49, ../sass/framework/_bibsdb.navigation.scss */
+  .navigation-wrapper {
+    background-color: #979da2;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 49, ../sass/framework/_bibsdb.navigation.scss */
+  .navigation-wrapper {
+    background-color: #979da2;
+  }
+}
+
+/* line 60, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu {
+  font-size: 130%;
+}
+
+/* line 64, ../sass/framework/_bibsdb.navigation.scss */
+.secondary-menu {
+  font-size: 110%;
+}
+
+/* line 69, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu .menu-item, .secondary-menu .menu-item {
+  color: white;
+}
+/* line 71, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
+  color: #7fc241;
+}
+/* line 74, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu .menu-item.active, .secondary-menu .menu-item.active {
+  color: #7fc241;
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+}
+
+/* Sub menu
+   ========================================================================== */
+/* line 83, ../sass/framework/_bibsdb.navigation.scss */
+h2.sub-menu-title {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+}
+
+/* line 87, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu {
+  margin-bottom: 20px;
+}
+/* line 90, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu > li a {
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+/* line 95, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu > li a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 102, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu li:before {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 100%;
+  margin-top: 4px;
+}
+/* line 109, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu ul li {
+  display: none;
+}
+
+/**
+ * Buttons
+ *
+ * @author agms
+ */
+/* Variables
+   ========================================================================== */
+/* agms */
+/* Extends
+   ========================================================================== */
+/* line 32, ../sass/framework/_bibsdb.buttons.scss */
+.button,
+a.button,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 100%;
+  padding: 8px 14px;
+  position: relative;
+  box-shadow: 0 0 1px #595959 inset;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 47, ../sass/framework/_bibsdb.buttons.scss */
+.button:focus,
+.search .form-submit:focus,
+.search-field-in-content .form-submit:focus,
+.user .form-submit:focus, .button:hover,
+.search .form-submit:hover,
+.search-field-in-content .form-submit:hover,
+.user .form-submit:hover, .button:active,
+.search .form-submit:active,
+.search-field-in-content .form-submit:active,
+.user .form-submit:active {
+  text-decoration: none;
+}
+/* line 53, ../sass/framework/_bibsdb.buttons.scss */
+.disabled.button,
+.search .disabled.form-submit,
+.search-field-in-content .disabled.form-submit,
+.user .disabled.form-submit, [disabled].button,
+.search [disabled].form-submit,
+.search-field-in-content [disabled].form-submit,
+.user [disabled].form-submit {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Mixins
+   ========================================================================== */
+/* Default button */
+/* line 96, ../sass/framework/_bibsdb.buttons.scss */
+.button,
+a.button,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fc241), color-stop(100%, #598a2c));
+  background-image: -webkit-linear-gradient(#7fc241, #598a2c);
+  background-image: -moz-linear-gradient(#7fc241, #598a2c);
+  background-image: -o-linear-gradient(#7fc241, #598a2c);
+  background-image: linear-gradient(#7fc241, #598a2c);
+  /* Make sure buttons get a background color in IE */
+  background-color: #7fc241;
+  border: 0;
+  color: white;
+}
+/* line 78, ../sass/framework/_bibsdb.buttons.scss */
+.button:link, .button:visited,
+a.button:link,
+a.button:visited,
+.search .form-submit:link,
+.search-field-in-content .form-submit:link,
+.user .form-submit:link,
+.search .form-submit:visited,
+.search-field-in-content .form-submit:visited,
+.user .form-submit:visited {
+  color: white;
+}
+/* line 85, ../sass/framework/_bibsdb.buttons.scss */
+.button:focus, .button:hover, .button:active,
+a.button:focus,
+a.button:hover,
+a.button:active,
+.search .form-submit:focus,
+.search-field-in-content .form-submit:focus,
+.user .form-submit:focus,
+.search .form-submit:hover,
+.search-field-in-content .form-submit:hover,
+.user .form-submit:hover,
+.search .form-submit:active,
+.search-field-in-content .form-submit:active,
+.user .form-submit:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b139), color-stop(100%, #4d7726));
+  background-image: -webkit-linear-gradient(#72b139, #4d7726);
+  background-image: -moz-linear-gradient(#72b139, #4d7726);
+  background-image: -o-linear-gradient(#72b139, #4d7726);
+  background-image: linear-gradient(#72b139, #4d7726);
+  background-color: #598a2c;
+}
+
+/* Theme button */
+/* Action button */
+/* Warning button */
+/* Danger button */
+/* Don't use native buttons on iOS */
+/* line 123, ../sass/framework/_bibsdb.buttons.scss */
+input[type=submit].button,
+button.button {
+  -webkit-appearance: none;
+}
+
+/* Correct FF button padding */
+@-moz-document url-prefix() {
+  /* line 134, ../sass/framework/_bibsdb.buttons.scss */
+  button::-moz-focus-inner,
+  input[type="reset"]::-moz-focus-inner,
+  input[type="button"]::-moz-focus-inner,
+  input[type="submit"]::-moz-focus-inner,
+  input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+}
+
+/**
+ * Labels
+ *
+ * @author agms
+ */
+/* line 8, ../sass/framework/_bibsdb.labels.scss */
+.label, .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .news-list .news-label {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #979da2;
+  color: #fffffd;
+  font-size: 90%;
+  padding: 3px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  vertical-align: baseline;
+  white-space: nowrap;
+  /* Make sure it works with a wrapper */
+  /* Make sure it works on a link */
+}
+/* line 23, ../sass/framework/_bibsdb.labels.scss */
+.label a:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link, .news-list .news-label a:link, .label a:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited, .news-list .news-label a:visited, .label a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover, .news-list .news-label a:hover {
+  color: #fffffd;
+  text-decoration: none;
+}
+/* line 31, ../sass/framework/_bibsdb.labels.scss */
+.label:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:link, .news-list .news-label:link, .label:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:visited, .news-list .news-label:visited {
+  color: #fffffd;
+}
+/* line 35, ../sass/framework/_bibsdb.labels.scss */
+.label:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:hover, .news-list .news-label:hover {
+  background-color: #747b83;
+  color: #fafaf7;
+  text-decoration: none;
+}
+
+/**
+ * Layout
+ *
+ * Base layout stuff
+ *
+ * @author agms
+ */
+/* Site header
+   ========================================================================== */
+/* Site name, slogan and logo
+   ========================================================================== */
+/* line 15, ../sass/layout/_bibsdb.layout.scss */
+.logo {
+  width: 50%;
+  /* Logo spans 6 colums - Topbar-menu spans 6 columns */
+  margin-right: -50%;
+}
+/* line 18, ../sass/layout/_bibsdb.layout.scss */
+.logo img {
+  height: auto;
+  margin-top: 10px;
+}
+
+/**
+ * Drupal
+ *
+ * Overrides for Drupal specific markup
+ *
+ * @author agms
+ */
+/**
+ * Homepage search result listing
+ */
+/**
+ * Typography
+ *
+ * @author agms
+ */
+/* Header variants
+   ========================================================================== */
+/* line 10, ../sass/layout/_bibsdb.typography.scss */
+h1, h1.page-title, .pane-menu-title h2 {
+  font-size: 180%;
+  font-family: "SourceSansProBold";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 18, ../sass/layout/_bibsdb.typography.scss */
+h2.pane-title {
+  font-size: 160%;
+  font-family: "SourceSansProBold";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Content and elements
+   ========================================================================== */
+/* line 31, ../sass/layout/_bibsdb.typography.scss */
+.page-lead {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #b7bbbf;
+}
+
+/**
+ * Module
+ *
+ * Common styling shared among modules
+ * - not modified
+ *
+ * @author agms
+ */
+/* Extends for page elements
+   ========================================================================== */
+/* line 13, ../sass/module/_bibsdb.module.scss */
+.bibsdb-taglist .bibsdb-taglist-item {
+  margin-bottom: 10px;
+}
+
+/* line 25, ../sass/module/_bibsdb.module.scss */
+.bibsdb-taglist .bibsdb-taglist-heading {
+  font-size: 130%;
+}
+
+/* Styling for material list items (example use: search results, related materials on news etc.) */
+/* Shared styling used for search and user form in topbar - agms
+   ========================================================================== */
+/* line 69, ../sass/module/_bibsdb.module.scss */
+.search, .search-field-in-content, .user {
+  width: 100%;
+  /* Media queries */
+}
+/* line 72, ../sass/module/_bibsdb.module.scss */
+.search label, .search-field-in-content label, .user label {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 110%;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+/* line 82, ../sass/module/_bibsdb.module.scss */
+.search [class^="icon-"], .search-field-in-content [class^="icon-"], .user [class^="icon-"] {
+  color: #747b83;
+  bottom: 15px;
+  font-size: 180%;
+  left: 24px;
+  position: absolute;
+}
+/* line 91, ../sass/module/_bibsdb.module.scss */
+.search .form-item, .search-field-in-content .form-item, .user .form-item {
+  display: inline-block;
+  position: relative;
+}
+/* line 96, ../sass/module/_bibsdb.module.scss */
+.search .form-text, .search-field-in-content .form-text, .user .form-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  border: 0;
+  display: inline;
+  font-size: 110%;
+  margin-right: 20px;
+  padding-bottom: 0;
+  width: 100%;
+}
+/* line 109, ../sass/module/_bibsdb.module.scss */
+.search .form-text, .search-field-in-content .form-text, .user .form-text,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  min-height: 60px;
+  padding-top: 0;
+}
+/* line 114, ../sass/module/_bibsdb.module.scss */
+.search .form-submit, .search-field-in-content .form-submit, .user .form-submit {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  font-size: 180%;
+  margin-top: 29px;
+  padding-bottom: 1px;
+  min-width: 110px;
+}
+/* line 124, ../sass/module/_bibsdb.module.scss */
+.search input[class^="form-"], .search-field-in-content input[class^="form-"], .user input[class^="form-"] {
+  margin-bottom: 0;
+}
+/* line 128, ../sass/module/_bibsdb.module.scss */
+.search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+@media only screen and (max-width: 480px) {
+  /* line 137, ../sass/module/_bibsdb.module.scss */
+  .search [class^="label-"], .search-field-in-content [class^="label-"], .user [class^="label-"] {
+    font-size: 90%;
+  }
+  /* line 141, ../sass/module/_bibsdb.module.scss */
+  .search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
+    position: relative;
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 148, ../sass/module/_bibsdb.module.scss */
+  .search i[class^="icon-"], .search-field-in-content i[class^="icon-"], .user i[class^="icon-"] {
+    font-size: 130%;
+  }
+  /* line 152, ../sass/module/_bibsdb.module.scss */
+  .search .form-text, .search-field-in-content .form-text, .user .form-text {
+    font-size: 110%;
+    min-height: 50px;
+    min-width: 100%;
+    padding-left: 42px;
+  }
+  /* line 159, ../sass/module/_bibsdb.module.scss */
+  .search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
+    position: relative;
+    clear: both;
+  }
+  /* line 164, ../sass/module/_bibsdb.module.scss */
+  .search .form-submit, .search-field-in-content .form-submit, .user .form-submit {
+    font-size: 110%;
+    margin-top: 20px;
+    min-height: 44px;
+    min-width: 100%;
+  }
+}
+
+/* Extends
+   ========================================================================== */
+/* line 176, ../sass/module/_bibsdb.module.scss */
+.bibsdb-taglist .arrow-link {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+
+/* Shared styling used for news and event in left menu - agms
+   ========================================================================== */
+/* line 186, ../sass/module/_bibsdb.module.scss */
+.pane-taxonomy-menu h2.sub-menu-title {
+  display: none;
+}
+
+/* line 191, ../sass/module/_bibsdb.module.scss */
+.pane-taxonomy-menu .sub-menu > li.first:before {
+  display: none;
+}
+/* line 194, ../sass/module/_bibsdb.module.scss */
+.pane-taxonomy-menu .sub-menu > li.first a {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  font-size: 130%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+/**
+ * Search
+ * - not modified
+ *
+ * @author agms
+ */
+/* Search
+   ========================================================================== */
+/* line 11, ../sass/module/_bibsdb.search.scss */
+.header-wrapper {
+  /* Add padding if the search is in the header */
+}
+/* line 13, ../sass/module/_bibsdb.search.scss */
+.header-wrapper .search, .header-wrapper .search-field-in-content {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+/* line 25, ../sass/module/_bibsdb.search.scss */
+.search .search-field-wrapper, .search-field-in-content .search-field-wrapper {
+  position: relative;
+}
+/* line 29, ../sass/module/_bibsdb.search.scss */
+.search [class^="icon-"], .search-field-in-content [class^="icon-"] {
+  bottom: 14px;
+  left: 14px;
+}
+/* line 35, ../sass/module/_bibsdb.search.scss */
+.search .spinner i[class^="icon-"], .search-field-in-content .spinner i[class^="icon-"] {
+  height: auto;
+}
+/* line 42, ../sass/module/_bibsdb.search.scss */
+.search .form-item, .search-field-in-content .form-item {
+  width: 100%;
+}
+/* line 46, ../sass/module/_bibsdb.search.scss */
+.search .form-text, .search-field-in-content .form-text {
+  padding-left: 49px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 21, ../sass/module/_bibsdb.search.scss */
+  .search, .search-field-in-content {
+    width: auto;
+  }
+}
+
+/* Search in content
+   ========================================================================== */
+@media only screen and (min-width: 769px) {
+  /* line 61, ../sass/module/_bibsdb.search.scss */
+  .search-field-in-content .form-submit {
+    margin-top: 0;
+  }
+}
+
+/* line 67, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--amount {
+  color: #979da2;
+}
+
+/* line 71, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content {
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative;
+}
+/* line 78, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content .form-text {
+  border: 1px solid #b7bbbf;
+}
+
+/* line 84, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--message {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f7e287;
+}
+
+/* line 96, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--sort-results,
+.search-field-in-content--sort-best-match,
+.page-search .pane-search-per-page,
+.page-search .pane-ting-search-sort-form {
+  display: inline-block;
+  min-width: 0;
+  max-width: 49%;
+}
+/* line 101, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--sort-results .form-select,
+.search-field-in-content--sort-best-match .form-select,
+.page-search .pane-search-per-page .form-select,
+.page-search .pane-ting-search-sort-form .form-select {
+  width: 100%;
+}
+
+/* line 107, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--sort-results,
+.page-search .pane-search-per-page {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 112, ../sass/module/_bibsdb.search.scss */
+.search-field-in-content--sort-best-match,
+.page-search .pane-ting-search-sort-form {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 116, ../sass/module/_bibsdb.search.scss */
+.page-search .pane-ting-search-sort-form {
+  clear: none;
+  overflow: visible;
+}
+
+/* line 123, ../sass/module/_bibsdb.search.scss */
+.page-search .pane-search-per-page,
+.page-search .pane-ting-search-sort-form {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 123, ../sass/module/_bibsdb.search.scss */
+  .page-search .pane-search-per-page,
+  .page-search .pane-ting-search-sort-form {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+/**
+* News
+*
+* Uses shared %article @extends
+*
+* @author agms
+*/
+/* line 10, ../sass/module/_bibsdb.news.scss */
+.news-list .news-label {
+  margin-right: 5px;
+}
+
+/**
+ * Event styling
+ *
+ * @author agms
+ */
+/* Event list heading */
+/* line 12, ../sass/module/_bibsdb.event.scss */
+.event-list-leaf .event-list-day {
+  background-color: #7fc241;
+}
+
+/**
+ * User
+ *
+ * @author agms
+ * - not modified
+ */
+/* User login in header
+   ========================================================================== */
+/* line 11, ../sass/module/_bibsdb.user.scss */
+.header-wrapper {
+  /* Add padding if the search is in the header */
+}
+/* line 13, ../sass/module/_bibsdb.user.scss */
+.header-wrapper .user {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+
+/* line 21, ../sass/module/_bibsdb.user.scss */
+.user {
+  overflow: hidden;
+}
+/* line 25, ../sass/module/_bibsdb.user.scss */
+.user .user-field-wrapper {
+  position: relative;
+}
+/* line 29, ../sass/module/_bibsdb.user.scss */
+.user .form-item-name {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 32, ../sass/module/_bibsdb.user.scss */
+.user .form-item-name .form-text {
+  padding-left: 45px;
+}
+/* line 37, ../sass/module/_bibsdb.user.scss */
+.user .form-item-pass {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 40, ../sass/module/_bibsdb.user.scss */
+.user .form-item-pass .form-text {
+  padding-left: 42px;
+}
+/* line 45, ../sass/module/_bibsdb.user.scss */
+.user .block-title {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 51, ../sass/module/_bibsdb.user.scss */
+  .user .form-item-name,
+  .user .form-item-pass {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: left;
+  }
+  /* line 56, ../sass/module/_bibsdb.user.scss */
+  .user .form-actions {
+    margin-bottom: 0;
+  }
+  /* line 60, ../sass/module/_bibsdb.user.scss */
+  .user .form-submit {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 21, ../sass/module/_bibsdb.user.scss */
+  .user {
+    text-align: left;
+  }
+  /* line 68, ../sass/module/_bibsdb.user.scss */
+  .user .block-title {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 77, ../sass/module/_bibsdb.user.scss */
+  .user .user-field-wrapper {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 21, ../sass/module/_bibsdb.user.scss */
+  .user {
+    width: auto;
+  }
+}
+
+/**
+ * Libraries
+ *
+ * @author agms
+ */
+/* line 8, ../sass/module/_bibsdb.libraries.scss */
+.library-list {
+  /* Opening hours toggle */
+}
+/* line 9, ../sass/module/_bibsdb.libraries.scss */
+.library-list .libraries-opening-hours {
+  display: inline;
+}
+/* line 14, ../sass/module/_bibsdb.libraries.scss */
+.library-list .opening-hours-toggle {
+  display: none;
+}
+
+/**
+ * Additional styles for the bibsdb theme only
+ * - does not contain overridden DDBasic styles
+ * 
+ *
+ * @author agms
+ */
+/* General
+   ========================================================================== */
+/* line 13, ../sass/bibsdbextras/_bibsdb.extras.scss */
+p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Hide class
+	============================================================================ */
+/* line 20, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.hidden {
+  display: none;
+}
+
+/* Add margin after title image in group
+   ========================================================================== */
+/* line 26, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.field-name-field-ding-group-title-image {
+  margin-bottom: 10px;
+}
+
+/* Column Styles
+   ========================================================================== */
+/* Two coloum layout */
+@media only screen and (min-width: 769px) {
+  /* line 36, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-half-column-one {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+  }
+
+  /* line 40, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-half-column-two {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 46, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-half-column-one {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+  }
+
+  /* line 51, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-half-column-two {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* Thirds coloum layout */
+@media only screen and (min-width: 769px) {
+  /* line 60, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-thirds-column-one {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+  }
+
+  /* line 64, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-thirds-column-two {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 70, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-thirds-column-one {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+  }
+
+  /* line 74, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-thirds-column-two {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+/* Hide tags on pages
+============================================================================= */
+/* line 82, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.node-type-ding-page .label, .node-type-ding-page .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .node-type-ding-page a, .node-type-ding-page .news-list .news-label, .news-list .node-type-ding-page .news-label {
+  display: none;
+}
+
+/* line 86, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.node-type-ding-page .super-heading {
+  display: none;
+}
+
+/* Infoboxes
+   ========================================================================== */
+/* line 95, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-infobox-header-gray {
+  padding: 3px 10px 1px 10px;
+}
+
+/* line 99, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-infobox-body-gray {
+  padding: 10px 15px;
+}
+
+/* line 105, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-infobox-header-gray {
+  background-color: #b7bbbf;
+  color: white;
+}
+
+/* line 110, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-infobox-body-gray {
+  background-color: #edeeef;
+}
+
+/* Bibsdb tag list
+   ========================================================================== */
+/* line 119, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.view-bibsdb-tags-list.view-node-search-result {
+  padding: 0;
+}
+
+/* line 123, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist {
+  margin: 0;
+  padding: 0;
+  /* Media queries */
+}
+/* line 127, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .arrow-link {
+  right: 10px;
+  top: 50%;
+}
+/* line 133, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .bibsdb-taglist-item {
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 154, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .bibsdb-taglist-image-wrapper {
+  float: left;
+  margin-right: 20px;
+  max-width: 120px;
+}
+/* line 159, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .bibsdb-taglist-image-wrapper a {
+  display: block;
+}
+/* line 165, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .bibsdb-taglist-heading,
+.bibsdb-taglist .bibsdb-taglist-content {
+  margin-left: 140px;
+}
+/* line 169, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-taglist .bibsdb-taglist-content {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 177, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-taglist .bibsdb-taglist-image-wrapper {
+    display: none;
+  }
+  /* line 182, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-taglist .bibsdb-taglist-heading,
+  .bibsdb-taglist .bibsdb-taglist-content {
+    margin-left: 0;
+  }
+  /* line 186, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-taglist .bibsdb-taglist-heading {
+    font-size: 130%;
+    margin-right: 35px;
+  }
+}
+
+/* Bibsdb heading
+   ========================================================================== */
+/* line 196, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb .pane-title {
+  background-color: #979da2;
+  color: white;
+  padding: 3px;
+  border-top: 7px double white;
+  border-bottom: 4px double white;
+  margin: 5px 0;
+}
+
+/* line 205, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb ul.bibsdb-menu {
+  padding: 0;
+}
+
+/* line 209, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb .bibsdb-menu li {
+  padding: 5px;
+}
+/* line 155, ../sass/framework/_bibsdb.base.scss */
+.bibsdb .bibsdb-menu li a:link {
+  color: #619630;
+  text-decoration: none;
+}
+/* line 160, ../sass/framework/_bibsdb.base.scss */
+.bibsdb .bibsdb-menu li a:visited {
+  color: #619630;
+}
+/* line 164, ../sass/framework/_bibsdb.base.scss */
+.bibsdb .bibsdb-menu li a:hover {
+  color: #3b5c1d;
+}
+/* line 168, ../sass/framework/_bibsdb.base.scss */
+.bibsdb .bibsdb-menu li a:focus {
+  color: #3b5c1d;
+}
+/* line 172, ../sass/framework/_bibsdb.base.scss */
+.bibsdb .bibsdb-menu li a:active {
+  background-color: transparent;
+  color: #3b5c1d;
+}
+
+/* line 215, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb .bibsdb-menu li.views-row-even {
+  background-color: #e0e1e3;
+}
