@@ -124,11 +124,16 @@ p {
   margin: 0;
   padding: 0;
   
-  .arrow-link {
-      @extend %arrow-link;
-      right: $medium-spacing;
-      top: 50%;
-  }
+.arrow-link {
+  @extend %arrow-link;
+  right: $medium-spacing;
+  top: 50%;
+}
+
+
+
+  
+  
 
   .bibsdb-taglist-item {
     @extend %article-background;
