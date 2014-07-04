@@ -131,3 +131,21 @@
     max-width: 100%;
   }
 }
+
+/* Facet browser styling
+   ========================================================================== */
+   
+.pane-search-backends, .pane-ding-facetbrowser {
+	a:visited {
+    color: $link-color;
+  }
+}
+
+/* Search results list
+   ========================================================================== */
+
+.subjects {
+  .subject {
+    @extend .label;
+  }
+}
