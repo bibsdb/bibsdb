@@ -1,0 +1,305 @@
+/**
+ * Content in grid
+ *
+ * @author agms
+ */
+
+/* Content in grid
+   ========================================================================== */
+
+.content-blocks--inner {
+  @include zen-clear(both);
+  @include zen-nested-container();
+
+  border-top: 1px solid $gray-light;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-top: 20px;
+
+  @include small-medium() {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.content-blocks--one {
+  > div:nth-child(1) {
+    @include zen-grid-item(12, 1);
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-blocks--two {
+  > div:nth-child(1) {
+    @include zen-grid-item(6, 1);
+
+    padding-left: 0;
+  }
+
+  > div:nth-child(2) {
+    @include zen-grid-item(6, 1, right);
+
+    padding-right: 0;
+  }
+}
+
+.content-blocks--three {
+  > div:nth-child(1) {
+    @include zen-grid-item(4, 1);
+
+    padding-left: 0;
+  }
+
+  > div:nth-child(2) {
+    @include zen-grid-item(4, 5);
+  }
+
+  > div:nth-child(3) {
+    @include zen-grid-item(4, 1, right);
+
+    padding-right: 0;
+  }
+}
+
+.content-blocks--four {
+  > div:nth-child(1) {
+    @include zen-grid-item(3, 1);
+
+    padding-left: 0;
+  }
+
+  > div:nth-child(2) {
+    @include zen-grid-item(3, 4);
+  }
+
+  > div:nth-child(3) {
+    @include zen-grid-item(3, 4, right);
+  }
+
+  > div:nth-child(4) {
+    @include zen-grid-item(3, 1, right);
+
+    padding-right: 0;
+  }
+}
+
+.content-blocks--six {
+  > div:nth-child(1) {
+    @include zen-grid-item(2, 1);
+
+    padding-left: 0;
+  }
+
+  > div:nth-child(2) {
+    @include zen-grid-item(2, 3);
+  }
+
+  > div:nth-child(3) {
+    @include zen-grid-item(2, 5);
+  }
+  
+  > div:nth-child(4) {
+    @include zen-grid-item(2, 7);
+  }
+  
+  > div:nth-child(5) {
+    @include zen-grid-item(2, 9);
+  }
+
+  > div:nth-child(6) {
+    @include zen-grid-item(2, 11);
+
+    padding-right: 0;
+  }
+}
+
+.content-blocks--wrapper {
+  @include zen-grid-container();
+
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+
+  @include small-medium() {
+    .content-blocks--one > div,
+    .content-blocks--two > div,
+    .content-blocks--three > div,
+    .content-blocks--four > div,
+    .content-blocks--six > div {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
+
+      border-bottom: 1px solid $gray-light;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      &.last {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Row tag list
+   ========================================================================== */
+   
+.view-bibsdb-tags-list.view-node-search-result {
+	padding: 0;
+}
+
+.bibsdb-taglist {
+  margin: 0;
+  padding: 0;
+  
+	.arrow-link {
+		@extend %arrow-link;
+		right: $medium-spacing;
+		top: 50%;
+	}
+
+	.bibsdb-taglist-item {
+			@extend %article-background;
+			padding: 10px;
+			@extend %article-margin;
+
+			overflow: hidden;
+			position: relative;
+	}
+
+	.bibsdb-taglist-item:nth-child(odd) {
+			@extend %article-background--odd;
+	}
+
+	.bibsdb-list-item:nth-child(even) {
+			@extend %article-background--even;
+	}
+
+	.bibsdb-taglist-heading {
+			@extend %article-heading;
+	}
+
+	.bibsdb-taglist-image-wrapper {
+		float: left;
+		margin-right: $large-spacing;
+		max-width: 120px;
+
+		a {
+			display: block;
+		}
+	}
+
+
+  .bibsdb-taglist-content-wrapper {
+		margin-right: $large-spacing;
+		margin-left: 140px;
+  }
+
+
+
+  .bibsdb-taglist-content {
+    margin-right: $large-spacing;
+   
+  }
+
+
+  /* Media queries */
+  @include small-medium() {
+    .bibsdb-taglist-image-wrapper {
+      display: none;
+    }
+
+	 .bibsdb-taglist-content-wrapper {
+			margin-right: $large-spacing;
+			margin-left: 0;
+		}
+
+    .bibsdb-taglist-heading {
+      font-size: $font-size-large;
+      margin-right: 35px;
+    }
+  }
+}
+
+
+/* Style content
+   ========================================================================== */
+
+.bibsdb-tagged-teasers-in-squares {
+  .bibsdb-taglist-content-wrapper {
+		margin-top: $large-spacing;
+		margin-bottom: $medium-spacing;
+  }
+}
+
+
+
+.bibsdb-new-materials {
+	.content-blocks--wrapper {
+		border-top: 1px solid $gray-light;
+		padding-top: $medium-spacing;
+	
+	}
+	
+	.content-blocks--inner {
+		border: 0;
+		margin: 0;
+		img {
+			float: left;
+			padding-right: $medium-spacing;
+		}
+		div .item-wrapper {
+			@extend %article-background;
+			padding: $medium-spacing;
+
+			overflow: hidden;
+			> div {
+				padding-top: $large-spacing;
+			}
+		}
+	}
+	
+	.content-blocks--wrapper {
+		@include small-medium() {
+			.content-blocks--one > div,
+			.content-blocks--two > div,
+			.content-blocks--three > div,
+			.content-blocks--four > div,
+			.content-blocks--six > div {
+				.item-wrapper > div{
+					padding-top: 0;
+				}
+				border: 0;
+				padding: 0;
+			}
+			.content-blocks--inner {
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.grid-arrow-link-small {
+		float: right;
+		right: $medium-spacing;
+		top: 50%;
+		font-size: 10px;
+	}
+	
+}
+
+
+
+
+.bibsdb-inspirationslister-6-col {
+	.content-blocks--six > div {
+		padding-right: 15px;
+		
+	}
+}
