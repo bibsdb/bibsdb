@@ -13,3 +13,11 @@
     margin-right: 5px;
   }
 }
+
+/*
+* Hide the library selector on news-page.
+*/
+
+.pane-library-list {
+	display: none;
+}

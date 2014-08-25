@@ -1123,6 +1123,14 @@ h2.pane-title {
   margin-right: 5px;
 }
 
+/*
+* Hide the library selector on news-page.
+*/
+/* line 21, ../sass/module/_bibsdb.news.scss */
+.pane-library-list {
+  display: none;
+}
+
 /**
  * Event styling
  *
