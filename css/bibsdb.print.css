@@ -1,0 +1,70 @@
+/**
+* Print styles
+*
+* Basic print stylesheet
+*
+* @author agms
+*/
+/* line 10, ../sass/bibsdb.print.scss */
+body {
+  font-size: 12px;
+  line-height: 15px;
+  text-rendering: auto;
+}
+
+/* line 21, ../sass/bibsdb.print.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: auto;
+}
+
+/* line 27, ../sass/bibsdb.print.scss */
+h1 {
+  font-size: 180%;
+}
+
+/* line 31, ../sass/bibsdb.print.scss */
+h2 {
+  font-size: 160%;
+}
+
+/* line 35, ../sass/bibsdb.print.scss */
+h3 {
+  font-size: 130%;
+}
+
+/* line 39, ../sass/bibsdb.print.scss */
+h4 {
+  font-size: 110%;
+}
+
+/* line 43, ../sass/bibsdb.print.scss */
+h5 {
+  font-size: 100%;
+}
+
+/* line 48, ../sass/bibsdb.print.scss */
+.site-header {
+  display: none;
+}
+
+/* line 51, ../sass/bibsdb.print.scss */
+.footer {
+  display: none;
+}
+
+/* line 55, ../sass/bibsdb.print.scss */
+.page-image {
+  display: none;
+}
+
+/* line 59, ../sass/bibsdb.print.scss */
+.content-blocks--inner {
+  page-break-inside: avoid;
+  margin: 0;
+  padding: 5px;
+}
