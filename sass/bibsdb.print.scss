@@ -1,0 +1,64 @@
+ /**
+ * Print styles
+ *
+ * Basic print stylesheet
+ *
+ * @author agms
+ */
+
+
+body {
+	font-size: 12px;
+	line-height: 15px;
+	text-rendering: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-rendering: auto;
+}
+	
+
+
+h1 {
+	font-size: 180%;
+}
+
+h2 {
+	font-size: 160%;
+}
+
+h3 {
+	font-size: 130%;
+}
+
+h4 {
+	font-size: 110%;
+}
+
+h5 {
+	font-size: 100%;
+}
+
+
+.site-header {
+	display: none;
+}
+.footer {
+	display: none;
+}
+
+.page-image {
+	display: none;
+}
+
+.content-blocks--inner {
+	page-break-inside: avoid;
+	margin: 0;
+	padding: 5px;
+}
+

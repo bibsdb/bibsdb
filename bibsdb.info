@@ -6,6 +6,7 @@
 	
 ;----------// Stylesheets
   stylesheets[all][] = css/bibsdb.styles.css
+  stylesheets[print][] = css/bibsdb.print.css
 
 ;----------// JavaScripts
   scripts[] = scripts/bibsdb.js
