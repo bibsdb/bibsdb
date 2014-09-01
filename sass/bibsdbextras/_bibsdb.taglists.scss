@@ -17,10 +17,6 @@
 	h2.pane-title {
 		margin-top: $large-spacing;
 		margin-bottom: $large-spacing;
-		/*
-		border-bottom: 1px solid $gray-light;
-		margin-bottom: $medium-spacing;
-		*/
 	}
 	
 	.pane-node-field-ding-page-lead {
@@ -143,7 +139,12 @@
 
 .content-blocks--wrapper {
   @include zen-grid-container();
-
+	
+	@include small-medium() {
+		margin-top: 10px;
+		border-top: 1px solid $gray-light;
+		padding-top: 20px;
+	}
   padding-right: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -158,6 +159,7 @@
       @include zen-grid-item(12, 1);
       @include zen-nested-container();
 
+			
       border-bottom: 1px solid $gray-light;
       margin-bottom: 20px;
       padding-bottom: 20px;
