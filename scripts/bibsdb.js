@@ -7,6 +7,8 @@
 		 * Hide all warnings about reservations that are about to expire, because we don't actually delete reservations.
 		 */
 		function hide_reservation_expiration_messages() {
+				// Hide interest period settings in user profiles, because they have no effect
+				$( "div[class*='interest-period']" ).hide();
     		// Hide message about reservation expiration, because we don't do that in Sonderborg
 				$(".warning:contains('This reservation is about to expire.')").hide();
 		}
