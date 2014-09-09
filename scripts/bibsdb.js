@@ -2,15 +2,61 @@
 	
    
   $(document).ready(function () {
+
 		
 		/**
 		 * Hide all warnings about reservations that are about to expire, because we don't actually delete reservations.
 		 */
-		function hide_reservation_expiration_messages() {
+		function hide_reservation_interest_period() {
 				// Hide interest period settings in user profiles, because they have no effect
 				$( "div[class*='interest-period']" ).hide();
+				// Hide expiration date on individual reservations
+				$( "#ding-reservation-reservations-notready-form li[class*='expire-date']" ).hide();
     		// Hide message about reservation expiration, because we don't do that in Sonderborg
 				$(".warning:contains('This reservation is about to expire.')").hide();
+	
+				// Hide interest period setting when modifying a reservation in ajax popup
+				jQuery('.ui-widget').live('DOMNodeInserted', function () {
+					$( "div[class*='interest-period']" ).hide();
+				});
+		}
+		
+		
+		/**
+		 * Translate default pickup branch selection on first reservation
+		 */
+		function translate_pick_default_branch_text() {
+			jQuery('.ui-widget').live('DOMNodeInserted', function () {
+				$( "p:contains('In order to make quick reservations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reservationer.");
+			});
+		}
+		
+		/**
+		 * Create renew all button
+		 */
+		function add_renew_all_loans_button() {
+			// Add renew all submit button
+			$("#ding-loan-loans-form div:first").prepend("<div class=\"gray-box renew-loan-button\"><input type=\"submit\" id=\"bibsdb-renew-all-submit-button\" name=\"op\" value=\"Forny alle\" class=\"form-submit\"></div>");
+			
+			// Make sure the button is not disabled by ding_loan.js
+			$("#ding-loan-loans-form input:checkbox").change(function() {
+				$( "#bibsdb-renew-all-submit-button" ).removeAttr("disabled");
+			});
+			
+			
+			//If clicked ckeck all checkboxes before submit
+			$( "#bibsdb-renew-all-submit-button" ).bind( "click", function() {
+				$( "#ding-loan-loans-form input:checkbox" ).attr('checked', 'checked');
+			});
+			
+	
+		}
+		
+		/**
+		 * Hide role menu item on profile page
+		 */
+		function hide_role_menu_item_on_profile_page() {
+			$(".pane-user-menu li a[href$='roles']").parent().hide();
 		}
 		
 		
@@ -64,11 +110,13 @@
 		
 		
 		// do the magic
-		hide_reservation_expiration_messages();
+		hide_reservation_interest_period();
+		hide_role_menu_item_on_profile_page();
 		control_library_link_visibility_in_event_lists();
 		control_topbar_search_box_visibility();
 		append_link_to_libraries_in_library_list();
-		
+		translate_pick_default_branch_text();
+		add_renew_all_loans_button();
 
 		
 		
