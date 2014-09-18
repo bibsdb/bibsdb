@@ -21,6 +21,20 @@
 				});
 		}
 		
+		/**
+		 * Hide bookmark import form. We don't provide this service.
+		 */
+		 function hide_bookmark_import_form() {
+			 $( ".pane-import" ).hide();
+		 }
+		 
+	 /** 
+		* Hide page tags on search result items and items in taxonomy lists
+		*/
+		function hide_page_taxonomy_tags() {
+			$( ".field-name-field-ding-page-tags" ).hide();
+		}
+		  
 		
 		/**
 		 * Translate default pickup branch selection on first reservation
@@ -30,6 +44,24 @@
 				$( "p:contains('In order to make quick reservations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reservationer.");
 			});
 		}
+		
+		/**
+		 * Translate event category label on library event list
+		 */
+		function translate_event_category_label_on_library_event_list() {
+				$( "label:contains('Event category ')" ).text("Kategori");
+		}
+		
+		/**
+		 * Translate staff-list-header on library page
+		 */
+		 function translate_staff_list_header_on_library_pages() {
+			 
+			 $(".pane-ding-staff-ding-staff-library-departments h2:first-of-type").text(function(index, text) {
+						return text.replace("departments & staff", "afdelinger og medarbejdere");
+			 });
+			 
+		 }
 		
 		/**
 		 * Create renew all button
@@ -108,6 +140,21 @@
 			});
 		}
 		
+		/**
+		 * Change how opening hours are displayed
+		 * 
+		 */
+		function modify_opening_hours_display() {
+			//alert("hej");
+    	//$(".opening-hours-week span.name").css("color", "blue");	
+    	jQuery('.opening-hours-week').live('DOMNodeInserted', function () {
+				$(".name").css("float", "none");
+				$(".notice-star").hide();
+				//$(".instance").prepend("Hallo");
+			});			
+			
+		}	
+		
 		
 		// do the magic
 		hide_reservation_interest_period();
@@ -117,7 +164,11 @@
 		append_link_to_libraries_in_library_list();
 		translate_pick_default_branch_text();
 		add_renew_all_loans_button();
-
+		translate_staff_list_header_on_library_pages();
+		hide_bookmark_import_form();
+		translate_event_category_label_on_library_event_list();
+		hide_page_taxonomy_tags();
+		modify_opening_hours_display();
 		
 		
 	});	
