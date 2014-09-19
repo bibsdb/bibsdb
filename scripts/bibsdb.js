@@ -132,11 +132,13 @@
 			
 			$('.library-list li').each(function() {
 				var $link = $(this).find('.library-title a').clone();
-				$link.text("Gå til " + $link.text() + "s lokalside >");
+				$link.text($link.text() + "s lokalside");
 				var $destination = $(this).find('.ding-library-right');
 				$destination.append("<div class='bibsdb-js-library-link'></div>");
 				$destination = $destination.find('.bibsdb-js-library-link');
-				$link.appendTo($destination);
+				$destination.append("Gå til: ");
+				$destination.append($link);
+				//$link.appendTo($destination);
 			});
 		}
 		
@@ -151,7 +153,6 @@
 				$(".name").css("float", "none");
 				$(".notice-star").hide();
 				$(".notice").show();
-				.opening-hours-week .times {
 
 			});			
 			
