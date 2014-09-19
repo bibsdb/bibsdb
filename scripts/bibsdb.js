@@ -141,16 +141,18 @@
 		}
 		
 		/**
-		 * Change how opening hours are displayed
+		 * Change how opening hours are displayed - work in progress
 		 * 
 		 */
 		function modify_opening_hours_display() {
-			//alert("hej");
+			alert("hej igen");
     	//$(".opening-hours-week span.name").css("color", "blue");	
-    	jQuery('.opening-hours-week').live('DOMNodeInserted', function () {
+    	jQuery('.opening-hours-week').one('DOMNodeInserted', function () {
 				$(".name").css("float", "none");
 				$(".notice-star").hide();
-				//$(".instance").prepend("Hallo");
+				$(".notice").show();
+				.opening-hours-week .times {
+
 			});			
 			
 		}	
@@ -168,7 +170,7 @@
 		hide_bookmark_import_form();
 		translate_event_category_label_on_library_event_list();
 		hide_page_taxonomy_tags();
-		modify_opening_hours_display();
+		//modify_opening_hours_display();
 		
 		
 	});	
