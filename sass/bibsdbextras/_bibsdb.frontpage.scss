@@ -1,0 +1,55 @@
+
+
+  .bibsdb-frontpage-links {	
+			display: none;
+		}	
+		
+		
+		@include large-x-large() {
+		  .bibsdb-frontpage-links {	
+				display: block;
+				@include zen-grid-item(3, 1, right);
+				overflow: hidden;
+				float: right;
+				background-color: white;
+				padding: $large-spacing;
+				position: relative;
+				height: 290px;
+				z-index: 5;
+				a {
+						@include font-bold();
+						font-size: $font-size-large;
+						color: $font-color-primary;
+				}
+			}	
+		}
+		
+		@include large() {
+			.bibsdb-frontpage-links {	
+				height: 200px;
+				a {
+					font-size: $font-size-medium;
+				}
+			}	
+}
+		
+
+
+
+
+
+
+
+
+	.ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav {
+    display: none;
+  }
+  
+  .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
+		@include zen-grid-item(9, 1);
+  }
+  
+  
+  
+
+

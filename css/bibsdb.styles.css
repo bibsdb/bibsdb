@@ -2185,3 +2185,76 @@ hr {
  */
 /* Read Circuit Sets Item Styling
    ========================================================================== */
+/* line 3, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+.bibsdb-frontpage-links {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 9, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .bibsdb-frontpage-links {
+    display: block;
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    overflow: hidden;
+    float: right;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    height: 290px;
+    z-index: 5;
+  }
+  /* line 19, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .bibsdb-frontpage-links a {
+    font-family: "SourceSansProSemibold";
+    font-weight: normal;
+    font-size: 130%;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 940px) {
+  /* line 28, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .bibsdb-frontpage-links {
+    height: 200px;
+  }
+  /* line 30, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .bibsdb-frontpage-links a {
+    font-size: 110%;
+  }
+}
+/* line 44, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+.ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav {
+  display: none;
+}
+
+/* line 48, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
