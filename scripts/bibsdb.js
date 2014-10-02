@@ -68,7 +68,7 @@
 		 */
 		function translate_pick_default_branch_text() {
 			jQuery('.ui-widget').live('DOMNodeInserted', function () {
-				$( "p:contains('In order to make quick reservations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reservationer.");
+				$( "p:contains('In order to make quick resercvations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reservationer.");
 			});
 		}
 		
@@ -138,21 +138,29 @@
 		/**
 		 * Show topbar search box on all pages except search result pages 
 		 * Also hide if login form is visible
-		 * 
+		 * And show loginbox and hide search box if incorrect login was attempted so user can retry
 		 */
 		function control_topbar_search_box_visibility() {
-
-			if (window.location.href.indexOf("search/") > -1) {
-				$('.js-topbar-search').css("display", "hidden");
+		
+			if ($( "div.messages.error:contains('Du har indtastet et forkert')" ).length) {
+			  $('.topbar-menu .leaf .topbar-link-search').removeClass('active');
+			  $('.js-topbar-search').css("display", "none");
+			  $('.front .js-topbar-search').css("display", "none");
+			  $('.js-topbar-user').css("display", "block");
+			}
+			else if (window.location.href.indexOf("search/") > -1) {
+				$('.js-topbar-search').css("display", "none");
 			}
 			else if ($('.js-topbar-user').is(":visible")) {
-				$('.js-topbar-search').css("display", "hidden");
+				$('.js-topbar-search').css("display", "none");
 			} 
 			else {
 				// Display the element.
 				$('.js-topbar-search').css("display", "block");
 			}
 		}
+		
+		
 		
 		function append_link_to_libraries_in_library_list() {
 		
@@ -187,6 +195,7 @@
 		
 		
 		// do the magic
+
 		hide_reservation_interest_period();
 		hide_role_menu_item_on_profile_page();
 		control_library_link_visibility_in_event_lists();
