@@ -223,9 +223,13 @@
 			@extend %article-heading;
 	}
 
-  .bibsdb-rowlist-content-wrapper {
+  .bibsdb-rowlist-content-wrapper, .bibsdb-rowlist-tags {
 		margin-right: $large-spacing;
 		margin-left: 140px;
+  }
+  
+  .bibsdb-rowlist-tags a {
+		margin-right: $small-spacing;
   }
 
 
