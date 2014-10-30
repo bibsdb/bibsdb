@@ -678,39 +678,43 @@ button.download-button {
 /**
  * Labels
  *
- * @author agms
+ * @author agms - exact copy from 7.x-1.0
  */
 /* line 8, ../sass/framework/_bibsdb.labels.scss */
 .label, .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .subjects .subject, .news-list .news-label {
+  font-size: 90%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  vertical-align: baseline;
+  white-space: nowrap;
+  /* Make sure it works with a wrapper */
+}
+/* line 16, ../sass/framework/_bibsdb.labels.scss */
+.label a, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a, .subjects .subject a, .news-list .news-label a {
+  background-color: #979da2;
+  color: #fffffd;
+  padding: 3px 10px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
-  background-color: #979da2;
-  color: #fffffd;
-  font-size: 90%;
-  padding: 3px 10px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  vertical-align: baseline;
-  white-space: nowrap;
-  /* Make sure it works with a wrapper */
-  /* Make sure it works on a link */
 }
-/* line 23, ../sass/framework/_bibsdb.labels.scss */
-.label a:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link, .subjects .subject a:link, .news-list .news-label a:link, .label a:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited, .subjects .subject a:visited, .news-list .news-label a:visited, .label a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover, .subjects .subject a:hover, .news-list .news-label a:hover {
+/* line 24, ../sass/framework/_bibsdb.labels.scss */
+.label a:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link, .subjects .subject a:link, .news-list .news-label a:link, .label a:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited, .subjects .subject a:visited, .news-list .news-label a:visited {
   color: #fffffd;
   text-decoration: none;
 }
-/* line 31, ../sass/framework/_bibsdb.labels.scss */
-.label:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:link, .subjects .subject:link, .news-list .news-label:link, .label:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:visited, .subjects .subject:visited, .news-list .news-label:visited {
-  color: #fffffd;
-}
-/* line 35, ../sass/framework/_bibsdb.labels.scss */
-.label:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a:hover, .subjects .subject:hover, .news-list .news-label:hover {
+/* line 29, ../sass/framework/_bibsdb.labels.scss */
+.label a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover, .subjects .subject a:hover, .news-list .news-label a:hover {
   background-color: #747b83;
   color: #fafaf7;
   text-decoration: none;
+}
+
+/* line 39, ../sass/framework/_bibsdb.labels.scss */
+.ting-object .subjects,
+.pane-ting-object .subjects {
+  white-space: normal;
 }
 
 /**
@@ -1164,15 +1168,10 @@ h2.pane-title {
 *
 * @author agms
 */
-/* line 10, ../sass/module/_bibsdb.news.scss */
-.news-list .news-label {
-  margin-right: 5px;
-}
-
 /*
 * Hide the library selector on news-page.
 */
-/* line 21, ../sass/module/_bibsdb.news.scss */
+/* line 19, ../sass/module/_bibsdb.news.scss */
 .pane-library-list {
   display: none;
 }
