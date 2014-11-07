@@ -201,6 +201,14 @@
 			
 		}	
 		
+		/**
+		 * Make holdings-info start expanded on page-load
+		 * 
+		 */
+		function expand_holdings_on_page_load() {
+			$('.group-holdings-available .field-group-format-wrapper').css("display", "block");	
+		}	
+		
 		
 		// do the magic
 
@@ -215,6 +223,7 @@
 		hide_bookmark_import_form();
 		translate_event_category_label_on_library_event_list();
 		hide_page_taxonomy_tags();
+		expand_holdings_on_page_load();
 		//resize_frontpage_links_box();
 		//modify_opening_hours_display();
 		
