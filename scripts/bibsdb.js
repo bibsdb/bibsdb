@@ -64,7 +64,7 @@
 	
 			$( ".field-name-field-ding-page-tags" ).hide();
 			$(".bibsdb-rowlist-tags .label").hide();
-			$(".bibsdb-rowlist-tags .label:contains('Adgang fra biblioteket').show();
+			$(".bibsdb-rowlist-tags .label:contains('Adgang fra biblioteket')").show();
 			$(".bibsdb-rowlist-tags .label:contains('Adgang hjemmefra')").show();
 		
 		}
