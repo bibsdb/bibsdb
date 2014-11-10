@@ -64,9 +64,8 @@
 	
 			$( ".field-name-field-ding-page-tags" ).hide();
 			$(".bibsdb-rowlist-tags .label").hide();
-			$(".bibsdb-rowlist-tags .label:contains('Teknologi:')").show();
-			$(".bibsdb-rowlist-tags .label:contains('Adgang hjemmefra og fra biblioteket')").show();
-			$(".bibsdb-rowlist-tags .label:contains('Adgang KUN fra biblioteket')").show();
+			$(".bibsdb-rowlist-tags .label:contains('Adgang fra biblioteket').show();
+			$(".bibsdb-rowlist-tags .label:contains('Adgang hjemmefra')").show();
 		
 		}
 		  
