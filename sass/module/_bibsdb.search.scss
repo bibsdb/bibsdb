@@ -1,6 +1,6 @@
 /**
  * Search
- * - not modified
+ * 
  *
  * @author agms
  */
@@ -12,9 +12,9 @@
   /* Add padding if the search is in the header */
   .search {
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 10px; /** agms */
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 10px; /** agms */
   }
 }
 

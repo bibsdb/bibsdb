@@ -6,6 +6,8 @@
  * @author agms
  */
  
+
+ 
  /* Hide links every where
 	============================================================================ */
 
@@ -59,6 +61,16 @@
   .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
 		@include zen-grid-item(9, 1);
   }
+}
+
+/* No left padding on tabrolls on large screens when we display only one slide
+	============================================================================ */
+
+@include large-x-large() {  
+
+	.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
+		padding-left: 0;
+	}
 }
   
   

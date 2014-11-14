@@ -977,7 +977,7 @@ h2.pane-title {
 
 /**
  * Search
- * - not modified
+ * 
  *
  * @author agms
  */
@@ -990,9 +990,11 @@ h2.pane-title {
 /* line 13, ../sass/module/_bibsdb.search.scss */
 .header-wrapper .search, .header-wrapper .search-field-in-content {
   padding-top: 30px;
-  padding-right: 20px;
+  padding-right: 10px;
+  /** agms */
   padding-bottom: 30px;
-  padding-left: 20px;
+  padding-left: 10px;
+  /** agms */
 }
 
 /* line 25, ../sass/module/_bibsdb.search.scss */
@@ -1976,12 +1978,12 @@ hr {
   padding-bottom: 20px;
   padding-left: 10px;
 }
-/* line 46, ../../../../../../../../../../var/lib/gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .content-blocks--wrapper:before, .content-blocks--wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../../../var/lib/gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .content-blocks--wrapper:after {
   clear: both;
 }
@@ -2192,7 +2194,7 @@ hr {
  */
  /* Hide links every where
 	============================================================================ */
-/* line 12, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+/* line 14, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
 .bibsdb-frontpage-links {
   display: none;
 }
@@ -2200,7 +2202,7 @@ hr {
  /* -- but dispaly on large screens 
 	============================================================================ */
 @media only screen and (min-width: 769px) {
-  /* line 19, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 21, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .bibsdb-frontpage-links {
     display: block;
     float: right;
@@ -2226,7 +2228,7 @@ hr {
     height: 290px;
     z-index: 5;
   }
-  /* line 29, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 31, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .bibsdb-frontpage-links a {
     font-family: "SourceSansProSemibold";
     font-weight: normal;
@@ -2237,7 +2239,7 @@ hr {
 /* Make font a bit smaller
 	============================================================================ */
 @media only screen and (min-width: 769px) and (max-width: 940px) {
-  /* line 42, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 44, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .bibsdb-frontpage-links a {
     font-size: 110%;
   }
@@ -2245,12 +2247,12 @@ hr {
 /* Hide the tabroll tabs on large screens - we occupy that space with the link-box
 	============================================================================ */
 @media only screen and (min-width: 769px) {
-  /* line 54, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 56, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav {
     display: none;
   }
 
-  /* line 59, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 61, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
     float: left;
     width: 75%;
@@ -2267,5 +2269,13 @@ hr {
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
+  }
+}
+/* No left padding on tabrolls on large screens when we display only one slide
+	============================================================================ */
+@media only screen and (min-width: 769px) {
+  /* line 71, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
+    padding-left: 0;
   }
 }
