@@ -24,11 +24,19 @@
 			});
 	}
 
+	/** 
+	 * Hide link to group on events
+   */
+	function hide_group_ref_on_events() {
+		$( ".event .groups-ref" ).hide();
+	}
+
 
   // When ready start the magic.
   $(document).ready(function () {
 		translate_event_category_label_on_library_event_list();
 		control_library_link_visibility_in_event_lists();
+		hide_group_ref_on_events();
 
 	
 
