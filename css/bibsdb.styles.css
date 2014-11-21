@@ -1046,16 +1046,27 @@ h2.pane-title {
   border: 1px solid #b7bbbf;
 }
 
-/* line 84, ../sass/module/_bibsdb.search.scss */
+ /* Hide message every where - agms
+============================================================================ */
+/* line 86, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--message {
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f7e287;
+  display: none;
 }
 
-/* line 96, ../sass/module/_bibsdb.search.scss */
+ /* -- but display on large screens - agms
+============================================================================ */
+@media only screen and (min-width: 769px) {
+  /* line 94, ../sass/module/_bibsdb.search.scss */
+  .search-field-in-content--message {
+    display: block;
+    font-family: "SourceSansProSemibold";
+    font-weight: normal;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7e287;
+  }
+}
+/* line 108, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .search-field-in-content--sort-best-match,
 .page-search .pane-search-per-page,
@@ -1064,7 +1075,7 @@ h2.pane-title {
   min-width: 0;
   max-width: 49%;
 }
-/* line 101, ../sass/module/_bibsdb.search.scss */
+/* line 113, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results .form-select,
 .search-field-in-content--sort-best-match .form-select,
 .page-search .pane-search-per-page .form-select,
@@ -1072,7 +1083,7 @@ h2.pane-title {
   width: 100%;
 }
 
-/* line 107, ../sass/module/_bibsdb.search.scss */
+/* line 119, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .page-search .pane-search-per-page {
   float: right;
@@ -1092,7 +1103,7 @@ h2.pane-title {
   _overflow-y: visible;
 }
 
-/* line 112, ../sass/module/_bibsdb.search.scss */
+/* line 124, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-best-match,
 .page-search .pane-ting-search-sort-form {
   float: left;
@@ -1112,20 +1123,20 @@ h2.pane-title {
   _overflow-y: visible;
 }
 
-/* line 116, ../sass/module/_bibsdb.search.scss */
+/* line 128, ../sass/module/_bibsdb.search.scss */
 .page-search .pane-ting-search-sort-form {
   clear: none;
   overflow: visible;
 }
 
-/* line 123, ../sass/module/_bibsdb.search.scss */
+/* line 135, ../sass/module/_bibsdb.search.scss */
 .page-search .pane-search-per-page,
 .page-search .pane-ting-search-sort-form {
   padding-left: 0;
   padding-right: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 123, ../sass/module/_bibsdb.search.scss */
+  /* line 135, ../sass/module/_bibsdb.search.scss */
   .page-search .pane-search-per-page,
   .page-search .pane-ting-search-sort-form {
     clear: both;
@@ -1152,7 +1163,7 @@ h2.pane-title {
 
 /* Facet browser styling
    ========================================================================== */
-/* line 139, ../sass/module/_bibsdb.search.scss */
+/* line 151, ../sass/module/_bibsdb.search.scss */
 .pane-search-backends a:visited, .pane-ding-facetbrowser a:visited {
   color: #619630;
 }

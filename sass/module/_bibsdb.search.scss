@@ -80,14 +80,26 @@
   }
 }
 
+ /* Hide message every where - agms
+============================================================================ */
 
-.search-field-in-content--message {
-  @include font-bold();
+.search-field-in-content--message {	
+  display: none;
+}	
+		
+ /* -- but display on large screens - agms
+============================================================================ */	
+@include large-x-large() {
 
-  margin-bottom: 30px;
-  padding: 20px;
+  .search-field-in-content--message {
+    display: block;
+    @include font-bold();
 
-  background-color: lighten($yellow, 20%);
+    margin-bottom: 30px;
+    padding: 20px;
+
+    background-color: lighten($yellow, 20%);
+  }
 }
 
 .search-field-in-content--sort-results,
