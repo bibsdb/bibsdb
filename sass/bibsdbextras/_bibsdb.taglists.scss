@@ -23,6 +23,7 @@
 		@include font-bold();
 		padding-bottom: $medium-spacing;
 	}
+
 }
 
 /* Content in grid
@@ -36,6 +37,7 @@
   overflow: hidden;
   margin-top: 20px;
   padding-top: 20px;
+	line-height: $base-line-height - 1px;
 
   @include small-medium() {
     border-top: 0;
@@ -183,6 +185,8 @@
 .bibsdb-rowlist{
   margin: 0;
   padding: 0;
+	line-height: $base-line-height - 1px;
+
   
 	.arrow-link {
 		@extend %arrow-link;
@@ -227,9 +231,31 @@
 		margin-right: $large-spacing;
 		margin-left: 140px;
   }
+
+
   
-  .bibsdb-rowlist-tags a {
-		margin-right: $small-spacing;
+  .bibsdb-rowlist-tags {
+		margin-top: $small-spacing;
+		
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				float: left;
+				
+				text-transform: uppercase;
+				@include font-bold();
+				color: $gray-dark;
+				&:after {
+   				content: "|";
+					margin-left: $small-spacing;
+					margin-right: $small-spacing;
+				}
+				&.last:after {
+					content: "";
+				}
+			}
+		}
   }
 
 
@@ -243,7 +269,7 @@
       display: none;
     }
 
-	 .bibsdb-rowlist-content-wrapper {
+	 .bibsdb-rowlist-content-wrapper, .bibsdb-rowlist-tags {
 			margin-right: $large-spacing;
 			margin-left: 0;
 		}

@@ -36,9 +36,9 @@
 	function hide_page_taxonomy_tags() {
 
 		$( ".field-name-field-ding-page-tags" ).hide();
-		$(".bibsdb-rowlist-tags .label").hide();
-		$(".bibsdb-rowlist-tags .label:contains('Adgang fra biblioteket')").show();
-		$(".bibsdb-rowlist-tags .label:contains('Adgang hjemmefra')").show();
+		$(".bibsdb-rowlist-tags li").hide();
+		$(".bibsdb-rowlist-tags li:contains('Adgang fra biblioteket')").show();
+		$(".bibsdb-rowlist-tags li:contains('Adgang hjemmefra')").show();
 
 	}
 
