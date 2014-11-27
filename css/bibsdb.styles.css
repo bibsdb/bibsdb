@@ -1664,7 +1664,7 @@ hr {
   overflow: hidden;
   margin-top: 20px;
   padding-top: 20px;
-  line-height: 20px;
+  line-height: 21px;
 }
 @media only screen and (max-width: 768px) {
   /* line 32, ../sass/bibsdbextras/_bibsdb.taglists.scss */
@@ -2055,7 +2055,7 @@ hr {
 .bibsdb-rowlist {
   margin: 0;
   padding: 0;
-  line-height: 20px;
+  line-height: 21px;
   /* Media queries */
 }
 /* line 191, ../sass/bibsdbextras/_bibsdb.taglists.scss */
