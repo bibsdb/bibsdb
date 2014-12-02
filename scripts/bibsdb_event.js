@@ -30,6 +30,23 @@
 	function hide_group_ref_on_events() {
 		$( ".event .groups-ref" ).hide();
 	}
+	
+	/** 
+	 * Move the ticket button to event-info
+   */
+	function move_ticket_button() {
+	  $(".field-name-field-place2book-tickets")
+    .prependTo(".event-info");
+	}
+	
+	/**
+	* Make labels equal size by removing extra label-classes
+	*/
+	function remove_extra_label_class() {
+	  $(".event-category a").removeClass("label label-info");
+	}
+	
+	
 
 
   // When ready start the magic.
@@ -37,10 +54,12 @@
 		translate_event_category_label_on_library_event_list();
 		control_library_link_visibility_in_event_lists();
 		hide_group_ref_on_events();
-
+		move_ticket_button();
+		remove_extra_label_class();
+	});
+	
 	
 
-	});
 
 
 

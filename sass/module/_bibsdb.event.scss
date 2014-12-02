@@ -4,13 +4,15 @@
  * @author agms
  */
  
- 
-
-
  /* Event list heading */
 .event-list-leaf {
 	.event-list-day {
     background-color: $green;
   }
+}
 
+/* Buy ticket button */
+.event .ticket-available {
+  margin-top: $large-spacing;
+  margin-bottom: $large-spacing;
 }

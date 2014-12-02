@@ -1191,9 +1191,16 @@ h2.pane-title {
  * @author agms
  */
 /* Event list heading */
-/* line 12, ../sass/module/_bibsdb.event.scss */
+/* line 9, ../sass/module/_bibsdb.event.scss */
 .event-list-leaf .event-list-day {
   background-color: #7fc241;
+}
+
+/* Buy ticket button */
+/* line 15, ../sass/module/_bibsdb.event.scss */
+.event .ticket-available {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /**
