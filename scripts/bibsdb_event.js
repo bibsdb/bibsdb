@@ -46,6 +46,14 @@
 	  $(".event-category a").removeClass("label label-info");
 	}
 	
+	/**
+	* Replace user-icon with info-icon in event info
+	*/
+	function replace_icon() {
+	  $(".event-info .icon-user").removeClass("icon-user").addClass("icon-info-sign");
+	  //switchClass("icon-user", "icon-info-circle");
+	}
+	
 	
 
 
@@ -56,6 +64,7 @@
 		hide_group_ref_on_events();
 		move_ticket_button();
 		remove_extra_label_class();
+		replace_icon();
 	});
 	
 	
