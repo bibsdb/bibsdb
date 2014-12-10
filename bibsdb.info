@@ -13,6 +13,7 @@
 	scripts[] = scripts/bibsdb_frontpage.js
 	scripts[] = scripts/bibsdb_search_and_reservation.js
 	scripts[] = scripts/bibsdb_event.js
+	scripts[] = scripts/bibsdb_news.js
 	scripts[] = scripts/bibsdb_other.js
 
 

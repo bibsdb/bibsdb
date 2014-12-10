@@ -1177,14 +1177,6 @@ h2.pane-title {
 *
 * @author agms
 */
-/*
-* Hide the library selector on news-page.
-*/
-/* line 19, ../sass/module/_bibsdb.news.scss */
-.pane-library-list {
-  display: none;
-}
-
 /**
  * Event styling
  *
