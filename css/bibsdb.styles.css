@@ -2310,3 +2310,9 @@ hr {
     padding-left: 0;
   }
 }
+/* Hide info-text across slide-show
+	============================================================================ */
+/* line 80, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info {
+  display: none;
+}

@@ -72,6 +72,14 @@
 		padding-left: 0;
 	}
 }
+
+
+/* Hide info-text across slide-show
+	============================================================================ */
+
+.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info {
+  display: none;
+}
   
   
   
