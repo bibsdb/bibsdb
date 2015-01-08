@@ -23,6 +23,40 @@
       
 			});
 	}
+	
+  /**
+    * Attach campagns to event-page
+    */    
+   function attach_campagigns_to_event_page() {
+   
+    // only apply to events pages
+    if (window.location.href.indexOf("arrangementer") == -1) {
+      return;
+    }
+    
+    var elements = new Array();
+    
+    //fetch library-list or taxonomy-menu
+    elements[0] = $('.pane-library-list');
+    
+    if (elements[0].length == 0) {
+      elements[0] = $('.pane-taxonomy-menu');
+    }
+    elements[0] = $('<div>').prepend(elements[0]);
+
+    // add campaigns
+    var campaign1 = $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/nyheder/kort-nyt/se-vores-foraarsprogrammer-paa-nettet-allerede-i-dag"><img src="https://biblioteket.sonderborg.dk/sites/default/files/foldere-2015-3-2.png" /></a>');
+    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms_om_arrangementer-4-1.png" /></a>');
+    campaign1 = bibsdb_add_border(campaign1);
+    campaign2 = bibsdb_add_border(campaign2);
+    elements[0] = elements[0].append(campaign2);
+    elements[1] = campaign1;
+ 
+	  
+	  var html = bibsdb_create_html(elements);
+
+	  $(".primary-content > div:nth-child(1)").after(html);
+	 }
 
 	/** 
 	 * Hide link to group on events
@@ -55,7 +89,9 @@
 	}
 	
 	
-
+	
+	
+  
 
   // When ready start the magic.
   $(document).ready(function () {
@@ -65,7 +101,11 @@
 		move_ticket_button();
 		remove_extra_label_class();
 		replace_icon();
+		attach_campagigns_to_event_page();
 	});
+	
+
+	
 	
 	
 

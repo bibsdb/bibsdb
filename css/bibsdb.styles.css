@@ -1195,6 +1195,7 @@ h2.pane-title {
   margin-bottom: 20px;
 }
 
+/* Campaigns - Pane library list */
 /**
  * User
  *
@@ -1597,34 +1598,50 @@ p {
   display: none;
 }
 
+/* Hide on small screens class
+==============================================================================*/
+@media only screen and (max-width: 768px) {
+  /* line 44, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .hidden-on-small-screens {
+    display: none;
+  }
+}
 /* Add margin after title image in group
    ========================================================================== */
-/* line 40, ../sass/bibsdbextras/_bibsdb.extras.scss */
+/* line 51, ../sass/bibsdbextras/_bibsdb.extras.scss */
 .field-name-field-ding-group-title-image {
   margin-bottom: 10px;
 }
 
 /* Hide tags on pages
 ============================================================================= */
-/* line 49, ../sass/bibsdbextras/_bibsdb.extras.scss */
+/* line 60, ../sass/bibsdbextras/_bibsdb.extras.scss */
 .node-type-ding-page .super-heading {
   display: none;
 }
 
 /* Gray box
 ============================================================================= */
-/* line 56, ../sass/bibsdbextras/_bibsdb.extras.scss */
+/* line 67, ../sass/bibsdbextras/_bibsdb.extras.scss */
 .gray-box {
   background-color: #edeeef;
   padding: 20px;
 }
 
-/* line 62, ../sass/bibsdbextras/_bibsdb.extras.scss */
+/* line 73, ../sass/bibsdbextras/_bibsdb.extras.scss */
 hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Box with thin gray border
+=============================================================================*/
+/* line 86, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.gray-border-box > div {
+  padding: 10px;
+  border: 1px solid #d2d5d7;
 }
 
 /**
@@ -1981,9 +1998,7 @@ hr {
 .content-blocks--wrapper {
   *position: relative;
   *zoom: 1;
-  padding-right: 10px;
   padding-bottom: 20px;
-  padding-left: 10px;
 }
 /* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .content-blocks--wrapper:before, .content-blocks--wrapper:after {

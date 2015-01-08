@@ -35,6 +35,17 @@ p {
 	display: none;
 }
 
+/* Hide on small screens class
+==============================================================================*/
+
+
+@include small-medium() {
+
+  .hidden-on-small-screens {
+    display: none;
+  }
+}
+
 /* Add margin after title image in group
    ========================================================================== */ 
 .field-name-field-ding-group-title-image {
@@ -64,4 +75,16 @@ hr {
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* Box with thin gray border
+=============================================================================*/
+
+.gray-border-box {
+  
+  > div {
+    padding: 10px;
+    border: 1px solid $gray-light;
+  }
 }
