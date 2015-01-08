@@ -57,21 +57,11 @@
   }
 }
 
-.main-menu-wrapper {
-  @include zen-grid-item(9, 1);
-}
-
-.secondary-menu-wrapper {
-  @include zen-grid-item(3, 1, right);
-}
-
-.main-menu {
-	font-size: $font-size-large;
-}
 
 .secondary-menu {
 	font-size: $font-size-medium;
 }
+
 
 .main-menu, .secondary-menu {
   .menu-item {
@@ -85,6 +75,7 @@
 		}
 	}
 }
+
 
 /* Sub menu
    ========================================================================== */
