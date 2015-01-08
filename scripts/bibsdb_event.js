@@ -46,7 +46,7 @@
 
     // add campaigns
     var campaign1 = $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/nyheder/kort-nyt/se-vores-foraarsprogrammer-paa-nettet-allerede-i-dag"><img src="https://biblioteket.sonderborg.dk/sites/default/files/foldere-2015-3-2.png" /></a>');
-    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms_om_arrangementer-4-1.png" /></a>');
+    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms-om-arrangementer-4-1.png" /></a>');
     campaign1 = bibsdb_add_border(campaign1);
     campaign2 = bibsdb_add_border(campaign2);
     elements[0] = elements[0].append(campaign2);
