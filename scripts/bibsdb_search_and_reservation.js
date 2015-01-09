@@ -19,7 +19,7 @@
 	}	
 
 	/**
-	 * Control visibility of topbar elements
+	 * Control visibility of search and login forms
 	 * 
 	 * 
 	 * And show loginbox and hide search box if incorrect login was attempted so user can retry
