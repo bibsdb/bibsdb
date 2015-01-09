@@ -57,9 +57,10 @@
   }
 }
 
-
-.secondary-menu {
-	font-size: $font-size-medium;
+@include large-x-large() {
+  .secondary-menu {
+	  font-size: $font-size-medium;
+  }
 }
 
 
