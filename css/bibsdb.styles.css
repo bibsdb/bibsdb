@@ -1153,6 +1153,13 @@ h2.pane-title {
   margin-bottom: 20px;
 }
 
+/* Not available button */
+/* line 21, ../sass/module/_bibsdb.event.scss */
+.event .ticket-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* Campaigns - Pane library list */
 /**
  * User
