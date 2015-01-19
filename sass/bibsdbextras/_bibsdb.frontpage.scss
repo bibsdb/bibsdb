@@ -6,7 +6,19 @@
  * @author agms
  */
  
-
+ 
+ /* Shrink search on large screens to make room for links
+==============================================================================*/
+@include large-x-large() {
+  .front, .page-ting, .page-arrangementer, .page-libraries, .page-nyheder, .page-node, .page-user {
+    .header-wrapper {
+      @include zen-grid-container(); 
+    }
+    .search {
+      @include zen-grid-item(9, 1);  
+    }
+  }
+}
  
  /* Hide links every where
 	============================================================================ */
@@ -18,22 +30,23 @@
  /* -- but dispaly on large screens 
 	============================================================================ */	
 @include large-x-large() {
-	.bibsdb-frontpage-links {	
-		display: block;
-		@include zen-grid-item(3, 1, right);
-		overflow: hidden;
-		float: right;
-		background-color: white;
-		padding: $large-spacing;
-		position: relative;
-		height: 290px;
-		z-index: 5;
-		a {
-				@include font-bold();
-				font-size: $font-size-large;
-				color: $font-color-primary;
-		}
-	}	
+	.front, .page-ting, .page-arrangementer, .page-libraries, .page-nyheder, .page-node, .page-user {
+	  .bibsdb-frontpage-links {	
+		  display: block;
+		  @include zen-grid-item(3, 1, right);
+
+
+		  padding: $large-spacing;
+		  padding-top: 50px;
+		  z-index: 5;
+		  a {
+				  @include font-bold();
+				  font-size: $font-size-medium;
+				  color: $white;
+		  }
+
+	  }	
+	}
 }
 
 /* Make font a bit smaller
@@ -48,40 +61,20 @@
 }
 		
 
-/* Hide the tabroll tabs on large screens - we occupy that space with the link-box
-	============================================================================ */
+/* Make carrousel heading upper case and white on small screens
+===============================================================================*/
 
-@include large-x-large() {  
-
-	.ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav {
-    display: none;
-  }
+.rs-carousel-title {
+  @extend h2.pane-title;
   
-
-  .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
-		@include zen-grid-item(9, 1);
+  
+  @include small-medium() {
+    color: $white;
   }
 }
 
-/* No left padding on tabrolls on large screens when we display only one slide
-	============================================================================ */
-
-@include large-x-large() {  
-
-	.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
-		padding-left: 0;
-	}
-}
 
 
-/* Hide info-text across slide-show
-	============================================================================ */
-
-.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info {
-  display: none;
-}
-  
-  
   
 
 
