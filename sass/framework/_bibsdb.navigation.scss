@@ -39,8 +39,19 @@
 			color: $white;
 			background-color: $gray-dark;
 		}
-
 	}
+
+  @include small-medium() {
+
+    .topbar-link-user-account.menu-item {
+      display:inline-block;
+    }
+
+    .topbar-link-user-account.default-override {
+      display:none;
+    }
+
+  }
 }
 
 /* Navigation, main menu and secondary menu
