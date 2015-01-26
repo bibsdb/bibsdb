@@ -1,5 +1,13 @@
 (function($) {
 
+function swap(a, b) {
+    a = $(a); b = $(b);
+    var tmp = $('<span>').hide();
+    a.before(tmp);
+    b.before(a);
+    tmp.replaceWith(b);
+};
+
 
 	/**
 	 * Translate default pickup branch selection on first reservation
@@ -17,6 +25,15 @@
 	function expand_holdings_on_page_load() {
 		$('.group-holdings-available .field-group-format-wrapper').css("display", "block");	
 	}	
+	
+	/**
+	 * Let material-details and holdings-info swap place
+	 */
+	function swap_holdings_and_material_details() {
+		swap('.group-holdings-available','.group-material-details');	
+	}	
+	 
+	 
 
 	/**
 	 * Control visibility of search and login forms
@@ -62,6 +79,7 @@
   $(document).ready(function () {
 		translate_pick_default_branch_text();
 		expand_holdings_on_page_load();
+		swap_holdings_and_material_details();
 		control_topbar_search_box_visibility();
 	
 
