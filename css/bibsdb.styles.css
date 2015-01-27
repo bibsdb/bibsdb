@@ -1604,6 +1604,76 @@ hr {
   border: 1px solid #d2d5d7;
 }
 
+/* Nice spacing around items in alpabetical list on netbiblioteket
+=============================================================================*/
+/* line 95, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-page-netbiblioteket .bibsdb-rowlist-item h3 {
+  margin: 0;
+}
+
+/* Nice heading on alphabetical list on netbiblioteket
+=============================================================================*/
+/* line 102, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-10 .pane-title {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #d2d5d7;
+}
+
+/* Two column layout on netbiblioteket
+=============================================================================*/
+@media only screen and (min-width: 769px) {
+  /* line 112, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-page-netbiblioteket .primary-content {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+  .bibsdb-page-netbiblioteket .primary-content:before, .bibsdb-page-netbiblioteket .primary-content:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+  .bibsdb-page-netbiblioteket .primary-content:after {
+    clear: both;
+  }
+  /* line 114, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-5 {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  /* line 118, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-10 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 /**
  * Content in grid
  *

@@ -88,3 +88,35 @@ hr {
     border: 1px solid $gray-light;
   }
 }
+
+/* Nice spacing around items in alpabetical list on netbiblioteket
+=============================================================================*/
+
+.bibsdb-page-netbiblioteket .bibsdb-rowlist-item h3 {
+  margin: 0;
+}
+
+/* Nice heading on alphabetical list on netbiblioteket
+=============================================================================*/
+
+.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-10 .pane-title {
+  margin-top: $large-spacing;
+  padding-top: $large-spacing;
+  border-top: 1px solid $gray-light;
+}
+
+/* Two column layout on netbiblioteket
+=============================================================================*/
+
+@include large-x-large() {
+  .bibsdb-page-netbiblioteket .primary-content {
+    @include zen-grid-container();
+    .pane-bibsdb-tags-list-panel-pane-5 {
+      @include zen-grid-item(8, 1);
+    }
+    
+    .pane-bibsdb-tags-list-panel-pane-10 {
+      @include zen-grid-item(4, 1, right);
+    }
+  }
+}
