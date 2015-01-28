@@ -369,9 +369,6 @@ h6 {
 /* line 10, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu {
   margin-top: 52px;
-  width: 50%;
-  /* Logo spans 6 colums - Topbar-menu spans 6 columns */
-  margin-left: -50%;
 }
 @media only screen and (max-width: 768px) {
   /* line 10, ../sass/framework/_bibsdb.navigation.scss */
@@ -385,7 +382,7 @@ h6 {
     margin-top: 0;
   }
 }
-/* line 20, ../sass/framework/_bibsdb.navigation.scss */
+/* line 19, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item {
   text-shadow: 1px 1px 0 #b7bbbf;
   font-size: 130%;
@@ -393,43 +390,53 @@ h6 {
   color: #6d6e71;
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 20, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 19, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item {
     padding: 20px 14px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 20, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 19, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item {
-    padding: 10px 14px;
+    padding: 10px 10px;
   }
 }
-/* line 34, ../sass/framework/_bibsdb.navigation.scss */
+/* line 33, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item:hover {
   background-color: #7fc241;
   color: white;
 }
-/* line 39, ../sass/framework/_bibsdb.navigation.scss */
+/* line 38, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.active {
   color: white;
   background-color: #979da2;
 }
+@media only screen and (max-width: 768px) {
+  /* line 47, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .topbar-link-user-account.menu-item {
+    display: inline-block;
+  }
+  /* line 51, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .topbar-link-user-account.default-override {
+    display: none;
+  }
+}
 
 /* Navigation, main menu and secondary menu
    ========================================================================== */
-/* line 49, ../sass/framework/_bibsdb.navigation.scss */
+/* line 60, ../sass/framework/_bibsdb.navigation.scss */
 .navigation-wrapper {
   background-color: #6d6e71;
   /* Media queries */
 }
 @media only screen and (max-width: 768px) {
-  /* line 49, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 60, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 49, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 60, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
@@ -497,11 +504,16 @@ h6 {
 }
 
 @media only screen and (min-width: 769px) {
+<<<<<<< HEAD
   /* line 77, ../sass/framework/_bibsdb.navigation.scss */
+=======
+  /* line 72, ../sass/framework/_bibsdb.navigation.scss */
+>>>>>>> carrousel
   .secondary-menu {
     font-size: 110%;
   }
 }
+<<<<<<< HEAD
 /* line 84, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   color: white;
@@ -511,6 +523,17 @@ h6 {
   color: #7fc241;
 }
 /* line 89, ../sass/framework/_bibsdb.navigation.scss */
+=======
+/* line 79, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu .menu-item, .secondary-menu .menu-item {
+  color: white;
+}
+/* line 81, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
+  color: #7fc241;
+}
+/* line 84, ../sass/framework/_bibsdb.navigation.scss */
+>>>>>>> carrousel
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
   color: #7fc241;
   font-family: "SourceSansProSemibold";
@@ -519,27 +542,47 @@ h6 {
 
 /* Sub menu
    ========================================================================== */
+<<<<<<< HEAD
 /* line 99, ../sass/framework/_bibsdb.navigation.scss */
+=======
+/* line 94, ../sass/framework/_bibsdb.navigation.scss */
+>>>>>>> carrousel
 h2.sub-menu-title {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
+<<<<<<< HEAD
 /* line 103, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu {
   margin-bottom: 20px;
 }
 /* line 106, ../sass/framework/_bibsdb.navigation.scss */
+=======
+/* line 98, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu {
+  margin-bottom: 20px;
+}
+/* line 101, ../sass/framework/_bibsdb.navigation.scss */
+>>>>>>> carrousel
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
   padding-top: 5px;
   padding-bottom: 3px;
 }
+<<<<<<< HEAD
 /* line 111, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 /* line 118, ../sass/framework/_bibsdb.navigation.scss */
+=======
+/* line 106, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu > li a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 113, ../sass/framework/_bibsdb.navigation.scss */
+>>>>>>> carrousel
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;
@@ -753,21 +796,9 @@ button.download-button {
    ========================================================================== */
 /* Site name, slogan and logo
    ========================================================================== */
-/* line 15, ../sass/layout/_bibsdb.layout.scss */
-.logo {
-  width: 50%;
-  /* Logo spans 6 colums - Topbar-menu spans 6 columns */
-  margin-right: -50%;
-}
-/* line 18, ../sass/layout/_bibsdb.layout.scss */
-.logo img {
-  height: auto;
-  margin-top: 10px;
-}
-
 /* Content
    ========================================================================== */
-/* line 27, ../sass/layout/_bibsdb.layout.scss */
+/* line 20, ../sass/layout/_bibsdb.layout.scss */
 .content-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -800,7 +831,7 @@ h1, h1.page-title, .pane-menu-title h2 {
 }
 
 /* line 18, ../sass/layout/_bibsdb.typography.scss */
-h2.pane-title {
+h2.pane-title, .rs-carousel-title {
   font-size: 160%;
   font-family: "SourceSansProBold";
   font-weight: normal;
@@ -1684,7 +1715,7 @@ hr {
   margin-bottom: 20px;
 }
 /* line 17, ../sass/bibsdbextras/_bibsdb.taglists.scss */
-#bibsdb-taglist-page h2.pane-title {
+#bibsdb-taglist-page h2.pane-title, #bibsdb-taglist-page .rs-carousel-title {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2264,68 +2295,25 @@ hr {
  *
  * @author agms
  */
- /* Hide links every where
-	============================================================================ */
-/* line 14, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-.bibsdb-frontpage-links {
-  display: none;
-}
-
- /* -- but dispaly on large screens 
-	============================================================================ */
+ /* Shrink search on large screens to make room for links
+==============================================================================*/
 @media only screen and (min-width: 769px) {
-  /* line 21, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .bibsdb-frontpage-links {
-    display: block;
-    float: right;
-    width: 25%;
-    margin-right: 0%;
-    margin-left: -25%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-    overflow: hidden;
-    float: right;
-    background-color: white;
-    padding: 20px;
-    position: relative;
-    height: 290px;
-    z-index: 5;
+  /* line 14, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .front .header-wrapper, .page-ting .header-wrapper, .page-arrangementer .header-wrapper, .page-libraries .header-wrapper, .page-nyheder .header-wrapper, .page-node .header-wrapper, .page-user .header-wrapper {
+    *position: relative;
+    *zoom: 1;
   }
-  /* line 31, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .bibsdb-frontpage-links a {
-    font-family: "SourceSansProSemibold";
-    font-weight: normal;
-    font-size: 130%;
-    color: rgba(0, 0, 0, 0.7);
+  /* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+  .front .header-wrapper:before, .front .header-wrapper:after, .page-ting .header-wrapper:before, .page-ting .header-wrapper:after, .page-arrangementer .header-wrapper:before, .page-arrangementer .header-wrapper:after, .page-libraries .header-wrapper:before, .page-libraries .header-wrapper:after, .page-nyheder .header-wrapper:before, .page-nyheder .header-wrapper:after, .page-node .header-wrapper:before, .page-node .header-wrapper:after, .page-user .header-wrapper:before, .page-user .header-wrapper:after {
+    content: "";
+    display: table;
   }
-}
-/* Make font a bit smaller
-	============================================================================ */
-@media only screen and (min-width: 769px) and (max-width: 940px) {
-  /* line 44, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .bibsdb-frontpage-links a {
-    font-size: 110%;
+  /* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+  .front .header-wrapper:after, .page-ting .header-wrapper:after, .page-arrangementer .header-wrapper:after, .page-libraries .header-wrapper:after, .page-nyheder .header-wrapper:after, .page-node .header-wrapper:after, .page-user .header-wrapper:after {
+    clear: both;
   }
-}
-/* Hide the tabroll tabs on large screens - we occupy that space with the link-box
-	============================================================================ */
-@media only screen and (min-width: 769px) {
-  /* line 56, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav {
-    display: none;
-  }
-
-  /* line 61, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
+  /* line 17, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .front .search, .front .search-field-in-content, .page-ting .search, .page-ting .search-field-in-content, .page-arrangementer .search, .page-arrangementer .search-field-in-content, .page-libraries .search, .page-libraries .search-field-in-content, .page-nyheder .search, .page-nyheder .search-field-in-content, .page-node .search, .page-node .search-field-in-content, .page-user .search, .page-user .search-field-in-content {
     float: left;
     width: 75%;
     margin-left: 0%;
@@ -2343,17 +2331,59 @@ hr {
     _overflow-y: visible;
   }
 }
-/* No left padding on tabrolls on large screens when we display only one slide
+ /* Hide links every where
+	============================================================================ */
+/* line 26, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+.bibsdb-frontpage-links {
+  display: none;
+}
+
+ /* -- but dispaly on large screens 
 	============================================================================ */
 @media only screen and (min-width: 769px) {
-  /* line 71, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
-    padding-left: 0;
+  /* line 34, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .front .bibsdb-frontpage-links, .page-ting .bibsdb-frontpage-links, .page-arrangementer .bibsdb-frontpage-links, .page-libraries .bibsdb-frontpage-links, .page-nyheder .bibsdb-frontpage-links, .page-node .bibsdb-frontpage-links, .page-user .bibsdb-frontpage-links {
+    display: block;
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding: 20px;
+    padding-top: 50px;
+    z-index: 5;
+  }
+  /* line 42, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .front .bibsdb-frontpage-links a, .page-ting .bibsdb-frontpage-links a, .page-arrangementer .bibsdb-frontpage-links a, .page-libraries .bibsdb-frontpage-links a, .page-nyheder .bibsdb-frontpage-links a, .page-node .bibsdb-frontpage-links a, .page-user .bibsdb-frontpage-links a {
+    font-family: "SourceSansProSemibold";
+    font-weight: normal;
+    font-size: 110%;
+    color: white;
   }
 }
-/* Hide info-text across slide-show
+/* Make font a bit smaller
 	============================================================================ */
-/* line 80, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-.ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info {
-  display: none;
+@media only screen and (min-width: 769px) and (max-width: 940px) {
+  /* line 57, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .bibsdb-frontpage-links a {
+    font-size: 110%;
+  }
+}
+/* Make carrousel heading upper case and white on small screens
+===============================================================================*/
+@media only screen and (max-width: 768px) {
+  /* line 67, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  .rs-carousel-title {
+    color: white;
+  }
 }

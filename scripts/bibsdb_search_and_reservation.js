@@ -35,44 +35,7 @@ function swap(a, b) {
 	 
 	 
 
-	/**
-	 * Control visibility of search and login forms
-	 * 
-	 * 
-	 * And show loginbox and hide search box if incorrect login was attempted so user can retry
-	 */
-	function control_topbar_search_box_visibility() {
-	  var breakpoint_medium = 768;
-	
-	  // Show loginbox and hide search box if incorrect login was attempted so user can retry
-		if ($( "div.messages.error:contains('Du har indtastet et forkert')" ).length) {
-		  $('.topbar-menu .leaf .topbar-link-search').removeClass('active');
-		  $('.js-topbar-search').css("display", "none");
-		  $('.front .js-topbar-search').css("display", "none");
-		  $('.js-topbar-user').css("display", "block");
-		}
-		// Hide topbar on search result pages (search box is displayed further down the page)
-		else if (window.location.href.indexOf("search/") > -1) {
-			$('.js-topbar-search').css("display", "none");
-		}
-		// Hide if login form is visible
-		else if ($('.js-topbar-user').is(":visible")) {
-			$('.js-topbar-search').css("display", "none");
-		} 
-		// On small screens hide search box on load on all pages except the frontpage
-		else if ($( window ).width() <= breakpoint_medium ){
-		  if ($('.front .js-topbar-search').length > 0 ) {
-		    $('.front .js-topbar-search').css("display", "block");
-		  }
-		  else {
-		    $('.js-topbar-search').css("display", "none");
-		  }
-		}
-		else {
-			// Display the element.
-			$('.js-topbar-search').css("display", "block");
-		}
-	}
+
 
 
   // When ready start the magic.
@@ -81,8 +44,6 @@ function swap(a, b) {
 		expand_holdings_on_page_load();
 		swap_holdings_and_material_details();
 		control_topbar_search_box_visibility();
-	
-
 	});
 
 
