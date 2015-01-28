@@ -43,7 +43,6 @@ function swap(a, b) {
 		translate_pick_default_branch_text();
 		expand_holdings_on_page_load();
 		swap_holdings_and_material_details();
-		control_topbar_search_box_visibility();
 	});
 
 
