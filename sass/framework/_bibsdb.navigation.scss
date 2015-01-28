@@ -67,6 +67,22 @@
   }
 }
 
+.main-menu-wrapper {
+  @include zen-grid-item(9, 1);
+}
+
+.secondary-menu-wrapper {
+  @include zen-grid-item(3, 1, right);
+}
+
+.main-menu-wrapper,
+.secondary-menu-wrapper {
+  @include small-medium() {
+    @include zen-grid-item(12, 1);
+    @include zen-clear();
+  }
+}
+
 @include large-x-large() {
   .secondary-menu {
 	  font-size: $font-size-medium;

@@ -442,21 +442,82 @@ h6 {
   }
 }
 
+/* line 70, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu-wrapper {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 74, ../sass/framework/_bibsdb.navigation.scss */
+.secondary-menu-wrapper {
+  float: right;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 79, ../sass/framework/_bibsdb.navigation.scss */
+  .main-menu-wrapper,
+  .secondary-menu-wrapper {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: left;
+  }
+}
+
 @media only screen and (min-width: 769px) {
-  /* line 71, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 87, ../sass/framework/_bibsdb.navigation.scss */
   .secondary-menu {
     font-size: 110%;
   }
 }
-/* line 78, ../sass/framework/_bibsdb.navigation.scss */
+/* line 94, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   color: white;
 }
-/* line 80, ../sass/framework/_bibsdb.navigation.scss */
+/* line 96, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
   color: #7fc241;
 }
-/* line 83, ../sass/framework/_bibsdb.navigation.scss */
+/* line 99, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
   color: #7fc241;
   font-family: "SourceSansProSemibold";
@@ -465,27 +526,27 @@ h6 {
 
 /* Sub menu
    ========================================================================== */
-/* line 93, ../sass/framework/_bibsdb.navigation.scss */
+/* line 109, ../sass/framework/_bibsdb.navigation.scss */
 h2.sub-menu-title {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
-/* line 97, ../sass/framework/_bibsdb.navigation.scss */
+/* line 113, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu {
   margin-bottom: 20px;
 }
-/* line 100, ../sass/framework/_bibsdb.navigation.scss */
+/* line 116, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
   padding-top: 5px;
   padding-bottom: 3px;
 }
-/* line 105, ../sass/framework/_bibsdb.navigation.scss */
+/* line 121, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 112, ../sass/framework/_bibsdb.navigation.scss */
+/* line 128, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;
