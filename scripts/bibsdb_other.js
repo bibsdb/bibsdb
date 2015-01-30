@@ -41,6 +41,15 @@
 		$(".bibsdb-rowlist-tags li:contains('Adgang hjemmefra')").show();
 
 	}
+	
+	function bibsdb_foldable_list() {
+
+	
+	  $(".bibsdb-toggle-fold").click(function() {
+	      //$(".bibsdb-foldable-field").hide();
+	      $(this).siblings(".bibsdb-foldable-field").slideToggle("fast");
+    });
+	}
 
 
   
@@ -50,6 +59,7 @@
 		append_link_to_libraries_in_library_list();
 		translate_staff_list_header_on_library_pages();
 		hide_page_taxonomy_tags();
+		bibsdb_foldable_list();
 
 	
 

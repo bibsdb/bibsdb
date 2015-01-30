@@ -89,21 +89,18 @@ hr {
   }
 }
 
-/* Nice spacing around items in alpabetical list on netbiblioteket
-=============================================================================*/
 
-.bibsdb-page-netbiblioteket .bibsdb-rowlist-item h3 {
-  margin: 0;
-}
 
 /* Nice heading on alphabetical list on netbiblioteket
 =============================================================================*/
 
-.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-10 .pane-title {
+.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-11 .pane-title {
   margin-top: $large-spacing;
   padding-top: $large-spacing;
   border-top: 1px solid $gray-light;
 }
+
+
 
 /* Two column layout on netbiblioteket
 =============================================================================*/
@@ -115,8 +112,27 @@ hr {
       @include zen-grid-item(8, 1);
     }
     
-    .pane-bibsdb-tags-list-panel-pane-10 {
+    .pane-bibsdb-tags-list-panel-pane-11 {
       @include zen-grid-item(4, 1, right);
     }
   }
+}
+
+/* Bibsdb foldable list
+=============================================================================*/
+
+.bibsdb-foldable-field {
+  display: none;
+}
+
+h3.bibsdb-foldable-list-title {
+  margin: 0;
+}
+
+.info-link {
+  @extend %arrow-link;
+  top: $medium-spacing;
+  padding-right: $small-spacing;
+  color: $green-dark;
+  font-size: $font-size-larger;
 }

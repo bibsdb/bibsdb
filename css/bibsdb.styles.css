@@ -958,7 +958,7 @@ h2.pane-title, .rs-carousel-title {
 /* Extends
    ========================================================================== */
 /* line 176, ../sass/module/_bibsdb.module.scss */
-.arrow-link-small, .bibsdb-rowlist .arrow-link {
+.arrow-link-small, .info-link, .bibsdb-rowlist .arrow-link {
   display: inline-block;
   position: absolute;
   right: 0;
@@ -1665,17 +1665,10 @@ hr {
   border: 1px solid #d2d5d7;
 }
 
-/* Nice spacing around items in alpabetical list on netbiblioteket
-=============================================================================*/
-/* line 95, ../sass/bibsdbextras/_bibsdb.extras.scss */
-.bibsdb-page-netbiblioteket .bibsdb-rowlist-item h3 {
-  margin: 0;
-}
-
 /* Nice heading on alphabetical list on netbiblioteket
 =============================================================================*/
-/* line 102, ../sass/bibsdbextras/_bibsdb.extras.scss */
-.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-10 .pane-title {
+/* line 97, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-page-netbiblioteket .pane-bibsdb-tags-list-panel-pane-11 .pane-title {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #d2d5d7;
@@ -1684,7 +1677,7 @@ hr {
 /* Two column layout on netbiblioteket
 =============================================================================*/
 @media only screen and (min-width: 769px) {
-  /* line 112, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  /* line 109, ../sass/bibsdbextras/_bibsdb.extras.scss */
   .bibsdb-page-netbiblioteket .primary-content {
     *position: relative;
     *zoom: 1;
@@ -1698,7 +1691,7 @@ hr {
   .bibsdb-page-netbiblioteket .primary-content:after {
     clear: both;
   }
-  /* line 114, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  /* line 111, ../sass/bibsdbextras/_bibsdb.extras.scss */
   .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-5 {
     float: left;
     width: 66.66667%;
@@ -1716,8 +1709,8 @@ hr {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 118, ../sass/bibsdbextras/_bibsdb.extras.scss */
-  .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-10 {
+  /* line 115, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-11 {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
@@ -1735,6 +1728,26 @@ hr {
     _overflow-y: visible;
   }
 }
+/* Bibsdb foldable list
+=============================================================================*/
+/* line 124, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-foldable-field {
+  display: none;
+}
+
+/* line 128, ../sass/bibsdbextras/_bibsdb.extras.scss */
+h3.bibsdb-foldable-list-title {
+  margin: 0;
+}
+
+/* line 132, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.info-link {
+  top: 10px;
+  padding-right: 5px;
+  color: #619630;
+  font-size: 160%;
+}
+
 /**
  * Content in grid
  *
@@ -2287,13 +2300,6 @@ hr {
   .bibsdb-titles-in-squares .content-blocks--wrapper .content-blocks--inner img {
     display: none;
   }
-}
-/* line 343, ../sass/bibsdbextras/_bibsdb.taglists.scss */
-.bibsdb-titles-in-squares .grid-arrow-link-small {
-  float: right;
-  right: 10px;
-  top: 50%;
-  font-size: 10px;
 }
 
 /**
