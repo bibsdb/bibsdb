@@ -57,7 +57,7 @@
   function attach_message_to_contact_page() {
  
     // only apply to contact page
-    if (window.location.href.indexOf("contact") == -1) {
+    if (window.location.href.indexOf("/contact") == -1) {
       return;
     }
 
