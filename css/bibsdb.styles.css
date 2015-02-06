@@ -1753,6 +1753,16 @@ h3.bibsdb-foldable-list-title {
   font-size: 160%;
 }
 
+/* Style message on contact page
+=============================================================================*/
+/* line 142, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.bibsdb-contact-message {
+  color: #a32e10;
+  font-size: 110%;
+  font-family: "SourceSansProSemibold";
+  margin-bottom: 10px;
+}
+
 /**
  * Content in grid
  *

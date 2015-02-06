@@ -136,3 +136,12 @@ h3.bibsdb-foldable-list-title {
   color: $green-dark;
   font-size: $font-size-larger;
 }
+
+/* Style message on contact page
+=============================================================================*/
+.bibsdb-contact-message {
+  color: $red;
+  font-size: $font-size-medium;
+  font-family: $font-bold;
+  margin-bottom: $medium-spacing;
+}

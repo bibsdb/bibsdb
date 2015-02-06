@@ -50,6 +50,21 @@
 	      $(this).siblings(".bibsdb-foldable-field").slideToggle("fast");
     });
 	}
+	
+	/** 
+	* Attach message to contact-page
+  */    
+  function attach_message_to_contact_page() {
+ 
+    // only apply to contact page
+    if (window.location.href.indexOf("contact") == -1) {
+      return;
+    }
+
+    var message = $('<div>').addClass("bibsdb-contact-message").text("Spørgsmål og ønsker til bestillinger skal ske ved personlig eller telefonisk henvendelse.");
+   
+    $(".primary-content .pane-content").prepend(message);
+  }
 
 
   
@@ -60,9 +75,7 @@
 		translate_staff_list_header_on_library_pages();
 		hide_page_taxonomy_tags();
 		bibsdb_foldable_list();
-
-	
-
+		attach_message_to_contact_page();
 	});
 
 
