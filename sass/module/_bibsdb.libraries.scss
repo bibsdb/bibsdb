@@ -14,6 +14,12 @@
   .opening-hours-toggle {
 		display: none;
 	}
+	
+	/* Replaces opening-hours for collection points on library list*/
+	.bibsdb-collection-point-opening-hours-list {
+	  @include zen-grid-item(4, 1, right);
+    @include zen-clear(right);
+  }
 }
 
 
@@ -75,6 +81,11 @@
     @include small-medium() {
       display: none;
     }
+  }
+  
+   /* Replaces opening-hours on collection point library pages */
+	.bibsdb-collection-point-opening-hours-page {
+    @extend .ding-library-events;
   }
 }
 

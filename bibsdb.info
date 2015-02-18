@@ -16,6 +16,7 @@
 	scripts[] = scripts/bibsdb_news.js
 	scripts[] = scripts/bibsdb_campaign.js
 	scripts[] = scripts/bibsdb_topbar.js
+	scripts[] = scripts/bibsdb_library.js
 	scripts[] = scripts/bibsdb_other.js
 
 
