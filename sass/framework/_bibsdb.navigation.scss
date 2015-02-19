@@ -68,11 +68,11 @@
 }
 
 .main-menu-wrapper {
-  @include zen-grid-item(9, 1);
+  @include zen-grid-item(8, 1);
 }
 
 .secondary-menu-wrapper {
-  @include zen-grid-item(3, 1, right);
+  @include zen-grid-item(4, 1, right);
 }
 
 .main-menu-wrapper,
@@ -101,6 +101,11 @@
       @include font-bold();
 		}
 	}
+}
+
+.secondary-menu i {
+  font-size: $font-size-large;
+
 }
 
 

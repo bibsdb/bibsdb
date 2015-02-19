@@ -70,12 +70,22 @@
 		}
 	}
 	
+	function bibsdb_add_icon_to_facebook_link() {
+
+	  var link = $(".secondary-menu a:contains('Facebook')");
+	  var span = $('<span>').text(link.text());
+	  link.empty();
+
+	  link.append($('<i>').addClass("icon-facebook-sign").after(span));
+	}
+	
 
 
 
   // When ready start the magic.
   $(document).ready(function () {
 		control_topbar_search_box_visibility();
+		bibsdb_add_icon_to_facebook_link();
 	
 
 	});
