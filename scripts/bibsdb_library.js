@@ -70,6 +70,8 @@
     
    $('.opening-hours-toggle').hide();
    $('.ding-library-events').hide();
+   $('.js-opening-hours-toggle-element').hide();
+   
 
 	 var msg1 = $('<p>').text("Åbent i skolebibliotekets åbningstid.");
 	 var msg2 = $('<p>').text("På et afhentningssted kan man hente reserverede materialer og aflevere materialer.");

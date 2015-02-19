@@ -19,6 +19,13 @@
 	.bibsdb-collection-point-opening-hours-list {
 	  @include zen-grid-item(4, 1, right);
     @include zen-clear(right);
+    
+    @include small-medium() {
+      @include zen-grid-item(12, 1);
+      @include zen-clear(both);
+
+      margin-top: 20px;
+    }
   }
 }
 
