@@ -40,9 +40,11 @@
     elements[0] = $('.pane-library-list');
     
     if (elements[0].length == 0) {
-      elements[0] = $('.pane-taxonomy-menu');
+      elements[0] = $('.primary-content .pane-taxonomy-menu');
     }
+    
     elements[0] = $('<div>').prepend(elements[0]);
+    
 
     // add campaigns
     var campaign1 = $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/nyheder/kort-nyt/se-vores-foraarsprogrammer-paa-nettet-allerede-i-dag"><img src="https://biblioteket.sonderborg.dk/sites/default/files/foldere-2015-3-2.png" /></a>');
