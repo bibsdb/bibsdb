@@ -9,6 +9,8 @@ function swap(a, b) {
 };
 
 
+
+
 	/**
 	 * Translate default pickup branch selection on first reservation
 	 */
@@ -32,6 +34,29 @@ function swap(a, b) {
 	function swap_holdings_and_material_details() {
 		swap('.group-holdings-available','.group-material-details');	
 	}	
+	
+	/**
+	 * Replace link-text i branch-facet
+	 */
+	function replace_link_text_in_branch_facet() {
+
+		
+		$("#facet-branch a").html(function(i,t){
+		  t = t.replace('aug ','augustenborg ');
+      t = t.replace('søn ','sønderborg ');
+      t = t.replace('bro ','broager ');
+      t = t.replace('dyb ','dybbøl ');
+      t = t.replace('nor ','nordborg ');
+      t = t.replace('sot ','vester sottrup ');
+      t = t.replace('grå ','gråsten ');
+      t = t.replace('hør ','hørup ');
+      t = t.replace('ulk ','ulkebøl ');
+      
+      
+      
+      return t;
+    });
+	}	
 	 
 	 
 
@@ -40,6 +65,7 @@ function swap(a, b) {
 
   // When ready start the magic.
   $(document).ready(function () {
+    replace_link_text_in_branch_facet();
 		translate_pick_default_branch_text();
 		expand_holdings_on_page_load();
 		swap_holdings_and_material_details();
