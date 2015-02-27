@@ -2488,3 +2488,54 @@ h3.bibsdb-foldable-list-title {
     color: white;
   }
 }
+
+/**
+ * Isotope specific styling
+ *
+ * @author agms
+ */
+/* line 8, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.front .news-list-item {
+  width: 75%;
+}
+
+/* line 9, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.item.w2 {
+  width: 50%;
+}
+
+/* line 18, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-image-wrapper {
+  float: none;
+  margin-right: 0;
+  max-width: none;
+}
+/* line 23, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-image-wrapper a {
+  display: inline;
+}
+/* line 30, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-heading,
+.news-list .news-sub-heading,
+.news-list .news-list-content {
+  margin-left: 0;
+}
+/* line 34, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-sub-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 39, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-sub-heading .news-date,
+.news-list .news-sub-heading .news-author {
+  margin-right: 5px;
+}
+/* line 44, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-list-content {
+  max-height: none;
+  overflow: visible;
+}
+/* line 49, ../sass/bibsdbextras/_bibsdb.isotope.scss */
+.news-list .news-link {
+  display: none;
+}

@@ -1,0 +1,52 @@
+/**
+ * Isotope specific styling
+ *
+ * @author agms
+ */
+ 
+
+.front .news-list-item { width: 75%; }
+.item.w2 { width: 50%; }
+
+
+
+
+.news-list {
+  .news-list-item {
+  }
+  
+  .news-image-wrapper {
+    float: none;
+    margin-right: 0;
+    max-width: none;
+
+    a {
+      display: inline;
+    }
+  }
+
+  .news-heading,
+  .news-sub-heading,
+  .news-list-content {
+    margin-left: 0;
+  }
+
+  .news-sub-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .news-date,
+    .news-author {
+      margin-right: 5px;
+    }
+  }
+  
+  .news-list-content {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .news-link {
+    display:none;
+  }
+}
