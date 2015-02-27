@@ -1201,6 +1201,11 @@ h2.pane-title, .rs-carousel-title {
 *
 * @author agms
 */
+/* line 14, ../sass/module/_bibsdb.news.scss */
+.news-list .news-list-content {
+  max-height: 65px;
+}
+
 /**
  * Event styling
  *

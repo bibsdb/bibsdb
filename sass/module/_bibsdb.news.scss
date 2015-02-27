@@ -10,4 +10,8 @@
   .news-label {
     @extend .label;
   }
+  
+  .news-list-content {
+    max-height: 65px;
+  }
 }
