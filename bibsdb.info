@@ -18,8 +18,9 @@
 	scripts[] = scripts/bibsdb_topbar.js
 	scripts[] = scripts/bibsdb_library.js
 	scripts[] = scripts/bibsdb_other.js
-	scripts[] = scripts/isotope.pkgd.min.js
-	scripts[] = scripts/bibsdb_isotope.js
+  scripts[] = scripts/imagesloaded.pkgd.min.js
+  scripts[] = scripts/masonry.pkgd.min.js
+	scripts[] = scripts/bibsdb_masonry.js
 
 
 ;----------// Regions

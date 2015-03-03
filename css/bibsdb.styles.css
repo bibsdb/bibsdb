@@ -2489,53 +2489,90 @@ h3.bibsdb-foldable-list-title {
   }
 }
 
-/**
- * Isotope specific styling
- *
- * @author agms
- */
-/* line 8, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.front .news-list-item {
-  width: 75%;
+/* line 3, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.frontpage-layout .layout-wrapper {
+  padding: 0;
+}
+/* line 6, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.frontpage-layout .layout-wrapper .secondary-content {
+  padding: 0;
 }
 
-/* line 9, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.item.w2 {
-  width: 50%;
+/* line 10, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+ul.masonry-news-list {
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background: #d2d5d7;
 }
 
-/* line 18, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-image-wrapper {
-  float: none;
-  margin-right: 0;
-  max-width: none;
+/* line 18, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.grid-sizer {
+  width: 30%;
 }
-/* line 23, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-image-wrapper a {
-  display: inline;
+
+/* line 21, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick {
+  width: 250px;
+  height: auto;
+  float: left;
+  background: white;
+  border: 1px solid #d9d9d9;
+  list-style: none;
+  margin: 0 0 12px 0;
+  position: relative;
+  box-shadow: 0px 6px 6px -3px #979da2;
 }
-/* line 30, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-heading,
-.news-list .news-sub-heading,
-.news-list .news-list-content {
-  margin-left: 0;
+/* line 32, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick:hover {
+  box-shadow: 0 3px 10px 0 #6d6e71;
 }
-/* line 34, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-sub-heading {
-  margin-top: 10px;
+/* line 36, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick img {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
-/* line 39, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-sub-heading .news-date,
-.news-list .news-sub-heading .news-author {
-  margin-right: 5px;
+/* line 43, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick h2, .brick h3 {
+  margin: 15px 5px 10px 0px;
+  font-size: 130%;
 }
-/* line 44, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-list-content {
-  max-height: none;
-  overflow: visible;
+/* line 48, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick .details {
+  padding: 15px 4px 15px 10px;
+  position: relative;
+  line-height: 1.3em;
 }
-/* line 49, ../sass/bibsdbextras/_bibsdb.isotope.scss */
-.news-list .news-link {
-  display: none;
+/* line 54, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick .tag {
+  background: white;
+  color: #0090c4;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  font-size: 90%;
+}
+
+/* line 67, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick.brick-two-thirds {
+  color: white;
+  background-image: none;
+  width: 512px;
+  height: 250px;
+  overflow: hidden;
+}
+/* line 74, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+.brick.brick-two-thirds .details {
+  width: 30%;
+  background-color: #cc1a16;
+  border-left: none;
+  color: white;
+  padding: 26px 10px 15px 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
