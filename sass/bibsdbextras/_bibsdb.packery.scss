@@ -1,0 +1,179 @@
+@import "compass/css3/box-shadow";
+
+$gutter-width: 3%;
+$column-width: 30.33332%;
+
+.frontpage-layout .layout-wrapper{
+  padding: 0;
+   
+  .secondary-content{
+    padding:0;
+  }
+}
+
+.masonry-news-list {
+  clear:both;
+  margin:0 auto;
+  padding:0;
+  list-style:none;
+  background:$gray-light;
+
+  .gutter-width {
+    width: $gutter-width; 
+  }
+
+  .column-width {
+    width: $column-width;
+  }
+}
+
+
+
+.brick {
+  width: $column-width;
+  height:auto;
+  float:left;
+  background:white;
+  list-style:none;
+  position:relative;
+  box-shadow:0px 6px 6px -3px $gray-dark;
+  
+  &:hover {
+    box-shadow:0 3px 10px 0 $gray-darkest;
+  }
+
+  
+  img {
+    display:block;
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+  }
+  
+  h2, h3 {
+    margin:15px 5px 10px 0px;
+    font-size: $font-size-larger;
+  }
+  
+  .details {
+    padding:15px 8px 15px 14px;
+    position:relative;
+    line-height:1.3em;
+  }
+  .description {
+    font-size: $font-size-reset;
+  }
+  .tag {
+    color:#0090c4;
+    font-weight:bold;
+    text-transform:uppercase;
+    position:absolute;
+    top:10px;
+    font-size: $font-size-small;
+    
+  }
+  
+}
+
+
+
+
+
+%brick-two-thirds {
+  color:white;
+  background-image:none;
+  width: 2 * $column-width + $gutter-width;
+  height:250px;
+  overflow:hidden;
+  
+  h2, h3 {
+    a {
+      &:link, &:visited, &:hover, &:focus, &:active {
+        color: white;
+      }
+    }
+  }
+  
+  .details{
+    width:30%;
+    border-left:none;
+    color:white;
+    padding:26px 10px 15px 15px;
+    position:absolute;
+    bottom:0;
+    right:0;
+  }
+  
+  .tag {
+    color: white;
+  }
+  
+}
+
+.brick.brick-two-thirds-blue {
+  @extend %brick-two-thirds;
+    .details {
+        background-color: blue;
+  } 
+}
+
+.brick.brick-two-thirds-green {
+  @extend %brick-two-thirds;
+    .details {
+        background-color: green;
+  } 
+}
+
+.brick.brick-two-thirds-red {
+  @extend %brick-two-thirds;
+    .details {
+        background-color: red;
+  } 
+}
+
+.brick.brick-one-half {
+  background:#5f564b;
+  color:white;
+  width: 48.5%;
+  height:220px;
+  
+  img {
+    width:50%;
+    height:220px;
+    border-right:3px solid white;
+    margin-right:10px;
+    position:absolute;
+    left:0px;
+  }
+  
+  .details {
+    position:absolute;
+    top:0;
+    float:right;
+    background:inherit;
+    border-left:none;
+    overflow:hidden;
+    left:50%;
+    height:190px;
+    
+    .tag {
+      color:#4ac5f8;
+      font-weight:400;
+      letter-spacing:.1em;
+    }
+    h2, h3 {
+      font-size:21px;
+      font-weight:400;
+      letter-spacing:.05em;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+
+.masonry-brick {
+}
+
+

@@ -2489,66 +2489,70 @@ h3.bibsdb-foldable-list-title {
   }
 }
 
-/* line 3, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 6, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .frontpage-layout .layout-wrapper {
   padding: 0;
 }
-/* line 6, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 9, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .frontpage-layout .layout-wrapper .secondary-content {
   padding: 0;
 }
 
-/* line 10, ../sass/bibsdbextras/_bibsdb.masonry.scss */
-ul.masonry-news-list {
+/* line 14, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.masonry-news-list {
   clear: both;
   margin: 0 auto;
   padding: 0;
   list-style: none;
   background: #d2d5d7;
 }
-
-/* line 18, ../sass/bibsdbextras/_bibsdb.masonry.scss */
-.grid-sizer {
-  width: 30%;
+/* line 21, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.masonry-news-list .gutter-width {
+  width: 3%;
+}
+/* line 25, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.masonry-news-list .column-width {
+  width: 30.33332%;
 }
 
-/* line 21, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 32, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick {
-  width: 250px;
+  width: 30.33332%;
   height: auto;
   float: left;
   background: white;
-  border: 1px solid #d9d9d9;
   list-style: none;
-  margin: 0 0 12px 0;
   position: relative;
   box-shadow: 0px 6px 6px -3px #979da2;
 }
-/* line 32, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 41, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick:hover {
   box-shadow: 0 3px 10px 0 #6d6e71;
 }
-/* line 36, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 46, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick img {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
-/* line 43, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 53, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick h2, .brick h3 {
   margin: 15px 5px 10px 0px;
-  font-size: 130%;
+  font-size: 160%;
 }
-/* line 48, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 58, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick .details {
-  padding: 15px 4px 15px 10px;
+  padding: 15px 8px 15px 14px;
   position: relative;
   line-height: 1.3em;
 }
-/* line 54, ../sass/bibsdbextras/_bibsdb.masonry.scss */
+/* line 63, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick .description {
+  font-size: 100%;
+}
+/* line 66, ../sass/bibsdbextras/_bibsdb.packery.scss */
 .brick .tag {
-  background: white;
   color: #0090c4;
   font-weight: bold;
   text-transform: uppercase;
@@ -2557,22 +2561,88 @@ ul.masonry-news-list {
   font-size: 90%;
 }
 
-/* line 67, ../sass/bibsdbextras/_bibsdb.masonry.scss */
-.brick.brick-two-thirds {
+/* line 82, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-blue, .brick.brick-two-thirds-green, .brick.brick-two-thirds-red {
   color: white;
   background-image: none;
-  width: 512px;
+  width: 63.66664%;
   height: 250px;
   overflow: hidden;
 }
-/* line 74, ../sass/bibsdbextras/_bibsdb.masonry.scss */
-.brick.brick-two-thirds .details {
+/* line 91, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-blue h2 a:link, .brick.brick-two-thirds-green h2 a:link, .brick.brick-two-thirds-red h2 a:link, .brick.brick-two-thirds-blue h2 a:visited, .brick.brick-two-thirds-green h2 a:visited, .brick.brick-two-thirds-red h2 a:visited, .brick.brick-two-thirds-blue h2 a:hover, .brick.brick-two-thirds-green h2 a:hover, .brick.brick-two-thirds-red h2 a:hover, .brick.brick-two-thirds-blue h2 a:focus, .brick.brick-two-thirds-green h2 a:focus, .brick.brick-two-thirds-red h2 a:focus, .brick.brick-two-thirds-blue h2 a:active, .brick.brick-two-thirds-green h2 a:active, .brick.brick-two-thirds-red h2 a:active, .brick.brick-two-thirds-blue h3 a:link, .brick.brick-two-thirds-green h3 a:link, .brick.brick-two-thirds-red h3 a:link, .brick.brick-two-thirds-blue h3 a:visited, .brick.brick-two-thirds-green h3 a:visited, .brick.brick-two-thirds-red h3 a:visited, .brick.brick-two-thirds-blue h3 a:hover, .brick.brick-two-thirds-green h3 a:hover, .brick.brick-two-thirds-red h3 a:hover, .brick.brick-two-thirds-blue h3 a:focus, .brick.brick-two-thirds-green h3 a:focus, .brick.brick-two-thirds-red h3 a:focus, .brick.brick-two-thirds-blue h3 a:active, .brick.brick-two-thirds-green h3 a:active, .brick.brick-two-thirds-red h3 a:active {
+  color: white;
+}
+/* line 97, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-blue .details, .brick.brick-two-thirds-green .details, .brick.brick-two-thirds-red .details {
   width: 30%;
-  background-color: #cc1a16;
   border-left: none;
   color: white;
   padding: 26px 10px 15px 15px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+/* line 107, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-blue .tag, .brick.brick-two-thirds-green .tag, .brick.brick-two-thirds-red .tag {
+  color: white;
+}
+
+/* line 115, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-blue .details {
+  background-color: blue;
+}
+
+/* line 122, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-green .details {
+  background-color: green;
+}
+
+/* line 129, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-two-thirds-red .details {
+  background-color: red;
+}
+
+/* line 134, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half {
+  background: #5f564b;
+  color: white;
+  width: 48.5%;
+  height: 220px;
+}
+/* line 140, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half img {
+  width: 50%;
+  height: 220px;
+  border-right: 3px solid white;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+}
+/* line 149, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half .details {
+  position: absolute;
+  top: 0;
+  float: right;
+  background: inherit;
+  border-left: none;
+  overflow: hidden;
+  left: 50%;
+  height: 190px;
+}
+/* line 159, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half .details .tag {
+  color: #4ac5f8;
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+/* line 164, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half .details h2, .brick.brick-one-half .details h3 {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: .05em;
+}
+/* line 168, ../sass/bibsdbextras/_bibsdb.packery.scss */
+.brick.brick-one-half .details h2 a, .brick.brick-one-half .details h3 a {
+  color: white;
 }

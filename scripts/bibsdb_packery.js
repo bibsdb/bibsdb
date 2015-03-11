@@ -5,15 +5,16 @@
 
   $(document).ready(function () {
     // Was function init().
-    var $wrapper = $('.masonry-news-list').masonry();
+    var $wrapper = $('.masonry-news-list').packery();
     // Trigger masonry after all the images have been loaded
     $wrapper.imagesLoaded(function () {
-      $wrapper.masonry({
+      $wrapper.packery({
         // options
-        itemSelector : '.brick',
+        columnWidth: '.column-width',
+        itemSelector: '.brick',
         isFitWidth: false,
-        columnWidth: 250,
-        gutter: 12
+        gutter: '.gutter-width',
+        transitionDuration: 0
       });
     });
   });

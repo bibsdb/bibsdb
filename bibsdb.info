@@ -19,8 +19,9 @@
 	scripts[] = scripts/bibsdb_library.js
 	scripts[] = scripts/bibsdb_other.js
   scripts[] = scripts/imagesloaded.pkgd.min.js
-  scripts[] = scripts/masonry.pkgd.min.js
-	scripts[] = scripts/bibsdb_masonry.js
+  scripts[] = scripts/packery.pkgd.min.js
+ 	scripts[] = scripts/bibsdb_packery.js
+
 
 
 ;----------// Regions
