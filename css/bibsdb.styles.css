@@ -1648,72 +1648,6 @@ h2.pane-title, .rs-carousel-title {
 }
 
 /**
- * Carousel
- *
- * @author agms
- */
-/* New materials display variables
-   ========================================================================== */
-/* line 18, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li {
-  position: relative;
-  display: inline-block;
-  margin-right: 2em;
-  margin-bottom: 5em;
-  width: 155px;
-}
-/* line 25, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li img {
-  padding: 0;
-}
-/* line 31, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li:hover .nm-item-title {
-  text-decoration: underline;
-}
-/* line 38, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li a:hover {
-  text-decoration: underline;
-}
-/* line 43, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li .title-wrapper {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 155px;
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  background-color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 100%;
-  line-height: 18px;
-  z-index: 100;
-}
-/* line 55, ../sass/module/_bibsdb.new_materials.scss */
-.nm-grid li .title-wrapper a.nm-item-title {
-  width: 155px;
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
-}
-@media only screen and (max-width: 480px) {
-  /* line 69, ../sass/module/_bibsdb.new_materials.scss */
-  .nm-grid li {
-    width: 77.5px;
-  }
-  /* line 72, ../sass/module/_bibsdb.new_materials.scss */
-  .nm-grid li a {
-    max-height: 105px;
-    width: 77.5px;
-  }
-  /* line 77, ../sass/module/_bibsdb.new_materials.scss */
-  .nm-grid li .nm-item-title {
-    display: none;
-  }
-}
-
-/**
  * Additional styles for the bibsdb theme only
  * - does not contain overridden DDBasic styles
  * 
@@ -1883,6 +1817,13 @@ h3.bibsdb-foldable-list-title {
   font-size: 110%;
   font-family: "SourceSansProSemibold";
   margin-bottom: 10px;
+}
+
+/* Make ask_vopros show above cover images
+==============================================================================*/
+/* line 151, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.ask-vopros-tab {
+  z-index: 100;
 }
 
 /**
@@ -2558,4 +2499,43 @@ h3.bibsdb-foldable-list-title {
   .rs-carousel-title {
     color: white;
   }
+}
+
+/**
+ * Ting Genre Page
+ *
+ * @author agms
+ */
+/* line 7, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .layout-wrapper {
+  background-color: #d2d5d7;
+  padding-top: 0;
+}
+
+/* line 11, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .pane-page-title h1 {
+  font-size: 250%;
+}
+
+/* line 15, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .pane-new-materials-covers, .node-type-genre-page .pane-inspiration-page-covers {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+/* line 20, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .new-materials-title {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+/* line 25, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .search-results li {
+  margin-bottom: 1.5em;
+  margin-right: 10px;
+}
+
+/* line 30, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
+.node-type-genre-page .search-results ul {
+  margin-left: 20px;
 }

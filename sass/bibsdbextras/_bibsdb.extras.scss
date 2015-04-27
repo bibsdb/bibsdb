@@ -145,3 +145,9 @@ h3.bibsdb-foldable-list-title {
   font-family: $font-bold;
   margin-bottom: $medium-spacing;
 }
+
+/* Make ask_vopros show above cover images
+==============================================================================*/
+.ask-vopros-tab {
+  z-index: 100;
+}
