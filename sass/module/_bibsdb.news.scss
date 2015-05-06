@@ -6,6 +6,20 @@
  * @author agms
  */
 
+ .news .image-container {
+ 		@include zen-grid-item(8, 1);
+ 		border-right: $small-spacing solid $gray-light;
+ }
+
+ .news .signature {
+ 		@include zen-grid-item(4, 1, right);
+ 		border: 0;
+ }
+
+ .news .super-heading {
+ 		@include zen-clear();
+ }
+
 .news-list { 
   .news-label {
     @extend .label;

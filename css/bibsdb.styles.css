@@ -1201,7 +1201,52 @@ h2.pane-title, .rs-carousel-title {
 *
 * @author agms
 */
+/* line 9, ../sass/module/_bibsdb.news.scss */
+.news .image-container {
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  border-right: 5px solid #d2d5d7;
+}
+
 /* line 14, ../sass/module/_bibsdb.news.scss */
+.news .signature {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  border: 0;
+}
+
+/* line 19, ../sass/module/_bibsdb.news.scss */
+.news .super-heading {
+  clear: left;
+}
+
+/* line 28, ../sass/module/_bibsdb.news.scss */
 .news-list .news-list-content {
   max-height: 65px;
 }
@@ -1817,13 +1862,6 @@ h3.bibsdb-foldable-list-title {
   font-size: 110%;
   font-family: "SourceSansProSemibold";
   margin-bottom: 10px;
-}
-
-/* Make ask_vopros show above cover images
-==============================================================================*/
-/* line 151, ../sass/bibsdbextras/_bibsdb.extras.scss */
-.ask-vopros-tab {
-  z-index: 100;
 }
 
 /**
@@ -2499,43 +2537,4 @@ h3.bibsdb-foldable-list-title {
   .rs-carousel-title {
     color: white;
   }
-}
-
-/**
- * Ting Genre Page
- *
- * @author agms
- */
-/* line 7, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .layout-wrapper {
-  background-color: #d2d5d7;
-  padding-top: 0;
-}
-
-/* line 11, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .pane-page-title h1 {
-  font-size: 250%;
-}
-
-/* line 15, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .pane-new-materials-covers, .node-type-genre-page .pane-inspiration-page-covers {
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-/* line 20, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .new-materials-title {
-  padding-left: 16px;
-  padding-top: 16px;
-}
-
-/* line 25, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .search-results li {
-  margin-bottom: 1.5em;
-  margin-right: 10px;
-}
-
-/* line 30, ../sass/bibsdbextras/_bibsdb.genre_page.scss */
-.node-type-genre-page .search-results ul {
-  margin-left: 20px;
 }
