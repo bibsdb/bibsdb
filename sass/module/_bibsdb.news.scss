@@ -5,16 +5,28 @@
  *
  * @author agms
  */
+@include large-x-large() {
+	 .news .image-container {
+	 		@include zen-grid-item(8, 1);
+	 		border-right: $small-spacing solid $gray-light;
+	 		@include box-sizing(border-box);
+	 		min-height: 200px;
+	 		padding:0;
+	 }
 
- .news .image-container {
- 		@include zen-grid-item(8, 1);
- 		border-right: $small-spacing solid $gray-light;
+	 .news .signature-top {
+	 		@include zen-grid-item(4, 1, right);
+	 		border: 0;
+	 		padding-left: $large-spacing;
+	 }
  }
 
- .news .signature {
- 		@include zen-grid-item(4, 1, right);
- 		border: 0;
+ @include small-medium() {
+  .news .signature-top {
+  	display: none;
+  }
  }
+
 
  .news .super-heading {
  		@include zen-clear();

@@ -1201,52 +1201,65 @@ h2.pane-title, .rs-carousel-title {
 *
 * @author agms
 */
-/* line 9, ../sass/module/_bibsdb.news.scss */
-.news .image-container {
-  float: left;
-  width: 66.66667%;
-  margin-left: 0%;
-  margin-right: -66.66667%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  border-right: 5px solid #d2d5d7;
-}
+@media only screen and (min-width: 769px) {
+  /* line 9, ../sass/module/_bibsdb.news.scss */
+  .news .image-container {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    border-right: 5px solid #d2d5d7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 0;
+  }
 
-/* line 14, ../sass/module/_bibsdb.news.scss */
-.news .signature {
-  float: right;
-  width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  border: 0;
+  /* line 17, ../sass/module/_bibsdb.news.scss */
+  .news .signature-top {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    border: 0;
+    padding-left: 20px;
+  }
 }
-
-/* line 19, ../sass/module/_bibsdb.news.scss */
+@media only screen and (max-width: 768px) {
+  /* line 25, ../sass/module/_bibsdb.news.scss */
+  .news .signature-top {
+    display: none;
+  }
+}
+/* line 31, ../sass/module/_bibsdb.news.scss */
 .news .super-heading {
   clear: left;
 }
 
-/* line 28, ../sass/module/_bibsdb.news.scss */
+/* line 40, ../sass/module/_bibsdb.news.scss */
 .news-list .news-list-content {
   max-height: 65px;
 }

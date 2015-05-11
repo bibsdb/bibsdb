@@ -93,7 +93,7 @@
     <div class="image-container">
       <?php print render($content['field_ding_news_title_image']); ?>
     </div>
-    <section class="signature">
+    <section class="signature-top">
       <?php if ($display_submitted): ?>
       <div class="signature-image"><?php print $user_picture; ?></div>
       <div class="signature-info">
@@ -136,6 +136,16 @@
   </section>
 
   <footer class="news-footer">
+      <?php if ($display_submitted): ?>
+      <section class="signature">
+        <div class="signature-image"><?php print $user_picture; ?></div>
+        <div class="signature-info">
+          <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $name; ?></p>
+          <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $submitted ?></p>
+          <p><span class="signature-label"><?php print t("Last updated:"); ?></span><?php print $ddbasic_updated ?></p>
+        </div>
+      </section>
+    <?php endif; ?>
 
 
     <?php
