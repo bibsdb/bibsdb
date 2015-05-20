@@ -89,11 +89,12 @@
  */
 ?>
 <article class="news">
-  <header class="page-header">
-    <div class="image-container">
-      <?php print render($content['field_ding_news_title_image']); ?>
-    </div>
-    <section class="signature-top">
+  <div class="news-tags">
+    <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
+  </div>
+  <h1 class="page-title"><?php print $title; ?></h1>
+  <div class="news-lead"><?php print render($content['field_ding_news_lead']); ?></div>
+  <div class="news-info">
       <?php if ($display_submitted): ?>
       <div class="signature-image"><?php print $user_picture; ?></div>
       <div class="signature-info">
@@ -101,28 +102,19 @@
         <p><i class="fa fa-clock-o fa-2x">&nbsp;</i><span><?php print $ddbasic_updated ?></span></p>
       </div>
       <?php endif; ?>
-  </section>
+  </div>
 
-    <div class="super-heading">
-      <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
-      <?php if (isset($content['og_group_ref']['#items'])) : ?>
-        <span class="library-ref label"><?php print render($content['og_group_ref']); ?></span>
-      <?php endif; ?>
-      <?php if (isset($content['ding_news_groups_ref']['#items'])) : ?>
-        <span class="groups-ref label"><?php print render($content['ding_news_groups_ref']); ?></span>
-      <?php endif; ?>
-      <?php if (isset($content['field_ding_news_tags'])) : ?>
-        <span class="news-tags label">
-            <?php print render($content['field_ding_news_tags']); ?>
-          </span>
-      <?php endif; ?>
-    </div>
-    <h1 class="page-title"><?php print $title; ?></h1>
-    <div class="page-lead"><?php print render($content['field_ding_news_lead']); ?></div>
-  </header>
+  <div class="news-content">
+    
 
-
-  <section class="news-content">
+    <?php if (!empty($content['field_ding_news_title_image'])): ?>
+      <div class="news-image">
+      <?php print render($content['field_ding_news_title_image']); ?>
+      </div>
+    <?php endif; ?> 
+  
+    
+    
     <?php
       // Hide fields that will be displayed as panel panes instead.
       hide($content['comments']);
@@ -130,12 +122,12 @@
       // Hide fields now so that we can render them later.
       hide($content['links']);
       hide($content['field_ding_news_tags']);
-
+      hide($content['field_ding_news_category']);
       print render($content);
     ?>
-  </section>
+  </div>
 
-  <footer class="news-footer">
+  <div class="news-footer">
       <?php if ($display_submitted): ?>
       <section class="signature">
         <div class="signature-image"><?php print $user_picture; ?></div>
@@ -163,5 +155,5 @@
     <?php endif; ?>
 
     <?php print render($content['comments']); ?>
-  </footer>
+  </div>
 </article>

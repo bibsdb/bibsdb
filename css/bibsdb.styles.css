@@ -1196,70 +1196,152 @@ h2.pane-title, .rs-carousel-title {
    ========================================================================== */
 /**
 * News
-*
-* Uses shared %article @extends
-*
+* *
 * @author agms
 */
-@media only screen and (min-width: 769px) {
-  /* line 9, ../sass/module/_bibsdb.news.scss */
-  .news .image-container {
-    float: left;
-    width: 66.66667%;
-    margin-left: 0%;
-    margin-right: -66.66667%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-    border-right: 5px solid #d2d5d7;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    min-height: 200px;
-    padding: 0;
-  }
-
-  /* line 17, ../sass/module/_bibsdb.news.scss */
-  .news .signature-top {
-    float: right;
-    width: 33.33333%;
-    margin-right: 0%;
-    margin-left: -33.33333%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-    border: 0;
-    padding-left: 20px;
-  }
+/* News Default View
+   ========================================================================== */
+/* line 11, ../sass/module/_bibsdb.news.scss */
+.news {
+  /* Because the ting-materials are appended inside div.news-content, it has to span all 12 cols */
+  /* Media queries */
+}
+/* line 12, ../sass/module/_bibsdb.news.scss */
+.news .news-image {
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+/* line 20, ../sass/module/_bibsdb.news.scss */
+.news .news-tags {
+  margin-bottom: 10px;
+}
+/* line 24, ../sass/module/_bibsdb.news.scss */
+.news .news-lead {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  border-bottom: 1px solid #d2d5d7;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+/* line 32, ../sass/module/_bibsdb.news.scss */
+.news .news-info {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  margin-top: 20px;
+  padding-right: 0;
+  padding-left: 20px;
+}
+/* line 39, ../sass/module/_bibsdb.news.scss */
+.news .news-info p {
+  border-left: 5px solid #d2d5d7;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  padding-left: 36px;
+}
+/* line 47, ../sass/module/_bibsdb.news.scss */
+.news .news-info i[class^="icon-"] {
+  display: inline-block;
+  margin-left: -24px;
+  min-width: 20px;
+}
+/* line 55, ../sass/module/_bibsdb.news.scss */
+.news .news-content {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+  /* We want the body-text to only span 8 cols due to readability and the news-info in the right-col */
+}
+/* line 62, ../sass/module/_bibsdb.news.scss */
+.news .news-content .field-name-field-ding-news-body {
+  margin-right: 33%;
+}
+/* line 65, ../sass/module/_bibsdb.news.scss */
+.news .news-content .field-name-field-ding-news-materials {
+  padding: 0;
+}
+/* line 68, ../sass/module/_bibsdb.news.scss */
+.news .news-content .label_info {
+  display: none;
+}
+/* line 73, ../sass/module/_bibsdb.news.scss */
+.news .field-name-field-ding-news-materials {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 77, ../sass/module/_bibsdb.news.scss */
+.news .news-footer {
+  clear: both;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 25, ../sass/module/_bibsdb.news.scss */
-  .news .signature-top {
+  /* line 84, ../sass/module/_bibsdb.news.scss */
+  .news .news-content {
+    padding-top: -20px;
+    padding-right: 0;
+  }
+  /* line 87, ../sass/module/_bibsdb.news.scss */
+  .news .news-content .field-name-field-ding-news-body {
+    margin-right: 0;
+  }
+  /* line 92, ../sass/module/_bibsdb.news.scss */
+  .news .news-image {
+    max-width: 100%;
+  }
+  /* line 96, ../sass/module/_bibsdb.news.scss */
+  .news .news-info {
     display: none;
   }
-}
-/* line 31, ../sass/module/_bibsdb.news.scss */
-.news .super-heading {
-  clear: left;
+  /* line 100, ../sass/module/_bibsdb.news.scss */
+  .news .news-content {
+    clear: left;
+    width: 100%;
+  }
 }
 
-/* line 40, ../sass/module/_bibsdb.news.scss */
+/* line 113, ../sass/module/_bibsdb.news.scss */
 .news-list .news-list-content {
   max-height: 65px;
 }

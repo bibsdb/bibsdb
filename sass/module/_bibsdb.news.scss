@@ -1,36 +1,109 @@
  /**
  * News
- *
- * Uses shared %article @extends
- *
+ * *
  * @author agms
  */
-@include large-x-large() {
-	 .news .image-container {
-	 		@include zen-grid-item(8, 1);
-	 		border-right: $small-spacing solid $gray-light;
-	 		@include box-sizing(border-box);
-	 		min-height: 200px;
-	 		padding:0;
-	 }
 
-	 .news .signature-top {
-	 		@include zen-grid-item(4, 1, right);
-	 		border: 0;
-	 		padding-left: $large-spacing;
-	 }
- }
 
- @include small-medium() {
-  .news .signature-top {
-  	display: none;
+/* News Default View
+   ========================================================================== */
+
+.news {
+  .news-image {
+    float: left;
+    margin-top: $large-spacing;
+    margin-right: $large-spacing;
+    margin-bottom: $medium-spacing;
+    max-width: 300px;
   }
- }
+
+  .news-tags {
+    margin-bottom: $medium-spacing;
+  }
+
+  .news-lead {
+    @include font-bold();
+
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: $medium-spacing;
+    padding-bottom: $large-spacing;
+  }
+
+  .news-info {
+    @include zen-grid-item(4, 1, right);
+
+    margin-top: $large-spacing;
+    padding-right: 0;
+    padding-left: $large-spacing;
+
+    p {
+      border-left: 5px solid $gray-light;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: $medium-spacing;
+      padding-left: 36px;
+    }
+
+    i[class^="icon-"] {
+      display: inline-block;
+      margin-left: -24px;
+      min-width: $large-spacing;
+    }
+  }
+
+  /* Because the ting-materials are appended inside div.news-content, it has to span all 12 cols */
+  .news-content {
+    @include zen-grid-item(12, 1);
 
 
- .news .super-heading {
- 		@include zen-clear();
- }
+    padding-left: 0;
+
+    /* We want the body-text to only span 8 cols due to readability and the news-info in the right-col */
+    .field-name-field-ding-news-body {
+      margin-right: 33%;
+    }
+    .field-name-field-ding-news-materials {
+    	padding:0;
+    }
+    .label_info {
+    	display: none;
+    }
+  }
+
+  .field-name-field-ding-news-materials {
+  	@include zen-grid-item(12, 1);
+  }
+
+  .news-footer {
+    clear: both;
+    margin-bottom: $large-spacing;
+  }
+
+  /* Media queries */
+  @include small-medium {
+    .news-content {
+      padding-top: -20px;
+      padding-right: 0;
+      .field-name-field-ding-news-body {
+	    	margin-right: 0;
+	    }
+    }
+
+    .news-image {
+      max-width: 100%;
+    }
+
+    .news-info {
+      display: none;
+    }
+
+    .news-content {
+      @include zen-clear();
+
+      width: 100%;
+    }
+  }
+}
 
 .news-list { 
   .news-label {
