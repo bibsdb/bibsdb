@@ -117,6 +117,7 @@ a:focus {
 /* line 79, ../sass/configuration/_bibsdb.configuration.scss */
 .bottom {
   background-color: #6d6e71;
+  padding-bottom: 30px;
 }
 
 /**
