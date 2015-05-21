@@ -93,7 +93,7 @@
     <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
   </div>
   <h1 class="page-title"><?php print $title; ?></h1>
-  <div class="news-lead"><?php print render($content['field_ding_news_lead']); ?></div>
+  <div class="news-lead news-large-x-large"><?php print render($content['field_ding_news_lead']); ?></div>
   <div class="news-info">
       <?php if ($display_submitted): ?>
       <div class="signature-image"><?php print $user_picture; ?></div>
@@ -113,7 +113,7 @@
       </div>
     <?php endif; ?> 
   
-    
+    <div class="news-lead news-small-medium"><?php print render($content['field_ding_news_lead']); ?></div>
     
     <?php
       // Hide fields that will be displayed as panel panes instead.

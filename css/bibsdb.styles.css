@@ -1226,7 +1226,11 @@ h2.pane-title, .rs-carousel-title {
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
-/* line 32, ../sass/module/_bibsdb.news.scss */
+/* line 31, ../sass/module/_bibsdb.news.scss */
+.news .news-lead.news-small-medium {
+  display: none;
+}
+/* line 38, ../sass/module/_bibsdb.news.scss */
 .news .news-info {
   float: right;
   width: 33.33333%;
@@ -1247,7 +1251,7 @@ h2.pane-title, .rs-carousel-title {
   padding-right: 0;
   padding-left: 20px;
 }
-/* line 39, ../sass/module/_bibsdb.news.scss */
+/* line 45, ../sass/module/_bibsdb.news.scss */
 .news .news-info p {
   border-left: 5px solid #d2d5d7;
   margin-top: 0;
@@ -1255,13 +1259,13 @@ h2.pane-title, .rs-carousel-title {
   padding-bottom: 10px;
   padding-left: 36px;
 }
-/* line 47, ../sass/module/_bibsdb.news.scss */
+/* line 53, ../sass/module/_bibsdb.news.scss */
 .news .news-info i[class^="icon-"] {
   display: inline-block;
   margin-left: -24px;
   min-width: 20px;
 }
-/* line 55, ../sass/module/_bibsdb.news.scss */
+/* line 61, ../sass/module/_bibsdb.news.scss */
 .news .news-content {
   float: left;
   width: 100%;
@@ -1281,19 +1285,19 @@ h2.pane-title, .rs-carousel-title {
   padding-left: 0;
   /* We want the body-text to only span 8 cols due to readability and the news-info in the right-col */
 }
-/* line 62, ../sass/module/_bibsdb.news.scss */
+/* line 68, ../sass/module/_bibsdb.news.scss */
 .news .news-content .field-name-field-ding-news-body {
   margin-right: 33%;
 }
-/* line 65, ../sass/module/_bibsdb.news.scss */
+/* line 71, ../sass/module/_bibsdb.news.scss */
 .news .news-content .field-name-field-ding-news-materials {
   padding: 0;
 }
-/* line 68, ../sass/module/_bibsdb.news.scss */
+/* line 74, ../sass/module/_bibsdb.news.scss */
 .news .news-content .label_info {
   display: none;
 }
-/* line 73, ../sass/module/_bibsdb.news.scss */
+/* line 79, ../sass/module/_bibsdb.news.scss */
 .news .field-name-field-ding-news-materials {
   float: left;
   width: 100%;
@@ -1311,37 +1315,61 @@ h2.pane-title, .rs-carousel-title {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 77, ../sass/module/_bibsdb.news.scss */
+/* line 83, ../sass/module/_bibsdb.news.scss */
 .news .news-footer {
   clear: both;
+  padding-top: 10px;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 84, ../sass/module/_bibsdb.news.scss */
+  /* line 91, ../sass/module/_bibsdb.news.scss */
+  .news h1.page-title {
+    margin-bottom: 10px;
+  }
+  /* line 94, ../sass/module/_bibsdb.news.scss */
+  .news .news-image {
+    float: none;
+    max-width: 500px;
+    margin-top: 5px;
+  }
+  /* line 99, ../sass/module/_bibsdb.news.scss */
+  .news .news-lead {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  /* line 102, ../sass/module/_bibsdb.news.scss */
+  .news .news-lead.news-large-x-large {
+    display: none;
+  }
+  /* line 105, ../sass/module/_bibsdb.news.scss */
+  .news .news-lead.news-small-medium {
+    display: block;
+  }
+  /* line 109, ../sass/module/_bibsdb.news.scss */
   .news .news-content {
     padding-top: -20px;
     padding-right: 0;
   }
-  /* line 87, ../sass/module/_bibsdb.news.scss */
+  /* line 112, ../sass/module/_bibsdb.news.scss */
   .news .news-content .field-name-field-ding-news-body {
     margin-right: 0;
   }
-  /* line 92, ../sass/module/_bibsdb.news.scss */
+  /* line 117, ../sass/module/_bibsdb.news.scss */
   .news .news-image {
     max-width: 100%;
   }
-  /* line 96, ../sass/module/_bibsdb.news.scss */
+  /* line 121, ../sass/module/_bibsdb.news.scss */
   .news .news-info {
     display: none;
   }
-  /* line 100, ../sass/module/_bibsdb.news.scss */
+  /* line 125, ../sass/module/_bibsdb.news.scss */
   .news .news-content {
     clear: left;
     width: 100%;
   }
 }
 
-/* line 113, ../sass/module/_bibsdb.news.scss */
+/* line 138, ../sass/module/_bibsdb.news.scss */
 .news-list .news-list-content {
   max-height: 65px;
 }

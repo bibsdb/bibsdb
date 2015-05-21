@@ -27,7 +27,13 @@
     border-bottom: 1px solid $gray-light;
     margin-bottom: $medium-spacing;
     padding-bottom: $large-spacing;
+
+    &.news-small-medium {
+      display: none;
+    }
   }
+
+
 
   .news-info {
     @include zen-grid-item(4, 1, right);
@@ -76,11 +82,30 @@
 
   .news-footer {
     clear: both;
+    padding-top: $medium-spacing;
     margin-bottom: $large-spacing;
   }
 
   /* Media queries */
   @include small-medium {
+    h1.page-title {
+      margin-bottom: $medium-spacing;
+    }
+    .news-image {
+      float: none;
+      max-width: 500px;
+      margin-top: $small-spacing;
+    }
+    .news-lead {
+      padding-top: $large-spacing;
+      padding-bottom: $medium-spacing;
+      &.news-large-x-large {
+        display: none;
+      }
+      &.news-small-medium {
+        display: block;
+      }
+  }
     .news-content {
       padding-top: -20px;
       padding-right: 0;
