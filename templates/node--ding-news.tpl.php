@@ -88,6 +88,7 @@
  * @see template_process()
  */
 ?>
+<?php  ?>
 <article class="news">
   <div class="news-tags">
     <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
@@ -98,8 +99,8 @@
       <?php if ($display_submitted): ?>
       <div class="signature-image"><?php print $user_picture; ?></div>
       <div class="signature-info">
-        <p><i class="fa fa-user fa-2x">&nbsp;</i><span><?php print $name; ?></span></p>
-        <p><i class="fa fa-clock-o fa-2x">&nbsp;</i><span><?php print $ddbasic_updated ?></span></p>
+        <p><i class="fa fa-user fa-2x">&nbsp;</i><span><?php print $bibsdb_author_full_name ?></span></p>
+        <p><i class="fa fa-clock-o fa-2x">&nbsp;</i><span><?php print $bibsdb_publication_date ?></span></p>
       </div>
       <?php endif; ?>
   </div>
@@ -132,9 +133,8 @@
       <section class="signature">
         <div class="signature-image"><?php print $user_picture; ?></div>
         <div class="signature-info">
-          <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $name; ?></p>
-          <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $submitted ?></p>
-          <p><span class="signature-label"><?php print t("Last updated:"); ?></span><?php print $ddbasic_updated ?></p>
+          <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $bibsdb_author_full_name; ?></p>
+          <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $bibsdb_publication_date; ?></p>
         </div>
       </section>
     <?php endif; ?>

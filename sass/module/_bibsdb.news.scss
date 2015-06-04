@@ -11,7 +11,7 @@
 .news {
   .news-image {
     float: left;
-    margin-top: $large-spacing;
+    margin-top: $medium-spacing;
     margin-right: $large-spacing;
     margin-bottom: $medium-spacing;
     max-width: 300px;
@@ -81,9 +81,7 @@
   }
 
   .news-footer {
-    clear: both;
-    padding-top: $medium-spacing;
-    margin-bottom: $large-spacing;
+    display: none;
   }
 
   /* Media queries */
@@ -105,7 +103,7 @@
       &.news-small-medium {
         display: block;
       }
-  }
+    }
     .news-content {
       padding-top: -20px;
       padding-right: 0;
@@ -124,8 +122,14 @@
 
     .news-content {
       @include zen-clear();
-
       width: 100%;
+    }
+
+    .news-footer {
+      display: block;
+      clear: both;
+      padding-top: $medium-spacing;
+      margin-bottom: $large-spacing;
     }
   }
 }
