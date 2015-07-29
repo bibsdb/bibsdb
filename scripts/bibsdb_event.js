@@ -55,7 +55,7 @@
   		width:'198',
   		height:'276'
 		}).appendTo($('<a />').attr({
-  		href:'https://biblioteket.sonderborg.dk/nyheder/boern/sommerfolder-2015-er-kommet'
+  		href:'https://biblioteket.sonderborg.dk/nyheder/born/arrangementer-born-sommer-og-efterar-2015'
 		}).appendTo(campaign1_banner1));
     $('<img />').attr({
   		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_voksne.png',
