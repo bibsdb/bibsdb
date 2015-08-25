@@ -11,7 +11,6 @@ h1, h1.page-title, .pane-menu-title h2 {
   @extend %page-heading;
 	font-size: $font-size-largest;
 	@include font-extrabold();
-	text-transform:uppercase;
 	color: $font-color-primary;
 }
 
@@ -19,7 +18,6 @@ h2.pane-title {
   @extend %page-heading;
 	font-size: $font-size-larger;
 	@include font-extrabold();
-	text-transform:uppercase;
 	color: $font-color-primary;
 }
 
@@ -30,12 +28,14 @@ h2.pane-title {
 
 .page-lead {
   @include font-bold();
-	padding-bottom: $medium-spacing;
+  font-size: $font-size-medium;
+	padding-bottom: $large-spacing;
   margin-bottom: $small-spacing;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-light;
 }
 
 
 .page-image {
 	margin-bottom: $large-spacing;
 }
+

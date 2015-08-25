@@ -1,10 +1,167 @@
  /**
  * News
- *
- * Uses shared %article @extends
- *
+ * *
  * @author agms
  */
+
+
+/* News Default View
+   ========================================================================== */
+
+.news {
+
+  h1.page-title{
+    clear: both;
+    @include zen-grid-item(8, 1);
+    padding: 0;
+  }
+
+  .news-image {
+    @include zen-grid-item(8, 1);
+    margin-top: $medium-spacing;
+    margin-right: $large-spacing;
+    margin-bottom: $medium-spacing;
+  }
+
+  .news-right-col {
+    clear: both;
+    @include zen-grid-item(4, 1, right);
+
+    /* Add top-margin when there is an image */
+    margin-top: $medium-spacing;
+
+    /* Create space between news-info and bibsdb-fact-box when there is no image */
+    >div:nth-child(2) {
+      margin-top: $large-spacing;
+    }
+  }
+
+  /* Remove top-margin when there is no image */
+  .news-right-col:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .news-info {
+    padding-right: 0;
+
+    p {
+      border-left: 5px solid $gray-light;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: $medium-spacing;
+      padding-left: $large-spacing;
+    }
+
+    i[class^="icon-"] {
+      display: inline-block;
+      margin-left: -24px;
+      min-width: $large-spacing;
+    }
+  }
+
+
+
+  .bibsdb-fact-box {
+
+    >h2 {
+      @include font-extrabold();
+      background-color: $gray-light;
+      font-size: $font-size-large;
+      padding: $medium-spacing;
+    }
+
+    >div {
+      background-color: $gray-lightest;
+      padding: $medium-spacing;
+   
+    }
+  }
+
+  .news-lead {
+    @include font-bold();
+
+    font-size: $font-size-medium;
+    padding-bottom: $large-spacing;
+    margin-bottom: $medium-spacing;
+    border-bottom: 1px solid $gray-light;
+
+  }
+
+
+  /* Because the ting-materials are appended inside div.news-content, it has to span all 12 cols */
+  .news-content {
+    @include zen-grid-item(8, 1);
+
+    padding-left: 0;
+
+    .field-name-field-ding-news-materials {
+    	padding:0;
+      h2 {
+        font-size: $font-size-large;
+      }
+      .label {
+        display: none;
+      }
+    }
+  }
+
+  .news-footer {
+    display: none;
+  }
+
+  /* Media queries */
+  @include small-medium {
+    h1.page-title {
+      @include zen-clear();
+      width: 100%;
+      margin-bottom: $large-spacing;
+    }
+    .news-image {
+      float: none;
+      width: 100%;
+      margin-top: $small-spacing;
+    }
+
+    .news-right-col {
+      display: none;
+    }
+
+    .news-content {
+      @include zen-clear();
+      width: 100%;
+      padding: 0;
+      .field-name-field-ding-news-materials {
+        padding:0;
+        h2 {
+          font-size: $font-size-medium;
+        }
+      }
+    }
+
+    .news-footer {
+      display: block;
+      clear: both;
+      padding-top: $large-spacing;
+      padding-bottom: $large-spacing;
+      border-top: 1px solid $gray-light;
+      border-bottom: 1px solid $gray-light;
+      margin-bottom: $large-spacing;
+
+
+      .signature {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .bibsdb-fact-box {
+        border-bottom: 1px solid $gray-light;
+        padding-bottom: $large-spacing;
+        margin-bottom: $large-spacing;
+      }
+    }
+  }
+}
 
 .news-list { 
   .news-label {

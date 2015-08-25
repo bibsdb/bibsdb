@@ -1,11 +1,13 @@
 (function($) {
 
+
 	/**
 	 * Control visibility of search and login forms
 	 * And show loginbox and hide search box if incorrect login was attempted so user can retry
 	 */
 	function control_topbar_search_box_visibility() {
-	  var breakpoint_medium = 768;
+		// At 768 pixels there are major layout changes
+		var breakpoint_medium = 768;
 	  
 	  // If the user login is clicked make links disappear
 	  // Make sure that login is shown even if button is pressed multiple time (it shouldn't toggle)
@@ -56,6 +58,7 @@
 		} 
 		// On small screens hide search box on load on all pages except the frontpage
 		else if ($( window ).width() <= breakpoint_medium ){
+
 		  if ($('.front .js-topbar-search').length > 0 ) {
 		    $('.front .js-topbar-search').css("display", "block");
 		  }
@@ -68,6 +71,7 @@
 			$('.js-topbar-search').css("display", "block");
 			$('.topbar-menu .leaf .topbar-link-search').toggleClass( 'active', true );
 		}
+		
 	}
 	
 	function bibsdb_add_icon_to_facebook_link() {
@@ -78,17 +82,28 @@
 
 	  link.append($('<i>').addClass("icon-facebook-sign").after(span));
 	}
-	
-
 
 
   // When ready start the magic.
   $(document).ready(function () {
 		control_topbar_search_box_visibility();
 		bibsdb_add_icon_to_facebook_link();
-	
+
+		//if screen is resized og tablet is rotated a new calculation must be made
+    $( window ).resize(function() {
+		  control_topbar_search_box_visibility();
+		});
+
 
 	});
+
+
+
+
+
+	
+
+	
 
 
 
