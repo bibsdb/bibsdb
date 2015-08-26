@@ -21,10 +21,11 @@
     margin-top: $medium-spacing;
     margin-right: $large-spacing;
     margin-bottom: $medium-spacing;
+    padding-left: 0;
   }
 
   .news-right-col {
-    clear: both;
+    @include zen-clear();
     @include zen-grid-item(4, 1, right);
 
     /* Add top-margin when there is an image */
@@ -90,6 +91,7 @@
 
   /* Because the ting-materials are appended inside div.news-content, it has to span all 12 cols */
   .news-content {
+    @include zen-clear();
     @include zen-grid-item(8, 1);
 
     padding-left: 0;
@@ -127,7 +129,6 @@
     }
 
     .news-content {
-      @include zen-clear();
       width: 100%;
       padding: 0;
       .field-name-field-ding-news-materials {
@@ -140,7 +141,7 @@
 
     .news-footer {
       display: block;
-      clear: both;
+      @include zen-clear();
       padding-top: $large-spacing;
       padding-bottom: $large-spacing;
       border-top: 1px solid $gray-light;
