@@ -1,0 +1,23 @@
+/**
+ * Additional styles for the bibsdb theme only
+ * - does not contain overridden DDBasic styles
+ * 
+ *
+ * @author agms
+ */
+ 
+ 
+.pane-search-context {
+  padding-bottom: $large_spacing;
+
+  .rs-carousel-mask {
+    li {
+      h2 {
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+      }
+    }
+  }
+}
+

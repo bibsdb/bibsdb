@@ -2709,3 +2709,21 @@ h3.bibsdb-foldable-list-title {
     color: white;
   }
 }
+
+/**
+ * Additional styles for the bibsdb theme only
+ * - does not contain overridden DDBasic styles
+ * 
+ *
+ * @author agms
+ */
+/* line 10, ../sass/bibsdbextras/_bibsdb.ting_search_context.scss */
+.pane-search-context {
+  padding-bottom: 20px;
+}
+/* line 15, ../sass/bibsdbextras/_bibsdb.ting_search_context.scss */
+.pane-search-context .rs-carousel-mask li h2 {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
