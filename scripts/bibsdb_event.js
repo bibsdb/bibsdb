@@ -51,25 +51,25 @@
     var campaign1_banner1 = $('<div>');
     var campaign1_banner2 = $('<div>');
     $('<img />').attr({
-  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_boern.png',
+  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_boern_2016.png',
   		width:'198',
   		height:'276'
 		}).appendTo($('<a />').attr({
-  		href:'https://biblioteket.sonderborg.dk/nyheder/born/arrangementer-born-sommer-og-efterar-2015'
+  		href:'https://biblioteket.sonderborg.dk/nyheder/kort-nyt/arrangementer-born-forar-2016'
 		}).appendTo(campaign1_banner1));
     $('<img />').attr({
-  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_voksne.png',
+  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_voksne_0.png',
   		width:'198',
   		height:'276'
 		}).appendTo($('<a />').attr({
-  		href:'https://biblioteket.sonderborg.dk/nyheder/kort-nyt/biblioteket-sonderborg-laver-nyt-magasin'
+  		href:'https://biblioteket.sonderborg.dk/nyheder/kort-nyt/biblioteket-soenderborgs-magasin-velkommen-til-foraarssaesonen-2016'
 		}).appendTo(campaign1_banner2));
 		campaign1_banner1 = bibsdb_add_border(campaign1_banner1);
 		campaign1_banner2 = bibsdb_add_border(campaign1_banner2);
 		campaign1 = bibsdb_create_html([campaign1_banner1, campaign1_banner2]);
     
 
-    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms-om-arrangementer-4-1.png" /></a>');
+    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms_om_arrangementer-1220-4-1.jpg" /></a>');
     campaign2 = bibsdb_add_border(campaign2);
     
     elements[0] = elements[0].append(campaign2);
