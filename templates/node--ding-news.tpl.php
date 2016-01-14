@@ -111,8 +111,6 @@
 
 
   <h1 class="page-title">
-    <?php if (isset($content['field_bibsdb_tag'])) : ?>
-      <span class="bibsdb-tag"><?php print render($content['field_bibsdb_tag']['#items'][0]['value']); ?></span>: <?php endif; ?>
       <?php print $title; ?>
     </h1>
 
