@@ -1,0 +1,121 @@
+ /**
+ * eresource
+ * *
+ * @author agms.
+ */
+
+
+/* eresource Default View
+   ========================================================================== */
+
+.eresource {
+
+  h1.page-title{
+    clear: both;
+    padding: 0;
+  }
+
+  .eresource-image {
+    margin-top: $medium-spacing;
+    margin-right: $large-spacing;
+    margin-bottom: $medium-spacing;
+    padding-left: 0;
+  }
+
+  .eresource-right-col {
+    @include zen-clear();
+    @include zen-grid-item(4, 1, right);
+
+    /* Add top-margin when there is an image */
+    margin-top: $medium-spacing;
+  }
+
+  .eresource-info {
+    padding-right: 0;
+
+    i[class^="icon-"] {
+      display: inline-block;
+      margin-left: -24px;
+      min-width: $large-spacing;
+    }
+
+    div, p {
+      display: inline;
+    }
+
+    div.eresource-info-item {
+      display: block;
+      border-left: 5px solid $gray-light;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: $medium-spacing;
+      padding-left: $large-spacing;
+    }
+
+    div.field-name-field-bibsdb-eresource-links .field-label{
+      display: none;
+    }
+  }
+
+  .eresource-lead {
+    @include font-bold();
+
+    font-size: $font-size-medium;
+    padding-bottom: $large-spacing;
+    margin-bottom: $medium-spacing;
+    border-bottom: 1px solid $gray-light;
+
+  }
+
+  .eresource-content {
+    @include zen-clear();
+    @include zen-grid-item(8, 1);
+
+    padding-left: 0;
+
+    .field-name-field-ding-eresource-materials {
+      padding:0;
+      h2 {
+        font-size: $font-size-large;
+      }
+      .label {
+        display: none;
+      }
+    }
+  }
+
+  .eresource-footer {
+    display: none;
+  }
+
+  /* Media queries */
+  @include small-medium {
+    h1.page-title {
+      @include zen-clear();
+      width: 100%;
+      margin-bottom: $large-spacing;
+    }
+    .eresource-image {
+      float: none;
+      width: 100%;
+      margin-top: $small-spacing;
+    }
+
+    .eresource-right-col {
+      display: none;
+    }
+
+    .eresource-content {
+      width: 100%;
+      padding: 0;
+      .field-name-field-ding-eresource-materials {
+        padding:0;
+        h2 {
+          font-size: $font-size-medium;
+        }
+      }
+    }
+
+    
+  }
+}
