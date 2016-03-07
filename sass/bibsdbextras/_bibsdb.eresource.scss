@@ -5,8 +5,36 @@
  */
 
 
+ /* Hightlight current node in menu */
+ .bibsdb-page-eresourcer {
+  .sub-menu {
+    > li {
+      .active0 {
+        @include font-bold();
+      }
+    }
+  }
+
+  /* Media queries */
+  @include small-medium {
+
+    /* Hide alphabetikal menu on small screens */
+    .alphabetical-eresource-list {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 /* eresource Default View
-   ========================================================================== */
+========================================================================== */
 
 .eresource {
 
@@ -15,11 +43,16 @@
     padding: 0;
   }
 
+  .label-info {
+    display: none;
+  }
+
   .eresource-image {
     margin-top: $medium-spacing;
     margin-right: $large-spacing;
     margin-bottom: $medium-spacing;
     padding-left: 0;
+    border: 1px solid $gray;
   }
 
   .eresource-right-col {
@@ -88,25 +121,47 @@
     display: none;
   }
 
+
+
+
   /* Media queries */
   @include small-medium {
+
     h1.page-title {
-      @include zen-clear();
-      width: 100%;
       margin-bottom: $large-spacing;
     }
-    .eresource-image {
-      float: none;
-      width: 100%;
-      margin-top: $small-spacing;
+
+    .label-info {
+      display: block;
     }
 
-    .eresource-right-col {
+    .eresource-image {
       display: none;
     }
 
+    .eresource-right-col {
+      display:none;
+    }
+
+    .eresource-footer {
+      display: block;
+      padding-top: $large-spacing;
+      margin-top: $medium-spacing;
+      border-top: 1px solid $gray-light;
+
+      .eresource-info {
+
+        .eresource-info-item {
+          border-left: 0;
+        }
+      }
+
+      
+    }
+
     .eresource-content {
-      width: 100%;
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
       padding: 0;
       .field-name-field-ding-eresource-materials {
         padding:0;
