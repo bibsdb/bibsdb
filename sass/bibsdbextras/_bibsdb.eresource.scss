@@ -5,26 +5,6 @@
  */
 
 
- /* Hightlight current node in menu */
- .bibsdb-page-eresourcer {
-  .sub-menu {
-    > li {
-      .active0 {
-        @include font-bold();
-      }
-    }
-  }
-
-  /* Media queries */
-  @include small-medium {
-
-    /* Hide alphabetikal menu on small screens */
-    .alphabetical-eresource-list {
-    }
-  }
-}
-
-
 
 /* eresource Default View
 ========================================================================== */
@@ -38,6 +18,25 @@
 
   .eresource-content {
     @include zen-grid-item(8, 1);
+    @include zen-nested-container();
+    
+    .eresource-info-item {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+
+      .eresource-icon {
+        @include zen-grid-item(1, 1);
+      }
+
+      .eresource-text {
+        @include zen-grid-item(11, 1, right);
+      }
+    }
+    .eresource-body {
+      @include zen-clear();
+
+      
+    }
 
   }
 
@@ -60,6 +59,19 @@
   }
 }
 
+/* Format menu title on eresource */
+
+.bibsdb-page-eresourcer .js-og-sub-menu-title {
+  display: none;
+  font-size: $font-size-small;
+  padding: 0;
+  margin: 0;
+
+  @include small-medium() {
+    display: block;
+
+  }
+}
 
 
 /* Page Elements */
@@ -77,19 +89,41 @@
 
   .eresource-lead {
     @include font-bold();
-
     font-size: $font-size-medium;
-    padding-bottom: $large-spacing;
     margin-bottom: $medium-spacing;
-    border-bottom: 1px solid $gray-light;
   }
 
   .eresource-image {
-    margin-top: $medium-spacing;
-    margin-right: $large-spacing;
+
+    img {
+      border: 1px solid $gray;
+      margin-top: $medium-spacing;
+      margin-right: $large-spacing;
+      margin-bottom: $medium-spacing;
+      padding-left: 0;
+    }
+  }
+
+    /* Format the link to the resource */
+  .eresource-info-item {
+    div, p {
+      display: inline-block;
+    }
+    display: inline-block;
+
+    vertical-align: middle;
+
+    background-color: $gray-light;
+
+    @include font-bold();
+    font-size: $font-size-medium;
+    padding: $small-spacing;
     margin-bottom: $medium-spacing;
-    padding-left: 0;
-    border: 1px solid $gray;
+
+    .field-label {
+      display: none;
+    
+    }
   }
 
   .field-name-field-ding-eresource-materials {
@@ -112,8 +146,10 @@
       display: inline;
     }
 
-  /* Format the link to the resource */
+
+    /* Format the link to the resource */
   .eresource-info-item {
+
     padding-top: $medium-spacing;
 
     &:nth-of-type(2) {
@@ -125,6 +161,8 @@
       }
     }
   }
+
+
   
   
 }
