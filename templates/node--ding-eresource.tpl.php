@@ -111,16 +111,7 @@
 
     <div class="eresource-lead"><?php print render($content['field_ding_eresource_lead']); ?></div>
 
-    <?php if (isset($content['field_bibsdb_eresource_links'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-globe fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
-          <?php print render($content['field_bibsdb_eresource_links']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
+
     <div class="eresource-body">
       <?php print render($content['field_ding_eresource_body']); ?>
     </div>
@@ -148,12 +139,7 @@
 
     <?php if (isset($content['field_bibsdb_eresource_links'])): ?>
       <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-globe fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
           <?php print render($content['field_bibsdb_eresource_links']); ?>
-        </div>
       </div>
     <?php endif; ?>
     <?php if (isset($content['field_bibsdb_eresource_period'])): ?>

@@ -575,7 +575,7 @@ a.button,
 a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
-.user .form-submit {
+.user .form-submit, .eresource-right-col .eresource-info-item:nth-of-type(2) a {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -594,23 +594,23 @@ a.download-button,
 .button:focus, .download-button:focus,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
-.user .form-submit:focus, .button:hover, .download-button:hover,
+.user .form-submit:focus, .eresource-right-col .eresource-info-item:nth-of-type(2) a:focus, .button:hover, .download-button:hover,
 .search .form-submit:hover,
 .search-field-in-content .form-submit:hover,
-.user .form-submit:hover, .button:active, .download-button:active,
+.user .form-submit:hover, .eresource-right-col .eresource-info-item:nth-of-type(2) a:hover, .button:active, .download-button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
-.user .form-submit:active {
+.user .form-submit:active, .eresource-right-col .eresource-info-item:nth-of-type(2) a:active {
   text-decoration: none;
 }
 /* line 53, ../sass/framework/_bibsdb.buttons.scss */
 .disabled.button, .disabled.download-button,
 .search .disabled.form-submit,
 .search-field-in-content .disabled.form-submit,
-.user .disabled.form-submit, [disabled].button, [disabled].download-button,
+.user .disabled.form-submit, .eresource-right-col .eresource-info-item:nth-of-type(2) a.disabled, [disabled].button, [disabled].download-button,
 .search [disabled].form-submit,
 .search-field-in-content [disabled].form-submit,
-.user [disabled].form-submit {
+.user [disabled].form-submit, .eresource-right-col .eresource-info-item:nth-of-type(2) a[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -webkit-box-shadow: none;
@@ -680,6 +680,32 @@ a.download-button:active,
 
 /* Theme button */
 /* Action button */
+/* line 106, ../sass/framework/_bibsdb.buttons.scss */
+.eresource-right-col .eresource-info-item:nth-of-type(2) a {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
+  background-image: -webkit-linear-gradient(#60a500, #335900);
+  background-image: -moz-linear-gradient(#60a500, #335900);
+  background-image: -o-linear-gradient(#60a500, #335900);
+  background-image: linear-gradient(#60a500, #335900);
+  /* Make sure buttons get a background color in IE */
+  background-color: #60a500;
+  border: 0;
+  color: white;
+}
+/* line 78, ../sass/framework/_bibsdb.buttons.scss */
+.eresource-right-col .eresource-info-item:nth-of-type(2) a:link, .eresource-right-col .eresource-info-item:nth-of-type(2) a:visited {
+  color: white;
+}
+/* line 85, ../sass/framework/_bibsdb.buttons.scss */
+.eresource-right-col .eresource-info-item:nth-of-type(2) a:focus, .eresource-right-col .eresource-info-item:nth-of-type(2) a:hover, .eresource-right-col .eresource-info-item:nth-of-type(2) a:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
+  background-image: -webkit-linear-gradient(#518b00, #253f00);
+  background-image: -moz-linear-gradient(#518b00, #253f00);
+  background-image: -o-linear-gradient(#518b00, #253f00);
+  background-image: linear-gradient(#518b00, #253f00);
+  background-color: #335900;
+}
+
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
@@ -2758,69 +2784,8 @@ h3.bibsdb-foldable-list-title {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  padding-left: 0;
-  padding-right: 0;
 }
 /* line 23, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.bibsdb-page-eresourcer .eresource-content .eresource-info-item {
-  clear: left;
-  float: left;
-  width: 91.66667%;
-  margin-left: 0%;
-  margin-right: -91.66667%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 27, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.bibsdb-page-eresourcer .eresource-content .eresource-info-item .eresource-icon {
-  float: left;
-  width: 8.33333%;
-  margin-left: 0%;
-  margin-right: -8.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 31, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.bibsdb-page-eresourcer .eresource-content .eresource-info-item .eresource-text {
-  float: right;
-  width: 91.66667%;
-  margin-right: 0%;
-  margin-left: -91.66667%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 35, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.bibsdb-page-eresourcer .eresource-content .eresource-body {
-  clear: left;
-}
-/* line 43, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col {
   float: right;
   width: 33.33333%;
@@ -2840,15 +2805,15 @@ h3.bibsdb-foldable-list-title {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 50, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 28, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col .eresource-info-item {
   clear: left;
   float: left;
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2858,15 +2823,17 @@ h3.bibsdb-foldable-list-title {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* line 54, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 33, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col .eresource-info-item .eresource-icon {
   float: left;
-  width: 12.5%;
+  width: 16.66667%;
   margin-left: 0%;
-  margin-right: -12.5%;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-right: -16.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2877,14 +2844,14 @@ h3.bibsdb-foldable-list-title {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 58, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 37, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col .eresource-info-item .eresource-text {
   float: right;
-  width: 87.5%;
+  width: 83.33333%;
   margin-right: 0%;
-  margin-left: -87.5%;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-left: -83.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2897,7 +2864,7 @@ h3.bibsdb-foldable-list-title {
 }
 
 /* Format menu title on eresource */
-/* line 67, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 46, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .js-og-sub-menu-title {
   display: none;
   font-size: 90%;
@@ -2905,91 +2872,67 @@ h3.bibsdb-foldable-list-title {
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 67, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 46, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .bibsdb-page-eresourcer .js-og-sub-menu-title {
     display: block;
   }
 }
 
 /* Page Elements */
-/* line 82, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.eresource-content {
-  /* Format the link to the resource */
-}
-/* line 85, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 64, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content h1.page-title {
   clear: both;
   padding: 0;
 }
-/* line 90, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 69, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .label-info {
   display: none;
 }
-/* line 94, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 73, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .eresource-lead {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
   font-size: 110%;
   margin-bottom: 10px;
 }
-/* line 102, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 81, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .eresource-image img {
   border: 1px solid #b7bbbf;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 0;
 }
-/* line 111, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.eresource-content .eresource-info-item {
-  width: 95%;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #d2d5d7;
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
-  font-size: 110%;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-/* line 112, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.eresource-content .eresource-info-item div, .eresource-content .eresource-info-item p {
-  display: inline-block;
-}
-/* line 127, ../sass/bibsdbextras/_bibsdb.eresource.scss */
-.eresource-content .eresource-info-item .field-label {
-  display: none;
-}
-/* line 133, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 89, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .field-name-field-ding-eresource-materials {
   padding: 0;
 }
-/* line 136, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 92, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .field-name-field-ding-eresource-materials h2 {
   font-size: 130%;
 }
-/* line 140, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 96, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .field-name-field-ding-eresource-materials .label, .eresource-content .field-name-field-ding-eresource-materials .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .eresource-content .field-name-field-ding-eresource-materials a, .eresource-content .field-name-field-ding-eresource-materials .subjects .subject, .subjects .eresource-content .field-name-field-ding-eresource-materials .subject, .eresource-content .field-name-field-ding-eresource-materials .news-list .news-label, .news-list .eresource-content .field-name-field-ding-eresource-materials .news-label {
   display: none;
 }
 
-/* line 148, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 102, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col {
   /* Format the link to the resource */
 }
-/* line 149, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 103, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col div, .eresource-right-col p {
   display: inline;
 }
-/* line 155, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 109, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col .eresource-info-item {
   padding-top: 10px;
 }
-/* line 159, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 112, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col .eresource-info-item:nth-of-type(2) {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
-/* line 163, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 115, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col .eresource-info-item:nth-of-type(2) .field-label {
   display: none;
 }
@@ -2997,19 +2940,19 @@ h3.bibsdb-foldable-list-title {
 /* Media queries */
 @media only screen and (max-width: 768px) {
   /* Structure */
-  /* line 181, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 133, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .bibsdb-page-eresourcer .primary-content {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 185, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 137, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .bibsdb-page-eresourcer .eresource-content {
     float: left;
-    width: 50%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -3020,15 +2963,15 @@ h3.bibsdb-foldable-list-title {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 190, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 142, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .bibsdb-page-eresourcer .eresource-right-col {
     clear: left;
     float: left;
-    width: 50%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -50%;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -3043,42 +2986,42 @@ h3.bibsdb-foldable-list-title {
   }
 
   /* Page elements */
-  /* line 198, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 150, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   h1.page-title {
     margin-bottom: 20px;
   }
 
-  /* line 202, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 154, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .label-info {
     display: block;
   }
 
-  /* line 206, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 158, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-image {
     display: none;
   }
 
-  /* line 211, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 163, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-footer {
     display: block;
     padding-top: 20px;
     margin-top: 10px;
     border-top: 1px solid #d2d5d7;
   }
-  /* line 219, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 171, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-footer .eresource-info .eresource-info-item {
     border-left: 0;
   }
 
-  /* line 227, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 179, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-content {
     padding: 0;
   }
-  /* line 230, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 182, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-content .field-name-field-ding-eresource-materials {
     padding: 0;
   }
-  /* line 232, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+  /* line 184, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .eresource-content .field-name-field-ding-eresource-materials h2 {
     font-size: 110%;
   }

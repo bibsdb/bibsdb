@@ -18,45 +18,24 @@
 
   .eresource-content {
     @include zen-grid-item(8, 1);
-    @include zen-nested-container();
-    
-    .eresource-info-item {
-      @include zen-clear();
-      @include zen-grid-item(11, 1);
-
-      .eresource-icon {
-        @include zen-grid-item(1, 1);
-      }
-
-      .eresource-text {
-        @include zen-grid-item(11, 1, right);
-      }
-    }
-    .eresource-body {
-      @include zen-clear();
-
-      
-    }
-
   }
 
   .eresource-right-col {
     @include zen-grid-item(4, 1, right);
-    $zen-column-count: 24;
-    $zen-gutter-width: 10px;
 
     @include zen-nested-container();
-
+    
     .eresource-info-item {
       @include zen-clear();
-      @include zen-grid-item(24, 1);
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
 
       .eresource-icon {
-        @include zen-grid-item(3, 1);
+        @include zen-grid-item(2, 1);
       }
 
       .eresource-text {
-        @include zen-grid-item(21, 1, right);
+        @include zen-grid-item(10, 1, right);
       }
     }
   }
@@ -107,29 +86,6 @@
     }
   }
 
-    /* Format the link to the resource */
-  .eresource-info-item {
-    div, p {
-      display: inline-block;
-    }
-    width: 95%;
-    display: inline-block;
-
-    vertical-align: middle;
-
-    background-color: $gray-light;
-
-    @include font-bold();
-    font-size: $font-size-medium;
-    padding: $small-spacing;
-    margin-bottom: $medium-spacing;
-
-    .field-label {
-      display: none;
-    
-    }
-  }
-
   .field-name-field-ding-eresource-materials {
     padding:0;
 
@@ -143,8 +99,6 @@
   }
 }
 
-
-
 .eresource-right-col {
     div, p {
       display: inline;
@@ -153,22 +107,20 @@
 
     /* Format the link to the resource */
   .eresource-info-item {
-
     padding-top: $medium-spacing;
 
     &:nth-of-type(2) {
-
       @include font-bold();
 
       .field-label {
         display: none;
       }
+
+      a {
+        @extend %button-action;
+      }
     }
-  }
-
-
-  
-  
+  }  
 }
 
 
