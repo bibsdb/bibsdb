@@ -24,7 +24,7 @@
     @include zen-grid-item(4, 1, right);
 
     @include zen-nested-container();
-    
+
     .eresource-info-item {
       @include zen-clear();
       @include zen-grid-item(12, 1);
@@ -117,7 +117,9 @@
       }
 
       a {
+        
         @extend %button-action;
+        padding: 5px 14px;
       }
     }
   }  
