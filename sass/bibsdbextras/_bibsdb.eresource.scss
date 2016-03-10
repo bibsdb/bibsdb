@@ -22,7 +22,7 @@
     
     .eresource-info-item {
       @include zen-clear();
-      @include zen-grid-item(12, 1);
+      @include zen-grid-item(11, 1);
 
       .eresource-icon {
         @include zen-grid-item(1, 1);
@@ -42,18 +42,21 @@
 
   .eresource-right-col {
     @include zen-grid-item(4, 1, right);
+    $zen-column-count: 24;
+    $zen-gutter-width: 10px;
+
     @include zen-nested-container();
 
     .eresource-info-item {
       @include zen-clear();
-      @include zen-grid-item(12, 1);
+      @include zen-grid-item(24, 1);
 
       .eresource-icon {
-        @include zen-grid-item(2, 1);
+        @include zen-grid-item(3, 1);
       }
 
       .eresource-text {
-        @include zen-grid-item(10, 1, right);
+        @include zen-grid-item(21, 1, right);
       }
     }
   }
@@ -78,6 +81,7 @@
 
 .eresource-content {
 
+
   h1.page-title {
     clear: both;
     padding: 0;
@@ -98,7 +102,6 @@
     img {
       border: 1px solid $gray;
       margin-top: $medium-spacing;
-      margin-right: $large-spacing;
       margin-bottom: $medium-spacing;
       padding-left: 0;
     }
@@ -109,6 +112,7 @@
     div, p {
       display: inline-block;
     }
+    width: 95%;
     display: inline-block;
 
     vertical-align: middle;
