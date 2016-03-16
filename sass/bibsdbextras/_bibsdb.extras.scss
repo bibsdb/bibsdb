@@ -145,3 +145,11 @@ h3.bibsdb-foldable-list-title {
   font-family: $font-bold;
   margin-bottom: $medium-spacing;
 }
+
+/* Hide ask-vopros-tab on small screens
+=============================================================================*/
+@include small-medium() {
+  .ask-vopros-tab {
+    display: none;
+  }
+} 

@@ -2061,6 +2061,14 @@ h3.bibsdb-foldable-list-title {
   margin-bottom: 10px;
 }
 
+/* Hide ask-vopros-tab on small screens
+=============================================================================*/
+@media only screen and (max-width: 768px) {
+  /* line 152, ../sass/bibsdbextras/_bibsdb.extras.scss */
+  .ask-vopros-tab {
+    display: none;
+  }
+}
 /**
  * Content in grid
  *
