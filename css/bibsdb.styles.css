@@ -1791,7 +1791,7 @@ h2.pane-title, .rs-carousel-title {
   }
 }
 /* line 65, ../sass/module/_bibsdb.libraries.scss */
-#ding-library-front .ding-library-events, #ding-library-front .bibsdb-collection-point-opening-hours-page {
+#ding-library-front .ding-library-events.js-og-single-content-type, #ding-library-front .js-og-single-content-type.bibsdb-collection-point-opening-hours-page {
   clear: both;
   float: left;
   width: 66.66667%;
@@ -1811,7 +1811,7 @@ h2.pane-title, .rs-carousel-title {
 }
 @media only screen and (max-width: 768px) {
   /* line 65, ../sass/module/_bibsdb.libraries.scss */
-  #ding-library-front .ding-library-events, #ding-library-front .bibsdb-collection-point-opening-hours-page {
+  #ding-library-front .ding-library-events.js-og-single-content-type, #ding-library-front .js-og-single-content-type.bibsdb-collection-point-opening-hours-page {
     clear: left;
     float: left;
     width: 100%;

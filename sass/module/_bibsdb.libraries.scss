@@ -62,7 +62,7 @@
     }
   }
 
-	.ding-library-events {
+	.ding-library-events.js-og-single-content-type {
     @include zen-clear(both);
     @include zen-grid-item(8, 1);
     @include small-medium() {
