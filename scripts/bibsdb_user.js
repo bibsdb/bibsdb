@@ -11,6 +11,7 @@
 		$( "#ding-reservation-reservations-notready-form li[class*='expire-date']" ).hide();
 		// Hide message about reservation expiration, because we don't do that in Sonderborg
 		$(".warning:contains('This reservation is about to expire.')").hide();
+		$(".warning:contains('Denne reservering udløber snart.')").hide();
 
 		// Hide interest period setting when modifying a reservation in ajax popup
 		jQuery('.ui-widget').live('DOMNodeInserted', function () {
