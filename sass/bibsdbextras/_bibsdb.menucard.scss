@@ -1,0 +1,105 @@
+ /**
+ * menucard
+ * *
+ * @author agms.
+ */
+
+
+
+/* eresource Default View
+========================================================================== */
+
+/* Nid on biblioteket.sonderborg.dk and alfabib.sonderborg.dk */
+/* Has to start with html.js to get rid of png-arrow on collabsible fieldset */
+
+ html.js .page-node-1392, html.js .page-node-1498 {
+
+	.pane-node-content, .node{
+		background-image: url("/sites/default/files/chalkboard-background.jpg");
+		background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #255e3b;
+    color: $white;
+	}
+
+	.illustrations {
+		@include zen-nested-container();
+		text-align: center;
+	}
+	.illustration1 {
+		@include zen-grid-item(4, 1);
+	}
+	.illustration2 {
+		@include zen-grid-item(4, 5);
+	}
+	.illustration3 {
+		@include zen-grid-item(4, 9);
+	}
+	.clearill {
+		@include zen-clear();
+	}
+
+
+
+	.pane-node-content h2.pane-title {
+		display: none;
+	}
+
+
+	form {
+		padding: $large-spacing;
+	}
+
+	.form-item {
+		margin: 0;
+		label.option {
+			font-size: $font-size-large;
+			padding-left: $small-spacing;
+		}
+		p {
+			margin-left: $large-spacing;
+		}
+		.form-checkboxes {
+			margin-top: 30px;
+		}
+	}
+
+
+
+	fieldset {
+		margin: $large-spacing;
+		&.collapsed {
+			.fieldset-legend {
+				background: none;
+				padding-left: 0;
+			}
+			.fieldset-title {
+				&:before {
+					font-family: FontAwesome;
+					content: "\f054\00a0\00a0";
+				}
+			}
+		}
+	
+		&.collapsible {
+			.fieldset-legend {
+				background: none;
+				padding-left: 0;
+			}
+			.fieldset-title {
+				&:before {
+					font-family: FontAwesome;
+					content: "\f078\00a0\00a0";
+				}
+			}
+		}
+
+		.fieldset-title {
+			color: white;
+			font-size: $font-size-large;
+		}
+	}
+
+}
+
+ 
