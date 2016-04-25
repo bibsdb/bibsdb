@@ -3049,7 +3049,7 @@ h3.bibsdb-foldable-list-title {
 /* Nid on biblioteket.sonderborg.dk and alfabib.sonderborg.dk */
 /* Has to start with html.js to get rid of png-arrow on collabsible fieldset */
 /* line 17, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .pane-node-content, html.js .page-node-1392 .node, html.js .page-node-1421 .pane-node-content, html.js .page-node-1421 .node {
+html.js .page-node-1392 .pane-node-content, html.js .page-node-1392 .node, html.js .page-node-1392 article.page, html.js .page-node-1421 .pane-node-content, html.js .page-node-1421 .node, html.js .page-node-1421 article.page, .page-node-1393 .pane-node-content, .page-node-1393 .node, .page-node-1393 article.page, .page-node-1441 .pane-node-content, .page-node-1441 .node, .page-node-1441 article.page {
   background-image: url("/sites/default/files/chalkboard-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -3057,13 +3057,26 @@ html.js .page-node-1392 .pane-node-content, html.js .page-node-1392 .node, html.
   color: white;
 }
 /* line 25, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .illustrations, html.js .page-node-1421 .illustrations {
+html.js .page-node-1392 .node, html.js .page-node-1392 article.page, html.js .page-node-1421 .node, html.js .page-node-1421 article.page, .page-node-1393 .node, .page-node-1393 article.page, .page-node-1441 .node, .page-node-1441 article.page {
+  padding: 20px;
+  padding-top: 0;
+}
+/* line 28, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .node .page-image, html.js .page-node-1392 article.page .page-image, html.js .page-node-1421 .node .page-image, html.js .page-node-1421 article.page .page-image, .page-node-1393 .node .page-image, .page-node-1393 article.page .page-image, .page-node-1441 .node .page-image, .page-node-1441 article.page .page-image {
+  margin: 0;
+}
+/* line 31, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .node h1.page-title, html.js .page-node-1392 article.page h1.page-title, html.js .page-node-1421 .node h1.page-title, html.js .page-node-1421 article.page h1.page-title, .page-node-1393 .node h1.page-title, .page-node-1393 article.page h1.page-title, .page-node-1441 .node h1.page-title, .page-node-1441 article.page h1.page-title {
+  color: white;
+}
+/* line 36, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .illustrations, html.js .page-node-1421 .illustrations, .page-node-1393 .illustrations, .page-node-1441 .illustrations {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
 }
-/* line 29, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .illustration1, html.js .page-node-1421 .illustration1 {
+/* line 40, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .illustration1, html.js .page-node-1421 .illustration1, .page-node-1393 .illustration1, .page-node-1441 .illustration1 {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
@@ -3080,8 +3093,8 @@ html.js .page-node-1392 .illustration1, html.js .page-node-1421 .illustration1 {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 32, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .illustration2, html.js .page-node-1421 .illustration2 {
+/* line 43, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .illustration2, html.js .page-node-1421 .illustration2, .page-node-1393 .illustration2, .page-node-1441 .illustration2 {
   float: left;
   width: 33.33333%;
   margin-left: 33.33333%;
@@ -3098,8 +3111,8 @@ html.js .page-node-1392 .illustration2, html.js .page-node-1421 .illustration2 {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 35, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .illustration3, html.js .page-node-1421 .illustration3 {
+/* line 46, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .illustration3, html.js .page-node-1421 .illustration3, .page-node-1393 .illustration3, .page-node-1441 .illustration3 {
   float: left;
   width: 33.33333%;
   margin-left: 66.66667%;
@@ -3116,61 +3129,61 @@ html.js .page-node-1392 .illustration3, html.js .page-node-1421 .illustration3 {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 38, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .clearill, html.js .page-node-1421 .clearill {
+/* line 49, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .clearill, html.js .page-node-1421 .clearill, .page-node-1393 .clearill, .page-node-1441 .clearill {
   clear: left;
 }
-/* line 44, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .pane-node-content h2.pane-title, html.js .page-node-1392 .pane-node-content .rs-carousel-title, html.js .page-node-1421 .pane-node-content h2.pane-title, html.js .page-node-1421 .pane-node-content .rs-carousel-title {
+/* line 55, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .pane-node-content h2.pane-title, html.js .page-node-1392 .pane-node-content .rs-carousel-title, html.js .page-node-1421 .pane-node-content h2.pane-title, html.js .page-node-1421 .pane-node-content .rs-carousel-title, .page-node-1393 .pane-node-content h2.pane-title, .page-node-1393 .pane-node-content .rs-carousel-title, .page-node-1441 .pane-node-content h2.pane-title, .page-node-1441 .pane-node-content .rs-carousel-title {
   display: none;
 }
-/* line 49, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 form, html.js .page-node-1421 form {
+/* line 60, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 form, html.js .page-node-1421 form, .page-node-1393 form, .page-node-1441 form {
   padding: 20px;
 }
-/* line 53, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .form-item, html.js .page-node-1421 .form-item {
+/* line 64, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .form-item, html.js .page-node-1421 .form-item, .page-node-1393 .form-item, .page-node-1441 .form-item {
   margin: 0;
 }
-/* line 55, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .form-item label.option, html.js .page-node-1421 .form-item label.option {
+/* line 66, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .form-item label.option, html.js .page-node-1421 .form-item label.option, .page-node-1393 .form-item label.option, .page-node-1441 .form-item label.option {
   font-size: 130%;
   padding-left: 5px;
 }
-/* line 59, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .form-item p, html.js .page-node-1421 .form-item p {
+/* line 70, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .form-item p, html.js .page-node-1421 .form-item p, .page-node-1393 .form-item p, .page-node-1441 .form-item p {
   margin-left: 20px;
 }
-/* line 62, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 .form-item .form-checkboxes, html.js .page-node-1421 .form-item .form-checkboxes {
+/* line 73, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 .form-item .form-checkboxes, html.js .page-node-1421 .form-item .form-checkboxes, .page-node-1393 .form-item .form-checkboxes, .page-node-1441 .form-item .form-checkboxes {
   margin-top: 30px;
 }
-/* line 69, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset, html.js .page-node-1421 fieldset {
+/* line 80, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset, html.js .page-node-1421 fieldset, .page-node-1393 fieldset, .page-node-1441 fieldset {
   margin: 20px;
 }
-/* line 72, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset.collapsed .fieldset-legend, html.js .page-node-1421 fieldset.collapsed .fieldset-legend {
+/* line 83, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset.collapsed .fieldset-legend, html.js .page-node-1421 fieldset.collapsed .fieldset-legend, .page-node-1393 fieldset.collapsed .fieldset-legend, .page-node-1441 fieldset.collapsed .fieldset-legend {
   background: none;
   padding-left: 0;
 }
-/* line 77, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset.collapsed .fieldset-title:before, html.js .page-node-1421 fieldset.collapsed .fieldset-title:before {
+/* line 88, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset.collapsed .fieldset-title:before, html.js .page-node-1421 fieldset.collapsed .fieldset-title:before, .page-node-1393 fieldset.collapsed .fieldset-title:before, .page-node-1441 fieldset.collapsed .fieldset-title:before {
   font-family: FontAwesome;
   content: "\f054\00a0\00a0";
 }
-/* line 85, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset.collapsible .fieldset-legend, html.js .page-node-1421 fieldset.collapsible .fieldset-legend {
+/* line 96, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset.collapsible .fieldset-legend, html.js .page-node-1421 fieldset.collapsible .fieldset-legend, .page-node-1393 fieldset.collapsible .fieldset-legend, .page-node-1441 fieldset.collapsible .fieldset-legend {
   background: none;
   padding-left: 0;
 }
-/* line 90, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset.collapsible .fieldset-title:before, html.js .page-node-1421 fieldset.collapsible .fieldset-title:before {
+/* line 101, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset.collapsible .fieldset-title:before, html.js .page-node-1421 fieldset.collapsible .fieldset-title:before, .page-node-1393 fieldset.collapsible .fieldset-title:before, .page-node-1441 fieldset.collapsible .fieldset-title:before {
   font-family: FontAwesome;
   content: "\f078\00a0\00a0";
 }
-/* line 97, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-1392 fieldset .fieldset-title, html.js .page-node-1421 fieldset .fieldset-title {
+/* line 108, ../sass/bibsdbextras/_bibsdb.menucard.scss */
+html.js .page-node-1392 fieldset .fieldset-title, html.js .page-node-1421 fieldset .fieldset-title, .page-node-1393 fieldset .fieldset-title, .page-node-1441 fieldset .fieldset-title {
   color: white;
   font-size: 130%;
 }

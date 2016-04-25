@@ -12,14 +12,25 @@
 /* Nid on biblioteket.sonderborg.dk and alfabib.sonderborg.dk */
 /* Has to start with html.js to get rid of png-arrow on collabsible fieldset */
 
- html.js .page-node-1392, html.js .page-node-1421 {
+ html.js .page-node-1392, html.js .page-node-1421, .page-node-1393, .page-node-1441 {
 
-	.pane-node-content, .node{
+	.pane-node-content, .node, article.page{
 		background-image: url("/sites/default/files/chalkboard-background.jpg");
 		background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: #255e3b;
     color: $white;
+	}
+
+	.node, article.page {
+		padding: $large-spacing;
+		padding-top: 0;
+		.page-image {
+			margin: 0;
+		}
+		h1.page-title {
+			color: $white;
+		}
 	}
 
 	.illustrations {
