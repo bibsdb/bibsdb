@@ -25,12 +25,26 @@
 	.node, article.page {
 		padding: $large-spacing;
 		padding-top: 0;
+
+		.field-name-field-ding-page-body a:link, .webform-component--footer a:link{
+			color: $white;
+			text-decoration: underline;
+		}
+		.field-name-field-ding-page-body a:visited, .webform-component--footer a:visited {
+			color: $white;
+			text-decoration: underline;
+		}
 		.page-image {
 			margin: 0;
 		}
+
 		h1.page-title {
 			color: $white;
 		}
+		.page-content {
+			font-size: $font-size-medium;
+		}
+
 	}
 
 	.illustrations {
@@ -63,6 +77,10 @@
 
 	.form-item {
 		margin: 0;
+		select {
+			max-width: 100px;
+			min-width: 75px;
+		}
 		label.option {
 			font-size: $font-size-large;
 			padding-left: $small-spacing;
@@ -70,9 +88,19 @@
 		p {
 			margin-left: $large-spacing;
 		}
+		&.webform-component--footer p{
+			margin-left: 0;
+			font-size: $font-size-medium;
+		}
 		.form-checkboxes {
 			margin-top: 30px;
 		}
+
+	}
+
+
+	.form-actions {
+		margin-top: $large-spacing;
 	}
 
 
