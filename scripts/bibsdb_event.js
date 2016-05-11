@@ -124,7 +124,7 @@
 		move_ticket_button();
 		remove_extra_label_class();
 		replace_icon();
-		attach_campagigns_to_event_page();
+		//attach_campagigns_to_event_page();
 	});
 	
 
