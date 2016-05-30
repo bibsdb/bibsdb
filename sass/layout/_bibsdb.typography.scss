@@ -6,16 +6,16 @@
 
 
 /* Header variants
-   ========================================================================== */
+========================================================================== */
 h1, h1.page-title, .pane-menu-title h2 {
-  @extend %page-heading;
+	@extend %page-heading;
 	font-size: $font-size-largest;
 	@include font-extrabold();
 	color: $font-color-primary;
 }
 
 h2.pane-title {
-  @extend %page-heading;
+	@extend %page-heading;
 	font-size: $font-size-larger;
 	@include font-extrabold();
 	color: $font-color-primary;
@@ -24,18 +24,30 @@ h2.pane-title {
 
 
 /* Content and elements
-   ========================================================================== */
+========================================================================== */
 
 .page-lead {
-  @include font-bold();
-  font-size: $font-size-medium;
+	@include font-bold();
+	font-size: $font-size-medium;
 	padding-bottom: $large-spacing;
-  margin-bottom: $small-spacing;
-  border-bottom: 1px solid $gray-light;
+	margin-bottom: $small-spacing;
+	border-bottom: 1px solid $gray-light;
 }
-
 
 .page-image {
 	margin-bottom: $large-spacing;
+}
+
+/* Page specific styling (page doesn't have a module file)
+============================================================================= */
+
+.node-type-ding-page { 
+	.layout-wrapper {
+		padding-top: 0;
+	}
+
+	.page-lead {
+		
+	}
 }
 

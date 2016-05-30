@@ -821,7 +821,7 @@ button.download-button {
  * @author agms
  */
 /* Header variants
-   ========================================================================== */
+========================================================================== */
 /* line 10, ../sass/layout/_bibsdb.typography.scss */
 h1, h1.page-title, .pane-menu-title h2 {
   font-size: 180%;
@@ -839,7 +839,7 @@ h2.pane-title, .rs-carousel-title {
 }
 
 /* Content and elements
-   ========================================================================== */
+========================================================================== */
 /* line 29, ../sass/layout/_bibsdb.typography.scss */
 .page-lead {
   font-family: "SourceSansProSemibold";
@@ -850,9 +850,16 @@ h2.pane-title, .rs-carousel-title {
   border-bottom: 1px solid #d2d5d7;
 }
 
-/* line 38, ../sass/layout/_bibsdb.typography.scss */
+/* line 37, ../sass/layout/_bibsdb.typography.scss */
 .page-image {
   margin-bottom: 20px;
+}
+
+/* Page specific styling (page doesn't have a module file)
+============================================================================= */
+/* line 45, ../sass/layout/_bibsdb.typography.scss */
+.node-type-ding-page .layout-wrapper {
+  padding-top: 0;
 }
 
 /**
