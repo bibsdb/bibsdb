@@ -123,77 +123,49 @@
 
   <div class="eresource-right-col">
     <div class="eresource-info-item">
-
-      <?php if (isset($content['field_bibsdb_eresource_ondesktop'])): ?>
-        <i class="fa fa-laptop fa-4x">&nbsp;</i>
-      <?php endif; ?>
-      <?php if (isset($content['field_bibsdb_eresource_ontablet'])): ?>
-        <i class="fa fa-tablet fa-4x">&nbsp;</i>
-      <?php endif; ?>
-      <?php if (isset($content['field_bibsdb_eresource_onmobile'])): ?>
-        <i class="fa fa-mobile fa-4x">&nbsp;</i>
-      <?php endif; ?>
-      
+      <i class="fa fa-laptop fa-4x">&nbsp;</i>
+      <i class="fa fa-tablet fa-4x">&nbsp;</i>
+      <i class="fa fa-mobile fa-4x">&nbsp;</i>
     </div>
 
-
     <?php if (isset($content['field_bibsdb_eresource_links'])): ?>
-      <div class="eresource-info-item">
-          <?php print render($content['field_bibsdb_eresource_links']); ?>
+      <div class="eresource-info-item eresource-links">
+        <?php print render($content['field_bibsdb_eresource_links']); ?>
       </div>
     <?php endif; ?>
+
+
     <?php if (isset($content['field_bibsdb_eresource_period'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-calendar fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
-          <?php print render($content['field_bibsdb_eresource_period']); ?>
-        </div>
+      <div class="eresource-info-item eresource-period">
+        <?php print render($content['field_bibsdb_eresource_period']); ?>
       </div>
     <?php endif; ?>
+
     <?php if (isset($content['field_bibsdb_eresource_limit'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-        <i class="fa fa-bars fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
-          <?php print render($content['field_bibsdb_eresource_limit']); ?>
-        </div>
+      <div class="eresource-info-item eresource-limit">
+        <?php print render($content['field_bibsdb_eresource_limit']); ?>
       </div>
     <?php endif; ?>
+
     <?php if (isset($content['field_ding_eresource_access'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-lock fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
-          <div class="field">
-            <div class="field-label">Adgang:</div>
-            <div class="field-items"><div class="field-item"><?php print render(entity_metadata_wrapper('node', $node)->field_ding_eresource_access->value()->name); ?></div></div>
-          </div>
+      <div class="eresource-info-item eresource-access">
+        <div class="field">
+          <div class="field-label">Adgang:</div>
+          <div class="field-items"><div class="field-item"><?php print render(entity_metadata_wrapper('node', $node)->field_ding_eresource_access->value()->name); ?></div></div>
         </div>
       </div>
     <?php endif; ?>
+
     <?php if (isset($content['field_bibsdb_eresource_info'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-info-circle fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
+      <div class="eresource-info-item eresource-info">
           <?php print render($content['field_bibsdb_eresource_info']); ?>
-        </div>
       </div>
     <?php endif; ?>
+
     <?php if (isset($content['field_bibsdb_eresource_contact'])): ?>
-      <div class="eresource-info-item">
-        <div class="eresource-icon">
-          <i class="fa fa-envelope fa-2x">&nbsp;</i>
-        </div>
-        <div class="eresource-text">
+      <div class="eresource-info-item eresource-contact">
           <?php print render($content['field_bibsdb_eresource_contact']); ?>
         </div>
-      </div>
     <?php endif; ?>
 
 

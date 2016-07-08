@@ -64,6 +64,7 @@
   h1.page-title {
     clear: both;
     padding: 0;
+    margin-bottom: $medium-spacing;
   }
 
   .label-info {
@@ -86,43 +87,140 @@
     }
   }
 
-  .field-name-field-ding-eresource-materials {
-    padding:0;
-
-    h2 {
-      font-size: $font-size-large;
+  .eresource-body {
+    ol {
+      counter-reset:li; /* Initiate a counter */
+      margin-left:0; /* Remove the default left margin */
+      padding-left:0; /* Remove the default left padding */
     }
-
-    .label {
-      display: none;
+    ol > li {
+      position:relative; /* Create a positioning context */
+      margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+      padding:4px 8px; /* Add some spacing around the content */
+      list-style:none; /* Disable the normal item numbering */
+      border-top:2px solid #666;
+      background:#f6f6f6;
     }
+    ol > li:before {
+      content:counter(li); /* Use the counter as content */
+      counter-increment:li; /* Increment the counter by 1 */
+      /* Position and style the number */
+      position:absolute;
+      top:-2px;
+      left:-2em;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      width:2em;
+      /* Some space between the number and the content in browsers that support
+      generated content but not positioning it (Camino 2 is one example) */
+      margin-right:8px;
+      padding:4px;
+      border-top:2px solid #666;
+      color:#fff;
+      background:#666;
+      font-weight:bold;
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      text-align:center;
+    }
+    li ol,
+    li ul {margin-top:6px;}
+    ol ol li:last-child {margin-bottom:0;}
+}
+
+.field-name-field-ding-eresource-materials {
+  padding:0;
+
+  h2 {
+    font-size: $font-size-large;
   }
+
+  .label {
+    display: none;
+  }
+}
 }
 
 .eresource-right-col {
-    div, p {
-      display: inline;
+
+
+  div, p {
+    display: inline;
+  }
+
+
+  /* Format the link to the resource */
+  .eresource-info-item {
+    padding-top: $medium-spacing;
+    padding-left: $large-spacing;
+
+    .field-label {
+      margin-right: 0;
     }
 
 
-    /* Format the link to the resource */
-  .eresource-info-item {
-    padding-top: $medium-spacing;
-
-    &:nth-of-type(2) {
+    &.eresource-links {
       @include font-bold();
+      font-size: $font-size-medium;
+      &::before {
+        font-size: $font-size-large;
+        font-family: fontawesome;
+        content: "\F0AC";
+        margin-right: .2em;
+      }
 
       .field-label {
         display: none;
       }
+    }
 
-      a {
-        
-        @extend %button-action;
-        padding: 5px 14px;
-        margin: 2px;
+    &.eresource-access {
+      &::before {
+        font-family: fontawesome;
+        content: "\F023";
+        font-size: $font-size-larger;
+        margin-right: .2em;
       }
     }
+
+    &.eresource-info {
+      &::before {
+        font-family: fontawesome;
+        content: "\F05A";
+        font-size: $font-size-larger;
+        margin-right: .2em;
+      }
+    }
+
+    &.eresource-period {
+      &::before {
+        font-family: fontawesome;
+        content: "\F133";
+        font-size: $font-size-larger;
+        margin-right: .2em;
+      }
+    }
+
+    &.eresource-limit {
+      &::before {
+        font-family: fontawesome;
+        content: "\F0C9";
+        font-size: $font-size-larger;
+        margin-right: .2em;
+      }
+    }
+
+    &.eresource-contact {
+      &::before {
+        font-family: fontawesome;
+        content: "\F059";
+        font-size: $font-size-larger;
+        margin-right: .2em;
+      }
+    }
+
+
+    
   }  
 }
 
