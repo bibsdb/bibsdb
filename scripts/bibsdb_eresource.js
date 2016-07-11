@@ -22,7 +22,7 @@
 
     // Add link
     $("<a>",{
-      href:"/temaer/online",
+      href:"/temaer/pa-nettet",
       text: "Alle online tilbud"
     }).appendTo($(".bibsdb-page-eresourcer .pane-menu-menu-alle-online-tilbud h2"));
 
