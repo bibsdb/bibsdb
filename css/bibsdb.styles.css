@@ -3076,7 +3076,7 @@ h3.bibsdb-foldable-list-title {
 }
 /* line 165, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col .eresource-info-item.eresource-links::before {
-  font-size: 130%;
+  font-size: 160%;
   font-family: fontawesome;
   content: "\F0AC";
   margin-right: .2em;

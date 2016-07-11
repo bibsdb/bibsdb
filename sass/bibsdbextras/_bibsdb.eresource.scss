@@ -163,7 +163,7 @@
       @include font-bold();
       font-size: $font-size-medium;
       &::before {
-        font-size: $font-size-large;
+        font-size: $font-size-larger;
         font-family: fontawesome;
         content: "\F0AC";
         margin-right: .2em;
