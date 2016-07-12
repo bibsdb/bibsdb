@@ -551,9 +551,9 @@ h2.sub-menu-title {
   color: rgba(0, 0, 0, 0.7);
   font-family: "SourceSansProSemibold";
   font-weight: normal;
-  font-size: 110%;
+  font-size: 130%;
   padding-top: 5px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 /* line 129, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
