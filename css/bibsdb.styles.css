@@ -542,17 +542,25 @@ h2.sub-menu-title {
 .sub-menu {
   margin-bottom: 20px;
 }
-/* line 121, ../sass/framework/_bibsdb.navigation.scss */
+/* line 120, ../sass/framework/_bibsdb.navigation.scss */
+.sub-menu > li {
+  border-bottom: 0;
+}
+/* line 122, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  font-size: 110%;
   padding-top: 5px;
-  padding-bottom: 3px;
+  padding-bottom: 8px;
 }
-/* line 126, ../sass/framework/_bibsdb.navigation.scss */
+/* line 129, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
 }
-/* line 133, ../sass/framework/_bibsdb.navigation.scss */
+/* line 137, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;

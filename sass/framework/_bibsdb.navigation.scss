@@ -118,13 +118,17 @@ h2.sub-menu-title {
 .sub-menu {
 	margin-bottom: $large-spacing;
   > li {
+    border-bottom: 0;
     a {
       color: $font-color-primary;
+      @include font-bold();
+      font-size: $font-size-medium;
       padding-top: $small-spacing;
-      padding-bottom: 3px;
+      padding-bottom: 8px;
       
       &:hover {
-				color: $font-color-primary;
+        color: $font-color-primary;
+				text-decoration: underline;
 			}
 		}
 	}
