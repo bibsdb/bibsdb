@@ -122,9 +122,9 @@ h2.sub-menu-title {
     a {
       color: $font-color-primary;
       @include font-bold();
-      font-size: $font-size-large;
+      font-size: $font-size-medium;
       padding-top: $small-spacing;
-      padding-bottom: 12px;
+      padding-bottom: 8px;
       
       &:hover {
         color: $font-color-primary;
