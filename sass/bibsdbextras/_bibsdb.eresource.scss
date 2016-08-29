@@ -142,6 +142,8 @@
 }
 
 .eresource-right-col {
+  margin-left: 1.7em;
+
 
 
   div, p {
@@ -153,7 +155,7 @@
   .eresource-info-item {
     padding-top: $medium-spacing;
     padding-left: $large-spacing;
-    text-indent: -1.7em;
+
 
     .field-label {
       margin-right: 0;
