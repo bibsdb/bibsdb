@@ -7,7 +7,6 @@
  * eresource title image that linkes to the eresource
  */
 function bibsdb_preprocess_node(&$variables){
-	dd($variables['type']);
 
 	if ('ding_news' == $variables['type'] || 'ding_page' == $variables['type']) {
 		$node = $variables['node'];
