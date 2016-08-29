@@ -82,7 +82,7 @@
     img {
       border: 1px solid $gray;
       margin-top: $medium-spacing;
-      margin-bottom: $medium-spacing;
+      margin-bottom: $large-spacing;
       padding-left: 0;
     }
   }
@@ -126,19 +126,19 @@
     li ol,
     li ul {margin-top:6px;}
     ol ol li:last-child {margin-bottom:0;}
-}
-
-.field-name-field-ding-eresource-materials {
-  padding:0;
-
-  h2 {
-    font-size: $font-size-large;
   }
 
-  .label {
-    display: none;
+  .field-name-field-ding-eresource-materials {
+    padding:0;
+
+    h2 {
+      font-size: $font-size-large;
+    }
+
+    .label {
+      display: none;
+    }
   }
-}
 }
 
 .eresource-right-col {
@@ -153,20 +153,38 @@
   .eresource-info-item {
     padding-top: $medium-spacing;
     padding-left: $large-spacing;
+    text-indent: -1.7em;
 
     .field-label {
       margin-right: 0;
     }
 
+    &.eresource-icons {
+      text-indent: 0;
+    }
 
-    &.eresource-links {
+    &.eresource-link {
       @include font-bold();
       font-size: $font-size-medium;
       &::before {
-        font-size: $font-size-larger;
+        font-size: $font-size-large;
         font-family: fontawesome;
         content: "\F0AC";
         margin-right: .2em;
+      }
+
+      .field-label {
+        display: none;
+      }
+    }
+
+    &.eresource-links {
+      p {
+        display: block;
+      }
+      
+      img {
+        padding: 0;
       }
 
       .field-label {

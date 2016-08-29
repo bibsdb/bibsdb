@@ -98,80 +98,87 @@
 
 <article class="eresource">
 
-  <div class="eresource-content">
+	<div class="eresource-content">
 
-    <div class="eresource-image">
-      <?php print render($content['field_ding_eresource_list_image']); ?>
-    </div>
-
-
-    <h1 class="page-title">
-      <?php print $title; ?>
-    </h1>
-
-    <div class="eresource-lead"><?php print render($content['field_ding_eresource_lead']); ?></div>
+		<div class="eresource-image">
+					<?php print render($bibsdb_linked_logo) ?>
+		</div>
 
 
-    <div class="eresource-body">
-      <?php print render($content['field_ding_eresource_body']); ?>
-    </div>
+		<h1 class="page-title">
+			<?php print $title; ?>
+		</h1>
+
+		<div class="eresource-lead"><?php print render($content['field_ding_eresource_lead']); ?></div>
 
 
-  </div>
+		<div class="eresource-body">
+			<?php print render($content['field_ding_eresource_body']); ?>
+		</div>
 
 
-
-  <div class="eresource-right-col">
-    <div class="eresource-info-item">
-      <i class="fa fa-laptop fa-4x">&nbsp;</i>
-      <i class="fa fa-tablet fa-4x">&nbsp;</i>
-      <i class="fa fa-mobile fa-4x">&nbsp;</i>
-    </div>
-
-    <?php if (isset($content['field_bibsdb_eresource_links'])): ?>
-      <div class="eresource-info-item eresource-links">
-        <?php print render($content['field_bibsdb_eresource_links']); ?>
-      </div>
-    <?php endif; ?>
-
-
-    <?php if (isset($content['field_bibsdb_eresource_period'])): ?>
-      <div class="eresource-info-item eresource-period">
-        <?php print render($content['field_bibsdb_eresource_period']); ?>
-      </div>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_bibsdb_eresource_limit'])): ?>
-      <div class="eresource-info-item eresource-limit">
-        <?php print render($content['field_bibsdb_eresource_limit']); ?>
-      </div>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_ding_eresource_access'])): ?>
-      <div class="eresource-info-item eresource-access">
-        <div class="field">
-          <div class="field-label">Adgang:</div>
-          <div class="field-items"><div class="field-item"><?php print render(entity_metadata_wrapper('node', $node)->field_ding_eresource_access->value()->name); ?></div></div>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_bibsdb_eresource_info'])): ?>
-      <div class="eresource-info-item eresource-info">
-          <?php print render($content['field_bibsdb_eresource_info']); ?>
-      </div>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_bibsdb_eresource_contact'])): ?>
-      <div class="eresource-info-item eresource-contact">
-          <?php print render($content['field_bibsdb_eresource_contact']); ?>
-        </div>
-    <?php endif; ?>
+	</div>
 
 
 
+	<div class="eresource-right-col">
 
-  </div>
+		<div class="eresource-info-item eresource-icons">
+			<i class="fa fa-laptop fa-4x">&nbsp;</i>
+			<i class="fa fa-tablet fa-4x">&nbsp;</i>
+			<i class="fa fa-mobile fa-4x">&nbsp;</i>
+		</div>
+
+		<?php if (isset($content['field_bibsdb_eresource_link'])): ?>
+			<div class="eresource-info-item eresource-link">
+				<?php print render($content['field_bibsdb_eresource_link']); ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if (isset($content['field_bibsdb_eresource_links'])): ?>
+			<div class="eresource-info-item eresource-links">
+				<?php print render($content['field_bibsdb_eresource_links']); ?>
+			</div>
+		<?php endif; ?>
+
+
+		<?php if (isset($content['field_bibsdb_eresource_period'])): ?>
+			<div class="eresource-info-item eresource-period">
+				<?php print render($content['field_bibsdb_eresource_period']); ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if (isset($content['field_bibsdb_eresource_limit'])): ?>
+			<div class="eresource-info-item eresource-limit">
+				<?php print render($content['field_bibsdb_eresource_limit']); ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if (isset($content['field_ding_eresource_access'])): ?>
+			<div class="eresource-info-item eresource-access">
+				<div class="field">
+					<div class="field-label">Adgang:</div>
+					<div class="field-items"><div class="field-item"><?php print render(entity_metadata_wrapper('node', $node)->field_ding_eresource_access->value()->name); ?></div></div>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php if (isset($content['field_bibsdb_eresource_info'])): ?>
+			<div class="eresource-info-item eresource-info">
+				<?php print render($content['field_bibsdb_eresource_info']); ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if (isset($content['field_bibsdb_eresource_contact'])): ?>
+			<div class="eresource-info-item eresource-contact">
+				<?php print render($content['field_bibsdb_eresource_contact']); ?>
+			</div>
+		<?php endif; ?>
+
+
+
+
+	</div>
 
 
 
