@@ -153,3 +153,9 @@ h3.bibsdb-foldable-list-title {
     display: none;
   }
 } 
+
+/* Extra space between form components on webforms
+==============================================================================*/
+.form-item.webform-component {
+	margin-top: $large-spacing;
+}
