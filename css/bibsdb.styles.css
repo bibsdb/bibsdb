@@ -395,29 +395,41 @@ h6 {
   .topbar-menu .menu-item {
     padding: 20px 14px;
   }
+  /* line 26, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .menu-item.topbar-link-new-user {
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   /* line 19, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item {
     padding: 10px 10px;
   }
+  /* line 32, ../sass/framework/_bibsdb.navigation.scss */
+  .topbar-menu .menu-item.topbar-link-new-user {
+    display: none;
+  }
 }
-/* line 33, ../sass/framework/_bibsdb.navigation.scss */
+/* line 39, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item:hover {
   background-color: #7fc241;
   color: white;
 }
-/* line 38, ../sass/framework/_bibsdb.navigation.scss */
+/* line 44, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.active {
   color: white;
   background-color: #979da2;
 }
+/* line 48, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .menu-item.topbar-link-new-user.logged-in {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
-  /* line 46, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 55, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.menu-item {
     display: inline-block;
   }
-  /* line 50, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 59, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.default-override {
     display: none;
   }
@@ -425,25 +437,25 @@ h6 {
 
 /* Navigation, main menu and secondary menu
    ========================================================================== */
-/* line 59, ../sass/framework/_bibsdb.navigation.scss */
+/* line 68, ../sass/framework/_bibsdb.navigation.scss */
 .navigation-wrapper {
   background-color: #6d6e71;
   /* Media queries */
 }
 @media only screen and (max-width: 768px) {
-  /* line 59, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 68, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 59, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 68, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
 }
 
-/* line 70, ../sass/framework/_bibsdb.navigation.scss */
+/* line 79, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu-wrapper {
   float: left;
   width: 66.66667%;
@@ -462,7 +474,7 @@ h6 {
   _overflow-y: visible;
 }
 
-/* line 74, ../sass/framework/_bibsdb.navigation.scss */
+/* line 83, ../sass/framework/_bibsdb.navigation.scss */
 .secondary-menu-wrapper {
   float: right;
   width: 33.33333%;
@@ -482,7 +494,7 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 79, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 88, ../sass/framework/_bibsdb.navigation.scss */
   .main-menu-wrapper,
   .secondary-menu-wrapper {
     float: left;
@@ -505,48 +517,48 @@ h6 {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 87, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 96, ../sass/framework/_bibsdb.navigation.scss */
   .secondary-menu {
     font-size: 110%;
   }
 }
-/* line 94, ../sass/framework/_bibsdb.navigation.scss */
+/* line 103, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   color: white;
 }
-/* line 96, ../sass/framework/_bibsdb.navigation.scss */
+/* line 105, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
   color: #7fc241;
 }
-/* line 99, ../sass/framework/_bibsdb.navigation.scss */
+/* line 108, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
   color: #7fc241;
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
-/* line 106, ../sass/framework/_bibsdb.navigation.scss */
+/* line 115, ../sass/framework/_bibsdb.navigation.scss */
 .secondary-menu i {
   font-size: 130%;
 }
 
 /* Sub menu
    ========================================================================== */
-/* line 114, ../sass/framework/_bibsdb.navigation.scss */
+/* line 123, ../sass/framework/_bibsdb.navigation.scss */
 h2.sub-menu-title {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
-/* line 118, ../sass/framework/_bibsdb.navigation.scss */
+/* line 127, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu {
   margin-bottom: 20px;
 }
-/* line 120, ../sass/framework/_bibsdb.navigation.scss */
+/* line 129, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li {
   border-bottom: 0;
 }
-/* line 122, ../sass/framework/_bibsdb.navigation.scss */
+/* line 131, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
   font-family: "SourceSansProSemibold";
@@ -555,12 +567,12 @@ h2.sub-menu-title {
   padding-top: 5px;
   padding-bottom: 8px;
 }
-/* line 129, ../sass/framework/_bibsdb.navigation.scss */
+/* line 138, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: underline;
 }
-/* line 137, ../sass/framework/_bibsdb.navigation.scss */
+/* line 146, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;

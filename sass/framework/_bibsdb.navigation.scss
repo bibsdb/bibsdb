@@ -23,9 +23,19 @@
 		/* Make the tabs a little higher to span the logo as it grows higher */
 		@include medium() {
 			padding: 20px 14px;
+
+      /* Hide New user menu item on small screens. */
+      &.topbar-link-new-user {
+        display: none;
+      }
 		}
 		@include small() {
 			padding: 10px 10px;
+
+      /* Hide New user menu item on small screens. */
+      &.topbar-link-new-user {
+        display: none;
+      }
 		}
 	
 
@@ -39,6 +49,11 @@
 			color: $white;
 			background-color: $gray-dark;
 		}
+
+    /* Hide New user menu item when logged in. */
+    &.topbar-link-new-user.logged-in {
+      display: none;
+    }
 	}
 
   @include small-medium() {
