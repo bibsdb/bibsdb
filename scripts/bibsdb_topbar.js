@@ -97,7 +97,12 @@
 	  // Change icon
 	  $('.topbar-menu li a[href*="/gatewayf/registration/information"] i').removeClass("icon-align-justify").addClass("icon-plus");
 
+	  // The default click-event on the menu item is prevented. Unbind click events to make the menu item open the registration page.
+	  $('.js-topbar-link.topbar-link-new-user').unbind('click');
+
 	}
+
+	
 
 
   // When ready start the magic.
