@@ -2160,6 +2160,13 @@ h3.bibsdb-foldable-list-title {
     display: none;
   }
 }
+/* Extra space between form components on webforms
+==============================================================================*/
+/* line 159, ../sass/bibsdbextras/_bibsdb.extras.scss */
+.form-item.webform-component {
+  margin-top: 20px;
+}
+
 /**
  * Content in grid
  *
