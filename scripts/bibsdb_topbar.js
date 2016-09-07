@@ -84,6 +84,10 @@
 	}
 
 	function bibsdb_new_user_menu_item() {
+		// If the wayf registration page is shown make search and login inactive and make new-user active
+		$('.page-gatewayf-registration .leaf .topbar-link-search').removeClass('active');
+		$('.page-gatewayf-registration .leaf .topbar-link-user').removeClass('active');
+		$('.page-gatewayf-registration .leaf .topbar-link-new-user').addClass('active');
 
 		// Add class topbar-link-new-user to li
 		$('.topbar-menu li:has(a[href*="/gatewayf/registration/information"])').removeClass("topbar-link-menu").addClass("topbar-link-new-user");
@@ -98,7 +102,21 @@
 	  $('.topbar-menu li a[href*="/gatewayf/registration/information"] i').removeClass("icon-align-justify").addClass("icon-plus");
 
 	  // The default click-event on the menu item is prevented. Unbind click events to make the menu item open the registration page.
-	  $('.js-topbar-link.topbar-link-new-user').unbind('click');
+	  $('.js-topbar-link.topbar-link-new-user').unbind('click touchstart');
+
+	  // If the search link is clicked make new user link inactive.
+     $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
+    	$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
+    	$('.page-gatewayf-registration .bibsdb-frontpage-links').css("display", "none");
+    });
+
+   	// If the user link is clicked make new user link inactive.
+    $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
+    	$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
+    });
+
+    //Change the text on the button below login fra Opret bruger to Ny bruger
+    $('.ding-gatewayf-registration-link').text('Ny bruger af biblioteket?');
 
 	}
 
