@@ -6,7 +6,7 @@
  */
 
 /* Search
-   ========================================================================== */
+========================================================================== */
 
 .header-wrapper {
   /* Add padding if the search is in the header */
@@ -27,8 +27,11 @@
   }
 
   [class^="icon-"] {
-    bottom: 14px;
-    left: 14px;
+    bottom: 16px;
+    // Make space for the drop-down
+    @include large-x-large() {
+      left: 19%;
+    }
   }
 
   .spinner {
@@ -44,7 +47,14 @@
   }
 
   .form-text {
-    padding-left: 49px;
+    padding-left: 10%;
+    // Make space for the drop-down
+    @include large-x-large() {
+      padding-left: 6%;
+      margin-left: 17%;
+      min-width: 82%;
+      width: 82%;
+    }
   }
 
   @include small-medium {
@@ -52,9 +62,44 @@
   }
 }
 
+/* Styling of Ting field search profile select box.
+========================================================================== */
+
+.form-item-ting-field-search select {
+  width: 100%;
+}
+
+// Make the profile select part of the search field on larger screens.
+@include large-x-large() {
+  #search-block-form {
+    position: relative;
+
+    .form-item-ting-field-search {
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      min-height: 60px;
+      width: 16%;
+      font-size: $font-size-medium;
+
+      select {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-height: 60px;
+        width: 15%;
+        border-radius: 15px;
+        border: 1px solid $gray;
+        
+      }
+    }
+  }
+}
+
 
 /* Search in content
-   ========================================================================== */
+========================================================================== */
 
 .search-field-in-content {
   @include large-x-large() {
@@ -81,15 +126,15 @@
 }
 
  /* Hide message every where - agms
-============================================================================ */
+ ============================================================================ */
 
-.search-field-in-content--message {	
+ .search-field-in-content--message {	
   display: none;
 }	
-		
+
  /* -- but display on large screens - agms
-============================================================================ */	
-@include large-x-large() {
+ ============================================================================ */	
+ @include large-x-large() {
 
   .search-field-in-content--message {
     display: block;
@@ -145,8 +190,8 @@
 }
 
 /* Facet browser styling
-   ========================================================================== */
-   
+========================================================================== */
+
 .pane-search-backends, .pane-ding-facetbrowser {
 	a:visited {
     color: $link-color;
@@ -154,7 +199,7 @@
 }
 
 /* Search results list
-   ========================================================================== */
+========================================================================== */
 
 .subjects {
   .subject {

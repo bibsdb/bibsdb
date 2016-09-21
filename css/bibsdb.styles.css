@@ -389,13 +389,15 @@ h6 {
   font-size: 130%;
   /* Make the tabs a little higher to span the logo as it grows higher */
   color: #6d6e71;
+  /* Hide New user menu item when logged in. */
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* line 19, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item {
     padding: 20px 14px;
+    /* Hide New user menu item on small screens. */
   }
-  /* line 26, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 28, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item.topbar-link-new-user {
     display: none;
   }
@@ -404,32 +406,33 @@ h6 {
   /* line 19, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item {
     padding: 10px 10px;
+    /* Hide New user menu item on small screens. */
   }
-  /* line 32, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 36, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item.topbar-link-new-user {
     display: none;
   }
 }
-/* line 39, ../sass/framework/_bibsdb.navigation.scss */
+/* line 43, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item:hover {
   background-color: #7fc241;
   color: white;
 }
-/* line 44, ../sass/framework/_bibsdb.navigation.scss */
+/* line 48, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.active {
   color: white;
   background-color: #979da2;
 }
-/* line 48, ../sass/framework/_bibsdb.navigation.scss */
+/* line 54, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.topbar-link-new-user.logged-in {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 55, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 61, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.menu-item {
     display: inline-block;
   }
-  /* line 59, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 65, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.default-override {
     display: none;
   }
@@ -437,25 +440,25 @@ h6 {
 
 /* Navigation, main menu and secondary menu
    ========================================================================== */
-/* line 68, ../sass/framework/_bibsdb.navigation.scss */
+/* line 74, ../sass/framework/_bibsdb.navigation.scss */
 .navigation-wrapper {
   background-color: #6d6e71;
   /* Media queries */
 }
 @media only screen and (max-width: 768px) {
-  /* line 68, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 74, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 68, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 74, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
     background-color: #979da2;
   }
 }
 
-/* line 79, ../sass/framework/_bibsdb.navigation.scss */
+/* line 85, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu-wrapper {
   float: left;
   width: 66.66667%;
@@ -474,7 +477,7 @@ h6 {
   _overflow-y: visible;
 }
 
-/* line 83, ../sass/framework/_bibsdb.navigation.scss */
+/* line 89, ../sass/framework/_bibsdb.navigation.scss */
 .secondary-menu-wrapper {
   float: right;
   width: 33.33333%;
@@ -494,7 +497,7 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 88, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 94, ../sass/framework/_bibsdb.navigation.scss */
   .main-menu-wrapper,
   .secondary-menu-wrapper {
     float: left;
@@ -517,48 +520,48 @@ h6 {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 96, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 102, ../sass/framework/_bibsdb.navigation.scss */
   .secondary-menu {
     font-size: 110%;
   }
 }
-/* line 103, ../sass/framework/_bibsdb.navigation.scss */
+/* line 109, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   color: white;
 }
-/* line 105, ../sass/framework/_bibsdb.navigation.scss */
+/* line 111, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
   color: #7fc241;
 }
-/* line 108, ../sass/framework/_bibsdb.navigation.scss */
+/* line 114, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
   color: #7fc241;
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
-/* line 115, ../sass/framework/_bibsdb.navigation.scss */
+/* line 121, ../sass/framework/_bibsdb.navigation.scss */
 .secondary-menu i {
   font-size: 130%;
 }
 
 /* Sub menu
    ========================================================================== */
-/* line 123, ../sass/framework/_bibsdb.navigation.scss */
+/* line 129, ../sass/framework/_bibsdb.navigation.scss */
 h2.sub-menu-title {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
 }
 
-/* line 127, ../sass/framework/_bibsdb.navigation.scss */
+/* line 133, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu {
   margin-bottom: 20px;
 }
-/* line 129, ../sass/framework/_bibsdb.navigation.scss */
+/* line 135, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li {
   border-bottom: 0;
 }
-/* line 131, ../sass/framework/_bibsdb.navigation.scss */
+/* line 137, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
   font-family: "SourceSansProSemibold";
@@ -567,12 +570,12 @@ h2.sub-menu-title {
   padding-top: 5px;
   padding-bottom: 8px;
 }
-/* line 138, ../sass/framework/_bibsdb.navigation.scss */
+/* line 144, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: underline;
 }
-/* line 146, ../sass/framework/_bibsdb.navigation.scss */
+/* line 152, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;
@@ -1029,7 +1032,7 @@ h2.pane-title, .rs-carousel-title {
  * @author agms
  */
 /* Search
-   ========================================================================== */
+========================================================================== */
 /* line 11, ../sass/module/_bibsdb.search.scss */
 .header-wrapper {
   /* Add padding if the search is in the header */
@@ -1050,20 +1053,34 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 29, ../sass/module/_bibsdb.search.scss */
 .search [class^="icon-"], .search-field-in-content [class^="icon-"] {
-  bottom: 14px;
-  left: 14px;
+  bottom: 16px;
 }
-/* line 35, ../sass/module/_bibsdb.search.scss */
+@media only screen and (min-width: 769px) {
+  /* line 29, ../sass/module/_bibsdb.search.scss */
+  .search [class^="icon-"], .search-field-in-content [class^="icon-"] {
+    left: 19%;
+  }
+}
+/* line 38, ../sass/module/_bibsdb.search.scss */
 .search .spinner i[class^="icon-"], .search-field-in-content .spinner i[class^="icon-"] {
   height: auto;
 }
-/* line 42, ../sass/module/_bibsdb.search.scss */
+/* line 45, ../sass/module/_bibsdb.search.scss */
 .search .form-item, .search-field-in-content .form-item {
   width: 100%;
 }
-/* line 46, ../sass/module/_bibsdb.search.scss */
+/* line 49, ../sass/module/_bibsdb.search.scss */
 .search .form-text, .search-field-in-content .form-text {
-  padding-left: 49px;
+  padding-left: 10%;
+}
+@media only screen and (min-width: 769px) {
+  /* line 49, ../sass/module/_bibsdb.search.scss */
+  .search .form-text, .search-field-in-content .form-text {
+    padding-left: 6%;
+    margin-left: 17%;
+    min-width: 82%;
+    width: 82%;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* line 21, ../sass/module/_bibsdb.search.scss */
@@ -1072,42 +1089,75 @@ h2.pane-title, .rs-carousel-title {
   }
 }
 
-/* Search in content
-   ========================================================================== */
+/* Styling of Ting field search profile select box.
+========================================================================== */
+/* line 68, ../sass/module/_bibsdb.search.scss */
+.form-item-ting-field-search select {
+  width: 100%;
+}
+
 @media only screen and (min-width: 769px) {
-  /* line 61, ../sass/module/_bibsdb.search.scss */
+  /* line 74, ../sass/module/_bibsdb.search.scss */
+  #search-block-form {
+    position: relative;
+  }
+  /* line 77, ../sass/module/_bibsdb.search.scss */
+  #search-block-form .form-item-ting-field-search {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 60px;
+    width: 16%;
+    font-size: 110%;
+  }
+  /* line 86, ../sass/module/_bibsdb.search.scss */
+  #search-block-form .form-item-ting-field-search select {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 60px;
+    width: 15%;
+    border-radius: 15px;
+    border: 1px solid #b7bbbf;
+  }
+}
+/* Search in content
+========================================================================== */
+@media only screen and (min-width: 769px) {
+  /* line 106, ../sass/module/_bibsdb.search.scss */
   .search-field-in-content .form-submit {
     margin-top: 0;
   }
 }
 
-/* line 67, ../sass/module/_bibsdb.search.scss */
+/* line 112, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--amount {
   color: #979da2;
 }
 
-/* line 71, ../sass/module/_bibsdb.search.scss */
+/* line 116, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content {
   margin-bottom: 20px;
   padding: 0;
   position: relative;
 }
-/* line 78, ../sass/module/_bibsdb.search.scss */
+/* line 123, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content .form-text {
   border: 1px solid #b7bbbf;
 }
 
- /* Hide message every where - agms
+/* Hide message every where - agms
 ============================================================================ */
-/* line 86, ../sass/module/_bibsdb.search.scss */
+/* line 131, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--message {
   display: none;
 }
 
- /* -- but display on large screens - agms
+/* -- but display on large screens - agms
 ============================================================================ */
 @media only screen and (min-width: 769px) {
-  /* line 94, ../sass/module/_bibsdb.search.scss */
+  /* line 139, ../sass/module/_bibsdb.search.scss */
   .search-field-in-content--message {
     display: block;
     font-family: "SourceSansProSemibold";
@@ -1117,7 +1167,7 @@ h2.pane-title, .rs-carousel-title {
     background-color: #f7e287;
   }
 }
-/* line 108, ../sass/module/_bibsdb.search.scss */
+/* line 153, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .search-field-in-content--sort-best-match,
 .page-search .pane-search-per-page,
@@ -1126,7 +1176,7 @@ h2.pane-title, .rs-carousel-title {
   min-width: 0;
   max-width: 49%;
 }
-/* line 113, ../sass/module/_bibsdb.search.scss */
+/* line 158, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results .form-select,
 .search-field-in-content--sort-best-match .form-select,
 .page-search .pane-search-per-page .form-select,
@@ -1134,7 +1184,7 @@ h2.pane-title, .rs-carousel-title {
   width: 100%;
 }
 
-/* line 119, ../sass/module/_bibsdb.search.scss */
+/* line 164, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .page-search .pane-search-per-page {
   float: right;
@@ -1154,7 +1204,7 @@ h2.pane-title, .rs-carousel-title {
   _overflow-y: visible;
 }
 
-/* line 124, ../sass/module/_bibsdb.search.scss */
+/* line 169, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-best-match,
 .page-search .pane-ting-search-sort-form {
   float: left;
@@ -1174,20 +1224,20 @@ h2.pane-title, .rs-carousel-title {
   _overflow-y: visible;
 }
 
-/* line 128, ../sass/module/_bibsdb.search.scss */
+/* line 173, ../sass/module/_bibsdb.search.scss */
 .page-search .pane-ting-search-sort-form {
   clear: none;
   overflow: visible;
 }
 
-/* line 135, ../sass/module/_bibsdb.search.scss */
+/* line 180, ../sass/module/_bibsdb.search.scss */
 .page-search .pane-search-per-page,
 .page-search .pane-ting-search-sort-form {
   padding-left: 0;
   padding-right: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 135, ../sass/module/_bibsdb.search.scss */
+  /* line 180, ../sass/module/_bibsdb.search.scss */
   .page-search .pane-search-per-page,
   .page-search .pane-ting-search-sort-form {
     clear: both;
@@ -1213,14 +1263,14 @@ h2.pane-title, .rs-carousel-title {
 }
 
 /* Facet browser styling
-   ========================================================================== */
-/* line 151, ../sass/module/_bibsdb.search.scss */
+========================================================================== */
+/* line 196, ../sass/module/_bibsdb.search.scss */
 .pane-search-backends a:visited, .pane-ding-facetbrowser a:visited {
   color: #619630;
 }
 
 /* Search results list
-   ========================================================================== */
+========================================================================== */
 /**
 * News
 * *
@@ -2743,100 +2793,13 @@ h3.bibsdb-foldable-list-title {
 /* Read Circuit Sets Item Styling
    ========================================================================== */
 /**
- * Create responsive link box on frontpage
- * - there is jquery involved too
- * 
  *
  * @author agms
  */
- /* Shrink search on large screens to make room for links
-==============================================================================*/
-@media only screen and (min-width: 769px) {
-  /* line 14, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .front .header-wrapper, .page-ting .header-wrapper, .page-arrangementer .header-wrapper, .page-libraries .header-wrapper, .page-nyheder .header-wrapper, .page-node .header-wrapper, .page-user .header-wrapper {
-    *position: relative;
-    *zoom: 1;
-  }
-  /* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-  .front .header-wrapper:before, .front .header-wrapper:after, .page-ting .header-wrapper:before, .page-ting .header-wrapper:after, .page-arrangementer .header-wrapper:before, .page-arrangementer .header-wrapper:after, .page-libraries .header-wrapper:before, .page-libraries .header-wrapper:after, .page-nyheder .header-wrapper:before, .page-nyheder .header-wrapper:after, .page-node .header-wrapper:before, .page-node .header-wrapper:after, .page-user .header-wrapper:before, .page-user .header-wrapper:after {
-    content: "";
-    display: table;
-  }
-  /* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-  .front .header-wrapper:after, .page-ting .header-wrapper:after, .page-arrangementer .header-wrapper:after, .page-libraries .header-wrapper:after, .page-nyheder .header-wrapper:after, .page-node .header-wrapper:after, .page-user .header-wrapper:after {
-    clear: both;
-  }
-  /* line 17, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .front .search, .front .search-field-in-content, .page-ting .search, .page-ting .search-field-in-content, .page-arrangementer .search, .page-arrangementer .search-field-in-content, .page-libraries .search, .page-libraries .search-field-in-content, .page-nyheder .search, .page-nyheder .search-field-in-content, .page-node .search, .page-node .search-field-in-content, .page-user .search, .page-user .search-field-in-content {
-    float: left;
-    width: 75%;
-    margin-left: 0%;
-    margin-right: -75%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
- /* Hide links every where
-	============================================================================ */
-/* line 26, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-.bibsdb-frontpage-links {
-  display: none;
-}
-
- /* -- but dispaly on large screens 
-	============================================================================ */
-@media only screen and (min-width: 769px) {
-  /* line 34, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .front .bibsdb-frontpage-links, .page-ting .bibsdb-frontpage-links, .page-arrangementer .bibsdb-frontpage-links, .page-libraries .bibsdb-frontpage-links, .page-nyheder .bibsdb-frontpage-links, .page-node .bibsdb-frontpage-links, .page-user .bibsdb-frontpage-links {
-    display: block;
-    float: right;
-    width: 25%;
-    margin-right: 0%;
-    margin-left: -25%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-    padding: 20px;
-    padding-top: 50px;
-    z-index: 5;
-  }
-  /* line 42, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .front .bibsdb-frontpage-links a, .page-ting .bibsdb-frontpage-links a, .page-arrangementer .bibsdb-frontpage-links a, .page-libraries .bibsdb-frontpage-links a, .page-nyheder .bibsdb-frontpage-links a, .page-node .bibsdb-frontpage-links a, .page-user .bibsdb-frontpage-links a {
-    font-family: "SourceSansProSemibold";
-    font-weight: normal;
-    font-size: 110%;
-    color: white;
-  }
-}
-/* Make font a bit smaller
-	============================================================================ */
-@media only screen and (min-width: 769px) and (max-width: 940px) {
-  /* line 57, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
-  .bibsdb-frontpage-links a {
-    font-size: 110%;
-  }
-}
 /* Make carrousel heading upper case and white on small screens
 ===============================================================================*/
 @media only screen and (max-width: 768px) {
-  /* line 67, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
+  /* line 13, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .rs-carousel-title {
     color: white;
   }

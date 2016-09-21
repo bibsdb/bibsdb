@@ -120,8 +120,6 @@
 
 	}
 
-	
-
 
   // When ready start the magic.
   $(document).ready(function () {

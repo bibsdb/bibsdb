@@ -1,64 +1,10 @@
 /**
- * Create responsive link box on frontpage
- * - there is jquery involved too
- * 
  *
  * @author agms
  */
  
  
- /* Shrink search on large screens to make room for links
-==============================================================================*/
-@include large-x-large() {
-  .front, .page-ting, .page-arrangementer, .page-libraries, .page-nyheder, .page-node, .page-user {
-    .header-wrapper {
-      @include zen-grid-container(); 
-    }
-    .search {
-      @include zen-grid-item(9, 1);  
-    }
-  }
-}
- 
- /* Hide links every where
-	============================================================================ */
 
-.bibsdb-frontpage-links {	
-		display: none;
-	}	
-		
- /* -- but dispaly on large screens 
-	============================================================================ */	
-@include large-x-large() {
-	.front, .page-ting, .page-arrangementer, .page-libraries, .page-nyheder, .page-node, .page-user {
-	  .bibsdb-frontpage-links {	
-		  display: block;
-		  @include zen-grid-item(3, 1, right);
-
-
-		  padding: $large-spacing;
-		  padding-top: 50px;
-		  z-index: 5;
-		  a {
-				  @include font-bold();
-				  font-size: $font-size-medium;
-				  color: $white;
-		  }
-
-	  }	
-	}
-}
-
-/* Make font a bit smaller
-	============================================================================ */
-	
-@include large() {
-	.bibsdb-frontpage-links {	
-		a {
-			font-size: $font-size-medium;
-		}
-	}	
-}
 		
 
 /* Make carrousel heading upper case and white on small screens
