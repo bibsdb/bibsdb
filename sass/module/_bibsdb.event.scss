@@ -58,6 +58,9 @@ If we have embedded columns don't show top border */
   .pane-ding-event-ding-event-list {
     @include zen-clear();
     @include zen-grid-item(9, 1);
+    @include small-medium() {
+      @include zen-grid-item(12, 1);
+    }
   }
 }
 
