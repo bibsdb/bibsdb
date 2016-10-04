@@ -1,6 +1,30 @@
 <?php
 
 /**
+* Preprocesses the wrapping HTML.
+* Add the Google Search Console verification code to the meta-tags on all pages
+*
+* @param array &$variables
+*   Template variables.
+*/
+function bibsdb_preprocess_html(&$vars) {
+  
+  // Setup Google Webmasters Verification Meta Tag
+  $google_webmasters_verification = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'google-site-verification',
+      // REPLACE THIS CODE WITH THE ONE GOOGLE SUPPLIED YOU WITH
+      'content' => 'qZMzCeDQAxqr58sYiQQKBWia4pVjVA6ZukHAETFnKvI',
+    )
+  );
+  
+  // Add Google Webmasters Verification Meta Tag to head
+  drupal_add_html_head($google_webmasters_verification, 'google_webmasters_verification');
+}
+
+/**
  * Implements hook_preprocess_HOOK() for node template
  * published date
  * author full name
