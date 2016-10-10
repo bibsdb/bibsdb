@@ -16,7 +16,7 @@ function bibsdb_preprocess_html(&$vars) {
     '#attributes' => array(
       'name' => 'google-site-verification',
       // REPLACE THIS CODE WITH THE ONE GOOGLE SUPPLIED YOU WITH
-      'content' => 'qZMzCeDQAxqr58sYiQQKBWia4pVjVA6ZukHAETFnKvI',
+      'content' => '-NRKxJA49-S9fgaUZgwHiv0GpaSmAdDz72WxtocIyQc',
     )
   );
   
