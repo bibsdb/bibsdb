@@ -6,9 +6,14 @@ function swap(a, b) {
     a.before(tmp);
     b.before(a);
     tmp.replaceWith(b);
-};
+}
 
-
+	/**
+	 * Hide the too-may-search-results message in search result
+	 */
+	function hide_too_many_search_results_message() {
+		$('.search-field-in-content--message').hide();
+	}
 
 
 	/**
@@ -69,6 +74,7 @@ function swap(a, b) {
 		translate_pick_default_branch_text();
 		expand_holdings_on_page_load();
 		swap_holdings_and_material_details();
+		hide_too_many_search_results_message();
 	});
 
 

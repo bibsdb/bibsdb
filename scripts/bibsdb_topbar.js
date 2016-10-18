@@ -105,19 +105,37 @@
 	  $('.js-topbar-link.topbar-link-new-user').unbind('click touchstart');
 
 	  // If the search link is clicked make new user link inactive.
-     $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
-    	$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
-    	$('.page-gatewayf-registration .bibsdb-frontpage-links').css("display", "none");
-    });
+	  $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
+	  	$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
+	  	$('.page-gatewayf-registration .bibsdb-frontpage-links').css("display", "none");
+	  });
 
    	// If the user link is clicked make new user link inactive.
-    $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
-    	$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
-    });
+   	$('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
+   		$('.topbar-menu .leaf .topbar-link-new-user').toggleClass( 'active', false );
+   	});
 
     //Change the text on the button below login fra Opret bruger to Ny bruger
     $('.ding-gatewayf-registration-link').text('Ny bruger af biblioteket?');
 
+  }
+
+  function bibsdb_default_search_query() {
+		// Issue a search on all content when the value in the dropdown is changed
+		$('#search-block-form #edit-ting-field-search').change(function() {
+			$('#search-block-form .form-text').val('term.type=*');
+			$('#search-block-form').submit();
+
+			// Remove the default query from the search field
+			if ($('#search-block-form .form-text').val().indexOf('term.type=*') > -1) {
+				$('#search-block-form .form-text').val('');
+			}
+		});
+
+		// Remove the default query from the search field
+		if ($('#search-block-form .form-text').val().indexOf('term.type=*') > -1) {
+			$('#search-block-form .form-text').val('');
+		}
 	}
 
 
@@ -126,6 +144,7 @@
   	control_topbar_search_box_visibility();
   	bibsdb_add_icon_to_facebook_link();
   	bibsdb_new_user_menu_item();
+  	bibsdb_default_search_query();
 
 		//if screen is resized og tablet is rotated a new calculation must be made
 		$( window ).resize(function() {
