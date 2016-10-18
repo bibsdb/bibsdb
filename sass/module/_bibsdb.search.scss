@@ -55,6 +55,10 @@
       min-width: 82%;
       width: 82%;
     }
+
+    @include small {
+      padding-left: 15%;
+    }
   }
 
   @include small-medium {
