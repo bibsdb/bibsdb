@@ -4,6 +4,23 @@
  * @author agms
  */
 
+/* Extends
+   ========================================================================== */
+%page-heading {
+  @include font-bold();
+  
+  font-size: $font-size-giga;
+
+  @include small() {
+    font-size: $font-size-large;
+  }
+}
+
+%section-heading {
+  @include font-bold();
+
+  font-size: $font-size-larger;
+}
 
 /* Header variants
 ========================================================================== */

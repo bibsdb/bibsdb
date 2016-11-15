@@ -47,7 +47,7 @@
 /* Topbar background color */
 /* line 9, ../sass/configuration/_bibsdb.configuration.scss */
 .topbar {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /* Header background color */
@@ -147,7 +147,7 @@ body {
   line-height: 22px;
 }
 
-/* line 21, ../sass/framework/_bibsdb.base.scss */
+/* line 16, ../sass/framework/_bibsdb.base.scss */
 h1,
 h2,
 h3,
@@ -309,7 +309,7 @@ body {
     line-height: 24px;
   }
 }
-/* line 181, ../sass/framework/_bibsdb.base.scss */
+/* line 179, ../sass/framework/_bibsdb.base.scss */
 h4,
 h5,
 h6 {
@@ -416,11 +416,11 @@ h6 {
 /* line 43, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item:hover {
   background-color: #7fc241;
-  color: white;
+  color: #fff;
 }
 /* line 48, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.active {
-  color: white;
+  color: #fff;
   background-color: #979da2;
 }
 /* line 54, ../sass/framework/_bibsdb.navigation.scss */
@@ -471,10 +471,6 @@ h6 {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
 /* line 89, ../sass/framework/_bibsdb.navigation.scss */
@@ -490,14 +486,10 @@ h6 {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 94, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 93, ../sass/framework/_bibsdb.navigation.scss */
   .main-menu-wrapper,
   .secondary-menu-wrapper {
     float: left;
@@ -511,10 +503,6 @@ h6 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     clear: left;
   }
 }
@@ -527,7 +515,7 @@ h6 {
 }
 /* line 109, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
-  color: white;
+  color: #fff;
 }
 /* line 111, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
@@ -599,10 +587,8 @@ a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
-  -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   display: inline-block;
   font-size: 100%;
@@ -613,7 +599,7 @@ a.download-button,
   text-align: center;
   vertical-align: middle;
 }
-/* line 47, ../sass/framework/_bibsdb.buttons.scss */
+/* line 45, ../sass/framework/_bibsdb.buttons.scss */
 .button:focus, .download-button:focus,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
@@ -626,7 +612,7 @@ a.download-button,
 .user .form-submit:active {
   text-decoration: none;
 }
-/* line 53, ../sass/framework/_bibsdb.buttons.scss */
+/* line 52, ../sass/framework/_bibsdb.buttons.scss */
 .disabled.button, .disabled.download-button,
 .search .disabled.form-submit,
 .search-field-in-content .disabled.form-submit,
@@ -636,8 +622,8 @@ a.download-button,
 .user [disabled].form-submit {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
-  -webkit-box-shadow: none;
   -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   cursor: default;
 }
@@ -645,24 +631,25 @@ a.download-button,
 /* Mixins
    ========================================================================== */
 /* Default button */
-/* line 96, ../sass/framework/_bibsdb.buttons.scss */
+/* line 94, ../sass/framework/_bibsdb.buttons.scss */
 .button, .download-button,
 a.button,
 a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdmYzI0MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5OGEyYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fc241), color-stop(100%, #598a2c));
-  background-image: -webkit-linear-gradient(#7fc241, #598a2c);
   background-image: -moz-linear-gradient(#7fc241, #598a2c);
-  background-image: -o-linear-gradient(#7fc241, #598a2c);
+  background-image: -webkit-linear-gradient(#7fc241, #598a2c);
   background-image: linear-gradient(#7fc241, #598a2c);
   /* Make sure buttons get a background color in IE */
   background-color: #7fc241;
   border: 0;
-  color: white;
+  color: #fff;
 }
-/* line 78, ../sass/framework/_bibsdb.buttons.scss */
+/* line 77, ../sass/framework/_bibsdb.buttons.scss */
 .button:link, .download-button:link, .button:visited, .download-button:visited,
 a.button:link,
 a.download-button:link,
@@ -674,9 +661,9 @@ a.download-button:visited,
 .search .form-submit:visited,
 .search-field-in-content .form-submit:visited,
 .user .form-submit:visited {
-  color: white;
+  color: #fff;
 }
-/* line 85, ../sass/framework/_bibsdb.buttons.scss */
+/* line 83, ../sass/framework/_bibsdb.buttons.scss */
 .button:focus, .download-button:focus, .button:hover, .download-button:hover, .button:active, .download-button:active,
 a.button:focus,
 a.download-button:focus,
@@ -693,10 +680,11 @@ a.download-button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
 .user .form-submit:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcyYjEzOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRkNzcyNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b139), color-stop(100%, #4d7726));
-  background-image: -webkit-linear-gradient(#72b139, #4d7726);
   background-image: -moz-linear-gradient(#72b139, #4d7726);
-  background-image: -o-linear-gradient(#72b139, #4d7726);
+  background-image: -webkit-linear-gradient(#72b139, #4d7726);
   background-image: linear-gradient(#72b139, #4d7726);
   background-color: #598a2c;
 }
@@ -706,7 +694,7 @@ a.download-button:active,
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
-/* line 123, ../sass/framework/_bibsdb.buttons.scss */
+/* line 122, ../sass/framework/_bibsdb.buttons.scss */
 input[type=submit].button, input[type=submit].download-button,
 button.button,
 button.download-button {
@@ -715,7 +703,7 @@ button.download-button {
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 134, ../sass/framework/_bibsdb.buttons.scss */
+  /* line 130, ../sass/framework/_bibsdb.buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
@@ -725,7 +713,6 @@ button.download-button {
     padding: 0;
   }
 }
-
 /**
  * Labels
  *
@@ -744,13 +731,11 @@ button.download-button {
   background-color: #979da2;
   color: #fffffd;
   padding: 3px 10px;
-  -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 24, ../sass/framework/_bibsdb.labels.scss */
+/* line 23, ../sass/framework/_bibsdb.labels.scss */
 .label a:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link, .subjects .subject a:link, .news-list .news-label a:link, .label a:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited, .subjects .subject a:visited, .news-list .news-label a:visited {
   color: #fffffd;
   text-decoration: none;
@@ -762,7 +747,7 @@ button.download-button {
   text-decoration: none;
 }
 
-/* line 39, ../sass/framework/_bibsdb.labels.scss */
+/* line 38, ../sass/framework/_bibsdb.labels.scss */
 .ting-object .subjects,
 .pane-ting-object .subjects {
   white-space: normal;
@@ -817,9 +802,24 @@ button.download-button {
  *
  * @author agms
  */
+/* Extends
+   ========================================================================== */
+/* line 9, ../sass/layout/_bibsdb.typography.scss */
+h1, h1.page-title, .pane-menu-title h2, h2.pane-title, .rs-carousel-title {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  font-size: 200%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 9, ../sass/layout/_bibsdb.typography.scss */
+  h1, h1.page-title, .pane-menu-title h2, h2.pane-title, .rs-carousel-title {
+    font-size: 130%;
+  }
+}
+
 /* Header variants
 ========================================================================== */
-/* line 10, ../sass/layout/_bibsdb.typography.scss */
+/* line 27, ../sass/layout/_bibsdb.typography.scss */
 h1, h1.page-title, .pane-menu-title h2 {
   font-size: 180%;
   font-family: "SourceSansProBold";
@@ -827,7 +827,7 @@ h1, h1.page-title, .pane-menu-title h2 {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 17, ../sass/layout/_bibsdb.typography.scss */
+/* line 34, ../sass/layout/_bibsdb.typography.scss */
 h2.pane-title, .rs-carousel-title {
   font-size: 160%;
   font-family: "SourceSansProBold";
@@ -837,7 +837,7 @@ h2.pane-title, .rs-carousel-title {
 
 /* Content and elements
 ========================================================================== */
-/* line 29, ../sass/layout/_bibsdb.typography.scss */
+/* line 46, ../sass/layout/_bibsdb.typography.scss */
 .page-lead {
   font-family: "SourceSansProSemibold";
   font-weight: normal;
@@ -847,14 +847,14 @@ h2.pane-title, .rs-carousel-title {
   border-bottom: 1px solid #d2d5d7;
 }
 
-/* line 37, ../sass/layout/_bibsdb.typography.scss */
+/* line 54, ../sass/layout/_bibsdb.typography.scss */
 .page-image {
   margin-bottom: 20px;
 }
 
 /* Page specific styling (page doesn't have a module file)
 ============================================================================= */
-/* line 45, ../sass/layout/_bibsdb.typography.scss */
+/* line 62, ../sass/layout/_bibsdb.typography.scss */
 .node-type-ding-page .layout-wrapper {
   padding-top: 0;
 }
@@ -912,13 +912,11 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 96, ../sass/module/_bibsdb.module.scss */
 .search .form-text, .search-field-in-content .form-text, .user .form-text {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
   border-radius: 12px;
   border: 0;
   display: inline;
@@ -927,7 +925,7 @@ h2.pane-title, .rs-carousel-title {
   padding-bottom: 0;
   width: 100%;
 }
-/* line 109, ../sass/module/_bibsdb.module.scss */
+/* line 108, ../sass/module/_bibsdb.module.scss */
 .search .form-text, .search-field-in-content .form-text, .user .form-text,
 .search .form-submit,
 .search-field-in-content .form-submit,
@@ -937,10 +935,8 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 114, ../sass/module/_bibsdb.module.scss */
 .search .form-submit, .search-field-in-content .form-submit, .user .form-submit {
-  -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
   border-radius: 12px;
   font-size: 180%;
   margin-top: 29px;
@@ -1173,7 +1169,7 @@ h2.pane-title, .rs-carousel-title {
     background-color: #f7e287;
   }
 }
-/* line 157, ../sass/module/_bibsdb.search.scss */
+/* line 154, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .search-field-in-content--sort-best-match,
 .page-search .pane-search-per-page,
@@ -1190,7 +1186,7 @@ h2.pane-title, .rs-carousel-title {
   width: 100%;
 }
 
-/* line 168, ../sass/module/_bibsdb.search.scss */
+/* line 167, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-results,
 .page-search .pane-search-per-page {
   float: right;
@@ -1204,13 +1200,9 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
-/* line 173, ../sass/module/_bibsdb.search.scss */
+/* line 172, ../sass/module/_bibsdb.search.scss */
 .search-field-in-content--sort-best-match,
 .page-search .pane-ting-search-sort-form {
   float: left;
@@ -1224,10 +1216,6 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
 /* line 177, ../sass/module/_bibsdb.search.scss */
@@ -1236,14 +1224,14 @@ h2.pane-title, .rs-carousel-title {
   overflow: visible;
 }
 
-/* line 184, ../sass/module/_bibsdb.search.scss */
+/* line 183, ../sass/module/_bibsdb.search.scss */
 .page-search .pane-search-per-page,
 .page-search .pane-ting-search-sort-form {
   padding-left: 0;
   padding-right: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 184, ../sass/module/_bibsdb.search.scss */
+  /* line 183, ../sass/module/_bibsdb.search.scss */
   .page-search .pane-search-per-page,
   .page-search .pane-ting-search-sort-form {
     clear: both;
@@ -1258,10 +1246,6 @@ h2.pane-title, .rs-carousel-title {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     padding-left: 0;
     padding-right: 0;
     max-width: 100%;
@@ -1304,10 +1288,6 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding: 0;
 }
 /* line 19, ../sass/module/_bibsdb.news.scss */
@@ -1323,10 +1303,6 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -1346,10 +1322,6 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   /* Add top-margin when there is an image */
   margin-top: 10px;
   /* Create space between news-info and bibsdb-fact-box when there is no image */
@@ -1416,10 +1388,6 @@ h2.pane-title, .rs-carousel-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
 }
 /* line 99, ../sass/module/_bibsdb.news.scss */
@@ -1551,10 +1519,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   clear: left;
 }
 @media only screen and (max-width: 768px) {
@@ -1571,10 +1535,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 50, ../sass/module/_bibsdb.event.scss */
@@ -1590,10 +1550,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 50, ../sass/module/_bibsdb.event.scss */
@@ -1615,10 +1571,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 58, ../sass/module/_bibsdb.event.scss */
@@ -1634,10 +1586,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 
@@ -1682,10 +1630,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 32, ../sass/module/_bibsdb.user.scss */
 .user .form-item-name .form-text {
@@ -1704,10 +1648,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 40, ../sass/module/_bibsdb.user.scss */
 .user .form-item-pass .form-text {
@@ -1718,7 +1658,7 @@ If we have embedded columns don't show top border */
   display: none;
 }
 @media only screen and (max-width: 480px) {
-  /* line 51, ../sass/module/_bibsdb.user.scss */
+  /* line 50, ../sass/module/_bibsdb.user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     float: left;
@@ -1732,10 +1672,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     clear: left;
   }
   /* line 56, ../sass/module/_bibsdb.user.scss */
@@ -1755,7 +1691,7 @@ If we have embedded columns don't show top border */
   /* line 68, ../sass/module/_bibsdb.user.scss */
   .user .block-title {
     display: block;
-    color: white;
+    color: #fff;
     margin-top: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     padding-top: 10px;
@@ -1804,10 +1740,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   clear: right;
 }
 @media only screen and (max-width: 768px) {
@@ -1824,10 +1756,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     clear: both;
     margin-top: 20px;
   }
@@ -1853,10 +1781,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 39, ../sass/module/_bibsdb.libraries.scss */
@@ -1873,10 +1797,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 48, ../sass/module/_bibsdb.libraries.scss */
@@ -1892,10 +1812,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 48, ../sass/module/_bibsdb.libraries.scss */
@@ -1912,10 +1828,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 57, ../sass/module/_bibsdb.libraries.scss */
@@ -1931,10 +1843,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 57, ../sass/module/_bibsdb.libraries.scss */
@@ -1951,10 +1859,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 65, ../sass/module/_bibsdb.libraries.scss */
@@ -1971,10 +1875,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
   /* line 65, ../sass/module/_bibsdb.libraries.scss */
@@ -1991,10 +1891,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 74, ../sass/module/_bibsdb.libraries.scss */
@@ -2017,10 +1913,6 @@ If we have embedded columns don't show top border */
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* line 84, ../sass/module/_bibsdb.libraries.scss */
@@ -2036,10 +1928,6 @@ If we have embedded columns don't show top border */
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   clear: both;
 }
 @media only screen and (max-width: 768px) {
@@ -2147,12 +2035,7 @@ hr {
 /* Two column layout on netbiblioteket
 =============================================================================*/
 @media only screen and (min-width: 769px) {
-  /* line 109, ../sass/bibsdbextras/_bibsdb.extras.scss */
-  .bibsdb-page-netbiblioteket .primary-content {
-    *position: relative;
-    *zoom: 1;
-  }
-  /* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+  /* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
   .bibsdb-page-netbiblioteket .primary-content:before, .bibsdb-page-netbiblioteket .primary-content:after {
     content: "";
     display: table;
@@ -2174,10 +2057,6 @@ hr {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
   /* line 115, ../sass/bibsdbextras/_bibsdb.extras.scss */
   .bibsdb-page-netbiblioteket .primary-content .pane-bibsdb-tags-list-panel-pane-11 {
@@ -2192,10 +2071,6 @@ hr {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
 }
 /* Bibsdb foldable list
@@ -2303,10 +2178,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2324,10 +2195,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
 }
 /* line 65, ../sass/bibsdbextras/_bibsdb.taglists.scss */
@@ -2343,10 +2210,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-right: 0;
 }
 
@@ -2363,10 +2226,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
 }
 /* line 79, ../sass/bibsdbextras/_bibsdb.taglists.scss */
@@ -2382,10 +2241,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 83, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--three > div:nth-child(3) {
@@ -2400,10 +2255,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-right: 0;
 }
 
@@ -2420,10 +2271,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
 }
 /* line 97, ../sass/bibsdbextras/_bibsdb.taglists.scss */
@@ -2439,10 +2286,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 101, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--four > div:nth-child(3) {
@@ -2457,10 +2300,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 105, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--four > div:nth-child(4) {
@@ -2475,10 +2314,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-right: 0;
 }
 
@@ -2495,10 +2330,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
 }
 /* line 119, ../sass/bibsdbextras/_bibsdb.taglists.scss */
@@ -2514,10 +2345,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 123, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--six > div:nth-child(3) {
@@ -2532,10 +2359,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 127, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--six > div:nth-child(4) {
@@ -2550,10 +2373,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 131, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--six > div:nth-child(5) {
@@ -2568,10 +2387,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 135, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--six > div:nth-child(6) {
@@ -2586,20 +2401,14 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-right: 0;
 }
 
 /* line 142, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 .content-blocks--wrapper {
-  *position: relative;
-  *zoom: 1;
   padding-bottom: 20px;
 }
-/* line 46, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .content-blocks--wrapper:before, .content-blocks--wrapper:after {
   content: "";
   display: table;
@@ -2617,7 +2426,7 @@ h3.bibsdb-foldable-list-title {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 159, ../sass/bibsdbextras/_bibsdb.taglists.scss */
+  /* line 155, ../sass/bibsdbextras/_bibsdb.taglists.scss */
   .content-blocks--wrapper .content-blocks--one > div,
   .content-blocks--wrapper .content-blocks--two > div,
   .content-blocks--wrapper .content-blocks--three > div,
@@ -2635,10 +2444,6 @@ h3.bibsdb-foldable-list-title {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     padding-left: 0;
     padding-right: 0;
     border-bottom: 1px solid #d2d5d7;
@@ -2774,7 +2579,7 @@ h3.bibsdb-foldable-list-title {
   padding-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 328, ../sass/bibsdbextras/_bibsdb.taglists.scss */
+  /* line 324, ../sass/bibsdbextras/_bibsdb.taglists.scss */
   .bibsdb-titles-in-squares .content-blocks--wrapper .content-blocks--one > div,
   .bibsdb-titles-in-squares .content-blocks--wrapper .content-blocks--two > div,
   .bibsdb-titles-in-squares .content-blocks--wrapper .content-blocks--three > div,
@@ -2827,7 +2632,7 @@ h3.bibsdb-foldable-list-title {
 @media only screen and (max-width: 768px) {
   /* line 13, ../sass/bibsdbextras/_bibsdb.frontpage.scss */
   .rs-carousel-title {
-    color: white;
+    color: #fff;
   }
 }
 
@@ -2875,10 +2680,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 23, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col {
@@ -2893,10 +2694,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2914,10 +2711,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2934,10 +2727,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 37, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .bibsdb-page-eresourcer .eresource-right-col .eresource-info-item .eresource-text {
@@ -2952,10 +2741,6 @@ h3.bibsdb-foldable-list-title {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
 /* Format menu title on eresource */
@@ -3045,7 +2830,7 @@ h3.bibsdb-foldable-list-title {
   font-family: "Helvetica Neue", Arial, sans-serif;
   text-align: center;
 }
-/* line 127, ../sass/bibsdbextras/_bibsdb.eresource.scss */
+/* line 126, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .eresource-body li ol,
 .eresource-content .eresource-body li ul {
   margin-top: 6px;
@@ -3175,10 +2960,6 @@ h3.bibsdb-foldable-list-title {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
   }
   /* line 263, ../sass/bibsdbextras/_bibsdb.eresource.scss */
   .bibsdb-page-eresourcer .eresource-right-col {
@@ -3194,10 +2975,6 @@ h3.bibsdb-foldable-list-title {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
     padding-left: 0;
     padding-right: 0;
   }
@@ -3258,7 +3035,7 @@ html.js .page-node-1392 .pane-node-content, html.js .page-node-1392 .node, html.
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #255e3b;
-  color: white;
+  color: #fff;
 }
 /* line 25, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .node, html.js .page-node-1392 article.page, html.js .page-node-1421 .node, html.js .page-node-1421 article.page, .page-node-1393 .node, .page-node-1393 article.page, .page-node-1441 .node, .page-node-1441 article.page {
@@ -3267,12 +3044,12 @@ html.js .page-node-1392 .node, html.js .page-node-1392 article.page, html.js .pa
 }
 /* line 29, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .node .field-name-field-ding-page-body a:link, html.js .page-node-1392 .node .webform-component--footer a:link, html.js .page-node-1392 article.page .field-name-field-ding-page-body a:link, html.js .page-node-1392 article.page .webform-component--footer a:link, html.js .page-node-1421 .node .field-name-field-ding-page-body a:link, html.js .page-node-1421 .node .webform-component--footer a:link, html.js .page-node-1421 article.page .field-name-field-ding-page-body a:link, html.js .page-node-1421 article.page .webform-component--footer a:link, .page-node-1393 .node .field-name-field-ding-page-body a:link, .page-node-1393 .node .webform-component--footer a:link, .page-node-1393 article.page .field-name-field-ding-page-body a:link, .page-node-1393 article.page .webform-component--footer a:link, .page-node-1441 .node .field-name-field-ding-page-body a:link, .page-node-1441 .node .webform-component--footer a:link, .page-node-1441 article.page .field-name-field-ding-page-body a:link, .page-node-1441 article.page .webform-component--footer a:link {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
 /* line 33, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .node .field-name-field-ding-page-body a:visited, html.js .page-node-1392 .node .webform-component--footer a:visited, html.js .page-node-1392 article.page .field-name-field-ding-page-body a:visited, html.js .page-node-1392 article.page .webform-component--footer a:visited, html.js .page-node-1421 .node .field-name-field-ding-page-body a:visited, html.js .page-node-1421 .node .webform-component--footer a:visited, html.js .page-node-1421 article.page .field-name-field-ding-page-body a:visited, html.js .page-node-1421 article.page .webform-component--footer a:visited, .page-node-1393 .node .field-name-field-ding-page-body a:visited, .page-node-1393 .node .webform-component--footer a:visited, .page-node-1393 article.page .field-name-field-ding-page-body a:visited, .page-node-1393 article.page .webform-component--footer a:visited, .page-node-1441 .node .field-name-field-ding-page-body a:visited, .page-node-1441 .node .webform-component--footer a:visited, .page-node-1441 article.page .field-name-field-ding-page-body a:visited, .page-node-1441 article.page .webform-component--footer a:visited {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
 /* line 37, ../sass/bibsdbextras/_bibsdb.menucard.scss */
@@ -3281,7 +3058,7 @@ html.js .page-node-1392 .node .page-image, html.js .page-node-1392 article.page 
 }
 /* line 41, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .node h1.page-title, html.js .page-node-1392 article.page h1.page-title, html.js .page-node-1421 .node h1.page-title, html.js .page-node-1421 article.page h1.page-title, .page-node-1393 .node h1.page-title, .page-node-1393 article.page h1.page-title, .page-node-1441 .node h1.page-title, .page-node-1441 article.page h1.page-title {
-  color: white;
+  color: #fff;
 }
 /* line 44, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .node .page-content, html.js .page-node-1392 article.page .page-content, html.js .page-node-1421 .node .page-content, html.js .page-node-1421 article.page .page-content, .page-node-1393 .node .page-content, .page-node-1393 article.page .page-content, .page-node-1441 .node .page-content, .page-node-1441 article.page .page-content {
@@ -3306,10 +3083,6 @@ html.js .page-node-1392 .illustration1, html.js .page-node-1421 .illustration1, 
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 57, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .illustration2, html.js .page-node-1421 .illustration2, .page-node-1393 .illustration2, .page-node-1441 .illustration2 {
@@ -3324,10 +3097,6 @@ html.js .page-node-1392 .illustration2, html.js .page-node-1421 .illustration2, 
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 60, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .illustration3, html.js .page-node-1421 .illustration3, .page-node-1393 .illustration3, .page-node-1441 .illustration3 {
@@ -3342,10 +3111,6 @@ html.js .page-node-1392 .illustration3, html.js .page-node-1421 .illustration3, 
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 /* line 63, ../sass/bibsdbextras/_bibsdb.menucard.scss */
 html.js .page-node-1392 .clearill, html.js .page-node-1421 .clearill, .page-node-1393 .clearill, .page-node-1441 .clearill {

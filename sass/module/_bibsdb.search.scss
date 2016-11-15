@@ -36,8 +36,8 @@
 
   .spinner {
     i[class^="icon-"] {
-      @extend .icon-spin;
-      @extend .icon-spinner;
+      @extend .icon-spin !optional;
+      @extend .icon-spinner !optional;
       height: auto;
     }
   }

@@ -142,6 +142,18 @@
 		}
 	}
 
+		/**
+	 * The wayf buttons don't wrap correctly on small screens
+	 */ 
+	function bibsdb_shorter_wayf_button_texts_on_small_screens() {
+	// At 768 pixels there are major layout changes
+		var breakpoint_medium = 768;		
+
+		if ($( window ).width() <= breakpoint_medium ){
+			$('.ding-gatewayf-registration-link').text('Ny bruger?');
+		}
+	}
+
 
   // When ready start the magic.
   $(document).ready(function () {
@@ -149,6 +161,7 @@
   	bibsdb_add_icon_to_facebook_link();
   	bibsdb_new_user_menu_item();
   	bibsdb_default_search_query();
+  	bibsdb_shorter_wayf_button_texts_on_small_screens();
 
 		//if screen is resized og tablet is rotated a new calculation must be made
 		$( window ).resize(function() {
