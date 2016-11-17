@@ -8,9 +8,11 @@
 *   Template variables.
 */
 function bibsdb_preprocess_html(&$vars) {
+	/** Hotjar script
 	if($vars['is_front']) {
 		drupal_add_js(drupal_get_path('theme', 'bibsdb') . '/scripts/bibsdb_hotjar.js');
 	};
+	*/
 
   // Setup Google Webmasters Verification Meta Tag
 	$google_webmasters_verification = array(
