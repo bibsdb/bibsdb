@@ -20,10 +20,30 @@
    ========================================================================== */
 
 .content-wrapper {
-  margin-top: $large-spacing;
-  margin-bottom: $large-spacing;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+/* Layouts
+   ========================================================================== */
 
-   
+.default-layout {
+  margin-top: 0;
+}
 
+/* Breadcrumbs
+   ========================================================================== */
+
+.breadcrumb {
+	background-color: $white;
+	margin-left: $medium-spacing;
+	margin-right: $medium-spacing;
+	padding-left: $large-spacing;
+	padding-top: $small-spacing;
+
+	@include small-medium {
+		background-color: $gray-light;
+		padding-left: 0;
+		font-size: $font-size-small;
+	}
+}
