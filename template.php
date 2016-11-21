@@ -2,17 +2,13 @@
 
 /**
 * Preprocesses the wrapping HTML.
+* Here we mess with the header section.
 * Add the Google Search Console verification code to the meta-tags on all pages
 *
 * @param array &$variables
 *   Template variables.
 */
 function bibsdb_preprocess_html(&$vars) {
-	/** Hotjar script
-	if($vars['is_front']) {
-		drupal_add_js(drupal_get_path('theme', 'bibsdb') . '/scripts/bibsdb_hotjar.js');
-	};
-	*/
 
   // Setup Google Webmasters Verification Meta Tag
 	$google_webmasters_verification = array(
@@ -27,7 +23,15 @@ function bibsdb_preprocess_html(&$vars) {
 
   // Add Google Webmasters Verification Meta Tag to head
 	drupal_add_html_head($google_webmasters_verification, 'google_webmasters_verification');
+
+	/** Hotjar script
+	if($vars['is_front']) {
+		drupal_add_js(drupal_get_path('theme', 'bibsdb') . '/scripts/bibsdb_hotjar.js');
+	};
+	*/
 }
+
+
 
 /**
  * Implements hook_preprocess_HOOK() for node template
