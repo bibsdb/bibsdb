@@ -24,20 +24,19 @@
   margin-bottom: 0;
 }
 
-/* Layouts
-   ========================================================================== */
-
-.default-layout {
-  margin-top: 0;
-}
-
 /* Breadcrumbs
    ========================================================================== */
+.breadcrumb-wrapper {
+	@include zen-clear();
+	  margin-right: 20px;
+}
 
 .breadcrumb {
+	@include zen-clear();
+	@include zen-grid-item(12, 1);
+	margin-right: 10px;
+	margin-left: 10px;
 	background-color: $white;
-	margin-left: $medium-spacing;
-	margin-right: $medium-spacing;
 	padding-left: $large-spacing;
 	padding-top: $small-spacing;
 
