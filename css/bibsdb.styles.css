@@ -784,15 +784,21 @@ button.button {
   margin-top: 0;
 }
 
+/* Depends on bibsdb_expose module */
+/* line 32, ../sass/layout/_bibsdb.layout.scss */
+.default-layout.editormode {
+  margin-top: 20px;
+}
+
 /* Breadcrumbs
    ========================================================================== */
-/* line 33, ../sass/layout/_bibsdb.layout.scss */
+/* line 39, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb-wrapper {
   clear: left;
   margin-right: 20px;
 }
 
-/* line 38, ../sass/layout/_bibsdb.layout.scss */
+/* line 44, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb {
   clear: left;
   float: left;
@@ -813,7 +819,7 @@ button.button {
   padding-top: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 38, ../sass/layout/_bibsdb.layout.scss */
+  /* line 44, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb {
     background-color: #d2d5d7;
     padding-left: 0;

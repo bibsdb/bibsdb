@@ -28,6 +28,12 @@
 	margin-top: 0;
 }
 
+/* Depends on bibsdb_expose module */
+.default-layout.editormode {
+	margin-top: 20px;
+}
+
+
 /* Breadcrumbs
    ========================================================================== */
 .breadcrumb-wrapper {
