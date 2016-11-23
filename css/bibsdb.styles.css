@@ -779,15 +779,20 @@ button.button {
   margin-bottom: 0;
 }
 
+/* line 27, ../sass/layout/_bibsdb.layout.scss */
+.default-layout {
+  margin-top: 0;
+}
+
 /* Breadcrumbs
    ========================================================================== */
-/* line 29, ../sass/layout/_bibsdb.layout.scss */
+/* line 33, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb-wrapper {
   clear: left;
   margin-right: 20px;
 }
 
-/* line 34, ../sass/layout/_bibsdb.layout.scss */
+/* line 38, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb {
   clear: left;
   float: left;
@@ -808,7 +813,7 @@ button.button {
   padding-top: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 34, ../sass/layout/_bibsdb.layout.scss */
+  /* line 38, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb {
     background-color: #d2d5d7;
     padding-left: 0;
