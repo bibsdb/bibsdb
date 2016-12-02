@@ -126,18 +126,18 @@
 
 			// If the user has not entered a search, then find everything in the category
 			if ($('#search-block-form .form-text').val().trim().length === 0) {
-				$('#search-block-form .form-text').val('term.type=*');
+				$('#search-block-form .form-text').val('*');
 			}
 			$('#search-block-form').submit();
 
 			// Remove the default query from the search field
-			if ($('#search-block-form .form-text').val().indexOf('term.type=*') > -1) {
+			if ($('#search-block-form .form-text').val().indexOf('*') > -1) {
 					$('#search-block-form .form-text').val('');
 			}
 		});
 
 		// Remove the default query from the search field
-		if ($('#search-block-form .form-text').val().indexOf('term.type=*') > -1) {
+		if ($('#search-block-form .form-text').val().indexOf('*') > -1) {
 			$('#search-block-form .form-text').val('');
 		}
 	}
