@@ -150,7 +150,7 @@
 		var breakpoint_medium = 768;		
 
 		if ($( window ).width() <= breakpoint_medium ){
-			$('.ding-gatewayf-registration-link').text('Ny bruger?');
+			$('.ding-gatewayf-registration-link').text('Ny låner?');
 		}
 	}
 
