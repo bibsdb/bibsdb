@@ -1,0 +1,63 @@
+	/* 
+	 * Styling of more-link and body text on new materials
+	 */
+
+
+	 .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
+	 	@include zen-grid-item(9, 1);
+	 	@include zen-clear();
+	
+
+	 	@media only screen and (max-width: $breakpoint-large) {
+	 		@include zen-grid-item(12, 1);
+	 		@include zen-clear();
+	 	}
+	 }
+
+
+	 .pane-node-field-bibsdb-new-materials-body {
+	 	margin-top: $large-spacing;
+	 	.pane-content {
+	 		padding: 15px;
+	 		background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+	 	}
+	 	.field {
+	 		background-color: $white;
+	 		padding: $medium-spacing;
+	 	}
+
+	 }
+
+
+	 .pane-new-materials {
+	 	.new-materials-header .new-materials-title {
+	 		padding-left: 0;
+	 	}
+	 	ul {
+	 		padding-left: 0;
+	 	}
+	 }
+
+	 .pane-bibsdb-new-materials-more-link {
+
+	 	.pane-content {
+	 		background-color: gray;
+	 		padding: $large-spacing;
+	 		text-align: center;
+	 		color: $white;
+	 		font-size: $font-size-larger;
+	 		line-height: $font-size-medium;
+
+	 		a:link {
+	 			color: $white;
+	 		}
+	 		a:hover {
+	 			color: $white;
+	 		}
+	 		a:visited {
+	 			color: $white;
+	 		}
+
+
+	 	}
+	 }
