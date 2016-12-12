@@ -2,15 +2,47 @@
 	 * Styling of more-link and body text on new materials
 	 */
 
+	 .pane-new-materials {
+	 	.new-materials-header .new-materials-title {
+	 		padding-left: 0;
+	 	}
+	 	ul {
+	 		padding-left: 0;
+	 	}
+	 }
 
 	 .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
 	 	@include zen-grid-item(9, 1);
 	 	@include zen-clear();
-	
+
 
 	 	@media only screen and (max-width: $breakpoint-large) {
 	 		@include zen-grid-item(12, 1);
 	 		@include zen-clear();
+	 	}
+	 }
+
+	 .new-materials-covers li {
+	 	display: inline-block;
+	 }
+
+	 .new-materials-covers li:last-child {
+	 	display: block;
+	 	background-color: gray;
+	 	padding: $large-spacing;
+	 	text-align: center;
+	 	color: $white;
+	 	font-size: $font-size-larger;
+	 	line-height: $font-size-medium;
+
+	 	a:link {
+	 		color: $white;
+	 	}
+	 	a:hover {
+	 		color: $white;
+	 	}
+	 	a:visited {
+	 		color: $white;
 	 	}
 	 }
 
@@ -29,35 +61,6 @@
 	 }
 
 
-	 .pane-new-materials {
-	 	.new-materials-header .new-materials-title {
-	 		padding-left: 0;
-	 	}
-	 	ul {
-	 		padding-left: 0;
-	 	}
-	 }
-
-	 .pane-bibsdb-new-materials-more-link {
-
-	 	.pane-content {
-	 		background-color: gray;
-	 		padding: $large-spacing;
-	 		text-align: center;
-	 		color: $white;
-	 		font-size: $font-size-larger;
-	 		line-height: $font-size-medium;
-
-	 		a:link {
-	 			color: $white;
-	 		}
-	 		a:hover {
-	 			color: $white;
-	 		}
-	 		a:visited {
-	 			color: $white;
-	 		}
 
 
-	 	}
-	 }
+	 
