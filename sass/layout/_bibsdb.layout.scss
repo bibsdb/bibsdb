@@ -7,21 +7,21 @@
  */
 
 /* Site header
-   ========================================================================== */
+========================================================================== */
 
 
 /* Site name, slogan and logo
-   ========================================================================== */
+========================================================================== */
 .logo img {
-   margin-top: $large-spacing;
+	margin-top: $large-spacing;
 }
 
 /* Content
-   ========================================================================== */
+========================================================================== */
 
 .content-wrapper {
-  margin-top: 0;
-  margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .default-layout {
@@ -35,10 +35,10 @@
 
 
 /* Breadcrumbs
-   ========================================================================== */
+========================================================================== */
 .breadcrumb-wrapper {
 	@include zen-clear();
-	  margin-right: 20px;
+	margin-right: 20px;
 }
 
 .breadcrumb {
@@ -50,8 +50,22 @@
 	padding-left: $large-spacing;
 	padding-top: $small-spacing;
 
+	color: $gray-dark;
+
+	a:link {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+
 	@include small-medium {
-		
 		font-size: $font-size-small;
 	}
 }

@@ -763,16 +763,16 @@ button.button {
  * @author agms
  */
 /* Site header
-   ========================================================================== */
+========================================================================== */
 /* Site name, slogan and logo
-   ========================================================================== */
+========================================================================== */
 /* line 15, ../sass/layout/_bibsdb.layout.scss */
 .logo img {
   margin-top: 20px;
 }
 
 /* Content
-   ========================================================================== */
+========================================================================== */
 /* line 22, ../sass/layout/_bibsdb.layout.scss */
 .content-wrapper {
   margin-top: 0;
@@ -791,7 +791,7 @@ button.button {
 }
 
 /* Breadcrumbs
-   ========================================================================== */
+========================================================================== */
 /* line 39, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb-wrapper {
   clear: left;
@@ -817,6 +817,22 @@ button.button {
   background-color: #fff;
   padding-left: 20px;
   padding-top: 5px;
+  color: #979da2;
+}
+/* line 55, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:link {
+  color: #979da2;
+  text-decoration: underline;
+}
+/* line 59, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:hover {
+  color: #979da2;
+  text-decoration: underline;
+}
+/* line 63, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:visited {
+  color: #979da2;
+  text-decoration: underline;
 }
 @media only screen and (max-width: 768px) {
   /* line 44, ../sass/layout/_bibsdb.layout.scss */
