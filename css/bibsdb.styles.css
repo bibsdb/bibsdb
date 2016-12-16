@@ -581,9 +581,8 @@ h2.sub-menu-title {
 /* Extends
    ========================================================================== */
 /* line 32, ../sass/framework/_bibsdb.buttons.scss */
-.button, .download-button,
+.button,
 a.button,
-a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
@@ -600,23 +599,23 @@ a.download-button,
   vertical-align: middle;
 }
 /* line 45, ../sass/framework/_bibsdb.buttons.scss */
-.button:focus, .download-button:focus,
+.button:focus,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
-.user .form-submit:focus, .button:hover, .download-button:hover,
+.user .form-submit:focus, .button:hover,
 .search .form-submit:hover,
 .search-field-in-content .form-submit:hover,
-.user .form-submit:hover, .button:active, .download-button:active,
+.user .form-submit:hover, .button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
 .user .form-submit:active {
   text-decoration: none;
 }
 /* line 52, ../sass/framework/_bibsdb.buttons.scss */
-.disabled.button, .disabled.download-button,
+.disabled.button,
 .search .disabled.form-submit,
 .search-field-in-content .disabled.form-submit,
-.user .disabled.form-submit, [disabled].button, [disabled].download-button,
+.user .disabled.form-submit, [disabled].button,
 .search [disabled].form-submit,
 .search-field-in-content [disabled].form-submit,
 .user [disabled].form-submit {
@@ -632,9 +631,8 @@ a.download-button,
    ========================================================================== */
 /* Default button */
 /* line 94, ../sass/framework/_bibsdb.buttons.scss */
-.button, .download-button,
+.button,
 a.button,
-a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
@@ -650,11 +648,9 @@ a.download-button,
   color: #fff;
 }
 /* line 77, ../sass/framework/_bibsdb.buttons.scss */
-.button:link, .download-button:link, .button:visited, .download-button:visited,
+.button:link, .button:visited,
 a.button:link,
-a.download-button:link,
 a.button:visited,
-a.download-button:visited,
 .search .form-submit:link,
 .search-field-in-content .form-submit:link,
 .user .form-submit:link,
@@ -664,13 +660,10 @@ a.download-button:visited,
   color: #fff;
 }
 /* line 83, ../sass/framework/_bibsdb.buttons.scss */
-.button:focus, .download-button:focus, .button:hover, .download-button:hover, .button:active, .download-button:active,
+.button:focus, .button:hover, .button:active,
 a.button:focus,
-a.download-button:focus,
 a.button:hover,
-a.download-button:hover,
 a.button:active,
-a.download-button:active,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
 .user .form-submit:focus,
@@ -695,9 +688,8 @@ a.download-button:active,
 /* Danger button */
 /* Don't use native buttons on iOS */
 /* line 122, ../sass/framework/_bibsdb.buttons.scss */
-input[type=submit].button, input[type=submit].download-button,
-button.button,
-button.download-button {
+input[type=submit].button,
+button.button {
   -webkit-appearance: none;
 }
 
@@ -783,8 +775,54 @@ button.download-button {
    ========================================================================== */
 /* line 22, ../sass/layout/_bibsdb.layout.scss */
 .content-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 27, ../sass/layout/_bibsdb.layout.scss */
+.default-layout {
+  margin-top: 0;
+}
+
+/* Depends on bibsdb_expose module */
+/* line 32, ../sass/layout/_bibsdb.layout.scss */
+.default-layout.editormode {
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+/* Breadcrumbs
+   ========================================================================== */
+/* line 39, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb-wrapper {
+  clear: left;
+  margin-right: 20px;
+}
+
+/* line 44, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 44, ../sass/layout/_bibsdb.layout.scss */
+  .breadcrumb {
+    font-size: 90%;
+  }
 }
 
 /**
@@ -2704,13 +2742,6 @@ h3.bibsdb-foldable-list-title {
   margin-bottom: 20px;
 }
 
-/**
- * Audio Book
- *
- * @author agms
- */
-/* Read Circuit Sets Item Styling
-   ========================================================================== */
 /**
  *
  * @author agms
