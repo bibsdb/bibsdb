@@ -821,8 +821,6 @@ button.button {
 @media only screen and (max-width: 768px) {
   /* line 44, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb {
-    background-color: #d2d5d7;
-    padding-left: 0;
     font-size: 90%;
   }
 }

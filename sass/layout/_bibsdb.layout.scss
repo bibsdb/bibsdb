@@ -51,8 +51,7 @@
 	padding-top: $small-spacing;
 
 	@include small-medium {
-		background-color: $gray-light;
-		padding-left: 0;
+		
 		font-size: $font-size-small;
 	}
 }
