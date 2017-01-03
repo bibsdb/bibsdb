@@ -131,7 +131,7 @@
 
 		<?php if (isset($content['field_bibsdb_eresource_link'])): ?>
 			<div class="eresource-info-item eresource-link">
-				<?php print render($content['field_bibsdb_eresource_link']); ?>
+				<?php print render($bibsdb_link_with_target_blank); ?>
 			</div>
 		<?php endif; ?>
 
