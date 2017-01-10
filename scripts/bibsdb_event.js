@@ -24,62 +24,7 @@
 			});
 	}
 	
-  /**
-    * Attach campagns to event-page
-    */    
-   function attach_campagigns_to_event_page() {
-   
-    // only apply to events pages
-    if (window.location.href.indexOf("arrangementer") == -1) {
-      return;
-    }
-    
-    var elements = new Array();
-    
-    //fetch library-list or taxonomy-menu
-    elements[0] = $('.pane-library-list');
-    
-    if (elements[0].length == 0) {
-      elements[0] = $('.primary-content .pane-taxonomy-menu');
-    }
-    
-    elements[0] = $('<div>').prepend(elements[0]);
-    
 
-    // add campaigns
-    var campaign1 = $('<div>');
-    var campaign1_banner1 = $('<div>');
-    var campaign1_banner2 = $('<div>');
-    $('<img />').attr({
-  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_boern_2016.png',
-  		width:'198',
-  		height:'276'
-		}).appendTo($('<a />').attr({
-  		href:'https://biblioteket.sonderborg.dk/nyheder/kort-nyt/arrangementer-born-forar-2016'
-		}).appendTo(campaign1_banner1));
-    $('<img />').attr({
-  		src:'https://biblioteket.sonderborg.dk/sites/default/files/arrangementsbanner_voksne_0.png',
-  		width:'198',
-  		height:'276'
-		}).appendTo($('<a />').attr({
-  		href:'https://biblioteket.sonderborg.dk/nyheder/kort-nyt/biblioteket-soenderborgs-magasin-velkommen-til-foraarssaesonen-2016'
-		}).appendTo(campaign1_banner2));
-		campaign1_banner1 = bibsdb_add_border(campaign1_banner1);
-		campaign1_banner2 = bibsdb_add_border(campaign1_banner2);
-		campaign1 = bibsdb_create_html([campaign1_banner1, campaign1_banner2]);
-    
-
-    var campaign2 =  $('<div>').prepend('<a href="https://biblioteket.sonderborg.dk/indhold/sms-om-arrangementer"><img src="https://biblioteket.sonderborg.dk/sites/default/files/sms_om_arrangementer-1220-4-1.jpg" /></a>');
-    campaign2 = bibsdb_add_border(campaign2);
-    
-    elements[0] = elements[0].append(campaign2);
-    elements[1] = campaign1;
- 
-	  
-	  var html = bibsdb_create_html(elements);
-
-	  $(".primary-content > div:nth-child(1)").after(html);
-	 }
 
 	/** 
 	 * Hide link to group on events
@@ -110,9 +55,20 @@
 	  $(".event-info .icon-user").removeClass("icon-user").addClass("icon-info-sign");
 	  //switchClass("icon-user", "icon-info-circle");
 	}
-	
-	
-	
+
+	/**
+	* Insert space below "Alle arrangementer for voksne" to visually divide menu
+	*/
+	function divide_event_menu() {
+	  $(".sub-menu li").has("a:contains('Alle arrangementer for voksne')").addClass("spacebelow");
+	}
+
+	/**
+	* Hide empty event categories
+	*/
+	function hide_empty_event_menu_categories() {
+	  $(".sub-menu li").has("a:contains(' (0)')").hide();
+	}
 	
   
 
@@ -124,7 +80,8 @@
 		move_ticket_button();
 		remove_extra_label_class();
 		replace_icon();
-		//attach_campagigns_to_event_page();
+		divide_event_menu();
+		hide_empty_event_menu_categories();
 	});
 	
 
