@@ -11,9 +11,9 @@
 
 /* Event list heading */
 .event-list-leaf {
- .event-list-day {
-  background-color: $green;
-}
+   .event-list-day {
+    background-color: $green;
+  }
 }
 
 /* Buy ticket button */
@@ -65,27 +65,37 @@
   /* Style the text below the event list */
   .pane-block-2 {
     @include zen-clear();
-    @include zen-grid-item(9, 1);
-    
-    @include small-medium() {
-     @include zen-grid-item(12, 1);
-   }
+    @include zen-grid-item(12, 1);
+    margin-top: $large-spacing;
 
-   margin-top: $large-spacing;
    .pane-content {
-    padding: 15px;
-    background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+      padding: 15px;
+      background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+    }
+    p, ul {
+      background-color: $white;
+      padding: $medium-spacing;
+      color: $gray-dark;
+    }
   }
-  p, ul {
-    background-color: $white;
-    padding: $medium-spacing;
-    color: $gray-darker;
-  }
-
-}
 }
 
 /* Style text on event category pages */
+.default-layout .attachments-wrapper {
+  @include zen-grid-container();
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.attachments-1-1 .attachment-first {
+  clear: both;
+  background-color: $white;
+  @include zen-grid-item(12, 1);
+}
+
+.footer {
+  clear: both;
+}
 
 .pane-taxonomy-term-field-bibsdb-event-cat-top {
   @include zen-clear();
@@ -93,8 +103,6 @@
 
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom {
   @include zen-clear();
-  
-
   margin-top: $large-spacing;
   .pane-content {
     padding: 15px;
@@ -103,7 +111,7 @@
   .field {
     background-color: $white;
     padding: $medium-spacing;
-    color: $gray-darker;
+    color: $gray-dark;
   }
 
 }

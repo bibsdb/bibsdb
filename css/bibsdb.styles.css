@@ -1647,9 +1647,9 @@ h2.pane-title, .rs-carousel-title {
 .page-arrangementer .pane-block-2 {
   clear: left;
   float: left;
-  width: 75%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: -75%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -1659,55 +1659,76 @@ h2.pane-title, .rs-carousel-title {
   word-wrap: break-word;
   margin-top: 20px;
 }
-@media only screen and (max-width: 768px) {
-  /* line 66, ../sass/module/_bibsdb.event.scss */
-  .page-arrangementer .pane-block-2 {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-/* line 75, ../sass/module/_bibsdb.event.scss */
+/* line 71, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .pane-block-2 .pane-content {
   padding: 15px;
   background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
 }
-/* line 79, ../sass/module/_bibsdb.event.scss */
+/* line 75, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .pane-block-2 p, .page-arrangementer .pane-block-2 ul {
   background-color: #fff;
   padding: 10px;
-  color: #747b83;
+  color: #979da2;
 }
 
 /* Style text on event category pages */
+/* line 84, ../sass/module/_bibsdb.event.scss */
+.default-layout .attachments-wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.default-layout .attachments-wrapper:before, .default-layout .attachments-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.default-layout .attachments-wrapper:after {
+  clear: both;
+}
+
 /* line 90, ../sass/module/_bibsdb.event.scss */
+.attachments-1-1 .attachment-first {
+  clear: both;
+  background-color: #fff;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 96, ../sass/module/_bibsdb.event.scss */
+.footer {
+  clear: both;
+}
+
+/* line 100, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-top {
   clear: left;
 }
 
-/* line 94, ../sass/module/_bibsdb.event.scss */
+/* line 104, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom {
   clear: left;
   margin-top: 20px;
 }
-/* line 99, ../sass/module/_bibsdb.event.scss */
+/* line 107, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom .pane-content {
   padding: 15px;
   background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
 }
-/* line 103, ../sass/module/_bibsdb.event.scss */
+/* line 111, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom .field {
   background-color: #fff;
   padding: 10px;
-  color: #747b83;
+  color: #979da2;
 }
 
 /**

@@ -68,6 +68,7 @@
 	*/
 	function hide_empty_event_menu_categories() {
 	  $(".sub-menu li").has("a:contains(' (0)')").hide();
+	  $(".main-menu li li").has("a:contains(' (0)')").hide();
 	}
 	
   
