@@ -1658,21 +1658,18 @@ h2.pane-title, .rs-carousel-title {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-top: 20px;
-}
-/* line 71, ../sass/module/_bibsdb.event.scss */
-.page-arrangementer .pane-block-2 .pane-content {
   padding: 15px;
   background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
 }
-/* line 75, ../sass/module/_bibsdb.event.scss */
-.page-arrangementer .pane-block-2 p, .page-arrangementer .pane-block-2 ul {
+/* line 73, ../sass/module/_bibsdb.event.scss */
+.page-arrangementer .pane-block-2 .pane-content {
   background-color: #fff;
   padding: 10px;
   color: #747b83;
 }
 
 /* Style text on event category pages */
-/* line 84, ../sass/module/_bibsdb.event.scss */
+/* line 82, ../sass/module/_bibsdb.event.scss */
 .default-layout .attachments-wrapper {
   margin-left: 10px;
   margin-right: 10px;
@@ -1687,7 +1684,7 @@ h2.pane-title, .rs-carousel-title {
   clear: both;
 }
 
-/* line 90, ../sass/module/_bibsdb.event.scss */
+/* line 88, ../sass/module/_bibsdb.event.scss */
 .attachments-1-1 .attachment-first {
   clear: both;
   background-color: #fff;
@@ -1704,27 +1701,27 @@ h2.pane-title, .rs-carousel-title {
   word-wrap: break-word;
 }
 
-/* line 96, ../sass/module/_bibsdb.event.scss */
+/* line 94, ../sass/module/_bibsdb.event.scss */
 .footer {
   clear: both;
 }
 
-/* line 100, ../sass/module/_bibsdb.event.scss */
+/* line 98, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-top {
   clear: left;
 }
 
-/* line 104, ../sass/module/_bibsdb.event.scss */
+/* line 102, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom {
   clear: left;
   margin-top: 20px;
 }
-/* line 107, ../sass/module/_bibsdb.event.scss */
+/* line 105, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom .pane-content {
   padding: 15px;
   background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
 }
-/* line 111, ../sass/module/_bibsdb.event.scss */
+/* line 109, ../sass/module/_bibsdb.event.scss */
 .pane-taxonomy-term-field-bibsdb-event-cat-bottom .field {
   background-color: #fff;
   padding: 10px;

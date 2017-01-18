@@ -67,12 +67,10 @@
     @include zen-clear();
     @include zen-grid-item(12, 1);
     margin-top: $large-spacing;
+    padding: 15px;
+    background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
 
    .pane-content {
-      padding: 15px;
-      background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
-    }
-    p, ul {
       background-color: $white;
       padding: $medium-spacing;
       color: $gray-darker;
