@@ -47,6 +47,14 @@
     $(".primary-content .pane-content").prepend(message);
   }
 
+  /** 
+	* Attach class to default-layout if editor is logged in. Used to style breadcrumbs.
+	*/    
+	function attach_class_to_default_layout() {
+    // Attach class if an editor is logged in
+    $("body").has("#toolbar").find(".default-layout").addClass("editormode");
+  }
+
 
   
 
@@ -56,6 +64,7 @@
   	bibsdb_foldable_list();
   	attach_message_to_contact_page();
   	hide_teaser_on_page_if_empty();
+  	attach_class_to_default_layout();
   });
 
 

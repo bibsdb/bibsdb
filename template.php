@@ -38,6 +38,7 @@ function bibsdb_preprocess_html(&$vars) {
  * published date
  * author full name
  * eresource title image that linkes to the eresource
+ * eresource link with target=_blank
  */
 function bibsdb_preprocess_node(&$variables){
 
@@ -57,10 +58,13 @@ function bibsdb_preprocess_node(&$variables){
 		$node = $variables['node'];
 		$wrapper = entity_metadata_wrapper('node', $node);
 		$image = $wrapper->field_ding_eresource_list_image->value();
+		$linktitle = $wrapper->field_bibsdb_eresource_link->value()['title'];
 		$url = $wrapper->field_bibsdb_eresource_link->value()['url'];
+		$url = str_replace('%3A', ':', $url);
 
 		$img =  theme('image_style', array('path'=>$image['uri'], 'style_name' => 'bibsdb_expose_large'));
-		$variables['bibsdb_linked_logo'] = l($img, $url, array('html'=>true, 'attributes' => array('target' => '_blank')));
+		$variables['bibsdb_linked_logo'] = l($img, $url, array('html'=>TRUE, 'attributes' => array('target' => '_blank')));
+		$variables['bibsdb_link_with_target_blank'] = l($linktitle, $url, array('html'=>TRUE, 'attributes' => array('target' => '_blank')));
 	}
 }
 

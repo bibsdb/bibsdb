@@ -581,9 +581,8 @@ h2.sub-menu-title {
 /* Extends
    ========================================================================== */
 /* line 32, ../sass/framework/_bibsdb.buttons.scss */
-.button, .download-button,
+.button,
 a.button,
-a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
@@ -600,23 +599,23 @@ a.download-button,
   vertical-align: middle;
 }
 /* line 45, ../sass/framework/_bibsdb.buttons.scss */
-.button:focus, .download-button:focus,
+.button:focus,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
-.user .form-submit:focus, .button:hover, .download-button:hover,
+.user .form-submit:focus, .button:hover,
 .search .form-submit:hover,
 .search-field-in-content .form-submit:hover,
-.user .form-submit:hover, .button:active, .download-button:active,
+.user .form-submit:hover, .button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
 .user .form-submit:active {
   text-decoration: none;
 }
 /* line 52, ../sass/framework/_bibsdb.buttons.scss */
-.disabled.button, .disabled.download-button,
+.disabled.button,
 .search .disabled.form-submit,
 .search-field-in-content .disabled.form-submit,
-.user .disabled.form-submit, [disabled].button, [disabled].download-button,
+.user .disabled.form-submit, [disabled].button,
 .search [disabled].form-submit,
 .search-field-in-content [disabled].form-submit,
 .user [disabled].form-submit {
@@ -632,9 +631,8 @@ a.download-button,
    ========================================================================== */
 /* Default button */
 /* line 94, ../sass/framework/_bibsdb.buttons.scss */
-.button, .download-button,
+.button,
 a.button,
-a.download-button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
@@ -650,11 +648,9 @@ a.download-button,
   color: #fff;
 }
 /* line 77, ../sass/framework/_bibsdb.buttons.scss */
-.button:link, .download-button:link, .button:visited, .download-button:visited,
+.button:link, .button:visited,
 a.button:link,
-a.download-button:link,
 a.button:visited,
-a.download-button:visited,
 .search .form-submit:link,
 .search-field-in-content .form-submit:link,
 .user .form-submit:link,
@@ -664,13 +660,10 @@ a.download-button:visited,
   color: #fff;
 }
 /* line 83, ../sass/framework/_bibsdb.buttons.scss */
-.button:focus, .download-button:focus, .button:hover, .download-button:hover, .button:active, .download-button:active,
+.button:focus, .button:hover, .button:active,
 a.button:focus,
-a.download-button:focus,
 a.button:hover,
-a.download-button:hover,
 a.button:active,
-a.download-button:active,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
 .user .form-submit:focus,
@@ -695,9 +688,8 @@ a.download-button:active,
 /* Danger button */
 /* Don't use native buttons on iOS */
 /* line 122, ../sass/framework/_bibsdb.buttons.scss */
-input[type=submit].button, input[type=submit].download-button,
-button.button,
-button.download-button {
+input[type=submit].button,
+button.button {
   -webkit-appearance: none;
 }
 
@@ -771,20 +763,82 @@ button.download-button {
  * @author agms
  */
 /* Site header
-   ========================================================================== */
+========================================================================== */
 /* Site name, slogan and logo
-   ========================================================================== */
+========================================================================== */
 /* line 15, ../sass/layout/_bibsdb.layout.scss */
 .logo img {
   margin-top: 20px;
 }
 
 /* Content
-   ========================================================================== */
+========================================================================== */
 /* line 22, ../sass/layout/_bibsdb.layout.scss */
 .content-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 27, ../sass/layout/_bibsdb.layout.scss */
+.default-layout {
+  margin-top: 0;
+}
+
+/* Depends on bibsdb_expose module */
+/* line 32, ../sass/layout/_bibsdb.layout.scss */
+.default-layout.editormode {
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+/* Breadcrumbs
+========================================================================== */
+/* line 39, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb-wrapper {
+  clear: left;
+  margin-right: 20px;
+}
+
+/* line 44, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-top: 5px;
+  color: #979da2;
+}
+/* line 55, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:link {
+  color: #979da2;
+  text-decoration: underline;
+}
+/* line 59, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:hover {
+  color: #979da2;
+  text-decoration: underline;
+}
+/* line 63, ../sass/layout/_bibsdb.layout.scss */
+.breadcrumb a:visited {
+  color: #979da2;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+  /* line 44, ../sass/layout/_bibsdb.layout.scss */
+  .breadcrumb {
+    font-size: 90%;
+  }
 }
 
 /**
@@ -1470,43 +1524,44 @@ h2.pane-title, .rs-carousel-title {
  *
  * @author agms
  */
+/* Insert space in event-menu below Alle arrangementer for voksne */
+/* line 8, ../sass/module/_bibsdb.event.scss */
+.sub-menu li.spacebelow {
+  padding-bottom: 20px;
+}
+
 /* Event list heading */
-/* line 9, ../sass/module/_bibsdb.event.scss */
+/* line 14, ../sass/module/_bibsdb.event.scss */
 .event-list-leaf .event-list-day {
   background-color: #7fc241;
 }
 
 /* Buy ticket button */
-/* line 15, ../sass/module/_bibsdb.event.scss */
+/* line 20, ../sass/module/_bibsdb.event.scss */
 .event .ticket-available {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 /* Not available button */
-/* line 21, ../sass/module/_bibsdb.event.scss */
+/* line 26, ../sass/module/_bibsdb.event.scss */
 .event .ticket-info {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* Campaigns - Pane library list 
-If we have embedded columns don't show top border */
-/* line 28, ../sass/module/_bibsdb.event.scss */
-.page-arrangementer .content-blocks--inner .content-blocks--inner {
-  border: 0;
-  margin-top: 0;
-  padding-top: 0;
-}
-
 /* Wall next to - Pane library list 
 */
-/* line 38, ../sass/module/_bibsdb.event.scss */
+/* line 36, ../sass/module/_bibsdb.event.scss */
+.page-arrangementer {
+  /* Style the text below the event list */
+}
+/* line 37, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .primary-content {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 42, ../sass/module/_bibsdb.event.scss */
+/* line 41, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .pane-library-list {
   float: left;
   width: 75%;
@@ -1522,7 +1577,7 @@ If we have embedded columns don't show top border */
   clear: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 42, ../sass/module/_bibsdb.event.scss */
+  /* line 41, ../sass/module/_bibsdb.event.scss */
   .page-arrangementer .pane-library-list {
     float: left;
     width: 100%;
@@ -1537,7 +1592,7 @@ If we have embedded columns don't show top border */
     word-wrap: break-word;
   }
 }
-/* line 50, ../sass/module/_bibsdb.event.scss */
+/* line 49, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .pane-bibsdb-wall-panel-bibsdb-wall {
   float: right;
   width: 25%;
@@ -1552,12 +1607,12 @@ If we have embedded columns don't show top border */
   word-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
-  /* line 50, ../sass/module/_bibsdb.event.scss */
+  /* line 49, ../sass/module/_bibsdb.event.scss */
   .page-arrangementer .pane-bibsdb-wall-panel-bibsdb-wall {
     display: none;
   }
 }
-/* line 58, ../sass/module/_bibsdb.event.scss */
+/* line 57, ../sass/module/_bibsdb.event.scss */
 .page-arrangementer .pane-ding-event-ding-event-list {
   clear: left;
   float: left;
@@ -1573,7 +1628,7 @@ If we have embedded columns don't show top border */
   word-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
-  /* line 58, ../sass/module/_bibsdb.event.scss */
+  /* line 57, ../sass/module/_bibsdb.event.scss */
   .page-arrangementer .pane-ding-event-ding-event-list {
     float: left;
     width: 100%;
@@ -1587,6 +1642,90 @@ If we have embedded columns don't show top border */
     box-sizing: border-box;
     word-wrap: break-word;
   }
+}
+/* line 66, ../sass/module/_bibsdb.event.scss */
+.page-arrangementer .pane-block-2 {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 20px;
+  padding: 15px;
+  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+}
+/* line 73, ../sass/module/_bibsdb.event.scss */
+.page-arrangementer .pane-block-2 .pane-content {
+  background-color: #fff;
+  padding: 10px;
+  color: #747b83;
+}
+
+/* Style text on event category pages */
+/* line 82, ../sass/module/_bibsdb.event.scss */
+.default-layout .attachments-wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.default-layout .attachments-wrapper:before, .default-layout .attachments-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.default-layout .attachments-wrapper:after {
+  clear: both;
+}
+
+/* line 88, ../sass/module/_bibsdb.event.scss */
+.attachments-1-1 .attachment-first {
+  clear: both;
+  background-color: #fff;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 94, ../sass/module/_bibsdb.event.scss */
+.footer {
+  clear: both;
+}
+
+/* line 98, ../sass/module/_bibsdb.event.scss */
+.pane-taxonomy-term-field-bibsdb-event-cat-top {
+  clear: left;
+}
+
+/* line 102, ../sass/module/_bibsdb.event.scss */
+.pane-taxonomy-term-field-bibsdb-event-cat-bottom {
+  clear: left;
+  margin-top: 20px;
+}
+/* line 105, ../sass/module/_bibsdb.event.scss */
+.pane-taxonomy-term-field-bibsdb-event-cat-bottom .pane-content {
+  padding: 15px;
+  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+}
+/* line 109, ../sass/module/_bibsdb.event.scss */
+.pane-taxonomy-term-field-bibsdb-event-cat-bottom .field {
+  background-color: #fff;
+  padding: 10px;
+  color: #747b83;
 }
 
 /**
@@ -1942,6 +2081,94 @@ If we have embedded columns don't show top border */
   right: 10px;
   top: 30%;
   font-size: 10px;
+}
+
+/* 
+ * Styling of more-link and body text on new materials
+ */
+/* line 6, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials .new-materials-header .new-materials-title {
+  padding-left: 0;
+}
+/* line 9, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials ul {
+  padding-left: 0;
+}
+
+/* line 14, ../sass/module/_bibsdb.new_materials.scss */
+.pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: left;
+}
+@media only screen and (max-width: 940px) {
+  /* line 14, ../sass/module/_bibsdb.new_materials.scss */
+  .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
+
+/* line 25, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li {
+  display: inline-block;
+}
+
+/* line 29, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child {
+  display: block;
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 160%;
+  line-height: 110%;
+}
+/* line 38, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:link {
+  color: #fff;
+}
+/* line 41, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:hover {
+  color: #fff;
+}
+/* line 44, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:visited {
+  color: #fff;
+}
+
+/* line 50, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body {
+  margin-top: 20px;
+}
+/* line 52, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body .pane-content {
+  padding: 15px;
+  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+}
+/* line 56, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body .field {
+  background-color: #fff;
+  padding: 10px;
 }
 
 /**
@@ -2831,13 +3058,6 @@ h3.bibsdb-foldable-list-title {
   margin-bottom: 20px;
 }
 
-/**
- * Audio Book
- *
- * @author agms
- */
-/* Read Circuit Sets Item Styling
-   ========================================================================== */
 /**
  *
  * @author agms

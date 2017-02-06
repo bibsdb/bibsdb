@@ -7,23 +7,65 @@
  */
 
 /* Site header
-   ========================================================================== */
+========================================================================== */
 
 
 /* Site name, slogan and logo
-   ========================================================================== */
+========================================================================== */
 .logo img {
-   margin-top: $large-spacing;
+	margin-top: $large-spacing;
 }
 
 /* Content
-   ========================================================================== */
+========================================================================== */
 
 .content-wrapper {
-  margin-top: $large-spacing;
-  margin-bottom: $large-spacing;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.default-layout {
+	margin-top: 0;
+}
+
+/* Depends on bibsdb_expose module */
+.default-layout.editormode {
+	margin-top: 20px;
 }
 
 
-   
+/* Breadcrumbs
+========================================================================== */
+.breadcrumb-wrapper {
+	@include zen-clear();
+	margin-right: 20px;
+}
 
+.breadcrumb {
+	@include zen-clear();
+	@include zen-grid-item(12, 1);
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: $white;
+	padding-left: $large-spacing;
+	padding-top: $small-spacing;
+
+	color: $gray-dark;
+
+	a:link {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: $gray-dark;
+		text-decoration: underline;
+	}
+
+	@include small-medium {
+		font-size: $font-size-small;
+	}
+}
