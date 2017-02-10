@@ -1518,6 +1518,10 @@ h2.pane-title, .rs-carousel-title {
 .news-list .news-list-content {
   max-height: 65px;
 }
+/* line 177, ../sass/module/_bibsdb.news.scss */
+.news-list .news-sub-heading div {
+  display: inline;
+}
 
 /**
  * Event styling
