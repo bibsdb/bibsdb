@@ -1,0 +1,101 @@
+/**
+ * Staff
+ *
+ * @author agnetemoos
+ */
+
+ /* Staff list
+ ========================================================================== */
+
+ .staff-list, .staff-list-all {
+ 	@include zen-grid-container();
+ }
+
+ .staff-list-item:nth-child(3n+1) {
+ 	@include zen-clear();
+ 	@include zen-grid-item(4, 1);
+ 	@include zen-nested-container();
+ 	@media only screen and (max-width: $breakpoint-large) {
+ 		@include zen-clear();
+ 		@include zen-grid-item(12, 1);
+ 		@include zen-nested-container();
+ 	}
+ }
+
+ .staff-list-item:nth-child(3n+2) {
+ 	@include zen-grid-item(4, 5);
+ 	@include zen-nested-container();
+ 	@media only screen and (max-width: $breakpoint-large) {
+ 		@include zen-clear();
+ 		@include zen-grid-item(12, 1);
+ 		@include zen-nested-container();
+ 	}
+ }
+
+ .staff-list-item:nth-child(3n+0) {
+ 	@include zen-grid-item(4, 1, right);
+ 	@include zen-nested-container();
+ 	@media only screen and (max-width: $breakpoint-large) {
+ 		@include zen-clear();
+ 		@include zen-grid-item(12, 1);
+ 		@include zen-nested-container();
+ 	}
+ }
+
+ .staff-list-item {
+ 	overflow: hidden;
+ 	max-height: 220px;
+
+ 	.staff-name-title, .staff-contact, .staff-image-wrapper, .staff-departments {
+ 		position: static;
+ 		margin: 0;
+ 		width: 100%;
+ 		max-width:100%;
+ 	}
+
+ 	.staff-image-wrapper {
+
+ 		img {
+ 			padding: 0;
+ 		}
+
+ 		@include zen-grid-item(4, 1);
+ 		@include medium-large() {
+ 			@include zen-grid-item(2, 1);
+ 		}
+ 	}
+
+ 	.staff-name-title {
+ 		margin-left: 35%;
+ 		.staff-name, .staff-position {
+ 			margin-right: 38%;
+ 		}
+
+ 		@include medium-large() {
+ 			margin-left: 18%;
+ 			.staff-name, .staff-position {
+ 				margin-right: 18%;
+ 			}
+ 		}
+
+ 		.staff-name {
+ 			@include font-bold();
+ 		}
+ 	
+ 	}
+
+ 	.staff-contact {
+ 		margin-left: 35%;
+ 		.staff-phone, .staff-email {
+ 			margin-right: 38%;
+ 		}
+ 		@include medium-large() {
+ 			margin-left: 18%;
+ 			.staff-phone, .staff-email {
+ 				margin-right: 18%;
+ 			}
+ 		}
+
+ 		padding-bottom: 300px;
+ 	}
+ }

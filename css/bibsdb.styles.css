@@ -2176,6 +2176,221 @@ h2.pane-title, .rs-carousel-title {
 }
 
 /**
+ * Staff
+ *
+ * @author agnetemoos
+ */
+/* Staff list
+========================================================================== */
+/* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.staff-list:before, .staff-list:after, .staff-list-all:before, .staff-list-all:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.staff-list:after, .staff-list-all:after {
+  clear: both;
+}
+
+/* line 14, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item:nth-child(3n+1) {
+  clear: left;
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (max-width: 940px) {
+  /* line 14, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item:nth-child(3n+1) {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 25, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item:nth-child(3n+2) {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (max-width: 940px) {
+  /* line 25, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item:nth-child(3n+2) {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 35, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item:nth-child(3n+0) {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (max-width: 940px) {
+  /* line 35, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item:nth-child(3n+0) {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 45, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item {
+  overflow: hidden;
+  max-height: 220px;
+}
+/* line 49, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-name-title, .staff-list-item .staff-contact, .staff-list-item .staff-image-wrapper, .staff-list-item .staff-departments {
+  position: static;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+/* line 56, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-image-wrapper {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 58, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-image-wrapper img {
+  padding: 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 940px) {
+  /* line 56, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item .staff-image-wrapper {
+    float: left;
+    width: 16.66667%;
+    margin-left: 0%;
+    margin-right: -16.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/* line 68, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-name-title {
+  margin-left: 35%;
+}
+/* line 70, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-name-title .staff-name, .staff-list-item .staff-name-title .staff-position {
+  margin-right: 38%;
+}
+@media only screen and (min-width: 481px) and (max-width: 940px) {
+  /* line 68, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item .staff-name-title {
+    margin-left: 18%;
+  }
+  /* line 76, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item .staff-name-title .staff-name, .staff-list-item .staff-name-title .staff-position {
+    margin-right: 18%;
+  }
+}
+/* line 81, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-name-title .staff-name {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+}
+/* line 87, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-contact {
+  margin-left: 35%;
+  padding-bottom: 300px;
+}
+/* line 89, ../sass/module/_bibsdb.staff.scss */
+.staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email {
+  margin-right: 38%;
+}
+@media only screen and (min-width: 481px) and (max-width: 940px) {
+  /* line 87, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item .staff-contact {
+    margin-left: 18%;
+  }
+  /* line 94, ../sass/module/_bibsdb.staff.scss */
+  .staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email {
+    margin-right: 18%;
+  }
+}
+
+/**
  * Additional styles for the bibsdb theme only
  * - does not contain overridden DDBasic styles
  * 
