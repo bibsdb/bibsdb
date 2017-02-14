@@ -218,12 +218,12 @@ h1 {
 
 /* line 63, ../sass/framework/_bibsdb.base.scss */
 h2 {
-  font-size: 180%;
+  font-size: 160%;
 }
 
 /* line 67, ../sass/framework/_bibsdb.base.scss */
 h3 {
-  font-size: 160%;
+  font-size: 130%;
 }
 
 /* line 71, ../sass/framework/_bibsdb.base.scss */
@@ -310,6 +310,8 @@ body {
   }
 }
 /* line 179, ../sass/framework/_bibsdb.base.scss */
+h2,
+h3,
 h4,
 h5,
 h6 {
@@ -345,17 +347,17 @@ h6 a:active {
   color: #3b5c1d;
 }
 
-/* line 197, ../sass/framework/_bibsdb.base.scss */
+/* line 199, ../sass/framework/_bibsdb.base.scss */
 h4 {
   font-size: 130%;
 }
 
-/* line 201, ../sass/framework/_bibsdb.base.scss */
+/* line 203, ../sass/framework/_bibsdb.base.scss */
 h5 {
   font-size: 110%;
 }
 
-/* line 205, ../sass/framework/_bibsdb.base.scss */
+/* line 207, ../sass/framework/_bibsdb.base.scss */
 h6 {
   font-size: 100%;
 }
@@ -2087,94 +2089,6 @@ h2.pane-title, .rs-carousel-title {
   font-size: 10px;
 }
 
-/* 
- * Styling of more-link and body text on new materials
- */
-/* line 6, ../sass/module/_bibsdb.new_materials.scss */
-.pane-new-materials .new-materials-header .new-materials-title {
-  padding-left: 0;
-}
-/* line 9, ../sass/module/_bibsdb.new_materials.scss */
-.pane-new-materials ul {
-  padding-left: 0;
-}
-
-/* line 14, ../sass/module/_bibsdb.new_materials.scss */
-.pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
-  float: left;
-  width: 75%;
-  margin-left: 0%;
-  margin-right: -75%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  clear: left;
-}
-@media only screen and (max-width: 940px) {
-  /* line 14, ../sass/module/_bibsdb.new_materials.scss */
-  .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: left;
-  }
-}
-
-/* line 25, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li {
-  display: inline-block;
-}
-
-/* line 29, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child {
-  display: block;
-  background-color: gray;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  font-size: 160%;
-  line-height: 110%;
-}
-/* line 38, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:link {
-  color: #fff;
-}
-/* line 41, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:hover {
-  color: #fff;
-}
-/* line 44, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:visited {
-  color: #fff;
-}
-
-/* line 50, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body {
-  margin-top: 20px;
-}
-/* line 52, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body .pane-content {
-  padding: 15px;
-  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
-}
-/* line 56, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body .field {
-  background-color: #fff;
-  padding: 10px;
-}
-
 /**
  * Staff
  *
@@ -2388,6 +2302,94 @@ h2.pane-title, .rs-carousel-title {
   .staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email {
     margin-right: 18%;
   }
+}
+
+/* 
+ * Styling of more-link and body text on new materials
+ */
+/* line 6, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials .new-materials-header .new-materials-title {
+  padding-left: 0;
+}
+/* line 9, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials ul {
+  padding-left: 0;
+}
+
+/* line 14, ../sass/module/_bibsdb.new_materials.scss */
+.pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: left;
+}
+@media only screen and (max-width: 940px) {
+  /* line 14, ../sass/module/_bibsdb.new_materials.scss */
+  .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
+
+/* line 25, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li {
+  display: inline-block;
+}
+
+/* line 29, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child {
+  display: block;
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 160%;
+  line-height: 110%;
+}
+/* line 38, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:link {
+  color: #fff;
+}
+/* line 41, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:hover {
+  color: #fff;
+}
+/* line 44, ../sass/module/_bibsdb.new_materials.scss */
+.new-materials-covers li:last-child a:visited {
+  color: #fff;
+}
+
+/* line 50, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body {
+  margin-top: 20px;
+}
+/* line 52, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body .pane-content {
+  padding: 15px;
+  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
+}
+/* line 56, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body .field {
+  background-color: #fff;
+  padding: 10px;
 }
 
 /**
