@@ -914,13 +914,6 @@ h2.pane-title, .rs-carousel-title {
   margin-bottom: 20px;
 }
 
-/* Page specific styling (page doesn't have a module file)
-============================================================================= */
-/* line 62, ../sass/layout/_bibsdb.typography.scss */
-.node-type-ding-page .layout-wrapper {
-  padding-top: 0;
-}
-
 /**
  * Module
  *
