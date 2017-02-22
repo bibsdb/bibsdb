@@ -2286,19 +2286,19 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 87, ../sass/module/_bibsdb.staff.scss */
 .staff-list-item .staff-contact {
-  margin-left: 35%;
   padding-bottom: 300px;
 }
 /* line 89, ../sass/module/_bibsdb.staff.scss */
-.staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email {
-  margin-right: 38%;
+.staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email, .staff-list-item .staff-contact .staff-departments {
+  margin-left: 35%;
+  margin-right: 3%;
 }
 @media only screen and (min-width: 481px) and (max-width: 940px) {
   /* line 87, ../sass/module/_bibsdb.staff.scss */
   .staff-list-item .staff-contact {
     margin-left: 18%;
   }
-  /* line 94, ../sass/module/_bibsdb.staff.scss */
+  /* line 95, ../sass/module/_bibsdb.staff.scss */
   .staff-list-item .staff-contact .staff-phone, .staff-list-item .staff-contact .staff-email {
     margin-right: 18%;
   }
