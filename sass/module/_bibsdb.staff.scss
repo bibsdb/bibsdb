@@ -85,9 +85,10 @@
  	}
 
  	.staff-contact {
- 		margin-left: 35%;
- 		.staff-phone, .staff-email {
- 			margin-right: 38%;
+ 		
+ 		.staff-phone, .staff-email, .staff-departments {
+ 			margin-left: 35%;
+ 			margin-right: 3%;
  		}
  		@include medium-large() {
  			margin-left: 18%;
