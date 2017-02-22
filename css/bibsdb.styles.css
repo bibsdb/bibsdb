@@ -799,8 +799,14 @@ button.button {
   clear: left;
   margin-right: 20px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 39, ../sass/layout/_bibsdb.layout.scss */
+  .breadcrumb-wrapper {
+    display: none;
+  }
+}
 
-/* line 44, ../sass/layout/_bibsdb.layout.scss */
+/* line 48, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb {
   clear: left;
   float: left;
@@ -821,23 +827,23 @@ button.button {
   padding-top: 5px;
   color: #979da2;
 }
-/* line 55, ../sass/layout/_bibsdb.layout.scss */
+/* line 59, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:link {
   color: #979da2;
   text-decoration: underline;
 }
-/* line 59, ../sass/layout/_bibsdb.layout.scss */
+/* line 63, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:hover {
   color: #979da2;
   text-decoration: underline;
 }
-/* line 63, ../sass/layout/_bibsdb.layout.scss */
+/* line 67, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:visited {
   color: #979da2;
   text-decoration: underline;
 }
 @media only screen and (max-width: 768px) {
-  /* line 44, ../sass/layout/_bibsdb.layout.scss */
+  /* line 48, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb {
     font-size: 90%;
   }
