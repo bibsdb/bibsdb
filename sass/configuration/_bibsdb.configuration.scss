@@ -5,8 +5,8 @@
  */
 
 
-/* Topbar background color */
-.topbar {
+ /* Topbar background color */
+ .topbar {
   background-color: $topbar-background-color;
 }
 
@@ -79,4 +79,42 @@ a {
 .bottom {
   background-color: $gray-darkest;
   padding-bottom: 30px;
+
+  .pane-content {
+    @include zen-grid-container();
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    overflow: visible;
+  }
+
+  .menu1, .menu2, .menu3 {
+    text-align: left;
+  }
+  .pane-title {
+    font-size: $font-size-medium;
+    color: $white;
+    padding-bottom: $large-spacing;
+  }
+
+  .menu1 {
+    @include zen-grid-item(3, 1);
+  }
+  .menu2 {
+    @include zen-grid-item(3, 4);
+  }
+  .menu3 {
+    @include zen-grid-item(3, 4, right);
+  }
+
+  .facebook-link {
+    &:before {
+    content: "\f082";
+    font-family: FontAwesome;
+    font-size: $font-size-large;
+    padding-right: $small-spacing;
+    padding-top: $small-spacing;
+    }
+
+  }
 }

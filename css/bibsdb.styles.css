@@ -119,6 +119,82 @@ a:focus {
   background-color: #6d6e71;
   padding-bottom: 30px;
 }
+/* line 83, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .pane-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+/* line 45, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.bottom .pane-content:before, .bottom .pane-content:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.bottom .pane-content:after {
+  clear: both;
+}
+/* line 91, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .menu1, .bottom .menu2, .bottom .menu3 {
+  text-align: left;
+}
+/* line 94, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .pane-title {
+  font-size: 110%;
+  color: #fff;
+  padding-bottom: 20px;
+}
+/* line 100, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .menu1 {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 103, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .menu2 {
+  float: left;
+  width: 25%;
+  margin-left: 25%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 106, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .menu3 {
+  float: right;
+  width: 25%;
+  margin-right: 25%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 111, ../sass/configuration/_bibsdb.configuration.scss */
+.bottom .facebook-link:before {
+  content: "\f082";
+  font-family: FontAwesome;
+  font-size: 130%;
+  padding-right: 5px;
+  padding-top: 5px;
+}
 
 /**
  * Mixins
@@ -2410,11 +2486,11 @@ p {
    ===========================================================================*/
 /* line 23, ../sass/bibsdbextras/_bibsdb.extras.scss */
 .bottom a:link {
-  color: #7fc241;
+  color: #fff;
 }
 /* line 27, ../sass/bibsdbextras/_bibsdb.extras.scss */
 .bottom a:visited {
-  color: #7fc241;
+  color: #fff;
 }
 
 /* Hide class
