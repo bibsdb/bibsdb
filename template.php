@@ -61,6 +61,7 @@ function bibsdb_preprocess_node(&$variables){
 		$linktitle = $wrapper->field_bibsdb_eresource_link->value()['title'];
 		$url = $wrapper->field_bibsdb_eresource_link->value()['url'];
 		$url = str_replace('%3A', ':', $url);
+		$url = str_replace('%3F', '?', $url);
 
 		$img =  theme('image_style', array('path'=>$image['uri'], 'style_name' => 'bibsdb_expose_large'));
 		$variables['bibsdb_linked_logo'] = l($img, $url, array('html'=>TRUE, 'attributes' => array('target' => '_blank')));
