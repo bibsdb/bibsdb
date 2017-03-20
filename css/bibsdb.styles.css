@@ -350,23 +350,26 @@ img {
 ul {
   margin: 0;
   padding-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
-/* line 119, ../sass/framework/_bibsdb.base.scss */
+/* line 117, ../sass/framework/_bibsdb.base.scss */
 ul li {
   list-style: none;
 }
 
 /* Make sure lists in content get the icon */
-/* line 127, ../sass/framework/_bibsdb.base.scss */
+/* line 125, ../sass/framework/_bibsdb.base.scss */
+.page-content ul {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 129, ../sass/framework/_bibsdb.base.scss */
 .page-content li {
   list-style: disc outside;
 }
 
 /* Agms
 	============================================================================= */
-/* line 135, ../sass/framework/_bibsdb.base.scss */
+/* line 137, ../sass/framework/_bibsdb.base.scss */
 body {
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
@@ -374,20 +377,20 @@ body {
 
 /* Media queries */
 @media only screen and (max-width: 480px) {
-  /* line 142, ../sass/framework/_bibsdb.base.scss */
+  /* line 144, ../sass/framework/_bibsdb.base.scss */
   body {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 149, ../sass/framework/_bibsdb.base.scss */
+  /* line 151, ../sass/framework/_bibsdb.base.scss */
   body {
     font-size: 16px;
     line-height: 24px;
   }
 }
-/* line 181, ../sass/framework/_bibsdb.base.scss */
+/* line 183, ../sass/framework/_bibsdb.base.scss */
 h2,
 h3,
 h4,
@@ -397,45 +400,45 @@ h6 {
   margin-bottom: 0;
 }
 
-/* line 157, ../sass/framework/_bibsdb.base.scss */
+/* line 159, ../sass/framework/_bibsdb.base.scss */
 h5 a:link,
 h6 a:link {
   color: #619630;
   text-decoration: none;
 }
-/* line 162, ../sass/framework/_bibsdb.base.scss */
+/* line 164, ../sass/framework/_bibsdb.base.scss */
 h5 a:visited,
 h6 a:visited {
   color: #619630;
 }
-/* line 166, ../sass/framework/_bibsdb.base.scss */
+/* line 168, ../sass/framework/_bibsdb.base.scss */
 h5 a:hover,
 h6 a:hover {
   color: #3b5c1d;
 }
-/* line 170, ../sass/framework/_bibsdb.base.scss */
+/* line 172, ../sass/framework/_bibsdb.base.scss */
 h5 a:focus,
 h6 a:focus {
   color: #3b5c1d;
 }
-/* line 174, ../sass/framework/_bibsdb.base.scss */
+/* line 176, ../sass/framework/_bibsdb.base.scss */
 h5 a:active,
 h6 a:active {
   background-color: transparent;
   color: #3b5c1d;
 }
 
-/* line 201, ../sass/framework/_bibsdb.base.scss */
+/* line 203, ../sass/framework/_bibsdb.base.scss */
 h4 {
   font-size: 130%;
 }
 
-/* line 205, ../sass/framework/_bibsdb.base.scss */
+/* line 207, ../sass/framework/_bibsdb.base.scss */
 h5 {
   font-size: 110%;
 }
 
-/* line 209, ../sass/framework/_bibsdb.base.scss */
+/* line 211, ../sass/framework/_bibsdb.base.scss */
 h6 {
   font-size: 100%;
 }
