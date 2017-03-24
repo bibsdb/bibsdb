@@ -57,7 +57,7 @@
 	}
 
 	/**
-	* Insert space below "Alle arrangementer for voksne" to visually divide menu
+	* Insert space above "Aktiviteter for baby" to visually divide menu
 	*/
 	function divide_event_menu() {
 	  $(".sub-menu li").has("a:contains('Aktiviteter for baby')").addClass("spaceabove");
