@@ -60,7 +60,7 @@
 	* Insert space below "Alle arrangementer for voksne" to visually divide menu
 	*/
 	function divide_event_menu() {
-	  $(".sub-menu li").has("a:contains('Alle arrangementer for voksne')").addClass("spacebelow");
+	  $(".sub-menu li").has("a:contains('Aktiviteter for baby')").addClass("spaceabove");
 	}
 
 	/**

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Variables
  *
@@ -1610,10 +1611,10 @@ h2.pane-title, .rs-carousel-title {
  *
  * @author agms
  */
-/* Insert space in event-menu below Alle arrangementer for voksne */
+/* Insert space in event-menu above Aktiviteter for baby 0-3 år */
 /* line 8, ../sass/module/_bibsdb.event.scss */
-.sub-menu li.spacebelow {
-  padding-bottom: 20px;
+.sub-menu li.spaceabove {
+  padding-top: 20px;
 }
 
 /* Event list heading */

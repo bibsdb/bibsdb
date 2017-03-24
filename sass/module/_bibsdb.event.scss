@@ -4,9 +4,9 @@
  * @author agms
  */
 
- /* Insert space in event-menu below Alle arrangementer for voksne */
- .sub-menu li.spacebelow {
-  padding-bottom: $large-spacing;
+ /* Insert space in event-menu above Aktiviteter for baby 0-3 år */
+ .sub-menu li.spaceabove {
+  padding-top: $large-spacing;
 } 
 
 /* Event list heading */
