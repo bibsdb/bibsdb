@@ -2386,91 +2386,74 @@ h2.pane-title, .rs-carousel-title {
 }
 
 /* 
- * Styling of more-link and body text on new materials
+ * Styling of new materials
  */
-/* line 6, ../sass/module/_bibsdb.new_materials.scss */
-.pane-new-materials .new-materials-header .new-materials-title {
-  padding-left: 0;
-}
-/* line 9, ../sass/module/_bibsdb.new_materials.scss */
-.pane-new-materials ul {
-  padding-left: 0;
+/* line 5, ../sass/module/_bibsdb.new_materials.scss */
+.pane-node-field-bibsdb-new-materials-body {
+  padding-top: 20px;
 }
 
-/* line 14, ../sass/module/_bibsdb.new_materials.scss */
-.pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
-  float: left;
-  width: 75%;
-  margin-left: 0%;
-  margin-right: -75%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  clear: left;
+/* line 11, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list #load-button {
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 5%;
 }
-@media only screen and (max-width: 940px) {
-  /* line 14, ../sass/module/_bibsdb.new_materials.scss */
-  .pane-bibsdb-new-materials-more-link, .pane-node-field-bibsdb-new-materials-body {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: left;
+/* line 17, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list #ajax-loader {
+  width: 300px;
+  display: none;
+  margin: auto;
+}
+/* line 26, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list .open-platform-item-list .open-platform-item {
+  width: 18%;
+  margin: 1%;
+  background-color: #d2d5d7;
+}
+/* line 32, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list .open-platform-item-list .open-platform-item a {
+  display: block;
+  position: relative;
+  padding-bottom: 170%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -10px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 32, ../sass/module/_bibsdb.new_materials.scss */
+  .pane-new-materials-list .open-platform-item-list .open-platform-item a {
+    padding-bottom: 190%;
   }
 }
-
-/* line 25, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li {
-  display: inline-block;
+/* line 47, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list .open-platform-item-list .item-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  padding-top: 12%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.7), #ffffff, #ffffff, #ffffff);
 }
-
-/* line 29, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child {
-  display: block;
-  background-color: gray;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  font-size: 160%;
-  line-height: 110%;
+/* line 58, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list .open-platform-item-list .item-author, .pane-new-materials-list .open-platform-item-list .item-title {
+  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 120%;
+  font-size: 100%;
+  color: #000;
 }
-/* line 38, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:link {
-  color: #fff;
+@media only screen and (max-width: 940px) {
+  /* line 58, ../sass/module/_bibsdb.new_materials.scss */
+  .pane-new-materials-list .open-platform-item-list .item-author, .pane-new-materials-list .open-platform-item-list .item-title {
+    font-size: 90%;
+  }
 }
-/* line 41, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:hover {
-  color: #fff;
-}
-/* line 44, ../sass/module/_bibsdb.new_materials.scss */
-.new-materials-covers li:last-child a:visited {
-  color: #fff;
-}
-
-/* line 50, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body {
-  margin-top: 20px;
-}
-/* line 52, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body .pane-content {
-  padding: 15px;
-  background: url("/profiles/ding2/themes/ddbasic/images/pw_maze_white.png");
-}
-/* line 56, ../sass/module/_bibsdb.new_materials.scss */
-.pane-node-field-bibsdb-new-materials-body .field {
-  background-color: #fff;
-  padding: 10px;
+/* line 67, ../sass/module/_bibsdb.new_materials.scss */
+.pane-new-materials-list .open-platform-item-list .item-title {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
 }
 
 /**
