@@ -5,7 +5,12 @@
  */
 
 
-.library-list {
+#ding-library-page {
+
+  h2.page-title {
+    text-decoration: underline;
+  }
+
 	.libraries-opening-hours {
 		display: inline;
 	}
@@ -54,33 +59,7 @@
     }
   }
 
-  .ding-library-facilities {
-    @include zen-grid-item(4, 1, right);
-    @include small-medium() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-  }
-
-	.ding-library-events.js-og-single-content-type {
-    @include zen-clear(both);
-    @include zen-grid-item(8, 1);
-    @include small-medium() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-  }
-  
-  .ding-library-facilities {
-    border-top: 1px solid $gray-lightest;
-    padding-top: $large-spacing;
-
-    @include small-medium() {
-      @include zen-clear(both);
-      @include zen-grid-item(12, 1);
-    }
-  }
-  
+    
  .opening-hours-toggle {
     @include zen-grid-item(6, 1);
     @include zen-clear(both);
@@ -92,7 +71,8 @@
   
    /* Replaces opening-hours on collection point library pages */
 	.bibsdb-collection-point-opening-hours-page {
-    @extend .ding-library-events;
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
   }
 }
 

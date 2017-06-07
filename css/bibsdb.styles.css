@@ -1941,20 +1941,24 @@ h2.pane-title, .rs-carousel-title {
  * @author agms
  */
 /* line 8, ../sass/module/_bibsdb.libraries.scss */
-.library-list {
+#ding-library-page {
   /* Opening hours toggle */
   /* Replaces opening-hours for collection points on library list*/
 }
-/* line 9, ../sass/module/_bibsdb.libraries.scss */
-.library-list .libraries-opening-hours {
-  display: inline;
+/* line 10, ../sass/module/_bibsdb.libraries.scss */
+#ding-library-page h2.page-title {
+  text-decoration: underline;
 }
 /* line 14, ../sass/module/_bibsdb.libraries.scss */
-.library-list .opening-hours-toggle {
-  display: none;
+#ding-library-page .libraries-opening-hours {
+  display: inline;
 }
 /* line 19, ../sass/module/_bibsdb.libraries.scss */
-.library-list .bibsdb-collection-point-opening-hours-list {
+#ding-library-page .opening-hours-toggle {
+  display: none;
+}
+/* line 24, ../sass/module/_bibsdb.libraries.scss */
+#ding-library-page .bibsdb-collection-point-opening-hours-list {
   float: right;
   width: 33.33333%;
   margin-right: 0%;
@@ -1969,8 +1973,8 @@ h2.pane-title, .rs-carousel-title {
   clear: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 19, ../sass/module/_bibsdb.libraries.scss */
-  .library-list .bibsdb-collection-point-opening-hours-list {
+  /* line 24, ../sass/module/_bibsdb.libraries.scss */
+  #ding-library-page .bibsdb-collection-point-opening-hours-list {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -1990,11 +1994,11 @@ h2.pane-title, .rs-carousel-title {
 /* Library page
    ========================================================================== */
 /* Using id, can't remove and add better wrapper class */
-/* line 37, ../sass/module/_bibsdb.libraries.scss */
+/* line 42, ../sass/module/_bibsdb.libraries.scss */
 #ding-library-front {
   /* Replaces opening-hours on collection point library pages */
 }
-/* line 39, ../sass/module/_bibsdb.libraries.scss */
+/* line 44, ../sass/module/_bibsdb.libraries.scss */
 #ding-library-front .ding-library-contact {
   float: left;
   width: 66.66667%;
@@ -2009,7 +2013,7 @@ h2.pane-title, .rs-carousel-title {
   word-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
-  /* line 39, ../sass/module/_bibsdb.libraries.scss */
+  /* line 44, ../sass/module/_bibsdb.libraries.scss */
   #ding-library-front .ding-library-contact {
     clear: left;
     float: left;
@@ -2025,7 +2029,7 @@ h2.pane-title, .rs-carousel-title {
     word-wrap: break-word;
   }
 }
-/* line 48, ../sass/module/_bibsdb.libraries.scss */
+/* line 53, ../sass/module/_bibsdb.libraries.scss */
 #ding-library-front .ding-library-address {
   float: right;
   width: 33.33333%;
@@ -2040,7 +2044,7 @@ h2.pane-title, .rs-carousel-title {
   word-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
-  /* line 48, ../sass/module/_bibsdb.libraries.scss */
+  /* line 53, ../sass/module/_bibsdb.libraries.scss */
   #ding-library-front .ding-library-address {
     clear: left;
     float: left;
@@ -2056,92 +2060,7 @@ h2.pane-title, .rs-carousel-title {
     word-wrap: break-word;
   }
 }
-/* line 57, ../sass/module/_bibsdb.libraries.scss */
-#ding-library-front .ding-library-facilities {
-  float: right;
-  width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-@media only screen and (max-width: 768px) {
-  /* line 57, ../sass/module/_bibsdb.libraries.scss */
-  #ding-library-front .ding-library-facilities {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-/* line 65, ../sass/module/_bibsdb.libraries.scss */
-#ding-library-front .ding-library-events.js-og-single-content-type, #ding-library-front .js-og-single-content-type.bibsdb-collection-point-opening-hours-page {
-  clear: both;
-  float: left;
-  width: 66.66667%;
-  margin-left: 0%;
-  margin-right: -66.66667%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-@media only screen and (max-width: 768px) {
-  /* line 65, ../sass/module/_bibsdb.libraries.scss */
-  #ding-library-front .ding-library-events.js-og-single-content-type, #ding-library-front .js-og-single-content-type.bibsdb-collection-point-opening-hours-page {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-/* line 74, ../sass/module/_bibsdb.libraries.scss */
-#ding-library-front .ding-library-facilities {
-  border-top: 1px solid #edeeef;
-  padding-top: 20px;
-}
-@media only screen and (max-width: 768px) {
-  /* line 74, ../sass/module/_bibsdb.libraries.scss */
-  #ding-library-front .ding-library-facilities {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-/* line 84, ../sass/module/_bibsdb.libraries.scss */
+/* line 63, ../sass/module/_bibsdb.libraries.scss */
 #ding-library-front .opening-hours-toggle {
   float: left;
   width: 50%;
@@ -2157,13 +2076,28 @@ h2.pane-title, .rs-carousel-title {
   clear: both;
 }
 @media only screen and (max-width: 768px) {
-  /* line 84, ../sass/module/_bibsdb.libraries.scss */
+  /* line 63, ../sass/module/_bibsdb.libraries.scss */
   #ding-library-front .opening-hours-toggle {
     display: none;
   }
 }
+/* line 73, ../sass/module/_bibsdb.libraries.scss */
+#ding-library-front .bibsdb-collection-point-opening-hours-page {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
 
-/* line 99, ../sass/module/_bibsdb.libraries.scss */
+/* line 79, ../sass/module/_bibsdb.libraries.scss */
 .arrow-link-small {
   right: 10px;
   top: 30%;
