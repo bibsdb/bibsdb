@@ -77,11 +77,11 @@ html.js .page-node-2271, html.js .page-node-1421, body.page-node-1441 {
 	}
 
 
-	form {
+	form.webform-client-form {
 		padding: $large-spacing;
 	}
 
-	.form-item {
+	.node-webform .form-item {
 		margin: 0;
 		select {
 			max-width: 100px;

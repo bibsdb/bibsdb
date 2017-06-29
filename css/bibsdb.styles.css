@@ -3730,34 +3730,34 @@ html.js .page-node-2271 .pane-node-content h2.pane-title, html.js .page-node-227
   display: none;
 }
 /* line 80, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 form, html.js .page-node-1421 form, body.page-node-1441 form {
+html.js .page-node-2271 form.webform-client-form, html.js .page-node-1421 form.webform-client-form, body.page-node-1441 form.webform-client-form {
   padding: 20px;
 }
 /* line 84, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item, html.js .page-node-1421 .form-item, body.page-node-1441 .form-item {
+html.js .page-node-2271 .node-webform .form-item, html.js .page-node-1421 .node-webform .form-item, body.page-node-1441 .node-webform .form-item {
   margin: 0;
 }
 /* line 86, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item select, html.js .page-node-1421 .form-item select, body.page-node-1441 .form-item select {
+html.js .page-node-2271 .node-webform .form-item select, html.js .page-node-1421 .node-webform .form-item select, body.page-node-1441 .node-webform .form-item select {
   max-width: 100px;
   min-width: 75px;
 }
 /* line 90, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item label.option, html.js .page-node-1421 .form-item label.option, body.page-node-1441 .form-item label.option {
+html.js .page-node-2271 .node-webform .form-item label.option, html.js .page-node-1421 .node-webform .form-item label.option, body.page-node-1441 .node-webform .form-item label.option {
   font-size: 130%;
   padding-left: 5px;
 }
 /* line 94, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item p, html.js .page-node-1421 .form-item p, body.page-node-1441 .form-item p {
+html.js .page-node-2271 .node-webform .form-item p, html.js .page-node-1421 .node-webform .form-item p, body.page-node-1441 .node-webform .form-item p {
   margin-left: 20px;
 }
 /* line 97, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item.webform-component--footer p, html.js .page-node-1421 .form-item.webform-component--footer p, body.page-node-1441 .form-item.webform-component--footer p {
+html.js .page-node-2271 .node-webform .form-item.webform-component--footer p, html.js .page-node-1421 .node-webform .form-item.webform-component--footer p, body.page-node-1441 .node-webform .form-item.webform-component--footer p {
   margin-left: 0;
   font-size: 110%;
 }
 /* line 101, ../sass/bibsdbextras/_bibsdb.menucard.scss */
-html.js .page-node-2271 .form-item .form-checkboxes, html.js .page-node-1421 .form-item .form-checkboxes, body.page-node-1441 .form-item .form-checkboxes {
+html.js .page-node-2271 .node-webform .form-item .form-checkboxes, html.js .page-node-1421 .node-webform .form-item .form-checkboxes, body.page-node-1441 .node-webform .form-item .form-checkboxes {
   margin-top: 30px;
 }
 /* line 108, ../sass/bibsdbextras/_bibsdb.menucard.scss */
