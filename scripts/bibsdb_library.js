@@ -69,6 +69,26 @@
 	}
 
 
+	/**
+	 * Add highlight to sonderborg library on library list to show that it is closed
+	 */
+	 function highlight_sonderborg_on_library_list() {
+	 	$("#ding-library-page h2.page-title a:contains('Sønderborg')").text("Biblioteket Sønderborg - LUKKET PGA. FLYTNING");
+	 	$("#ding-library-page h2.page-title a:contains('Sønderborg')").css('color', 'red');
+
+	 	var msg = $('<div>').css('color', 'red').text("Vi åbner igen d. 4. november i Multikulturhuset på havnen");
+	 	$("#ding-library-page h2.page-title").has("a:contains('Sønderborg')").after(msg);
+	 }
+
+	/**
+	 * Add highlight to sonderborg library on library list to show that it is closed
+	 */
+	 function highlight_sonderborg_on_library_page() {
+
+	 	var msg = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 4. november i Multikulturhuset på havnen");
+	 	$("#ding-library-front .ding-library-image").after(msg);
+	 }
+
 
 
   // When ready start the magic.
@@ -76,6 +96,8 @@
   	translate_staff_list_header_on_library_pages();
   	replace_opening_hours_for_collection_point_on_library_list();
   	replace_opening_hours_for_collection_point_on_library_page();
+  	highlight_sonderborg_on_library_list();
+  	highlight_sonderborg_on_library_page();
   });
 
 

@@ -1,67 +1,108 @@
 (function($) {
 
-function swap(a, b) {
-    a = $(a); b = $(b);
-    var tmp = $('<span>').hide();
-    a.before(tmp);
-    b.before(a);
-    tmp.replaceWith(b);
-}
+	function swap(a, b) {
+		a = $(a); b = $(b);
+		var tmp = $('<span>').hide();
+		a.before(tmp);
+		b.before(a);
+		tmp.replaceWith(b);
+	}
 
 	/**
 	 * Hide the too-may-search-results message in search result
 	 */
-	function hide_too_many_search_results_message() {
-		$('.search-field-in-content--message').hide();
-	}
+	 function hide_too_many_search_results_message() {
+	 	$('.search-field-in-content--message').hide();
+	 }
 
 
 	/**
 	 * Translate default pickup branch selection on first reservation
 	 */
-	function translate_pick_default_branch_text() {
-		jQuery('.ui-widget').live('DOMNodeInserted', function () {
-			$( "p:contains('In order to make quick resercvations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reservationer.");
-		});
-	}
+	 function translate_pick_default_branch_text() {
+	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
+	 		$( "p:contains('In order to make quick resercvations, you must select a default pickup branch.')" ).text("Vælg hvor du som standard vil afhente dine reserveringer.");
+	 	});
+	 }
 
 	/**
 	 * Make holdings-info start expanded on page-load
 	 * 
 	 */
-	function expand_holdings_on_page_load() {
-		$('.group-holdings-available .field-group-format-wrapper').css("display", "block");	
-	}	
-	
+	 function expand_holdings_on_page_load() {
+	 	$('.group-holdings-available .field-group-format-wrapper').css("display", "block");	
+	 }	
+
 	/**
 	 * Let material-details and holdings-info swap place
 	 */
-	function swap_holdings_and_material_details() {
-		swap('.group-holdings-available','.group-material-details');	
-	}	
-	
+	 function swap_holdings_and_material_details() {
+	 	swap('.group-holdings-available','.group-material-details');	
+	 }	
+
 	/**
 	 * Replace link-text i branch-facet
 	 */
-	function replace_link_text_in_branch_facet() {
+	 function replace_link_text_in_branch_facet() {
 
-		
-		$("#facet-branch a").html(function(i,t){
-		  t = t.replace('aug ','augustenborg ');
-      t = t.replace('søn ','sønderborg ');
-      t = t.replace('bro ','broager ');
-      t = t.replace('dyb ','dybbøl ');
-      t = t.replace('nor ','nordborg ');
-      t = t.replace('sot ','vester sottrup ');
-      t = t.replace('grå ','gråsten ');
-      t = t.replace('hør ','hørup ');
-      t = t.replace('ulk ','ulkebøl ');
-      
-      
-      
-      return t;
-    });
-	}	
+
+	 	$("#facet-branch a").html(function(i,t){
+	 		t = t.replace('aug ','augustenborg ');
+	 		t = t.replace('søn ','sønderborg ');
+	 		t = t.replace('bro ','broager ');
+	 		t = t.replace('dyb ','dybbøl ');
+	 		t = t.replace('nor ','nordborg ');
+	 		t = t.replace('sot ','vester sottrup ');
+	 		t = t.replace('grå ','gråsten ');
+	 		t = t.replace('hør ','hørup ');
+	 		t = t.replace('ulk ','ulkebøl ');
+
+
+
+	 		return t;
+	 	});
+	 }
+
+
+	/**
+	 * Add sonderborg closed message to reservation confirmation
+	 */
+	 function add_sonderborg_closed_msg_to_reservation_confirmation() {
+	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
+	 		$( "li:contains('afhentning på Sønderborg Bibliotek')" ).text("Materialet er reserveret til dig til afhentning på Sønderborg Bibliotek. \nFORDI BIBLIOTEKET SØNDERBORG ER LUKKET PGA. AF FLYTNING SKAL DU HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK IND TIL 4. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG GENÅBNER I MULTIKULTURHUSET PÅ HAVNEN.");
+	 	});
+	 }	
+
+
+	/**
+	 * Add sonderborg closed message to reservation confirmation
+	 */
+	 function add_sonderborg_closed_msg_to_pick_default_branch_text() {
+	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
+	 		$( "select#edit-provider-options-alma-preferred-branch option:contains('Sønderborg Bibliotek')").text("Sønderborg Bibliotek - lukket til 4. november");
+	 	});
+	 }	
+
+	 function add_sonderborg_closed_msg_to_reservation_page() {
+	 	// Only run for reservations page
+	 	if (window.location.href.indexOf("user/me/status/reservations") == -1) {
+	 		return;
+	 	}
+
+	 	// Only show message if user has reservations to be picked up in sonderborg
+	 	var $sonderborg_res = $( ".item-information-data:contains('Sønderborg Bibliotek')" );
+	 	if ($sonderborg_res.length == 0) {
+	 		return;
+	 	}
+
+	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 4. november i Multikulturhuset på havnen.");
+	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal ind til 4. november afhentes på Dybbøl Bibliotek.");
+	 	$(".pane-reservations").first().append(msg1, msg2);
+
+
+
+
+	 }
 	 
 	 
 
@@ -70,12 +111,15 @@ function swap(a, b) {
 
   // When ready start the magic.
   $(document).ready(function () {
-    replace_link_text_in_branch_facet();
-		translate_pick_default_branch_text();
-		expand_holdings_on_page_load();
-		swap_holdings_and_material_details();
-		hide_too_many_search_results_message();
-	});
+  	replace_link_text_in_branch_facet();
+  	translate_pick_default_branch_text();
+  	expand_holdings_on_page_load();
+  	swap_holdings_and_material_details();
+  	hide_too_many_search_results_message();
+  	add_sonderborg_closed_msg_to_reservation_confirmation();
+  	add_sonderborg_closed_msg_to_pick_default_branch_text();
+  	add_sonderborg_closed_msg_to_reservation_page();
+  });
 
 
 
