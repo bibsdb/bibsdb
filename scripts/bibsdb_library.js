@@ -76,8 +76,10 @@
 	 	$("#ding-library-page h2.page-title a:contains('Sønderborg')").text("Biblioteket Sønderborg - LUKKET PGA. FLYTNING");
 	 	$("#ding-library-page h2.page-title a:contains('Sønderborg')").css('color', 'red');
 
-	 	var msg = $('<div>').css('color', 'red').text("Vi åbner igen d. 3. november i Multikulturhuset, Nørre Havnegade 15");
-	 	$("#ding-library-page h2.page-title").has("a:contains('Sønderborg')").after(msg);
+	 	var msg1 = $('<div>').css('color', 'red').text("Vi åbner igen d. 3. november i Multikulturhuset, Nørre Havnegade 15. ");
+	 	var msg2 = $('<div>').css('color', 'red').text("Man kan stadig reservere bøger m. m. fra hovedbiblioteket.");
+	 	var msg3 = $('<div>').css('color', 'red').text("Reserveringer, der ellers ville skulle hentes på biblioteket på Kongevej, vil stå til afhentning på Biblioteket Dybbøl.");
+	 	$("#ding-library-page h2.page-title").has("a:contains('Sønderborg')").after(msg1, msg2, msg3);
 	 }
 
 	/**
@@ -85,8 +87,10 @@
 	 */
 	 function highlight_sonderborg_on_library_page() {
 
-	 	var msg = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen den 3. november i Multikulturhuset, Nørre Havnegade 15");
-	 	$("#ding-library-front .ding-library-image").after(msg);
+	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen den 3. november i Multikulturhuset, Nørre Havnegade 15");
+	 	var msg2 = $('<p>').css('color', 'red').text("Man kan stadig reservere bøger m. m. fra hovedbiblioteket.");
+	 	var msg3 = $('<p>').css('color', 'red').text("Reserveringer, der ellers ville skulle hentes på biblioteket på Kongevej, vil stå til afhentning på Biblioteket Dybbøl.");
+	 	$("#ding-library-front .ding-library-image").after(msg1, msg2, msg3);
 	 }
 
 

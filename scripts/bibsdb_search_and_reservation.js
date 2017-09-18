@@ -72,7 +72,7 @@
 	 		var $ul = $( "li:contains('afhentning på Sønderborg Bibliotek')" ).parent();
 	 		var length = $ul.children().length;
 	 		if (length == 2) {
-	 			$li = $("<li>").text("BEMÆRK! DU SKAL HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK IND TIL 3. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG ÅBNER IGEN I MULTIKULTURHUSET, NØRRE HAVNEGADE 15.");
+	 			$li = $("<li>").text("BEMÆRK! DU SKAL HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK INDTIL 3. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG ÅBNER IGEN I MULTIKULTURHUSET, NØRRE HAVNEGADE 15.");
 	 			$('.ui-widget ul').append($li);
 	 		}
 	 	});
@@ -101,7 +101,7 @@
 	 	}
 
 	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 3. november i Multikulturhuset, Nørre Havnegade 15.");
-	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal hentes på Dybbøl Bibliotek .");
+	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal hentes på Dybbøl Bibliotek, Gammel Aabenraavej 20A.");
 	 	$(".pane-reservations").first().append(msg1, msg2);
 
 
