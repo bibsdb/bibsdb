@@ -69,7 +69,12 @@
 	 */
 	 function add_sonderborg_closed_msg_to_reservation_confirmation() {
 	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
-	 		$( "li:contains('afhentning på Sønderborg Bibliotek')" ).text("Materialet er reserveret til dig til afhentning på Sønderborg Bibliotek. \nFORDI BIBLIOTEKET SØNDERBORG ER LUKKET PGA. AF FLYTNING SKAL DU HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK IND TIL 4. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG GENÅBNER I MULTIKULTURHUSET PÅ HAVNEN.");
+	 		var $ul = $( "li:contains('afhentning på Sønderborg Bibliotek')" ).parent();
+	 		var length = $ul.children().length;
+	 		if (length == 2) {
+	 			$li = $("<li>").text("BEMÆRK! DU SKAL HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK IND TIL 4. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG ÅBNER IGEN I MULTIKULTURHUSET, NØRRE HAVNEGADE 15.");
+	 			$('.ui-widget ul').append($li);
+	 		}
 	 	});
 	 }	
 
@@ -95,8 +100,8 @@
 	 		return;
 	 	}
 
-	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 4. november i Multikulturhuset på havnen.");
-	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal ind til 4. november afhentes på Dybbøl Bibliotek.");
+	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 4. november i Multikulturhuset, Nørre Havnegade 15.");
+	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal hentes på Dybbøl Bibliotek .");
 	 	$(".pane-reservations").first().append(msg1, msg2);
 
 
