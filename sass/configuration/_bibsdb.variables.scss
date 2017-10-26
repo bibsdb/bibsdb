@@ -53,6 +53,21 @@ $blue:                           #00caff;
 $green:                          #7fc241;
 $green-dark:										 darken($green, 12%) !default;
 $green-darker:									 darken($green-dark, 15%) !default;
+$mkh-blue1:                      #373e4f;
+$mkh-blue2:                      #4a4f60;
+$mkh-blue3:                      #747584;
+$mkh-green:                      #32ac73;
+$mkh-gray1:                      #adacb6;
+$mkh-gray2:                      #bab8c0;
+$mkh-gray3:                      #c4c4cb;
+$mkh-gray4:                      #d2d1d7;
+$mkh-gray5:                      #dfdee3;
+
+
+
+
+
+
 
 
 /* Font library
@@ -64,14 +79,14 @@ $base-icon-library-font:         "FontAwesome";
 /* Typography
    ========================================================================== */
 
-$font-light:                      "SourceSansProLight";
-$font-light-italic:               "SourceSansProLightItalic";
-$font-regular:                    "SourceSansProRegular";
-$font-regular-italic:             "SourceSansProItalic";
-$font-bold:                       "SourceSansProSemibold";
-$font-bold-italic:                "SourceSansProSemiboldItalic";
+$font-light:                      "brother_1816thin";
+$font-light-italic:               "brother_1816thin_italic";
+$font-regular:                    "brother_1816regular";
+$font-regular-italic:             "brother_1816regular_italic";
+$font-bold:                       "brother_1816medium";
+$font-bold-italic:                "brother_1816medium_italic";
 $font-color-primary:              transparentize($black, .3);
-$font-extrabold:                  "SourceSansProBold";
+$font-extrabold:                  "brother_1816bold";
 
 
 
@@ -102,7 +117,7 @@ $font-size-tiny:                  80%;
 /* Labels
    ========================================================================== */
 
-$label-border-radius:             8px;
+$label-border-radius:             0px;
 $label-shadow:                    0 -1px 0 rgba(0,0,0,.25);
 $label-padding:                   3px 10px;
 
@@ -121,7 +136,8 @@ $navbar-text-color-active:        lighten($black, 30%);
 
 $availability-pending:                  $gray-darker;
 $availability-processed:                $gray-darker;
-$availability-available:                $green;
+$availability-available:                $mkh-green;
 $availability-reservable:               $yellow;
-$availability-available-reservable:     $green;
+$availability-available-reservable:     $mkh-green;
 $availability-available-not-reservable: $red;
+$availability-not-available-reservable: $mkh-green;

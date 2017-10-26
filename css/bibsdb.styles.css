@@ -48,19 +48,19 @@
 /* Topbar background color */
 /* line 9, ../sass/configuration/_bibsdb.configuration.scss */
 .topbar {
-  background-color: #ffffff;
+  background-color: #373e4f;
 }
 
 /* Header background color */
 /* line 16, ../sass/configuration/_bibsdb.configuration.scss */
 .header-wrapper {
-  background-color: #979da2;
+  background-color: #373e4f;
 }
 
 /* Navigation background color */
 /* line 23, ../sass/configuration/_bibsdb.configuration.scss */
 .navigation-wrapper {
-  background-color: #6d6e71;
+  background-color: #373e4f;
 }
 
 /* Links */
@@ -70,17 +70,17 @@ a {
 }
 /* line 32, ../sass/configuration/_bibsdb.configuration.scss */
 a:link {
-  color: #619630;
+  color: #32ac73;
   text-decoration: none;
 }
 /* line 37, ../sass/configuration/_bibsdb.configuration.scss */
 a:visited {
-  color: #619630;
+  color: #32ac73;
   text-decoration: none;
 }
 /* line 42, ../sass/configuration/_bibsdb.configuration.scss */
 a:hover {
-  color: #3b5c1d;
+  color: #000;
   text-decoration: underline;
 }
 /* line 46, ../sass/configuration/_bibsdb.configuration.scss */
@@ -89,7 +89,7 @@ a:hover i[class^="icon-"] {
 }
 /* line 51, ../sass/configuration/_bibsdb.configuration.scss */
 a:focus {
-  color: #3b5c1d;
+  color: #000;
 }
 
 /* Article background extends */
@@ -111,13 +111,13 @@ a:focus {
 /* Footer background color */
 /* line 74, ../sass/configuration/_bibsdb.configuration.scss */
 .footer {
-  background-color: #979da2;
+  background-color: #4a4f60;
 }
 
 /* Bottom background color */
 /* line 79, ../sass/configuration/_bibsdb.configuration.scss */
 .bottom {
-  background-color: #6d6e71;
+  background-color: #373e4f;
   padding-bottom: 30px;
 }
 /* line 83, ../sass/configuration/_bibsdb.configuration.scss */
@@ -210,6 +210,10 @@ a:focus {
  *
  * These are mixins to allow for use in media queries
    ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
 /**
  * Base
  *
@@ -217,9 +221,9 @@ a:focus {
  */
 /* line 7, ../sass/framework/_bibsdb.base.scss */
 body {
-  background-color: #d2d5d7;
+  background-color: #dfdee3;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "brother_1816regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
 }
@@ -231,7 +235,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
@@ -320,18 +324,18 @@ h6 {
 
 /* line 84, ../sass/framework/_bibsdb.base.scss */
 strong {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
 }
 
 /* line 89, ../sass/framework/_bibsdb.base.scss */
 em {
-  font-family: "SourceSansProItalic";
+  font-family: "brother_1816regular_italic";
   font-weight: normal;
 }
 /* line 92, ../sass/framework/_bibsdb.base.scss */
 em strong {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
 }
 
@@ -404,29 +408,29 @@ h6 {
 /* line 159, ../sass/framework/_bibsdb.base.scss */
 h5 a:link,
 h6 a:link {
-  color: #619630;
+  color: #32ac73;
   text-decoration: none;
 }
 /* line 164, ../sass/framework/_bibsdb.base.scss */
 h5 a:visited,
 h6 a:visited {
-  color: #619630;
+  color: #32ac73;
 }
 /* line 168, ../sass/framework/_bibsdb.base.scss */
 h5 a:hover,
 h6 a:hover {
-  color: #3b5c1d;
+  color: #000;
 }
 /* line 172, ../sass/framework/_bibsdb.base.scss */
 h5 a:focus,
 h6 a:focus {
-  color: #3b5c1d;
+  color: #000;
 }
 /* line 176, ../sass/framework/_bibsdb.base.scss */
 h5 a:active,
 h6 a:active {
   background-color: transparent;
-  color: #3b5c1d;
+  color: #000;
 }
 
 /* line 203, ../sass/framework/_bibsdb.base.scss */
@@ -453,7 +457,7 @@ h6 {
    ========================================================================== */
 /* line 10, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu {
-  margin-top: 52px;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 768px) {
   /* line 10, ../sass/framework/_bibsdb.navigation.scss */
@@ -469,10 +473,11 @@ h6 {
 }
 /* line 19, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item {
-  text-shadow: 1px 1px 0 #b7bbbf;
+  text-shadow: none;
   font-size: 130%;
+  font-family: "brother_1816medium";
   /* Make the tabs a little higher to span the logo as it grows higher */
-  color: #6d6e71;
+  color: #fff;
   /* Hide New user menu item when logged in. */
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -481,7 +486,7 @@ h6 {
     padding: 20px 14px;
     /* Hide New user menu item on small screens. */
   }
-  /* line 28, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 29, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item.topbar-link-new-user {
     display: none;
   }
@@ -492,57 +497,66 @@ h6 {
     padding: 10px 10px;
     /* Hide New user menu item on small screens. */
   }
-  /* line 36, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 37, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .menu-item.topbar-link-new-user {
     display: none;
   }
 }
-/* line 43, ../sass/framework/_bibsdb.navigation.scss */
+/* line 44, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item:hover {
-  background-color: #7fc241;
+  background-color: #32ac73;
   color: #fff;
 }
-/* line 48, ../sass/framework/_bibsdb.navigation.scss */
+/* line 49, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.active {
   color: #fff;
-  background-color: #979da2;
+  background-color: #fff;
+  color: #373e4f;
 }
-/* line 54, ../sass/framework/_bibsdb.navigation.scss */
+/* line 56, ../sass/framework/_bibsdb.navigation.scss */
 .topbar-menu .menu-item.topbar-link-new-user.logged-in {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 61, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 63, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.menu-item {
     display: inline-block;
   }
-  /* line 65, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 67, ../sass/framework/_bibsdb.navigation.scss */
   .topbar-menu .topbar-link-user-account.default-override {
     display: none;
   }
 }
+/* line 73, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .pane-notifications-top-menu {
+  margin-top: 65px;
+}
+/* line 75, ../sass/framework/_bibsdb.navigation.scss */
+.topbar-menu .pane-notifications-top-menu .item-list li.last {
+  margin-right: 2em;
+}
 
 /* Navigation, main menu and secondary menu
    ========================================================================== */
-/* line 74, ../sass/framework/_bibsdb.navigation.scss */
+/* line 83, ../sass/framework/_bibsdb.navigation.scss */
 .navigation-wrapper {
-  background-color: #6d6e71;
+  background-color: #373e4f;
   /* Media queries */
 }
 @media only screen and (max-width: 768px) {
-  /* line 74, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 83, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
-    background-color: #979da2;
+    background-color: #373e4f;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 74, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 83, ../sass/framework/_bibsdb.navigation.scss */
   .navigation-wrapper {
-    background-color: #979da2;
+    background-color: #373e4f;
   }
 }
 
-/* line 85, ../sass/framework/_bibsdb.navigation.scss */
+/* line 94, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu-wrapper {
   float: left;
   width: 66.66667%;
@@ -557,7 +571,7 @@ h6 {
   word-wrap: break-word;
 }
 
-/* line 89, ../sass/framework/_bibsdb.navigation.scss */
+/* line 98, ../sass/framework/_bibsdb.navigation.scss */
 .secondary-menu-wrapper {
   float: right;
   width: 33.33333%;
@@ -573,7 +587,7 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 93, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 102, ../sass/framework/_bibsdb.navigation.scss */
   .main-menu-wrapper,
   .secondary-menu-wrapper {
     float: left;
@@ -592,62 +606,70 @@ h6 {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 102, ../sass/framework/_bibsdb.navigation.scss */
+  /* line 111, ../sass/framework/_bibsdb.navigation.scss */
   .secondary-menu {
     font-size: 110%;
   }
 }
-/* line 109, ../sass/framework/_bibsdb.navigation.scss */
+/* line 117, ../sass/framework/_bibsdb.navigation.scss */
+.main-menu, .secondary-menu {
+  font-size: 130%;
+  font-family: "brother_1816medium";
+}
+/* line 121, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-/* line 111, ../sass/framework/_bibsdb.navigation.scss */
+/* line 125, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
-  color: #7fc241;
+  color: #32ac73;
 }
-/* line 114, ../sass/framework/_bibsdb.navigation.scss */
+/* line 128, ../sass/framework/_bibsdb.navigation.scss */
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
-  color: #7fc241;
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
+  color: #32ac73;
 }
 
-/* line 121, ../sass/framework/_bibsdb.navigation.scss */
-.secondary-menu i {
-  font-size: 130%;
+/* line 135, ../sass/framework/_bibsdb.navigation.scss */
+.secondary-menu .menu-item {
+  margin-right: 0;
+}
+/* line 139, ../sass/framework/_bibsdb.navigation.scss */
+.secondary-menu li {
+  border-right: 0;
 }
 
 /* Sub menu
    ========================================================================== */
-/* line 129, ../sass/framework/_bibsdb.navigation.scss */
+/* line 149, ../sass/framework/_bibsdb.navigation.scss */
 h2.sub-menu-title {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
 }
 
-/* line 133, ../sass/framework/_bibsdb.navigation.scss */
+/* line 153, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu {
   margin-bottom: 20px;
 }
-/* line 135, ../sass/framework/_bibsdb.navigation.scss */
+/* line 155, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li {
   border-bottom: 0;
 }
-/* line 137, ../sass/framework/_bibsdb.navigation.scss */
+/* line 157, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
+  font-family: "brother_1816regular";
   font-size: 110%;
   padding-top: 5px;
   padding-bottom: 8px;
 }
-/* line 144, ../sass/framework/_bibsdb.navigation.scss */
+/* line 164, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu > li a:hover {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: underline;
 }
-/* line 152, ../sass/framework/_bibsdb.navigation.scss */
+/* line 172, ../sass/framework/_bibsdb.navigation.scss */
 .sub-menu li:before {
   color: rgba(0, 0, 0, 0.7);
   font-size: 100%;
@@ -669,10 +691,17 @@ h2.sub-menu-title {
 a.button,
 .search .form-submit,
 .search-field-in-content .form-submit,
-.user .form-submit {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+.user .form-submit, .pane-reservations .renew-loan-button .renewable,
+.pane-loans .renew-loan-button .renewable,
+.pane-debts .renew-loan-button .renewable,
+.pane-bookmarks .renew-loan-button .renewable, .material-item .action-button.reserve-button.available,
+.field-name-ding-entity-buttons .reserve-button.available,
+.ding-periodical-issues .reserve-button.available, .material-item .action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable,
+.ding-periodical-issues .reserve-button.unavailable.reservable {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   display: inline-block;
   font-size: 100%;
   padding: 8px 14px;
@@ -686,23 +715,58 @@ a.button,
 .button:focus,
 .search .form-submit:focus,
 .search-field-in-content .form-submit:focus,
-.user .form-submit:focus, .button:hover,
+.user .form-submit:focus, .pane-reservations .renew-loan-button .renewable:focus,
+.pane-loans .renew-loan-button .renewable:focus,
+.pane-debts .renew-loan-button .renewable:focus,
+.pane-bookmarks .renew-loan-button .renewable:focus, .material-item .action-button.reserve-button.available:focus,
+.field-name-ding-entity-buttons .reserve-button.available:focus,
+.ding-periodical-issues .reserve-button.available:focus, .material-item .action-button.reserve-button.unavailable.reservable:focus,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus,
+.ding-periodical-issues .reserve-button.unavailable.reservable:focus, .button:hover,
 .search .form-submit:hover,
 .search-field-in-content .form-submit:hover,
-.user .form-submit:hover, .button:active,
+.user .form-submit:hover, .pane-reservations .renew-loan-button .renewable:hover,
+.pane-loans .renew-loan-button .renewable:hover,
+.pane-debts .renew-loan-button .renewable:hover,
+.pane-bookmarks .renew-loan-button .renewable:hover, .material-item .action-button.reserve-button.available:hover,
+.field-name-ding-entity-buttons .reserve-button.available:hover,
+.ding-periodical-issues .reserve-button.available:hover, .material-item .action-button.reserve-button.unavailable.reservable:hover,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover,
+.ding-periodical-issues .reserve-button.unavailable.reservable:hover, .button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
-.user .form-submit:active {
+.user .form-submit:active, .pane-reservations .renew-loan-button .renewable:active,
+.pane-loans .renew-loan-button .renewable:active,
+.pane-debts .renew-loan-button .renewable:active,
+.pane-bookmarks .renew-loan-button .renewable:active, .material-item .action-button.reserve-button.available:active,
+.field-name-ding-entity-buttons .reserve-button.available:active,
+.ding-periodical-issues .reserve-button.available:active, .material-item .action-button.reserve-button.unavailable.reservable:active,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
+.ding-periodical-issues .reserve-button.unavailable.reservable:active {
   text-decoration: none;
 }
 /* line 52, ../sass/framework/_bibsdb.buttons.scss */
 .disabled.button,
 .search .disabled.form-submit,
 .search-field-in-content .disabled.form-submit,
-.user .disabled.form-submit, [disabled].button,
+.user .disabled.form-submit, .pane-reservations .renew-loan-button .disabled.renewable,
+.pane-loans .renew-loan-button .disabled.renewable,
+.pane-debts .renew-loan-button .disabled.renewable,
+.pane-bookmarks .renew-loan-button .disabled.renewable, .material-item .disabled.action-button.reserve-button.available,
+.field-name-ding-entity-buttons .disabled.reserve-button.available,
+.ding-periodical-issues .disabled.reserve-button.available, .material-item .disabled.action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons .disabled.reserve-button.unavailable.reservable,
+.ding-periodical-issues .disabled.reserve-button.unavailable.reservable, [disabled].button,
 .search [disabled].form-submit,
 .search-field-in-content [disabled].form-submit,
-.user [disabled].form-submit {
+.user [disabled].form-submit, .pane-reservations .renew-loan-button [disabled].renewable,
+.pane-loans .renew-loan-button [disabled].renewable,
+.pane-debts .renew-loan-button [disabled].renewable,
+.pane-bookmarks .renew-loan-button [disabled].renewable, .material-item [disabled].action-button.reserve-button.available,
+.field-name-ding-entity-buttons [disabled].reserve-button.available,
+.ding-periodical-issues [disabled].reserve-button.available, .material-item [disabled].action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons [disabled].reserve-button.unavailable.reservable,
+.ding-periodical-issues [disabled].reserve-button.unavailable.reservable {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -moz-box-shadow: none;
@@ -720,14 +784,14 @@ a.button,
 .search .form-submit,
 .search-field-in-content .form-submit,
 .user .form-submit {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdmYzI0MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5OGEyYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyYWM3MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxNzE0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fc241), color-stop(100%, #598a2c));
-  background-image: -moz-linear-gradient(#7fc241, #598a2c);
-  background-image: -webkit-linear-gradient(#7fc241, #598a2c);
-  background-image: linear-gradient(#7fc241, #598a2c);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32ac73), color-stop(100%, #21714b));
+  background-image: -moz-linear-gradient(#32ac73, #21714b);
+  background-image: -webkit-linear-gradient(#32ac73, #21714b);
+  background-image: linear-gradient(#32ac73, #21714b);
   /* Make sure buttons get a background color in IE */
-  background-color: #7fc241;
+  background-color: #32ac73;
   border: 0;
   color: #fff;
 }
@@ -757,17 +821,75 @@ a.button:active,
 .search .form-submit:active,
 .search-field-in-content .form-submit:active,
 .user .form-submit:active {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcyYjEzOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRkNzcyNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjOTg2NiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFiNWQzZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b139), color-stop(100%, #4d7726));
-  background-image: -moz-linear-gradient(#72b139, #4d7726);
-  background-image: -webkit-linear-gradient(#72b139, #4d7726);
-  background-image: linear-gradient(#72b139, #4d7726);
-  background-color: #598a2c;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2c9866), color-stop(100%, #1b5d3e));
+  background-image: -moz-linear-gradient(#2c9866, #1b5d3e);
+  background-image: -webkit-linear-gradient(#2c9866, #1b5d3e);
+  background-image: linear-gradient(#2c9866, #1b5d3e);
+  background-color: #21714b;
 }
 
 /* Theme button */
 /* Action button */
+/* line 106, ../sass/framework/_bibsdb.buttons.scss */
+.pane-reservations .renew-loan-button .renewable,
+.pane-loans .renew-loan-button .renewable,
+.pane-debts .renew-loan-button .renewable,
+.pane-bookmarks .renew-loan-button .renewable, .material-item .action-button.reserve-button.available,
+.field-name-ding-entity-buttons .reserve-button.available,
+.ding-periodical-issues .reserve-button.available {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyYWM3MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxNzE0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32ac73), color-stop(100%, #21714b));
+  background-image: -moz-linear-gradient(#32ac73, #21714b);
+  background-image: -webkit-linear-gradient(#32ac73, #21714b);
+  background-image: linear-gradient(#32ac73, #21714b);
+  /* Make sure buttons get a background color in IE */
+  background-color: #32ac73;
+  border: 0;
+  color: #fff;
+}
+/* line 77, ../sass/framework/_bibsdb.buttons.scss */
+.pane-reservations .renew-loan-button .renewable:link,
+.pane-loans .renew-loan-button .renewable:link,
+.pane-debts .renew-loan-button .renewable:link,
+.pane-bookmarks .renew-loan-button .renewable:link, .material-item .action-button.reserve-button.available:link,
+.field-name-ding-entity-buttons .reserve-button.available:link,
+.ding-periodical-issues .reserve-button.available:link, .pane-reservations .renew-loan-button .renewable:visited,
+.pane-loans .renew-loan-button .renewable:visited,
+.pane-debts .renew-loan-button .renewable:visited,
+.pane-bookmarks .renew-loan-button .renewable:visited, .material-item .action-button.reserve-button.available:visited,
+.field-name-ding-entity-buttons .reserve-button.available:visited,
+.ding-periodical-issues .reserve-button.available:visited {
+  color: #fff;
+}
+/* line 83, ../sass/framework/_bibsdb.buttons.scss */
+.pane-reservations .renew-loan-button .renewable:focus,
+.pane-loans .renew-loan-button .renewable:focus,
+.pane-debts .renew-loan-button .renewable:focus,
+.pane-bookmarks .renew-loan-button .renewable:focus, .material-item .action-button.reserve-button.available:focus,
+.field-name-ding-entity-buttons .reserve-button.available:focus,
+.ding-periodical-issues .reserve-button.available:focus, .pane-reservations .renew-loan-button .renewable:hover,
+.pane-loans .renew-loan-button .renewable:hover,
+.pane-debts .renew-loan-button .renewable:hover,
+.pane-bookmarks .renew-loan-button .renewable:hover, .material-item .action-button.reserve-button.available:hover,
+.field-name-ding-entity-buttons .reserve-button.available:hover,
+.ding-periodical-issues .reserve-button.available:hover, .pane-reservations .renew-loan-button .renewable:active,
+.pane-loans .renew-loan-button .renewable:active,
+.pane-debts .renew-loan-button .renewable:active,
+.pane-bookmarks .renew-loan-button .renewable:active, .material-item .action-button.reserve-button.available:active,
+.field-name-ding-entity-buttons .reserve-button.available:active,
+.ding-periodical-issues .reserve-button.available:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjOTg2NiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFiNWQzZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2c9866), color-stop(100%, #1b5d3e));
+  background-image: -moz-linear-gradient(#2c9866, #1b5d3e);
+  background-image: -webkit-linear-gradient(#2c9866, #1b5d3e);
+  background-image: linear-gradient(#2c9866, #1b5d3e);
+  background-color: #21714b;
+}
+
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
@@ -804,12 +926,12 @@ button.button {
 }
 /* line 16, ../sass/framework/_bibsdb.labels.scss */
 .label a, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a, .subjects .subject a, .news-list .news-label a {
-  background-color: #979da2;
+  background-color: #adacb6;
   color: #fffffd;
   padding: 3px 10px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 /* line 23, ../sass/framework/_bibsdb.labels.scss */
 .label a:link, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link, .subjects .subject a:link, .news-list .news-label a:link, .label a:visited, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited, .subjects .subject a:visited, .news-list .news-label a:visited {
@@ -818,7 +940,7 @@ button.button {
 }
 /* line 29, ../sass/framework/_bibsdb.labels.scss */
 .label a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover, .subjects .subject a:hover, .news-list .news-label a:hover {
-  background-color: #747b83;
+  background-color: #bab8c0;
   color: #fafaf7;
   text-decoration: none;
 }
@@ -839,6 +961,26 @@ button.button {
   background: #7fc241;
 }
 
+/* line 1, ../sass/framework/_bibsdb.forms.scss */
+input, textarea, select {
+  font-family: "brother_1816regular";
+}
+
+/* line 5, ../sass/framework/_bibsdb.forms.scss */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  font-family: "brother_1816regular";
+}
+
 /**
  * Layout
  *
@@ -846,49 +988,80 @@ button.button {
  *
  * @author agms
  */
-/* Site header
+/* Frontpage
 ========================================================================== */
+/* line 12, ../sass/layout/_bibsdb.layout.scss */
+.frontpage-layout .layout-wrapper {
+  padding-top: 0px;
+}
+
+/* line 16, ../sass/layout/_bibsdb.layout.scss */
+.frontpage-layout .primary-content {
+  margin-bottom: 0px;
+}
+
+/* line 20, ../sass/layout/_bibsdb.layout.scss */
+.frontpage-layout h2.pane-title, .frontpage-layout .rs-carousel-title {
+  margin-top: 30px;
+}
+
 /* Site name, slogan and logo
 ========================================================================== */
-/* line 15, ../sass/layout/_bibsdb.layout.scss */
+/* line 27, ../sass/layout/_bibsdb.layout.scss */
 .logo img {
-  margin-top: 20px;
+  margin-top: 15px;
+  max-height: 110px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 27, ../sass/layout/_bibsdb.layout.scss */
+  .logo img {
+    max-height: 70px;
+  }
 }
 
 /* Content
 ========================================================================== */
-/* line 22, ../sass/layout/_bibsdb.layout.scss */
+/* line 38, ../sass/layout/_bibsdb.layout.scss */
 .content-wrapper {
   margin-top: 0;
   margin-bottom: 0;
+  /*background-image: url("/sites/default/themes/bibsdb/images/bg.png");*/
+  background-color: white;
+  background: linear-gradient(to right, #adacb6 20%, #d2d1d7 20%, #d2d1d7 40%, #dfdee3 40%, #dfdee3 60%, #bab8c0 60%, #bab8c0 80%, #c4c4cb 80%), linear-gradient(to right, #dfdee3 20%, #c4c4cb 20%, #c4c4cb 40%, #bab8c0 40%, #bab8c0 60%, #d2d1d7 60%, #d2d1d7 80%, #adacb6 80%), linear-gradient(to right, #adacb6 20%, #d2d1d7 20%, #d2d1d7 40%, #dfdee3 40%, #dfdee3 60%, #bab8c0 60%, #bab8c0 80%, #c4c4cb 80%);
+  background-size: 650px 130px;
+  background-repeat: repeat-x;
+  background-position: 50% 0, 50% 130px, 50% 260px;
+  /*background-size: auto 350px;
+  background-position: center top;
+  background-repeat: no-repeat;*/
 }
 
-/* line 27, ../sass/layout/_bibsdb.layout.scss */
+/* line 70, ../sass/layout/_bibsdb.layout.scss */
 .default-layout {
   margin-top: 0;
 }
 
 /* Depends on bibsdb_expose module */
-/* line 32, ../sass/layout/_bibsdb.layout.scss */
+/* line 75, ../sass/layout/_bibsdb.layout.scss */
 .default-layout.editormode {
   margin-top: 20px;
 }
 
 /* Breadcrumbs
 ========================================================================== */
-/* line 39, ../sass/layout/_bibsdb.layout.scss */
+/* line 82, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb-wrapper {
   clear: left;
   margin-right: 20px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 39, ../sass/layout/_bibsdb.layout.scss */
+  /* line 82, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb-wrapper {
     display: none;
   }
 }
 
-/* line 48, ../sass/layout/_bibsdb.layout.scss */
+/* line 91, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb {
   clear: left;
   float: left;
@@ -909,26 +1082,33 @@ button.button {
   padding-top: 5px;
   color: #979da2;
 }
-/* line 59, ../sass/layout/_bibsdb.layout.scss */
+/* line 102, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:link {
   color: #979da2;
   text-decoration: underline;
 }
-/* line 63, ../sass/layout/_bibsdb.layout.scss */
+/* line 106, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:hover {
   color: #979da2;
   text-decoration: underline;
 }
-/* line 67, ../sass/layout/_bibsdb.layout.scss */
+/* line 110, ../sass/layout/_bibsdb.layout.scss */
 .breadcrumb a:visited {
   color: #979da2;
   text-decoration: underline;
 }
 @media only screen and (max-width: 768px) {
-  /* line 48, ../sass/layout/_bibsdb.layout.scss */
+  /* line 91, ../sass/layout/_bibsdb.layout.scss */
   .breadcrumb {
     font-size: 90%;
   }
+}
+
+/* Buttons
+========================================================================== */
+/* line 122, ../sass/layout/_bibsdb.layout.scss */
+.button, a.button, .form-submit, #edit-cancel, #edit-delete, .search .form-submit, .search-field-in-content .form-submit, .search-field-in-content .form-submit, .user .form-submit, .bookmark-button {
+  border-radius: 0;
 }
 
 /**
@@ -938,6 +1118,12 @@ button.button {
  *
  * @author agms
  */
+/* line 9, ../sass/layout/_bibsdb.drupal.scss */
+label {
+  font-family: "brother_1816medium";
+  font-weight: normal;
+}
+
 /**
  * Homepage search result listing
  */
@@ -950,7 +1136,7 @@ button.button {
    ========================================================================== */
 /* line 9, ../sass/layout/_bibsdb.typography.scss */
 h1, h1.page-title, .pane-menu-title h2, h2.pane-title, .rs-carousel-title {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 200%;
 }
@@ -966,16 +1152,14 @@ h1, h1.page-title, .pane-menu-title h2, h2.pane-title, .rs-carousel-title {
 /* line 27, ../sass/layout/_bibsdb.typography.scss */
 h1, h1.page-title, .pane-menu-title h2 {
   font-size: 180%;
-  font-family: "SourceSansProBold";
-  font-weight: normal;
+  font-family: "brother_1816medium";
   color: rgba(0, 0, 0, 0.7);
 }
 
 /* line 34, ../sass/layout/_bibsdb.typography.scss */
 h2.pane-title, .rs-carousel-title {
   font-size: 160%;
-  font-family: "SourceSansProBold";
-  font-weight: normal;
+  font-family: "brother_1816medium";
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -983,7 +1167,7 @@ h2.pane-title, .rs-carousel-title {
 ========================================================================== */
 /* line 46, ../sass/layout/_bibsdb.typography.scss */
 .page-lead {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 110%;
   padding-bottom: 20px;
@@ -994,6 +1178,12 @@ h2.pane-title, .rs-carousel-title {
 /* line 54, ../sass/layout/_bibsdb.typography.scss */
 .page-image {
   margin-bottom: 20px;
+}
+
+/* line 2, ../sass/layout/_bibsdb.drupal_system_messages.scss */
+.messages.status,
+.messages table tr.ok {
+  background-color: #32ac73;
 }
 
 /**
@@ -1026,15 +1216,14 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 72, ../sass/module/_bibsdb.module.scss */
 .search label, .search-field-in-content label, .user label {
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 110%;
+  font-size: 100%;
+  font-family: "brother_1816regular";
   margin-top: 2px;
   margin-bottom: 5px;
   margin-left: 2px;
 }
-/* line 82, ../sass/module/_bibsdb.module.scss */
+/* line 81, ../sass/module/_bibsdb.module.scss */
 .search [class^="icon-"], .search-field-in-content [class^="icon-"], .user [class^="icon-"] {
   color: #747b83;
   bottom: 15px;
@@ -1042,27 +1231,27 @@ h2.pane-title, .rs-carousel-title {
   left: 24px;
   position: absolute;
 }
-/* line 91, ../sass/module/_bibsdb.module.scss */
+/* line 90, ../sass/module/_bibsdb.module.scss */
 .search .form-item, .search-field-in-content .form-item, .user .form-item {
   display: inline-block;
   position: relative;
 }
-/* line 96, ../sass/module/_bibsdb.module.scss */
+/* line 95, ../sass/module/_bibsdb.module.scss */
 .search .form-text, .search-field-in-content .form-text, .user .form-text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   border: 0;
   display: inline;
-  font-size: 110%;
+  font-size: 100%;
   margin-right: 20px;
   padding-bottom: 0;
   width: 100%;
 }
-/* line 108, ../sass/module/_bibsdb.module.scss */
+/* line 107, ../sass/module/_bibsdb.module.scss */
 .search .form-text, .search-field-in-content .form-text, .user .form-text,
 .search .form-submit,
 .search-field-in-content .form-submit,
@@ -1070,12 +1259,13 @@ h2.pane-title, .rs-carousel-title {
   min-height: 60px;
   padding-top: 0;
 }
-/* line 114, ../sass/module/_bibsdb.module.scss */
+/* line 113, ../sass/module/_bibsdb.module.scss */
 .search .form-submit, .search-field-in-content .form-submit, .user .form-submit {
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  font-size: 180%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-family: "brother_1816medium";
+  font-size: 130%;
   margin-top: 29px;
   padding-bottom: 1px;
   min-width: 110px;
@@ -1151,7 +1341,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 194, ../sass/module/_bibsdb.module.scss */
 .pane-taxonomy-menu .sub-menu > li.first a {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 130%;
   padding-left: 20px;
@@ -1172,10 +1362,10 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 13, ../sass/module/_bibsdb.search.scss */
 .header-wrapper .search, .header-wrapper .search-field-in-content {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-right: 10px;
   /** agms */
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 10px;
   /** agms */
 }
@@ -1257,7 +1447,7 @@ h2.pane-title, .rs-carousel-title {
     white-space: nowrap;
     min-height: 60px;
     width: 15%;
-    border-radius: 15px;
+    border-radius: 0;
     border: 1px solid #b7bbbf;
   }
 }
@@ -1299,7 +1489,7 @@ h2.pane-title, .rs-carousel-title {
   /* line 143, ../sass/module/_bibsdb.search.scss */
   .search-field-in-content--message {
     display: block;
-    font-family: "SourceSansProSemibold";
+    font-family: "brother_1816medium";
     font-weight: normal;
     margin-bottom: 30px;
     padding: 20px;
@@ -1393,11 +1583,39 @@ h2.pane-title, .rs-carousel-title {
 ========================================================================== */
 /* line 200, ../sass/module/_bibsdb.search.scss */
 .pane-search-backends a:visited, .pane-ding-facetbrowser a:visited {
-  color: #619630;
+  color: #32ac73;
+}
+
+/* line 205, ../sass/module/_bibsdb.search.scss */
+legend {
+  font-family: "brother_1816medium";
+  font-weight: normal;
+  font-size: 100%;
 }
 
 /* Search results list
 ========================================================================== */
+/* Autocomplete
+========================================================================== */
+/* line 222, ../sass/module/_bibsdb.search.scss */
+#autocomplete {
+  border-radius: 0;
+}
+
+/* Buttons
+========================================================================== */
+/* line 230, ../sass/module/_bibsdb.search.scss */
+.field-name-ding-entity-buttons .reserve-button {
+  border-radius: 0;
+}
+
+/* line 235, ../sass/module/_bibsdb.search.scss */
+.button-see-online {
+  border-radius: 0;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
 /**
 * News
 * *
@@ -1491,7 +1709,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 67, ../sass/module/_bibsdb.news.scss */
 .news .bibsdb-fact-box > h2 {
-  font-family: "SourceSansProBold";
+  font-family: "brother_1816bold";
   font-weight: normal;
   background-color: #d2d5d7;
   font-size: 130%;
@@ -1504,7 +1722,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 81, ../sass/module/_bibsdb.news.scss */
 .news .news-lead {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 110%;
   padding-bottom: 20px;
@@ -1620,7 +1838,7 @@ h2.pane-title, .rs-carousel-title {
 /* Event list heading */
 /* line 14, ../sass/module/_bibsdb.event.scss */
 .event-list-leaf .event-list-day {
-  background-color: #7fc241;
+  background-color: #32ac73;
 }
 
 /* Buy ticket button */
@@ -1835,15 +2053,25 @@ h2.pane-title, .rs-carousel-title {
   padding-left: 20px;
 }
 
-/* line 21, ../sass/module/_bibsdb.user.scss */
+/* /user/$uid/status/*
+   ========================================================================== */
+/* line 24, ../sass/module/_bibsdb.user.scss */
+.pane-reservations,
+.pane-loans,
+.pane-debts,
+.pane-bookmarks {
+  /* BUTTONS */
+}
+
+/* line 38, ../sass/module/_bibsdb.user.scss */
 .user {
   overflow: hidden;
 }
-/* line 25, ../sass/module/_bibsdb.user.scss */
+/* line 42, ../sass/module/_bibsdb.user.scss */
 .user .user-field-wrapper {
   position: relative;
 }
-/* line 29, ../sass/module/_bibsdb.user.scss */
+/* line 46, ../sass/module/_bibsdb.user.scss */
 .user .form-item-name {
   float: left;
   width: 50%;
@@ -1857,11 +2085,11 @@ h2.pane-title, .rs-carousel-title {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 32, ../sass/module/_bibsdb.user.scss */
+/* line 49, ../sass/module/_bibsdb.user.scss */
 .user .form-item-name .form-text {
   padding-left: 45px;
 }
-/* line 37, ../sass/module/_bibsdb.user.scss */
+/* line 54, ../sass/module/_bibsdb.user.scss */
 .user .form-item-pass {
   float: right;
   width: 50%;
@@ -1875,16 +2103,16 @@ h2.pane-title, .rs-carousel-title {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 40, ../sass/module/_bibsdb.user.scss */
+/* line 57, ../sass/module/_bibsdb.user.scss */
 .user .form-item-pass .form-text {
   padding-left: 42px;
 }
-/* line 45, ../sass/module/_bibsdb.user.scss */
+/* line 62, ../sass/module/_bibsdb.user.scss */
 .user .block-title {
   display: none;
 }
 @media only screen and (max-width: 480px) {
-  /* line 50, ../sass/module/_bibsdb.user.scss */
+  /* line 67, ../sass/module/_bibsdb.user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     float: left;
@@ -1900,21 +2128,21 @@ h2.pane-title, .rs-carousel-title {
     word-wrap: break-word;
     clear: left;
   }
-  /* line 56, ../sass/module/_bibsdb.user.scss */
+  /* line 73, ../sass/module/_bibsdb.user.scss */
   .user .form-actions {
     margin-bottom: 0;
   }
-  /* line 60, ../sass/module/_bibsdb.user.scss */
+  /* line 77, ../sass/module/_bibsdb.user.scss */
   .user .form-submit {
     margin-top: 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 21, ../sass/module/_bibsdb.user.scss */
+  /* line 38, ../sass/module/_bibsdb.user.scss */
   .user {
     text-align: left;
   }
-  /* line 68, ../sass/module/_bibsdb.user.scss */
+  /* line 85, ../sass/module/_bibsdb.user.scss */
   .user .block-title {
     display: block;
     color: #fff;
@@ -1923,13 +2151,13 @@ h2.pane-title, .rs-carousel-title {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  /* line 77, ../sass/module/_bibsdb.user.scss */
+  /* line 94, ../sass/module/_bibsdb.user.scss */
   .user .user-field-wrapper {
     position: relative;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 21, ../sass/module/_bibsdb.user.scss */
+  /* line 38, ../sass/module/_bibsdb.user.scss */
   .user {
     width: auto;
   }
@@ -2296,7 +2524,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 81, ../sass/module/_bibsdb.staff.scss */
 .staff-list-item .staff-name-title .staff-name {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
 }
 /* line 87, ../sass/module/_bibsdb.staff.scss */
@@ -2370,7 +2598,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 51, ../sass/module/_bibsdb.new_materials.scss */
 .pane-new-materials-list .open-platform-item-list .item-author, .pane-new-materials-list .open-platform-item-list .item-title {
-  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "brother_1816regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   line-height: 120%;
   font-size: 100%;
@@ -2384,7 +2612,7 @@ h2.pane-title, .rs-carousel-title {
 }
 /* line 60, ../sass/module/_bibsdb.new_materials.scss */
 .pane-new-materials-list .open-platform-item-list .item-title {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
 }
 /* line 69, ../sass/module/_bibsdb.new_materials.scss */
@@ -2556,6 +2784,124 @@ h2.pane-title, .rs-carousel-title {
     background-color: white;
   }
 }
+/* line 1, ../sass/module/_bibsdb.p2.scss */
+.pane-carousel {
+  margin-bottom: 0;
+}
+
+/* line 5, ../sass/module/_bibsdb.p2.scss */
+.ding-list-add-button .trigger {
+  border-radius: 0;
+}
+
+/* line 9, ../sass/module/_bibsdb.p2.scss */
+.pane-notifications-top-menu {
+  margin-right: 380px;
+  margin-top: 25px;
+}
+/* line 15, ../sass/module/_bibsdb.p2.scss */
+.pane-notifications-top-menu a:link {
+  color: #fff;
+}
+/* line 19, ../sass/module/_bibsdb.p2.scss */
+.pane-notifications-top-menu a:visited {
+  color: #fff;
+}
+/* line 23, ../sass/module/_bibsdb.p2.scss */
+.pane-notifications-top-menu a:hover {
+  color: #32ac73;
+}
+
+/* Ting object buttons.
+   ========================================================================== */
+/* line 12, ../sass/module/_bibsdb.availability.scss */
+.material-item .action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable,
+.ding-periodical-issues .reserve-button.unavailable.reservable {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyYWM3MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxNzE0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #32ac73), color-stop(100%, #21714b));
+  background-image: -moz-linear-gradient(#32ac73, #21714b);
+  background-image: -webkit-linear-gradient(#32ac73, #21714b);
+  background-image: linear-gradient(#32ac73, #21714b);
+  /* Make sure buttons get a background color in IE */
+  background-color: #32ac73;
+  border: 0;
+  color: #fff;
+}
+/* line 77, ../sass/framework/_bibsdb.buttons.scss */
+.material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited,
+.ding-periodical-issues .reserve-button.unavailable.reservable:link,
+.ding-periodical-issues .reserve-button.unavailable.reservable:visited {
+  color: #fff;
+}
+/* line 83, ../sass/framework/_bibsdb.buttons.scss */
+.material-item .action-button.reserve-button.unavailable.reservable:focus, .material-item .action-button.reserve-button.unavailable.reservable:hover, .material-item .action-button.reserve-button.unavailable.reservable:active,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
+.ding-periodical-issues .reserve-button.unavailable.reservable:focus,
+.ding-periodical-issues .reserve-button.unavailable.reservable:hover,
+.ding-periodical-issues .reserve-button.unavailable.reservable:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjOTg2NiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFiNWQzZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2c9866), color-stop(100%, #1b5d3e));
+  background-image: -moz-linear-gradient(#2c9866, #1b5d3e);
+  background-image: -webkit-linear-gradient(#2c9866, #1b5d3e);
+  background-image: linear-gradient(#2c9866, #1b5d3e);
+  background-color: #21714b;
+}
+
+/**
+ * Carousel
+ *
+ * @author magnify
+ */
+/* Variables
+   ========================================================================== */
+/* Carousel
+   ========================================================================== */
+/* line 22, ../sass/module/_bibsdb.carousel.scss */
+.rs-carousel-inner {
+  padding-bottom: 20px;
+}
+
+/* Carousel tabs
+   ========================================================================== */
+/* line 33, ../sass/module/_bibsdb.carousel.scss */
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a {
+  background-color: #747584;
+  color: #fff;
+  margin-right: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 40, ../sass/module/_bibsdb.carousel.scss */
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a:hover {
+  background-color: #4a4f60;
+  text-decoration: none;
+}
+/* line 47, ../sass/module/_bibsdb.carousel.scss */
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a {
+  font-family: "brother_1816regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+  background-color: #4a4f60;
+}
+/* line 52, ../sass/module/_bibsdb.carousel.scss */
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a:before {
+  border: 10px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  top: -20px;
+  border-bottom-color: #4a4f60;
+  margin-left: -10px;
+  left: 50%;
+}
+
 /**
  * Additional styles for the bibsdb theme only
  * - does not contain overridden DDBasic styles
@@ -2711,7 +3057,7 @@ h3.bibsdb-foldable-list-title {
 .bibsdb-contact-message {
   color: #a32e10;
   font-size: 110%;
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   margin-bottom: 10px;
 }
 
@@ -2750,7 +3096,7 @@ h3.bibsdb-foldable-list-title {
 }
 /* line 22, ../sass/bibsdbextras/_bibsdb.taglists.scss */
 #bibsdb-taglist-page .pane-node-field-ding-page-lead {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   padding-bottom: 10px;
 }
@@ -3127,7 +3473,7 @@ h3.bibsdb-foldable-list-title {
 .bibsdb-rowlist .bibsdb-rowlist-tags ul li {
   float: left;
   text-transform: uppercase;
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   color: #979da2;
 }
@@ -3376,7 +3722,7 @@ h3.bibsdb-foldable-list-title {
 }
 /* line 74, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-content .eresource-lead {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 110%;
   margin-bottom: 10px;
@@ -3481,7 +3827,7 @@ h3.bibsdb-foldable-list-title {
 }
 /* line 168, ../sass/bibsdbextras/_bibsdb.eresource.scss */
 .eresource-right-col .eresource-info-item.eresource-link {
-  font-family: "SourceSansProSemibold";
+  font-family: "brother_1816medium";
   font-weight: normal;
   font-size: 110%;
 }

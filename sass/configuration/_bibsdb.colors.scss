@@ -7,21 +7,21 @@
 
 
 /* Topbar */
-$topbar-background-color:         #ffffff !default;
+$topbar-background-color:         $mkh-blue1 !default;
 
 /* Header */
-$header-background-color:         $gray-dark !default;
+$header-background-color:         $mkh-blue1 !default;
 
 /* Navigation */
-$navigation-background-color:     $gray-darkest !default;
+$navigation-background-color:     $mkh-blue1 !default;
 
 /* Links */
-$link-color:                      $green-dark !default;
-$link-color-hover:                $green-darker !default;
+$link-color:                      $mkh-green !default;
+$link-color-hover:                $black !default;
 
 /* Labels */
-$label-bg-color:                  $gray-dark !default;
-$label-bg-color-hover:            $gray-darker !default;
+$label-bg-color:                  $mkh-gray1 !default;
+$label-bg-color-hover:            $mkh-gray2 !default;
 $label-text-color:                #fffffd !default;
 $label-text-color-hover:          #fafaf7 !default;
 
@@ -35,4 +35,4 @@ $list-item-background-color-even: $gray-lightest !default;
 $list-text-color:                 #4c4c4c !default;
 
 /* Footer */
-$footer-background-color:         $gray-dark !default;
+$footer-background-color:         $mkh-blue2 !default;

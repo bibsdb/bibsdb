@@ -6,14 +6,30 @@
  * @author agms
  */
 
-/* Site header
+/* Frontpage
 ========================================================================== */
+
+.frontpage-layout .layout-wrapper {
+	padding-top: 0px;
+}
+
+.frontpage-layout .primary-content {
+	margin-bottom: 0px;
+}
+
+.frontpage-layout h2.pane-title {
+	margin-top: 30px;
+}
 
 
 /* Site name, slogan and logo
 ========================================================================== */
 .logo img {
-	margin-top: $large-spacing;
+	margin-top: 15px;
+	max-height: 110px;
+	@include small-medium() {
+		max-height: 70px;
+	}
 }
 
 /* Content
@@ -22,6 +38,33 @@
 .content-wrapper {
 	margin-top: 0;
 	margin-bottom: 0;
+	/*background-image: url("/sites/default/themes/bibsdb/images/bg.png");*/
+	background-color: white;
+	background: 
+	linear-gradient(to right, 
+		$mkh-gray1 20%, $mkh-gray4 20%, 
+		$mkh-gray4 40%, $mkh-gray5 40%, 
+		$mkh-gray5 60%, $mkh-gray2 60%,
+		$mkh-gray2 80%, $mkh-gray3 80%),
+	linear-gradient(to right, 
+		$mkh-gray5 20%, $mkh-gray3 20%, 
+		$mkh-gray3 40%, $mkh-gray2 40%, 
+		$mkh-gray2 60%, $mkh-gray4 60%,
+		$mkh-gray4 80%, $mkh-gray1 80%),
+	linear-gradient(to right, 
+		$mkh-gray1 20%, $mkh-gray4 20%, 
+		$mkh-gray4 40%, $mkh-gray5 40%, 
+		$mkh-gray5 60%, $mkh-gray2 60%,
+		$mkh-gray2 80%, $mkh-gray3 80%)
+	;
+	
+
+	background-size: 650px 130px;
+	background-repeat: repeat-x;
+	background-position: 50% 0, 50% 130px, 50% 260px;
+  /*background-size: auto 350px;
+  background-position: center top;
+  background-repeat: no-repeat;*/
 }
 
 .default-layout {
@@ -72,4 +115,10 @@
 	@include small-medium {
 		font-size: $font-size-small;
 	}
+}
+
+/* Buttons
+========================================================================== */
+.button, a.button, .form-submit, #edit-cancel, #edit-delete, .search .form-submit, .search-field-in-content .form-submit, .user .form-submit, .bookmark-button {
+	border-radius: 0;
 }

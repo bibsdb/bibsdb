@@ -1,0 +1,15 @@
+/* Ting object buttons.
+   ========================================================================== */
+
+.material-item .action-button.reserve-button,
+.field-name-ding-entity-buttons .reserve-button,
+.ding-periodical-issues .reserve-button {
+ 
+  &.available {
+    @extend %button-action;
+  }
+
+  &.unavailable.reservable {
+    @include create-gradient-button($white, $availability-not-available-reservable, darken($availability-not-available-reservable, 15%));
+  }
+}

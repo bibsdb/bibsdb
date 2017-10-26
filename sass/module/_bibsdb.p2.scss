@@ -1,0 +1,27 @@
+.pane-carousel {
+	margin-bottom: 0;
+}
+
+.ding-list-add-button .trigger {
+	border-radius: 0;
+}
+
+.pane-notifications-top-menu {
+	margin-right: 380px;
+  margin-top: 25px;
+
+  a {
+
+	  &:link {
+	    color: $white;
+	  }
+
+	  &:visited {
+	    color: $white;
+	  }
+
+	  &:hover {
+	    color: $mkh-green;
+	  }
+	}
+}

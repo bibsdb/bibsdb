@@ -6,6 +6,10 @@
  * @author agms
  */
 
+ label {
+  @include font-bold();
+}
+
 
 /**
  * Homepage search result listing

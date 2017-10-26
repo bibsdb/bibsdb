@@ -23,12 +23,14 @@
 @import "framework/_bibsdb.buttons";
 @import "framework/_bibsdb.labels";
 @import "framework/_bibsdb.modal";
+@import "framework/_bibsdb.forms";
 
 
 // Include media queries (displays and attachments)
 @import "layout/_bibsdb.layout";
 @import "layout/_bibsdb.drupal";
 @import "layout/_bibsdb.typography";
+@import "layout/_bibsdb.drupal_system_messages";
 
 // Include modules
 @import "module/_bibsdb.module";
@@ -39,6 +41,9 @@
 @import "module/_bibsdb.libraries";
 @import "module/_bibsdb.staff";
 @import "module/_bibsdb.new_materials";
+@import "module/_bibsdb.p2";
+@import "module/_bibsdb.availability";
+@import "module/_bibsdb.carousel";
 
 // Include bibsdbextras
 @import "bibsdbextras/_bibsdb.extras";
@@ -48,6 +53,7 @@
 @import "bibsdbextras/_bibsdb.ting_search_context";
 @import "bibsdbextras/_bibsdb.eresource";
 @import "bibsdbextras/_bibsdb.menucard";
+@import "bibsdbextras/_bibsdb.mkh";
 
 
 

@@ -18,6 +18,23 @@
   }
 }
 
+/* /user/$uid/status/*
+   ========================================================================== */
+
+.pane-reservations,
+.pane-loans,
+.pane-debts,
+.pane-bookmarks {
+
+  /* BUTTONS */
+
+  .renew-loan-button  {
+    .renewable {
+      @extend %button-action;
+    }
+  }
+}
+
 .user {
   @extend %search-user-header;
   overflow: hidden;

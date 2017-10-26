@@ -11,9 +11,9 @@
 .header-wrapper {
   /* Add padding if the search is in the header */
   .search {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-right: 10px; /** agms */
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 10px; /** agms */
   }
 }
@@ -93,7 +93,7 @@
         white-space: nowrap;
         min-height: 60px;
         width: 15%;
-        border-radius: 15px;
+        border-radius: 0;
         border: 1px solid $gray;
         
       }
@@ -202,6 +202,11 @@
   }
 }
 
+legend {
+  @include font-bold();
+  font-size: $font-size-reset;
+}
+
 /* Search results list
 ========================================================================== */
 
@@ -209,4 +214,26 @@
   .subject {
     @extend .label;
   }
+}
+
+/* Autocomplete
+========================================================================== */
+
+#autocomplete {
+  border-radius: 0;
+}
+
+/* Buttons
+========================================================================== */
+
+.field-name-ding-entity-buttons {
+  .reserve-button {
+    border-radius: 0;
+  }
+}
+
+.button-see-online {
+  border-radius: 0;
+  line-height: normal;
+  vertical-align: baseline;
 }

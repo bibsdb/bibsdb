@@ -70,10 +70,9 @@
   width: 100%;
 
   label {
-    @include font-bold();
-
     color: transparentize($white, .25);
-    font-size: $font-size-medium;
+    font-size: $font-size-reset;
+    font-family: $font-regular;
     margin-top: 2px;
     margin-bottom: 5px;
     margin-left: 2px;
@@ -95,11 +94,11 @@
 
   .form-text {
     @include box-sizing(border-box);
-    @include border-radius(12px);
+    @include border-radius(0);
 
     border: 0;
     display: inline;
-    font-size: $font-size-medium;
+    font-size: $font-size-reset;
     margin-right: 20px;
     padding-bottom: 0;
     width: 100%;
@@ -112,10 +111,11 @@
   }
 
   .form-submit {
-    @include border-radius(12px);
+    @include border-radius(0);
     @extend %button-default;
 
-    font-size: $font-size-largest;
+    font-family: $font-bold;
+    font-size: $font-size-large;
     margin-top: 29px;
     padding-bottom: 1px;
     min-width: 110px;

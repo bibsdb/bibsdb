@@ -6,6 +6,7 @@
 	
 ;----------// Stylesheets
   stylesheets[all][] = css/bibsdb.styles.css
+  stylesheets[all][] = font/brother1816/stylesheet.css
   stylesheets[print][] = css/bibsdb.print.css
 
 ;----------// JavaScripts
