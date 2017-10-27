@@ -9,6 +9,13 @@
 .pane-notifications-top-menu {
 	margin-right: 380px;
   margin-top: 25px;
+  @include small-medium() {
+  	display:none;
+  }
+  
+  @include small {
+		display:none;
+	}
 
   a {
 

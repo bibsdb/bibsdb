@@ -10,10 +10,14 @@
 .topbar-menu {
 	margin-top: 15px;
 	@include small-medium() {
-    margin-top: 0;
+    margin-top: 15px;
+    @include zen-grid-item(8, 1, right);
+    clear: none;
   }
   @include small() {
-    margin-top: 0;
+    margin-top: 15px;
+    @include zen-grid-item(8, 1, right);
+    clear: none;
   }
 
 	.menu-item {

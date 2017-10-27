@@ -19,6 +19,17 @@ $carousel-tab-color:                       $white;
 /* Carousel
    ========================================================================== */
 
+.rs-carousel {
+  @include small-medium() {
+    background-color: $white;
+  }
+  
+  @include small {
+    background-color: $white;
+  }
+
+}
+
 .rs-carousel-inner {
   padding-bottom: 20px;
 }

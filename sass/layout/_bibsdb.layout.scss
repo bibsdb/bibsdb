@@ -24,11 +24,16 @@
 
 /* Site name, slogan and logo
 ========================================================================== */
+.logo {
+  @include zen-grid-item(4, 1);
+}
+
 .logo img {
 	margin-top: 15px;
 	max-height: 110px;
 	@include small-medium() {
 		max-height: 70px;
+		margin-bottom: 15px;
 	}
 }
 
