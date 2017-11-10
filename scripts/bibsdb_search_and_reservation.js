@@ -64,52 +64,7 @@
 	 }
 
 
-	/**
-	 * Add sonderborg closed message to reservation confirmation
-	 */
-	 function add_sonderborg_closed_msg_to_reservation_confirmation() {
-	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
-	 		var $ul = $( "li:contains('afhentning på Sønderborg Bibliotek')" ).parent();
-	 		var length = $ul.children().length;
-	 		if (length == 2) {
-	 			$li = $("<li>").text("BEMÆRK! DU SKAL HENTE DINE RESERVERINGER PÅ DYBBØL BIBLIOTEK INDTIL 3. NOVEMBER, HVOR BIBLIOTEKET SØNDERBORG ÅBNER IGEN I MULTIKULTURHUSET, NØRRE HAVNEGADE 15.");
-	 			$('.ui-widget ul').append($li);
-	 		}
-	 	});
-	 }	
-
-
-	/**
-	 * Add sonderborg closed message to reservation confirmation
-	 */
-	 function add_sonderborg_closed_msg_to_pick_default_branch_text() {
-	 	jQuery('.ui-widget').live('DOMNodeInserted', function () {
-	 		$( "select#edit-provider-options-alma-preferred-branch option:contains('Sønderborg Bibliotek')").text("Sønderborg Bibliotek - lukket indtil 3. november");
-	 	});
-	 }	
-
-	 function add_sonderborg_closed_msg_to_reservation_page() {
-	 	// Only run for reservations page
-	 	if (window.location.href.indexOf("user/me/status/reservations") == -1) {
-	 		return;
-	 	}
-
-	 	// Only show message if user has reservations to be picked up in sonderborg
-	 	var $sonderborg_res = $( ".item-information-data:contains('Sønderborg Bibliotek')" );
-	 	if ($sonderborg_res.length == 0) {
-	 		return;
-	 	}
-
-	 	var msg1 = $('<p>').css('color', 'red').text("Biblioteket Sønderborg er lukket pga. af flytning. Vi åbner igen d. 3. november i Multikulturhuset, Nørre Havnegade 15.");
-	 	var msg2 = $('<p>').css('color', 'red').text("Reserveringer med afhentning i Sønderborg skal hentes på Dybbøl Bibliotek, Gammel Aabenraavej 20A.");
-	 	$(".pane-reservations").first().append(msg1, msg2);
-
-
-
-
-	 }
-	 
-	 
+ 
 
 
 
@@ -121,9 +76,6 @@
   	expand_holdings_on_page_load();
   	swap_holdings_and_material_details();
   	hide_too_many_search_results_message();
-  	add_sonderborg_closed_msg_to_reservation_confirmation();
-  	add_sonderborg_closed_msg_to_pick_default_branch_text();
-  	add_sonderborg_closed_msg_to_reservation_page();
   });
 
 
